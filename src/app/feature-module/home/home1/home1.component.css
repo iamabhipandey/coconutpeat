@@ -263,3 +263,254 @@
     font-size: 14px;
 }
 }
+
+
+/* ----------------------------- new section 2 -----------------------*/
+.feature-section {
+  background: #f6c048;
+}
+
+.feature-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-5px);
+}
+
+.feature-img {
+  width: 65px;
+  height: 65px;
+}
+/* ----------------------------recommanded section------------------------- */
+.recommend-section {
+  background: #fde9b8;
+}
+.recommend-section::before {
+    content: "";
+    background: #f7f7f7;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.recommend-tag {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  padding: 6px 22px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.recommend-box {
+  background: #fff;
+  padding: 15px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin-bottom: 15px;
+  transition: 0.2s ease;
+}
+
+.recommend-box:hover {
+  transform: translateY(-4px);
+}
+
+.num-circle {
+  width: 35px;
+  height: 35px;
+  background: #f39b1b;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.morning-shot-box {
+  padding: 25px;
+  border-radius: 22px;
+ 
+  backdrop-filter: blur(8px);
+  display: inline-block;
+}
+
+.morning-shot-img {
+  border-radius: 20px;
+}
+
+
+.caption-text h3 {
+  font-size: 30px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.3;
+  margin-bottom: 5px;
+}
+
+.tagline {
+  font-size: 18px;
+  background: #111;
+  color: #fff;
+  display: inline-block;
+  padding: 6px 22px;
+  border-radius: 10px;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+/*----------------------------- feature section --------------------------- */
+.feature-section {
+  background: #fafafa;
+}
+
+.point-badge {
+  background: #000;
+  color: #fff;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.3;
+}
+
+.subtitle {
+  font-size: 16px;
+  margin-top: 8px;
+  color: #555;
+}
+
+.highlight-box {
+  background: #fff;
+  border-left: 4px solid #f9c846;
+  padding: 15px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.07);
+}
+
+.highlight-title {
+  background: #f9c846;
+  padding: 4px 10px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.highlight-text {
+  margin-top: 8px;
+  color: #444;
+  font-size: 14px;
+}
+
+.feature-img-box {
+  display: inline-block;
+  padding: 15px;
+}
+
+.feature-img1 {
+  border-radius: 50%;
+  max-width: 330px;
+  transition: 0.4s ease;
+}
+
+/* Hover Effect */
+.feature-img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.garcinia-title {
+  font-size: 22px;
+  color: #333;
+  font-weight: 600;
+}
+
+.cut-title {
+  font-size: 30px;
+  color: #b72a47;
+  font-weight: 800;
+}
+
+.icon-img {
+  width: 55px;
+  height: 55px;
+  margin-bottom: 10px;
+}
+
+.icon-text {
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+}
+
+.icon-grid .col-md-2 {
+  padding: 20px 10px;
+}
+/*------------------------------------ product details --------------------------- */
+.flavor-section {
+    background: linear-gradient(135deg, #ffb347, #ffcc33, #b19eff, #d4a3ff);
+    background-size: 300% 300%;
+    animation: gradientMove 6s infinite alternate;
+  }
+  @keyframes gradientMove {
+    0% { background-position: left; }
+    100% { background-position: right; }
+  }
+
+  .berry-card { background: #f5e9ff; }
+  .mango-card { background: #fff4dd; }
+
+  .text-purple { color: #7a39c9; }
+  .text-orange { color: #ff8a00; }
+
+  .btn-purple {
+    background: #7a39c9; 
+    color: white; 
+  }
+
+  .btn-orange {
+    background: #ff8a00; 
+    color: white; 
+  }
+
+  .bg-purple { background: #9f63e6 !important; }
+  .bg-orange { background: #ffa733 !important; }
+
+  .flavor-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .flavor-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+  }
+/*----------------------- ingredient section ------------------------------*/
+    .ingredients-section {
+    background: linear-gradient(135deg, #fff8e6, #f3eaff);
+  }
+
+  .ingredient-card {
+    background: #ffffff;
+    transition: all .3s ease;
+  }
+
+  .ingredient-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  }

@@ -529,80 +529,65 @@ public header: header[] = [
       { menuValue: 'HEADER.VISION', routes: routes.Vision2030Module, hasSubRoute: false, showSubRoute: false, subMenus: [],},
       { menuValue: 'HEADER.HISTORY', routes: routes.CompanyHistory, hasSubRoute: false, showSubRoute: false, subMenus: [],},
       { menuValue: 'HEADER.SOCIAL_CONTRIBUTION', routes: routes.SocialContribution, hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'R&D and technology',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Clean Room ',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
     ],
   },
   {
-    tittle: 'HEADER.PRODUCT_INFO',
+    tittle: 'Key Ingredient',
     showAsTab: false,
     separateRoute: false,
     menu: [
-      { menuValue: 'HEADER.MEDICAL_DEVICES', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.BOTOX', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.FILLERS', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.PL', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.PDRN', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.SKIN_BOOST', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.LIPOLYSIS', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.PDRN_IMPLANTS', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-
-      {
-        menuValue: 'HEADER.COSMETICS',
-        routes: routes.listingGrid,
-        hasSubRoute: true,
-        showSubRoute: false,
-        subMenus: [
-          { menuValue: 'HEADER.PDRN', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-          { menuValue: 'HEADER.HYALURONIC', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-          { menuValue: 'HEADER.EXOSOME', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-          { menuValue: 'HEADER.SPICULE', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-        ]
-      },
-
-      {
-        menuValue: 'HEADER.MORNING_BOOSTER',
-        routes: routes.listingGrid,
-        hasSubRoute: true,
-        showSubRoute: false,
-        subMenus: [
-          { menuValue: 'HEADER.MORNING_SHOT', routes: routes.listingGrid, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-        ]
-      },
-
-      { menuValue: 'HEADER.BUSINESS_INQUIRIES', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      { menuValue: 'Amla', 
+        hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      { menuValue: 'Garcia ', 
+        hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      { menuValue: 'B.C', 
+        hasSubRoute: false, showSubRoute: false, subMenus: [], },
     ]
   },
+    {
+    tittle: 'Shopping',
+      showAsTab: false,
+      separateRoute: true,
+      hasSubRoute: false,
+      showSubRoute: false,
+        },
 
   {
-    tittle: 'HEADER.RND',
+    tittle: 'Cardalog Archive',
     showAsTab: false,
     separateRoute: false,
     menu: [
-      {
-        menuValue: 'HEADER.INDIAN_HOSPITALS',
-        routes: routes.CeoGreeting,
-        hasSubRoute: true,
-        showSubRoute: false,
-        subMenus: [
-          { menuValue: 'HEADER.KOREA_HEALTH_CENTER', routes: routes.CeoGreeting , hasSubRoute: false, showSubRoute: false, subMenus: [], },
-        ]
-      },
-      { menuValue: 'HEADER.RND_TECH', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.CLEAN_ROOM', routes: routes.CleanRoom, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.CERTIFICATIONS', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-
-      {
-        menuValue: 'HEADER.COOPERATIVE_ORG',
-        routes: routes.CeoGreeting,
-        hasSubRoute: true,
-        showSubRoute: false,
-        subMenus: [
-          { menuValue: 'HEADER.PARAS_HOSPITAL', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-          { menuValue: 'HEADER.ALL_INDIA_COLLEGE', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-          { menuValue: 'HEADER.ALPHA_DENTAL', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-          { menuValue: 'HEADER.OSONG_MEDICAL', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], },
-          { menuValue: 'HEADER.GIMHAE_FOUNDATION', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], }
-        ]
-      }
+       { menuValue: 'the entire', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      
+      // {
+      //   menuValue: 'HEADER.INDIAN_HOSPITALS',
+      //   routes: routes.CeoGreeting,
+      //   hasSubRoute: true,
+      //   showSubRoute: false,
+      //   subMenus: [
+      //     { menuValue: 'HEADER.KOREA_HEALTH_CENTER', routes: routes.CeoGreeting , hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      //   ]
+      // },
+     { menuValue: 'Product',  hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      { menuValue: 'Morningshot', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      { menuValue: 'Ingredient', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      { menuValue: 'India hub', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      { menuValue: 'Nepal hub', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      // {
+      //   menuValue: 'HEADER.COOPERATIVE_ORG',
+      //   routes: routes.CeoGreeting,
+      //   hasSubRoute: true,
+      //   showSubRoute: false,
+      //   subMenus: [
+      //     { menuValue: 'HEADER.PARAS_HOSPITAL', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      //     { menuValue: 'HEADER.ALL_INDIA_COLLEGE', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      //     { menuValue: 'HEADER.ALPHA_DENTAL', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      //     { menuValue: 'HEADER.OSONG_MEDICAL', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      //     { menuValue: 'HEADER.GIMHAE_FOUNDATION', routes: routes.CeoGreeting, hasSubRoute: false, showSubRoute: false, subMenus: [], }
+      //   ]
+      // }
     ]
   },
 
@@ -671,106 +656,106 @@ public header: header[] = [
   ]
 },
 
-{
-  tittle: 'HEADER.RECRUITMENT',
-  showAsTab: false,
-  separateRoute: false,
-  menu: [
-    {
-      menuValue: 'HEADER.PERSONNEL_WELFARE_SYSTEM',
-      routes: routes.LocheNews,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.RECRUITMENT_PROCEDURES',
-      routes: routes.CeoGreeting,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.JOB_INTRODUCTION',
-      routes: routes.CeoGreeting,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    }
-  ]
-},
+// {
+//   tittle: 'HEADER.RECRUITMENT',
+//   showAsTab: false,
+//   separateRoute: false,
+//   menu: [
+//     {
+//       menuValue: 'HEADER.PERSONNEL_WELFARE_SYSTEM',
+//       routes: routes.LocheNews,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     },
+//     {
+//       menuValue: 'HEADER.RECRUITMENT_PROCEDURES',
+//       routes: routes.CeoGreeting,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     },
+//     {
+//       menuValue: 'HEADER.JOB_INTRODUCTION',
+//       routes: routes.CeoGreeting,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     }
+//   ]
+// },
 
-{
-  tittle: 'HEADER.PR',
-  showAsTab: false,
-  separateRoute: false,
-  menu: [
-    {
-      menuValue: 'HEADER.PRESS_RELEASE',
-      routes: routes.LocheNews,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.PROMOTIONAL_VIDEO',
-      routes: routes.CeoGreeting,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.ADVERTISING',
-      routes: routes.CeoGreeting,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    }
-  ]
-},
+// {
+//   tittle: 'HEADER.PR',
+//   showAsTab: false,
+//   separateRoute: false,
+//   menu: [
+//     {
+//       menuValue: 'HEADER.PRESS_RELEASE',
+//       routes: routes.LocheNews,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     },
+//     {
+//       menuValue: 'HEADER.PROMOTIONAL_VIDEO',
+//       routes: routes.CeoGreeting,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     },
+//     {
+//       menuValue: 'HEADER.ADVERTISING',
+//       routes: routes.CeoGreeting,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     }
+//   ]
+// },
 
-{
-  tittle: 'HEADER.CATALOG_ARCHIVE',
-  showAsTab: false,
-  separateRoute: false,
-  menu: [
-    {
-      menuValue: 'HEADER.ENTIRE_CATALOG',
-      routes: routes.listingGrid,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.FILLERS',
-      routes: routes.listingGrid,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.PL',
-      routes: routes.listingGrid,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.PDRN',
-      routes: routes.listingGrid,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.IMPLANT',
-      routes: routes.listingGrid,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    }
-  ]
-}
+// {
+//   tittle: 'HEADER.CATALOG_ARCHIVE',
+//   showAsTab: false,
+//   separateRoute: false,
+//   menu: [
+//     {
+//       menuValue: 'HEADER.ENTIRE_CATALOG',
+//       routes: routes.listingGrid,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     },
+//     {
+//       menuValue: 'HEADER.FILLERS',
+//       routes: routes.listingGrid,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     },
+//     {
+//       menuValue: 'HEADER.PL',
+//       routes: routes.listingGrid,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     },
+//     {
+//       menuValue: 'HEADER.PDRN',
+//       routes: routes.listingGrid,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     },
+//     {
+//       menuValue: 'HEADER.IMPLANT',
+//       routes: routes.listingGrid,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     }
+//   ]
+// }
 
 
 
