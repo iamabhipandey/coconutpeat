@@ -509,7 +509,9 @@
     background: #ffffff;
     transition: all .3s ease;
   }
-
+.ingredient-card h5 {
+    font-size: 16px;
+}
   .ingredient-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.1);
