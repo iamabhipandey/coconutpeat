@@ -216,11 +216,11 @@
 
 
 "INQUIRY": {
-  "INQUIRY_TITLE": "PDRN USA の美容業界での専門知識とグローバルネットワークに参加しませんか",
+  "INQUIRY_TITLE": "MORNINGSHOT の美容業界での専門知識とグローバルネットワークに参加しませんか",
   "INQUIRY_DESCRIPTION": "美容製品の製造、プロダクション、ブランディング、物流、流通、販売に関するご質問がありましたら、お気軽にお問い合わせください。担当者がメール、SMS、または電話にて迅速にご対応いたします。",
   
   "AFFILIATE_INQUIRY": "提携お問い合わせ",
-  "SUBTITLE": "PDRN USA との提携をご希望の場合は、以下のフォームにご記入ください。担当チームが早急にご連絡いたします。",
+  "SUBTITLE": "MORNINGSHOT との提携をご希望の場合は、以下のフォームにご記入ください。担当チームが早急にご連絡いたします。",
   
   "NAME_LABEL": "氏名",
   "NAME_PLACEHOLDER": "フルネームを入力してください",
@@ -248,7 +248,7 @@
 },
 
   "ROOM": {
-    "HEADING": "PDRN USA — クリーンルーム & 医療機器基準",
+    "HEADING": "MORNINGSHOT — クリーンルーム & 医療機器基準",
     "HEADING_DESC": "医療・化粧品製造向けのモジュラー型クリーンルーム、ISO 適合、先進的フィルtration ソリューション。",
     "STANDARDS": "医療機器基準",
     "STANDARD": "医療機器基準",
@@ -268,7 +268,7 @@
     "RECOMMENDED": "推奨",
     "RECOMMENDED_DESC": "医療機器包装や滅菌組立には、ハードウォールクリーンルームが安定した制御に最適です。",
     "RECOMMENDED_CAPS": "追加設備",
-    "RECOMMENDED_CAPS_DESC": "PDRN USA はクリーンルームの安全で確実な稼働を実現するための補助システムを提供します：",
+    "RECOMMENDED_CAPS_DESC": "MORNINGSHOT はクリーンルームの安全で確実な稼働を実現するための補助システムを提供します：",
     "FILTRATION": "空気ろ過",
     "FILTRATION_DESC": "HEPA / ULPA 多段フィルタとプレフィルタ。",
     "FLOW": "層流装置",

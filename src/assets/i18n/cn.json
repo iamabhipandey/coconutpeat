@@ -223,11 +223,11 @@
 
 
 "INQUIRY": {
-  "INQUIRY_TITLE": "加入 PDRN USA，借助我们在美容行业的专业知识与全球网络",
+  "INQUIRY_TITLE": "加入 MORNINGSHOT，借助我们在美容行业的专业知识与全球网络",
   "INQUIRY_DESCRIPTION": "如果您对美容产品的制造、生产、品牌建设、物流、分销或销售有任何疑问，请联系我们。我们的代表将通过电子邮件、短信或电话及时回复您。",
   
   "AFFILIATE_INQUIRY": "合作咨询",
-  "SUBTITLE": "请填写以下表格以咨询与 PDRN USA 的合作机会。我们的团队将尽快与您联系。",
+  "SUBTITLE": "请填写以下表格以咨询与 MORNINGSHOT 的合作机会。我们的团队将尽快与您联系。",
   
   "NAME_LABEL": "姓名",
   "NAME_PLACEHOLDER": "请输入您的全名",
@@ -254,7 +254,7 @@
   "SUBMIT_BUTTON": "提交"
 },
  "ROOM": {
-    "HEADING": "PDRN USA — 洁净室与医疗器械标准",
+    "HEADING": "MORNINGSHOT — 洁净室与医疗器械标准",
     "HEADING_DESC": "为医疗与化妆品生产提供模块化洁净室、ISO 合规性以及先进过滤系统。",
     "STANDARDS": "医疗器械标准",
     "STANDARD": "医疗器械标准",
@@ -274,7 +274,7 @@
     "RECOMMENDED": "推荐",
     "RECOMMENDED_DESC": "用于医疗器械包装与无菌组装，建议选择硬墙洁净室以实现行业标准的控制与稳定性。",
     "RECOMMENDED_CAPS": "附加安装系统",
-    "RECOMMENDED_CAPS_DESC": "PDRN USA 提供全套辅助系统，确保洁净室可靠、安全运行：",
+    "RECOMMENDED_CAPS_DESC": "MORNINGSHOT 提供全套辅助系统，确保洁净室可靠、安全运行：",
     "FILTRATION": "空气过滤",
     "FILTRATION_DESC": "HEPA / ULPA 多级过滤及预过滤系统。",
     "FLOW": "层流系统",
