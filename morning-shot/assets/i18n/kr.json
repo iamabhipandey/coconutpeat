@@ -223,11 +223,11 @@
 
 
 "INQUIRY": {
-  "INQUIRY_TITLE": "PDRN USA와 함께 아름다움 산업 전문성과 글로벌 네트워크를 경험하세요",
+  "INQUIRY_TITLE": "MORNINGSHOT와 함께 아름다움 산업 전문성과 글로벌 네트워크를 경험하세요",
   "INQUIRY_DESCRIPTION": "뷰티 제품의 제조, 생산, 브랜드, 물류, 유통 또는 판매와 관련하여 궁금한 점이 있다면 언제든지 문의해 주세요. 담당자가 이메일, 문자 또는 전화로 신속하게 답변해 드립니다。",
   
   "AFFILIATE_INQUIRY": "제휴 문의",
-  "SUBTITLE": "PDRN USA와의 제휴 기회를 문의하려면 아래 양식을 작성해 주세요. 담당 팀이 최대한 빠르게 연락드리겠습니다。",
+  "SUBTITLE": "MORNINGSHOT와의 제휴 기회를 문의하려면 아래 양식을 작성해 주세요. 담당 팀이 최대한 빠르게 연락드리겠습니다。",
   
   "NAME_LABEL": "이름",
   "NAME_PLACEHOLDER": "이름을 입력하세요",
@@ -255,7 +255,7 @@
 },
 
  "ROOM": {
-    "HEADING": "PDRN USA — 클린룸 & 의료기기 기준",
+    "HEADING": "MORNINGSHOT — 클린룸 & 의료기기 기준",
     "HEADING_DESC": "의료 및 화장품 제조를 위한 모듈형 클린룸, ISO 규정 준수, 고급 공기 필tration 솔루션.",
     "STANDARDS": "의료기기 기준",
     "STANDARD": "의료기기 기준",
@@ -275,7 +275,7 @@
     "RECOMMENDED": "추천",
     "RECOMMENDED_DESC": "의료기기 포장 및 멸균 조립에는 하드월 클린룸이 업계 표준 제어에 적합합니다.",
     "RECOMMENDED_CAPS": "추가 설치",
-    "RECOMMENDED_CAPS_DESC": "PDRN USA 는 클린룸의 안정적이고 안전한 작동을 위한 모든 보조 시스템을 제공합니다:",
+    "RECOMMENDED_CAPS_DESC": "MORNINGSHOT 는 클린룸의 안정적이고 안전한 작동을 위한 모든 보조 시스템을 제공합니다:",
     "FILTRATION": "공기 필tration",
     "FILTRATION_DESC": "HEPA / ULPA 필터 단계 및 프리필터 시스템.",
     "FLOW": "층류 시스템",
