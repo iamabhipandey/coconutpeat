@@ -304,10 +304,10 @@
     }
   },
     "INQUIRY": {
-    "INQUIRY_TITLE": "Join PDRN USA with our expertise in the beauty industry and global network",
+    "INQUIRY_TITLE": "Join Morningshot with our expertise in the beauty industry and global network",
     "INQUIRY_DESCRIPTION": "If you have any questions about manufacturing, production, branding, logistics, distribution, or sales related to beauty products, please contact us. Your inquiry will be answered promptly by our representatives via email, text message, or phone.",
     "AFFILIATE_INQUIRY": "Affiliate Inquiry",
-    "SUBTITLE": "Please fill out the form below to inquire about affiliate opportunities with PDRN USA. Our team will get back to you as soon as possible.",
+    "SUBTITLE": "Please fill out the form below to inquire about affiliate opportunities with Morningshot. Our team will get back to you as soon as possible.",
     "NAME_LABEL": "Name",
     "NAME_PLACEHOLDER": "Enter your full name",
     "COMPANY_NAME_LABEL": "Company Name",
@@ -325,7 +325,7 @@
     "SUBMIT_BUTTON": "Submit"
   },
   "ROOM": {
-    "HEADING": "PDRN USA — Cleanroom & Medical Device Standards",
+    "HEADING": "Morningshot — Cleanroom & Medical Device Standards",
     "HEADING_DESC": "Modular cleanrooms, ISO compliance, and advanced filtration solutions tailored for medical and cosmetic manufacturing.",
     "STANDARDS": "MEDICAL DEVICE STANDARDS",
     "STANDARD": "Medical Device Standards",
@@ -345,7 +345,7 @@
     "RECOMMENDED": "Recommended",
     "RECOMMENDED_DESC": "For medical device packaging and sterile assembly, choose Hardwall Cleanrooms to achieve industry-standard control and repeatability.",
     "RECOMMENDED_CAPS": "ADDITIONAL INSTALLATIONS",
-    "RECOMMENDED_CAPS_DESC": "PDRN USA supplies a full suite of ancillary systems to ensure the clean room performs reliably and safely:",
+    "RECOMMENDED_CAPS_DESC": "Morningshot supplies a full suite of ancillary systems to ensure the clean room performs reliably and safely:",
     "FILTRATION": "Air Filtration",
     "FILTRATION_DESC": " HEPA / ULPA filtration stages with pre-filter cascades.",
     "FLOW": "Laminar Flow",
