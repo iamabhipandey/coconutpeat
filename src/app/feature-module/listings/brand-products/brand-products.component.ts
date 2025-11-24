@@ -38,7 +38,7 @@ export class BrandProductsComponent {
     private dataFactory: DataFactoryService,
     private router: Router,
   ) {
-    this.listingGrid = this.data.listingGrid;
+    
     this.loggedUserData = this.dataFactory.getCurrentUser();
     if (this.loggedUserData) {
         this.loggedUserName = this.loggedUserData.name;

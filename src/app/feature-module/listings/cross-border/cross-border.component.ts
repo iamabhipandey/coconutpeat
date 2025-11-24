@@ -54,7 +54,7 @@ export class CrossBorderComponent {
       this.currentLoggedUserId = this.loggedUserId;
 
     }
-    this.listingGrid = this.data.listingGrid;
+   
     this.getAllVerifiedProductData();
     this.getAllActiveProductData();
   }

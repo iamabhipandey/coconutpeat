@@ -66,7 +66,7 @@ export class ListingGridComponent {
         this.currentLoggedUserId=   this.loggedUserId ;
         
     }
-    this.listingGrid = this.data.listingGrid;
+    // this.listingGrid = this.data.listingGrid;
     this.getAllVerifiedProductData();
      this.getAllActiveProductData();
    

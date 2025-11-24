@@ -2,14 +2,21 @@
 <section class="slider-for-ta">
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-inner">
+      
       <div class="carousel-item active" [routerLink]="routes.listingGrid">
-        <img src="assets/img/banners/mg.jpg" class="d-block w-100" alt="Slide 1">
+        <img src="assets/img/banners/drink1.webp" class="d-block w-100" alt="Slide 1">
       </div>
       <div class="carousel-item" [routerLink]="routes.listingGrid">
-        <img src="assets/img/banners/mg1.jpg" class="d-block w-100" alt="Slide 6">
+        <img src="assets/img/banners/drink2.webp" class="d-block w-100" alt="Slide 2">
       </div>
-      <div class="carousel-item" [routerLink]="routes.listingGrid">
-        <img src="assets/img/banners/mg2.jpg" class="d-block w-100" alt="Slide 2">
+       <div class="carousel-item" [routerLink]="routes.listingGrid">
+        <img src="assets/img/banners/drink3.webp" class="d-block w-100" alt="Slide 3">
+      </div>
+       <div class="carousel-item" [routerLink]="routes.listingGrid">
+        <img src="assets/img/banners/drink4.jpg" class="d-block w-100" alt="Slide 4">
+      </div>
+       <div class="carousel-item" [routerLink]="routes.listingGrid">
+        <img src="assets/img/banners/drink5.jpg" class="d-block w-100" alt="Slide 5">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -303,59 +310,39 @@
 
 
 
-<!-- <div class="menu-section">
-  <div class="container">
-    <div class="row justify-content-center text-center">
-      <div class="col-6 col-md-3 mb-1 menu-item" [routerLink]="routes.CeoGreeting">
-        <i class="fa-solid fa-cloud"></i>
-        <span>{{ 'HOME.ABOUTUS' | translate }}</span>
-      </div>
-      <div class="col-6 col-md-3 mb-1 menu-item" [routerLink]="routes.listingGrid">
-        <i class="fa-solid fa-award"></i>
-        <span>{{ 'HOME.BRAND' | translate }}</span>
-      </div>
-      <div class="col-6 col-md-3 mb-1 menu-item" [routerLink]="routes.LocheNews">
-        <i class="fa-solid fa-globe"></i>
-        <span>{{ 'HOME.CHANNEL' | translate }}</span>
-      </div>
-      <div class="col-6 col-md-3 mb-1 menu-item" [routerLink]="routes.contactUs">
-        <i class="fa-solid fa-user-group"></i>
-        <span>{{ 'HOME.CONTACT' | translate }}</span>
-      </div>
-    </div>
-  </div>
-</div> -->
 <!-- section 3 -->
-<!-- <div class="hero-section">
+ <div class="hero-section">
   <div class="container">
     <div class="row align-items-center">
 
       <div class="col-lg-5 mb-4 mb-lg-0">
         <h1 class="hero-title">
           {{ 'HOME.Advanced_Hybrid' | translate }} <br>
-          {{ 'HOME.Collagen_Stimulator' | translate }}
+          {{ 'HOME.HANGOVER' | translate }}
         </h1>
-        <button class="hero-btn" [routerLink]="routes.listingGrid">
+        <button class="hero-btn" >
             {{ 'HOME.LEARN_MORE' | translate }}
         </button>
       </div>
 
-      <div class="col-lg-7 text-center" [routerLink]="routes.listingGrid">
-        <img src="assets/img/banners/09.jpg" alt="Hero Image" class="hero-image">
+      <div class="col-lg-7 text-center" >
+        <img src="assets/img/banners/drink.webp" alt="Hero Image" class="hero-image">
       </div>
 
     </div>
   </div>
 </div>
-<div class="lenisna-section">
+<!-- section 4 -->
+
+<div class="lenisna-section mb-5">
   <div class="container">
     <div class="row align-items-center">
 
       <div class="col-lg-8 mb-5 mb-lg-0">
         <div class="lenisna-grid">
-          <img src="assets/img/banners/PDRNelle.jpg" class="grid-img">
-          <img src="assets/img/banners/section two 3.jpg" class="grid-img">
-          <img src="assets/img/banners/Loche Tox 200Unit.jpg" class="grid-img">
+          <img src="assets/img/banners/drink2.webp" class="grid-img">
+          <img src="assets/img/banners/drink5.jpg" class="grid-img">
+          <img src="assets/img/banners/drink3.webp" class="grid-img">
         </div>
       </div>
 
@@ -367,7 +354,9 @@
     </div>
   </div>
 </div>
-<section class="NewArrival-section our-Stores-product">
+
+<!-- section 5 -->
+<!-- <section class="NewArrival-section our-Stores-product">
   <div class="container mb-5">
     <h2 class="text-center section-title mb-5 pt-4 animate__animated animate__fadeInDown"> {{ 'HOME.PROMOTION_PRODUCTS' | translate }}
       <span [routerLink]="routes.listingGrid">{{ 'HOME.SEE_ALL_PRODUCTS' | translate }}</span> <i class="fa-solid fa-chevron-right"></i>
@@ -399,7 +388,9 @@
       </ng-container>
     </owl-carousel-o>
   </div>
-</section>
+</section> -->
+
+<!-- section 6 -->
 <div class="affiliates-section container">
   <h2 class="affiliates-title">{{ 'HOME.EMPOWERING_GLOBAL_SYNERGIES' | translate }}</h2>
 
@@ -472,4 +463,4 @@
     </div>
 </a>
   </div>
-</div> -->
+</div> 

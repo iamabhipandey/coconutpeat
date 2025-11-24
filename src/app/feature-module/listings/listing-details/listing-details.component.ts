@@ -69,7 +69,7 @@ export class ListingDetailsComponent {
      private datePipe: DatePipe,private _lightbox: Lightbox,private matDialog: MatDialog) {
     this.listingDetails = this.data.listingDetails;
     this.thumbnails = this.data.thumbnails;
-    this.interestedCars = this.data.interestedCars;
+  
     for (let i = 1; i <= 12; i++) {
       const src = 'assets/img/gallery/gallery-thumb-0' + i + '.jpg';
       this.gallery.push({ src: src });
