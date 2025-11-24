@@ -3,10 +3,10 @@
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-inner">
       
-      <div class="carousel-item active" [routerLink]="routes.listingGrid">
+      <!-- <div class="carousel-item active" [routerLink]="routes.listingGrid">
         <img src="assets/img/banners/drink1.webp" class="d-block w-100" alt="Slide 1">
-      </div>
-      <div class="carousel-item" [routerLink]="routes.listingGrid">
+      </div> -->
+      <div class="carousel-item active" [routerLink]="routes.listingGrid">
         <img src="assets/img/banners/drink2.webp" class="d-block w-100" alt="Slide 2">
       </div>
        <div class="carousel-item" [routerLink]="routes.listingGrid">
@@ -43,29 +43,29 @@
       <div class="col-md-3 col-6">
         <div class="feature-box text-center p-4">
           <img src="assets/img/icons/flask.png" class="feature-img" alt="">
-          <h6 class="fw-bold mt-3">Patented Raw Materials</h6>
-          <p class="small text-muted mb-0">Hangover-relief effect confirmed</p>
+          <h6 class="fw-bold mt-3">{{'HOME.PATENTED' | translate}}</h6>
+          <p class="small text-muted mb-0">{{'HOME.HANGOVER_RELIEF' | translate}}</p>
         </div>
       </div>
       <div class="col-md-3 col-6">
         <div class="feature-box text-center p-4">
           <img src="assets/img/icons/mass-production.png" class="feature-img" alt="">
-          <h6 class="fw-bold mt-3">Direct Design & Production</h6>
-          <p class="small text-muted mb-0">Quality-controlled manufacturing</p>
+          <h6 class="fw-bold mt-3">{{'HOME.DIRECT' | translate}}</h6>
+          <p class="small text-muted mb-0">{{'HOME.QUALITY_CONTROL' | translate}}</p>
         </div>
       </div>
       <div class="col-md-3 col-6">
         <div class="feature-box text-center p-4">
           <img src="assets/img/icons/dairy-products.png" class="feature-img" alt="">
-          <h6 class="fw-bold mt-3">Comfortable Formula</h6>
-          <p class="small text-muted mb-0">No discomfort after drinking</p>
+          <h6 class="fw-bold mt-3">{{'HOME.COMFORTABLE' | translate}}</h6>
+          <p class="small text-muted mb-0">{{'HOME.NO_DISCOMFORT' | translate}}</p>
         </div>
       </div>
       <div class="col-md-3 col-6">
         <div class="feature-box text-center p-4">
           <img src="assets/img/icons/juice.png" class="feature-img" alt="">
-          <h6 class="fw-bold mt-3">Refreshing Flavors</h6>
-          <p class="small text-muted mb-0">Mango & grape blends</p>
+          <h6 class="fw-bold mt-3">{{'HOME.REFRESHING' | translate}}</h6>
+          <p class="small text-muted mb-0">{{'HOME.MANGO' | translate}}</p>
         </div>
       </div>
     </div>
@@ -80,27 +80,27 @@
   <div class="container">
     <div class="row align-items-center">
       <div class="col-lg-6">
-        <div class="recommend-tag mb-3">RECOMMEND</div>
-        <h2 class="fw-bold mb-4">I recommend it to these people</h2>
+        <div class="recommend-tag mb-3">{{'HOME.RECOMMEND' | translate}}</div>
+        <h2 class="fw-bold mb-4">{{'HOME.I_RECOMMEND' | translate}}</h2>
         <div class="recommend-box d-flex align-items-center">
           <span class="num-circle">1</span>
-          <p class="mb-0">Office workers who frequently attend company dinners and gatherings</p>
+          <p class="mb-0">{{'HOME.OFFICE_WORKER' | translate}}</p>
         </div>
         <div class="recommend-box d-flex align-items-center">
           <span class="num-circle">2</span>
-          <p class="mb-0">People who want to enjoy alcohol but are worried about the next morning</p>
+          <p class="mb-0">{{'HOME.PEOPLE' | translate}}</p>
         </div>
         <div class="recommend-box d-flex align-items-center">
           <span class="num-circle">3</span>
-          <p class="mb-0">Those who want a clean taste without any unpleasant after-drinking sensation</p>
+          <p class="mb-0">{{'HOME.CLEAN_TASTE' | translate}}</p>
         </div>
         <div class="recommend-box d-flex align-items-center">
           <span class="num-circle">4</span>
-          <p class="mb-0">Introverts who want a hangover cure to share at parties</p>
+          <p class="mb-0">{{'HOME.INTROVERT' | translate}}</p>
         </div>
         <div class="recommend-box d-flex align-items-center">
           <span class="num-circle">5</span>
-          <p class="mb-0">Those who prefer something easier to consume than pills or liquids</p>
+          <p class="mb-0">{{'HOME.PREFER_SOMETHING' | translate}}</p>
         </div>
       </div>
 
@@ -109,8 +109,8 @@
   <div class="morning-shot-box p-4 shadow-lg rounded-4">
     <img src="assets/img/icons/sectionn2img.png" class="img-fluid morning-shot-img" alt="Product">
     <div class="caption-text mt-4">
-      <h3 class="fw-bold mb-1">Me yesterday<br>and me today</h3>
-      <p class="tagline fw-semibold">Fun and light!</p>
+      <h3 class="fw-bold mb-1">{{'HOME.YESTERDAY' | translate}}<br>{{'HOME.TODAY' | translate}}</h3>
+      <p class="tagline fw-semibold">{{'HOME.FUN_LIGHT' | translate}}!</p>
     </div>
   </div>
 </div>
@@ -127,15 +127,14 @@
         <div class="feature-content">
           <span class="point-badge">POINT 01</span>
           <h2 class="title mt-3">
-            Patented raw material<br>
-            proven to improve hangovers
+            {{'HOME.PATENTED' | translate}}<br>
+            {{'HOME.PROVEN' | translate}}
           </h2>
-          <p class="subtitle">Fermented Garlic Extract Powder (Cygbolyin) – No. 1670321</p>
+          <p class="subtitle">{{'HOME.FERMENTED' | translate}}</p>
           <div class="highlight-box mt-4">
-            <span class="highlight-title">What is Indian Gooseberry?</span>
+            <span class="highlight-title">{{'HOME.GOSSEBERRY' | translate}}</span>
             <p class="highlight-text">
-              Indian gooseberry is rich in polyphenol vitamin C, contributing to the
-              strengthening and activation of ingredients that help reduce harmful effects.
+             {{'HOME.GOSSEBERRY_DESC' | translate}} 
             </p>
           </div>
         </div>
@@ -149,33 +148,33 @@
       </div>
     </div>
     <div class="text-center mt-5">
-      <h3 class="garcinia-title">Garcinia cambogia extract</h3>
-      <h2 class="cut-title">Carbohydrate CUT!</h2>
+      <h3 class="garcinia-title">{{'HOME.GARCINIA_EXTRACT' | translate}}</h3>
+      <h2 class="cut-title">{{'HOME.CARBO' | translate}}!</h2>
     </div>
     <div class="row text-center mt-4">
       <div class="col-4 col-md-2 mb-3">
         <img src="assets/img/icons/diet.png" class="icon-img" alt="">
-        <p class="icon-text">Weight Control</p>
+        <p class="icon-text">{{'HOME.WEIGHT_CONTROL' | translate}}</p>
       </div>
       <div class="col-4 col-md-2 mb-3">
         <img src="assets/img/icons/weight-scale.png" class="icon-img" alt="">
-        <p class="icon-text">BMI Down</p>
+        <p class="icon-text">{{'HOME.BMI' | translate}}</p>
       </div>
       <div class="col-4 col-md-2 mb-3">
         <img src="assets/img/icons/cardiogram.png" class="icon-img" alt="">
-        <p class="icon-text">Heart Health</p>
+        <p class="icon-text">{{'HOME.HEART' | translate}}</p>
       </div>
       <div class="col-4 col-md-2 mb-3">
         <img src="assets/img/icons/digestive-organ.png" class="icon-img" alt="">
-        <p class="icon-text">Digestive Support</p>
+        <p class="icon-text">{{'HOME.DIGEST' | translate}}</p>
       </div>
       <div class="col-4 col-md-2 mb-3">
         <img src="assets/img/icons/slim.png" class="icon-img" alt="">
-        <p class="icon-text">Fat Reduction</p>
+        <p class="icon-text">{{'HOME.FAT' | translate}}</p>
       </div>
       <div class="col-4 col-md-2 mb-3">
         <img src="assets/img/icons/target (2).png" class="icon-img" alt="">
-        <p class="icon-text">Food Intake Control</p>
+        <p class="icon-text">{{'HOME.FOOD' | translate}}</p>
       </div>
     </div>
 
@@ -186,24 +185,24 @@
 <section class="flavor-section py-5">
   <div class="container">
     <div class="text-center mb-5">
-      <h2 class="fw-bold text-white">Sweet Mango & Refreshing Mixed Berries</h2>
-      <p class="text-light">Boost your mood with two delicious flavors!</p>
+      <h2 class="fw-bold text-white">{{'HOME.SWEET_MANGO' | translate}}</h2>
+      <p class="text-light">{{'HOME.BOOST' | translate}}!</p>
     </div>
     <div class="row g-4">
       <div class="col-md-6">
         <div class="card flavor-card berry-card h-100 shadow-lg border-0 rounded-4">
           <div class="card-body p-4">
-            <span class="badge bg-purple mb-2 px-3 py-2 rounded-pill">Morning Shot</span>
-            <h3 class="fw-bold text-purple">Mixed Berry Flavor</h3>
-            <p class="text-muted">Refreshing first taste with a sweet grape aftertaste.</p>
+            <span class="badge bg-purple mb-2 px-3 py-2 rounded-pill">{{'HOME.MORNINGSHOT' | translate}}</span>
+            <h3 class="fw-bold text-purple">{{'HOME.MIXED_BERRY' | translate}}</h3>
+            <p class="text-muted">{{'HOME.FIRST_TASTE' | translate}}</p>
             <ul class="list-unstyled mt-3 mb-4 text-purple">
-              <li>🌿 Mellow taste</li>
-              <li>🍇 Rich fruit flavor</li>
-              <li>✨ Smooth softness</li>
+              <li>🌿 {{'HOME.MELLOW' | translate}}</li>
+              <li>🍇 {{'HOME.RICH_FRUIT' | translate}}</li>
+              <li>✨ {{'HOME.SMOOTH' | translate}}</li>
             </ul>
             <div class="mt-4">
               <button class="btn btn-purple px-4 py-2 rounded-pill fw-semibold">
-                Try Mixed Berry
+                {{'HOME.TRY_BERRY' | translate}}
               </button>
             </div>
           </div>
@@ -213,18 +212,18 @@
       <div class="col-md-6">
         <div class="card flavor-card mango-card h-100 shadow-lg border-0 rounded-4">
           <div class="card-body p-4">
-            <span class="badge bg-orange mb-2 px-3 py-2 rounded-pill">Morning Shot</span>
-            <h3 class="fw-bold text-orange">Mango Flavor</h3>
-            <p class="text-muted">Sweetness of tropical fruits that fills your mouth.</p>
+            <span class="badge bg-orange mb-2 px-3 py-2 rounded-pill">{{'HOME.MORNINGSHOT' | translate}}</span>
+            <h3 class="fw-bold text-orange">{{'HOME.MANGO_FLAVOR' | translate}}</h3>
+            <p class="text-muted">{{'HOME.SWEETNESS' | translate}}</p>
             <ul class="list-unstyled mt-3 mb-4 text-orange">
-              <li>🥭 Tropical sweetness</li>
-              <li>🍈 Refreshing taste</li>
-              <li>✨ Smooth & soft finish</li>
+              <li>🥭 {{'HOME.TROPICAL' | translate}}</li>
+              <li>🍈 {{'HOME.REFRESHING_TASTE' | translate}}</li>
+              <li>✨ {{'HOME.SOFT_FINISH' | translate}}</li>
             </ul>
 
             <div class="mt-4">
               <button class="btn btn-orange px-4 py-2 rounded-pill fw-semibold">
-                Try Mango
+                {{'HOME.TRY_MANGO' | translate}}
               </button>
             </div>
           </div>
@@ -238,9 +237,9 @@
   <div class="container">
     <section class="highlight-msg pb-5">
   <div class="container text-center">
-    <span class="badge bg-black px-4 py-2 fs-6">No Stuffy Feeling</span>
-    <h2 class="fw-bold mt-4">No hesitation even after drinking</h2>
-    <p class="text-muted fs-5">Just one bite – feel the comfort instantly</p>
+    <span class="badge bg-black px-4 py-2 fs-6">{{'HOME.FEELING' | translate}}</span>
+    <h2 class="fw-bold mt-4">{{'HOME.HESITATION' | translate}}</h2>
+    <p class="text-muted fs-5">{{'HOME.ONE_BITE' | translate}}</p>
   </div>
 </section>
 
@@ -249,54 +248,54 @@
       <div class="col-6 col-md-4 col-lg-3 col-xl-2">
         <div class="ingredient-card rounded-4 shadow-sm p-3 text-center">
           <img src="assets/img/icons/amala.png" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semi-bold">Indian Gooseberry</h5>
-          <p class="small text-muted mb-0">Emblica officinalis fruit</p>
-          <p class="small fw-semibold text-primary">Dry extract 42.5mg</p>
+          <h5 class="fw-semi-bold">{{'HOME.INDIAN_GOSSEBERRY' | translate}}</h5>
+          <p class="small text-muted mb-0">{{'HOME.EMBLICA' | translate}}</p>
+          <p class="small fw-semibold text-primary">{{'HOME.EXTRACT' | translate}} 42.5 mg</p>
         </div>
       </div>
 
       <div class="col-6 col-md-4 col-lg-3 col-xl-2">
         <div class="ingredient-card rounded-4 shadow-sm p-3 text-center">
           <img src="assets/img/icons/ginger.png" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semi-bold">Ginger</h5>
-          <p class="small text-muted mb-0">Zingiber officinale rhizome</p>
-          <p class="small fw-semibold text-primary">Dry extract 1.2mg</p>
+          <h5 class="fw-semi-bold">{{'HOME.GINGER' | translate}}</h5>
+          <p class="small text-muted mb-0">{{'HOME.RHIZOME' | translate}}</p>
+          <p class="small fw-semibold text-primary">{{'HOME.EXTRACT' | translate}} 1.2 mg</p>
         </div>
       </div>
 
       <div class="col-6 col-md-4 col-lg-3 col-xl-2">
         <div class="ingredient-card rounded-4 shadow-sm p-3 text-center">
           <img src="assets/img/icons/date.png" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semi-bold">Date Palm</h5>
-          <p class="small text-muted mb-0">Phoenix dactylifera fruit</p>
-          <p class="small fw-semibold text-primary">Dry extract 43.4mg</p>
+          <h5 class="fw-semi-bold">{{'HOME.DATE_PALM' | translate}}</h5>
+          <p class="small text-muted mb-0">{{'HOME.PHOENIX' | translate}}</p>
+          <p class="small fw-semibold text-primary">{{'HOME.EXTRACT' | translate}} 43.4 mg</p>
         </div>
       </div>
 
       <div class="col-6 col-md-4 col-lg-3 col-xl-2">
         <div class="ingredient-card rounded-4 shadow-sm p-3 text-center">
           <img src="assets/img/icons/seed powder.png" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semi-bold">Fenugreek Seeds</h5>
-          <p class="small text-muted mb-0">Fenugreek seed powder</p>
-          <p class="small fw-semibold text-primary">21.9mg</p>
+          <h5 class="fw-semi-bold">{{'HOME.FENUGREEK' | translate}}</h5>
+          <p class="small text-muted mb-0">{{'HOME.FENUGREEK_POWDER' | translate}}</p>
+          <p class="small fw-semibold text-primary">{{'HOME.EXTRACT' | translate}} 21.9 mg</p>
         </div>
       </div>
 
       <div class="col-6 col-md-4 col-lg-3 col-xl-2">
         <div class="ingredient-card rounded-4 shadow-sm p-3 text-center">
           <img src="assets/img/icons/grape.png" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semi-bold">Grape</h5>
-          <p class="small text-muted mb-0">Vitis vinifera fruit</p>
-          <p class="small fw-semibold text-primary">Dry extract 16.9mg</p>
+          <h5 class="fw-semi-bold">{{'HOME.GRAPES' | translate}}</h5>
+          <p class="small text-muted mb-0">{{'HOME.VITIS' | translate}}</p>
+          <p class="small fw-semibold text-primary">{{'HOME.EXTRACT' | translate}} 16.9 mg</p>
         </div>
       </div>
 
       <div class="col-6 col-md-4 col-lg-3 col-xl-2">
         <div class="ingredient-card rounded-4 shadow-sm p-3 text-center">
           <img src="assets/img/icons/termerik.png" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semi-bold">Turmeric Root</h5>
-          <p class="small text-muted mb-0">Curcuma longa rhizome</p>
-          <p class="small fw-semibold text-primary">Dry extract 25.0mg</p>
+          <h5 class="fw-semi-bold">{{'HOME.ROOT' | translate}}</h5>
+          <p class="small text-muted mb-0">{{'HOME.LONGA' | translate}}</p>
+          <p class="small fw-semibold text-primary">{{'HOME.EXTRACT' | translate}}  25.0 mg</p>
         </div>
       </div>
 
