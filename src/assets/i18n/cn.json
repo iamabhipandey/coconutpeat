@@ -68,21 +68,17 @@
     "ORDERS": "订单",
     "LOGOUT": "登出",
     "PROFILE": "个人资料",
-      "KEY_INGREDIENT": "关键成分",
-  "AMLA": "余甘子",
-  "GARCIA": "加西亚",
-  "SHOPPING": "购物",
-  "CARDALOG": "商品档案",
-  "PRODUCT": "产品",
-  "MORNINGSHOT": "晨间饮品",
-  "INGREDIENT": "成分",
-  "INDIA_HUB": "印度中心",
-  "NEPAL_HUB": "尼泊尔中心"
-
+    "KEY_INGREDIENT": "关键成分",
+    "AMLA": "余甘子",
+    "GARCIA": "加西亚",
+    "SHOPPING": "购物",
+    "CARDALOG": "商品档案",
+    "PRODUCT": "产品",
+    "MORNINGSHOT": "晨间饮品",
+    "INGREDIENT": "成分",
+    "INDIA_HUB": "印度中心",
+    "NEPAL_HUB": "尼泊尔中心"
   },
-
-
-
   "HOME": {
     "ABOUTUS": "关于我们",
     "BRAND": "品牌",
@@ -91,7 +87,7 @@
     "LEARN_MORE": "了解更多关于 Morningshot",
     "Advanced_Hybrid": "先进的混合胶原蛋白刺激剂",
     "Collagen_Stimulator": "胶原蛋白刺激剂",
-     "HANGOVER": "解酒配方",
+    "HANGOVER": "解酒配方",
     "RESTORE_YOUR": "恢复您的",
     "NATURAL_VOLUME": "自然体积",
     "FULLNESS_NATURALLY_RESTORED": "自然恢复饱满感",
@@ -106,92 +102,86 @@
     "COSMETICS_OEM_MANUFACTURING": "化妆品 OEM 制造与生产",
     "LOCHE_LOGISTICS": "Loche 物流",
     "INTERNATIONAL_LOGISTICS": "国际物流航空，海运",
-
     "PATENTED": "专利原材料",
-  "DIRECT": "直接设计与生产",
-  "HANGOVER_RELIEF": "证实具有解酒效果",
-  "QUALITY_CONTROL": "质量控制的生产",
-  "COMFORTABLE": "舒适配方",
-  "NO_DISCOMFORT": "饮酒后无不适感",
-  "REFRESHING": "清爽口味",
-  "MANGO": "芒果与葡萄混合风味",
-  "RECOMMEND": "推荐",
-  "I_RECOMMEND": "我推荐给这样的人",
-  "OFFICE_WORKER": "经常参加聚餐的上班族",
-  "PEOPLE": "想喝酒但担心第二天不适的人",
-  "CLEAN_TASTE": "想要无异味、清爽口感的人",
-  "INTROVERT": "想带去派对分享的内向者",
-  "PREFER_SOMETHING": "比药片或液体更喜欢易入口的产品",
-  "YESTERDAY": "昨天的我",
-  "TODAY": "今天的我",
-  "FUN_LIGHT": "轻松又有趣",
-  "PROVEN": "经证实可改善宿醉",
-  "FERMENTED": "发酵大蒜提取粉（Cygbolyin）– No. 1670321",
-  "GOSSEBERRY": "什么是印度醋栗？",
-  "GOSSEBERRY_DESC": "印度醋栗富含多酚维生素C，有助于加强和激活减轻有害影响的成分。",
-  "GARCINIA_EXTRACT": "藤黄果提取物",
-  "CARBO": "碳水 CUT",
-  "WEIGHT_CONTROL": "体重管理",
-  "BMI": "BMI降低",
-  "HEART": "心脏健康",
-  "DIGEST": "消化支持",
-  "FAT": "脂肪减少",
-  "FOOD": "控制食物摄取",
-  "SWEET_MANGO": "甜芒果 & 清爽混合莓果",
-  "BOOST": "用两种美味口味提升好心情",
-  "MORNINGSHOT": "晨间饮品",
-  "MIXED_BERRY": "混合莓果口味",
-  "FIRST_TASTE": "清爽的初尝，伴随甜葡萄余味。",
-  "MELLOW": "柔和口感",
-  "RICH_FRUIT": "浓郁水果风味",
-  "SMOOTH": "顺滑柔软",
-  "TRY_BERRY": "尝试混合莓口味",
-  "MANGO_FLAVOR": "芒果口味",
-  "SWEETNESS": "热带水果的甜味充满口腔。",
-  "TROPICAL": "热带甜味",
-  "REFRESHING_TASTE": "清爽口感",
-  "SOFT_FINISH": "顺滑柔和的余味",
-  "TRY_MANGO": "尝试芒果口味",
-  "FEELING": "没有闷胀感",
-  "HESITATION": "饮酒后也无需犹豫",
-  "ONE_BITE": "只需一口——立即感受舒适",
-  "INDIAN_GOSSEBERRY": "印度醋栗",
-  "EMBLICA": "余甘子果实",
-  "EXTRACT": "干提取物",
-  "GINGER": "姜",
-  "RHIZOME": "姜根茎",
-  "DATE_PALM": "枣椰树",
-  "PHOENIX": "椰枣果实",
-  "FENUGREEK": "葫芦巴籽",
-  "FENUGREEK_POWDER": "葫芦巴籽粉",
-  "GRAPES": "葡萄",
-  "VITIS": "葡萄果实",
-  "ROOT": "姜黄根",
-  "LONGA": "姜黄根茎"
-
-
+    "DIRECT": "直接设计与生产",
+    "HANGOVER_RELIEF": "证实具有解酒效果",
+    "QUALITY_CONTROL": "质量控制的生产",
+    "COMFORTABLE": "舒适配方",
+    "NO_DISCOMFORT": "饮酒后无不适感",
+    "REFRESHING": "清爽口味",
+    "MANGO": "芒果与葡萄混合风味",
+    "RECOMMEND": "推荐",
+    "I_RECOMMEND": "我推荐给这样的人",
+    "OFFICE_WORKER": "经常参加聚餐的上班族",
+    "PEOPLE": "想喝酒但担心第二天不适的人",
+    "CLEAN_TASTE": "想要无异味、清爽口感的人",
+    "INTROVERT": "想带去派对分享的内向者",
+    "PREFER_SOMETHING": "比药片或液体更喜欢易入口的产品",
+    "YESTERDAY": "昨天的我",
+    "TODAY": "今天的我",
+    "FUN_LIGHT": "轻松又有趣",
+    "PROVEN": "经证实可改善宿醉",
+    "FERMENTED": "发酵大蒜提取粉（Cygbolyin）– No. 1670321",
+    "GOSSEBERRY": "什么是印度醋栗？",
+    "GOSSEBERRY_DESC": "印度醋栗富含多酚维生素C，有助于加强和激活减轻有害影响的成分。",
+    "GARCINIA_EXTRACT": "藤黄果提取物",
+    "CARBO": "碳水 CUT",
+    "WEIGHT_CONTROL": "体重管理",
+    "BMI": "BMI降低",
+    "HEART": "心脏健康",
+    "DIGEST": "消化支持",
+    "FAT": "脂肪减少",
+    "FOOD": "控制食物摄取",
+    "SWEET_MANGO": "甜芒果 & 清爽混合莓果",
+    "BOOST": "用两种美味口味提升好心情",
+    "MORNINGSHOT": "晨间饮品",
+    "MIXED_BERRY": "混合莓果口味",
+    "FIRST_TASTE": "清爽的初尝，伴随甜葡萄余味。",
+    "MELLOW": "柔和口感",
+    "RICH_FRUIT": "浓郁水果风味",
+    "SMOOTH": "顺滑柔软",
+    "TRY_BERRY": "尝试混合莓口味",
+    "MANGO_FLAVOR": "芒果口味",
+    "SWEETNESS": "热带水果的甜味充满口腔。",
+    "TROPICAL": "热带甜味",
+    "REFRESHING_TASTE": "清爽口感",
+    "SOFT_FINISH": "顺滑柔和的余味",
+    "TRY_MANGO": "尝试芒果口味",
+    "FEELING": "没有闷胀感",
+    "HESITATION": "饮酒后也无需犹豫",
+    "ONE_BITE": "只需一口——立即感受舒适",
+    "INDIAN_GOSSEBERRY": "印度醋栗",
+    "EMBLICA": "余甘子果实",
+    "EXTRACT": "干提取物",
+    "GINGER": "姜",
+    "RHIZOME": "姜根茎",
+    "DATE_PALM": "枣椰树",
+    "PHOENIX": "椰枣果实",
+    "FENUGREEK": "葫芦巴籽",
+    "FENUGREEK_POWDER": "葫芦巴籽粉",
+    "GRAPES": "葡萄",
+    "VITIS": "葡萄果实",
+    "ROOT": "姜黄根",
+    "LONGA": "姜黄根茎"
   },
-
- "FOOTER": {
-  "BUSINESS_HOURS": "营业时间：周一至周六",
-  "CUSTOMER_CARE": "客户服务",
-  "REWARDS": "奖励",
-  "SHIPPING": "配送",
-  "TRACK_SHIPMENT": "追踪货物",
-  "TERMS_AND_CONDITIONS": "条款和条件",
-  "PRIVACY_POLICY": "隐私政策",
-  "GET_IN_TOUCH": "联系我们",
-  "INDIA": "印度",
-  "REGISTERED_OFFICE": "注册办公室",
-  "CORPORATE_OFFICE": "公司总部",
-  "REPUBLIC_OF_KOREA": "大韩民国",
-  "TAMIL_ADDRESS": "No 82 二楼，Srestha，第四大道，Ashok Nagar，Chennai - 600083，泰米尔纳德邦，印度。",
-  "HARYANA_ADDRESS": "8楼，8-C大楼，DLF Cyber Hub，第二阶段，古尔冈，哈里亚纳邦 122002，印度。",
-  "COPYRIGHT": "版权所有 © 2025 morningshot.loche.in。保留所有权利 由 Loche India Private Limited 提供支持",
-   "OTHER_SITE_LINKS": "其他网站链接"
-},
-
-
+  "FOOTER": {
+    "BUSINESS_HOURS": "营业时间：周一至周六",
+    "CUSTOMER_CARE": "客户服务",
+    "REWARDS": "奖励",
+    "SHIPPING": "配送",
+    "TRACK_SHIPMENT": "追踪货物",
+    "TERMS_AND_CONDITIONS": "条款和条件",
+    "PRIVACY_POLICY": "隐私政策",
+    "GET_IN_TOUCH": "联系我们",
+    "INDIA": "印度",
+    "REGISTERED_OFFICE": "注册办公室",
+    "CORPORATE_OFFICE": "公司总部",
+    "REPUBLIC_OF_KOREA": "大韩民国",
+    "TAMIL_ADDRESS": "No 82 二楼，Srestha，第四大道，Ashok Nagar，Chennai - 600083，泰米尔纳德邦，印度。",
+    "HARYANA_ADDRESS": "8楼，8-C大楼，DLF Cyber Hub，第二阶段，古尔冈，哈里亚纳邦 122002，印度。",
+    "COPYRIGHT": "版权所有 © 2025 morningshot.loche.in。保留所有权利 由 Loche India Private Limited 提供支持",
+    "OTHER_SITE_LINKS": "其他网站链接"
+  },
   "GREETING": {
     "CEO_GREETING": "CEO 致辞",
     "CEO_NAME": "在医疗器械和美容行业积累了10年的临床（整形、美容行业）经验 通过医疗器械业务的发展，我们专注于21世纪的人类健康促进项目。",
@@ -200,7 +190,6 @@
     "CONTENT_3": "此外，亚洲美容美学和医疗器械市场在中国和印度迅速增长。基于其在印度、中东和非洲医疗行业的经验，Morningshot 正通过积极的营销和技术开发，在全球网络利基市场中，以韩国 K 医疗、制造、研发和教育服务为先锋，专注于扩大和出口市场，这些都是韩国 K 生物业务的核心。",
     "CONTENT_4": "基于印度自身的无尘室制造设施，管理人员和员工将在印度以14亿卢比完成韩国和印度的新商业模式，以引领持续快速的 K 医疗先锋。",
     "CONTENT_5": "此外，它将成为21世纪医疗行业在韩国和印度创造就业机会和高附加值医疗产业的先锋。",
-
     "VISION": "愿景 2030",
     "VISION_STATEMENT": "\"K-医疗创新的全球先锋\"",
     "VISION_POINT_1": "Morningshot 旨在通过以下愿景实现到 2030 年：<br /><br />成为 K-医疗的全球领导者<br />利用韩国先进的生物和医疗器械技术，我们将为印度、中东和非洲等新兴市场提供量身定制的解决方案，使自己成为全球医疗保健行业的关键合作伙伴。",
@@ -208,8 +197,7 @@
     "VISION_POINT_3": "创新和研发<br />我们将继续投资于研发，以保持我们在医疗技术前沿的地位。通过与领先的研究机构和大学合作，我们旨在开发创新的医疗解决方案，以满足不断变化的患者需求。",
     "VISION_POINT_4": "可持续发展和社会责任<br />Morningshot 致力于可持续发展实践，并将社会责任纳入我们的业务战略。我们将支持社区健康计划，并推动环保举措，以确保我们的业务对社会和环境产生积极影响。",
     "VISION_INTRO": "Morningshot 旨在通过以下愿景实现到 2030 年：",
-
-     "BECOME_A_GLOBAL_LEADER_IN_K_MEDICAL": "成为 K-医疗的全球领导者",
+    "BECOME_A_GLOBAL_LEADER_IN_K_MEDICAL": "成为 K-医疗的全球领导者",
     "BECOME_POINT_1": "利用韩国先进的生物和医疗器械技术，我们将为印度、中东和非洲等新兴市场提供量身定制的解决方案，使自己成为全球医疗保健行业的关键合作伙伴。",
     "BECOME_POINT_1_DESC": "利用韩国先进的生物和医疗器械技术，我们将为印度、中东和非洲等新兴市场提供量身定制的解决方案，使自己成为全球医疗保健行业的关键合作伙伴。",
     "BECOME_POINT_2": "亚太地区的战略扩张",
@@ -218,107 +206,70 @@
     "BECOME_POINT_3_DESC": "基于我们在印度的无尘室制造设施，我们将建立一个综合的 K 医疗平台，涵盖产品开发、研究和专业培训。",
     "BECOME_POINT_4": "创造就业机会，引领高价值医疗创新",
     "BECOME_POINT_4_DESC": "通过韩印合作，我们将促进可持续的就业生态系统，成为21世纪医疗行业的先锋。"
-
-
   },
-
-
-   "LOCHE_NEWS": {
+  "LOCHE_NEWS": {
     "PRESS_TITLE": "Morningshot 平台在新闻文章中",
     "PRESS_SUBTITLE": "了解 Morningshot 如何通过合作伙伴关系和创新塑造印度的 K-Beauty 格局。",
     "PRESS_1": "全面支持进入印度亚马逊美容类别。",
     "PRESS_2": "K-Beauty 进入印度，与 Packbox 和 Roche 合作。",
     "PRESS_3": "Packbox 与印度 K-beauty 电商平台签署独家供应协议。",
     "PRESS_4": "K-Beauty 现在与 Bellaluna (www.bellaluna.in) 进入印度，这是一个 100% 投资的 K-startup。"
- },
-
-
-
+  },
   "SOCIAL": {
-   "SOCIAL_CONTRIBUTION": "社会贡献",
-   "SUBTITLE": "通过 K 医疗创新，建设一个更健康、更公平和可持续的未来。",
-   "GLOBAL_HEALTH_EQUITY": "全球健康公平",
-   "GLOBAL_HEALTH_EQUITY_DESCRIPTION": "我们致力于改善印度、非洲和中东等欠发达地区获得优质医疗设备和美学解决方案的机会。通过无尘室制造和临床专业知识，我们旨在减少医疗保健差距，促进全民健康。",
-   "EDUCATION_WORKFORCE_DEVELOPMENT": "教育与劳动力发展",
-   "EDUCATION_WORKFORCE_DEVELOPMENT_DESCRIPTION": "通过 K 医疗教育项目，我们赋能当地医疗专业人员，提供先进的培训和认证。我们促进就业机会，建立可持续的就业生态系统，服务于韩国和合作国家。",
-   "SUSTAINABLE_INNOVATION": "可持续创新",
-   "SUSTAINABLE_INNOVATION_DESCRIPTION": "Morningshot 在产品设计和制造的每个阶段都融入生态意识实践。我们的目标是在推动高价值医疗创新的同时，尽量减少对环境的影响，为一个更健康的星球而努力。",
-   "COMMUNITY_ENGAGEMENT": "社区参与",
-   "COMMUNITY_ENGAGEMENT_DESCRIPTION": "我们与政府、非政府组织和学术合作伙伴合作，推动公共卫生、医疗推广和美学健康教育——建设更强大、更健康的全球社区。"
- },
-
-
- "COMPANY": {
-  "HISTORY": "公司历史",
-  "TIMELINE": "乐施时间轴",
-  "DESCRIPTION": "一段创新与全球医疗卓越的旅程",
-
-  "TIMELINE_DATA": {
-    "TITLE_2015": "进入医疗器械与美容美学行业",
-    "DESCRIPTION_2015": "开始积累临床经验。",
-
-    "TITLE_2017": "启动产品研发",
-    "DESCRIPTION_2017": "基于十年整形外科和美容临床数据进行研发。",
-
-    "TITLE_2019": "拓展全球业务",
-    "DESCRIPTION_2019": "进入中东和非洲市场，开始建立国际网络。",
-
-    "TITLE_2021": "加强与印度的合作",
-    "DESCRIPTION_2021": "与印度医疗领域合作并开展本地研究。",
-
-    "TITLE_2026": "推进先进制造",
-    "DESCRIPTION_2026": "在印度建成净化车间设施，开始生产 K-Medical 产品。",
-
-    "TITLE_2027": "启动教育服务",
-    "DESCRIPTION_2027": "推出 K-Bio 培训项目并扩大研发中心运营。",
-
-    "TITLE_2028": "发布 2030 愿景",
-    "DESCRIPTION_2028": "根据 2030 愿景积极扩大亚洲和非洲的出口业务。"
-  }
-
-
-
-
-
-
-
-},
-
-
-
-
-"INQUIRY": {
-  "INQUIRY_TITLE": "加入 MORNINGSHOT，借助我们在美容行业的专业知识与全球网络",
-  "INQUIRY_DESCRIPTION": "如果您对美容产品的制造、生产、品牌建设、物流、分销或销售有任何疑问，请联系我们。我们的代表将通过电子邮件、短信或电话及时回复您。",
-  
-  "AFFILIATE_INQUIRY": "合作咨询",
-  "SUBTITLE": "请填写以下表格以咨询与 MORNINGSHOT 的合作机会。我们的团队将尽快与您联系。",
-  
-  "NAME_LABEL": "姓名",
-  "NAME_PLACEHOLDER": "请输入您的全名",
-
-  "COMPANY_NAME_LABEL": "公司名称",
-  "COMPANY_NAME_PLACEHOLDER": "请输入公司名称",
-
-  "DEPARTMENT_NAME_LABEL": "部门名称",
-  "DEPARTMENT_NAME_PLACEHOLDER": "请输入部门名称",
-
-  "CONTACT_LABEL": "联系方式",
-
-  "EMAIL_LABEL": "电子邮箱",
-  "EMAIL_PLACEHOLDER": "请输入您的邮箱地址",
-
-  "TITLE_LABEL": "职位",
-  "TITLE_PLACEHOLDER": "请输入您的职位",
-
-  "CONTENT_LABEL": "内容",
-  "CONTENT_PLACEHOLDER": "请在此输入您的咨询内容",
-
-  "FILE_ATTACHMENTS_LABEL": "附件上传",
-
-  "SUBMIT_BUTTON": "提交"
-},
- "ROOM": {
+    "SOCIAL_CONTRIBUTION": "社会贡献",
+    "SUBTITLE": "通过 K 医疗创新，建设一个更健康、更公平和可持续的未来。",
+    "GLOBAL_HEALTH_EQUITY": "全球健康公平",
+    "GLOBAL_HEALTH_EQUITY_DESCRIPTION": "我们致力于改善印度、非洲和中东等欠发达地区获得优质医疗设备和美学解决方案的机会。通过无尘室制造和临床专业知识，我们旨在减少医疗保健差距，促进全民健康。",
+    "EDUCATION_WORKFORCE_DEVELOPMENT": "教育与劳动力发展",
+    "EDUCATION_WORKFORCE_DEVELOPMENT_DESCRIPTION": "通过 K 医疗教育项目，我们赋能当地医疗专业人员，提供先进的培训和认证。我们促进就业机会，建立可持续的就业生态系统，服务于韩国和合作国家。",
+    "SUSTAINABLE_INNOVATION": "可持续创新",
+    "SUSTAINABLE_INNOVATION_DESCRIPTION": "Morningshot 在产品设计和制造的每个阶段都融入生态意识实践。我们的目标是在推动高价值医疗创新的同时，尽量减少对环境的影响，为一个更健康的星球而努力。",
+    "COMMUNITY_ENGAGEMENT": "社区参与",
+    "COMMUNITY_ENGAGEMENT_DESCRIPTION": "我们与政府、非政府组织和学术合作伙伴合作，推动公共卫生、医疗推广和美学健康教育——建设更强大、更健康的全球社区。"
+  },
+  "COMPANY": {
+    "HISTORY": "公司历史",
+    "TIMELINE": "乐施时间轴",
+    "DESCRIPTION": "一段创新与全球医疗卓越的旅程",
+    "TIMELINE_DATA": {
+      "TITLE_2015": "进入医疗器械与美容美学行业",
+      "DESCRIPTION_2015": "开始积累临床经验。",
+      "TITLE_2017": "启动产品研发",
+      "DESCRIPTION_2017": "基于十年整形外科和美容临床数据进行研发。",
+      "TITLE_2019": "拓展全球业务",
+      "DESCRIPTION_2019": "进入中东和非洲市场，开始建立国际网络。",
+      "TITLE_2021": "加强与印度的合作",
+      "DESCRIPTION_2021": "与印度医疗领域合作并开展本地研究。",
+      "TITLE_2026": "推进先进制造",
+      "DESCRIPTION_2026": "在印度建成净化车间设施，开始生产 K-Medical 产品。",
+      "TITLE_2027": "启动教育服务",
+      "DESCRIPTION_2027": "推出 K-Bio 培训项目并扩大研发中心运营。",
+      "TITLE_2028": "发布 2030 愿景",
+      "DESCRIPTION_2028": "根据 2030 愿景积极扩大亚洲和非洲的出口业务。"
+    }
+  },
+  "INQUIRY": {
+    "INQUIRY_TITLE": "加入 MORNINGSHOT，借助我们在美容行业的专业知识与全球网络",
+    "INQUIRY_DESCRIPTION": "如果您对美容产品的制造、生产、品牌建设、物流、分销或销售有任何疑问，请联系我们。我们的代表将通过电子邮件、短信或电话及时回复您。",
+    "AFFILIATE_INQUIRY": "合作咨询",
+    "SUBTITLE": "请填写以下表格以咨询与 MORNINGSHOT 的合作机会。我们的团队将尽快与您联系。",
+    "NAME_LABEL": "姓名",
+    "NAME_PLACEHOLDER": "请输入您的全名",
+    "COMPANY_NAME_LABEL": "公司名称",
+    "COMPANY_NAME_PLACEHOLDER": "请输入公司名称",
+    "DEPARTMENT_NAME_LABEL": "部门名称",
+    "DEPARTMENT_NAME_PLACEHOLDER": "请输入部门名称",
+    "CONTACT_LABEL": "联系方式",
+    "EMAIL_LABEL": "电子邮箱",
+    "EMAIL_PLACEHOLDER": "请输入您的邮箱地址",
+    "TITLE_LABEL": "职位",
+    "TITLE_PLACEHOLDER": "请输入您的职位",
+    "CONTENT_LABEL": "内容",
+    "CONTENT_PLACEHOLDER": "请在此输入您的咨询内容",
+    "FILE_ATTACHMENTS_LABEL": "附件上传",
+    "SUBMIT_BUTTON": "提交"
+  },
+  "ROOM": {
     "HEADING": "MORNINGSHOT — 洁净室与医疗器械标准",
     "HEADING_DESC": "为医疗与化妆品生产提供模块化洁净室、ISO 合规性以及先进过滤系统。",
     "STANDARDS": "医疗器械标准",
@@ -361,8 +312,4 @@
     "MAN": "低维护",
     "MAN_DESC": "便捷的维护通道与模块化组件减少停机时间。"
   }
-
-
-
-
 }

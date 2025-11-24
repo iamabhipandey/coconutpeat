@@ -67,19 +67,17 @@
     "ORDERS": "注文履歴",
     "LOGOUT": "ログアウト",
     "PROFILE": "プロフィール",
-     "KEY_INGREDIENT": "主要成分",
-  "AMLA": "アムラ",
-  "GARCIA": "ガルシア",
-  "SHOPPING": "ショッピング",
-  "CARDALOG": "カタログアーカイブ",
-  "PRODUCT": "商品",
-  "MORNINGSHOT": "モーニングショット",
-  "INGREDIENT": "成分",
-  "INDIA_HUB": "インド拠点",
-  "NEPAL_HUB": "ネパール拠点"
+    "KEY_INGREDIENT": "主要成分",
+    "AMLA": "アムラ",
+    "GARCIA": "ガルシア",
+    "SHOPPING": "ショッピング",
+    "CARDALOG": "カタログアーカイブ",
+    "PRODUCT": "商品",
+    "MORNINGSHOT": "モーニングショット",
+    "INGREDIENT": "成分",
+    "INDIA_HUB": "インド拠点",
+    "NEPAL_HUB": "ネパール拠点"
   },
-
-
   "HOME": {
     "ABOUTUS": "会社情報",
     "BRAND": "ブランド",
@@ -88,7 +86,7 @@
     "LEARN_MORE": "ロチェバイオに関する詳細",
     "Advanced_Hybrid": "先進的ハイブリッド",
     "Collagen_Stimulator": "コラーゲン刺激剤",
-      "HANGOVER": "二日酔い緩和フォーミュラ",
+    "HANGOVER": "二日酔い緩和フォーミュラ",
     "RESTORE_YOUR": "自然なボリュームを",
     "NATURAL_VOLUME": "取り戻す",
     "FULLNESS_NATURALLY_RESTORED": "自然に満たされた豊かさ",
@@ -103,89 +101,86 @@
     "COSMETICS_OEM_MANUFACTURING": "化粧品OEM製造・生産",
     "LOCHE_LOGISTICS": "Loche ロジスティクス",
     "INTERNATIONAL_LOGISTICS": "国際物流 航空、海上輸送",
-
     "PATENTED": "特許取得原材料",
-  "DIRECT": "直接設計・生産",
-  "HANGOVER_RELIEF": "二日酔い緩和効果を確認",
-  "QUALITY_CONTROL": "品質管理された製造",
-  "COMFORTABLE": "快適な処方",
-  "NO_DISCOMFORT": "飲酒後の不快感なし",
-  "REFRESHING": "爽やかな風味",
-  "MANGO": "マンゴー＆グレープブレンド",
-  "RECOMMEND": "おすすめ",
-  "I_RECOMMEND": "こんな人におすすめ",
-  "OFFICE_WORKER": "会社の飲み会が多い会社員",
-  "PEOPLE": "お酒を楽しみたいが翌日が心配な人",
-  "CLEAN_TASTE": "飲後の不快感がないクリーンな味を求める人",
-  "INTROVERT": "パーティーで共有したい内向的な人",
-  "PREFER_SOMETHING": "錠剤や液体より手軽に摂りたい人",
-  "YESTERDAY": "昨日の私",
-  "TODAY": "今日の私",
-  "FUN_LIGHT": "楽しくて軽い気分",
-  "PROVEN": "二日酔い改善が証明済み",
-  "FERMENTED": "発酵ニンニク抽出粉末（Cygbolyin）– No. 1670321",
-  "GOSSEBERRY": "インドのグースベリーとは？",
-  "GOSSEBERRY_DESC": "インドグースベリーはポリフェノールとビタミンCが豊富で、有害作用を軽減する成分の強化と活性化に役立ちます。",
-  "GARCINIA_EXTRACT": "ガルシニアカンボジア抽出物",
-  "CARBO": "炭水化物CUT",
-  "WEIGHT_CONTROL": "体重管理",
-  "BMI": "BMIダウン",
-  "HEART": "心臓の健康",
-  "DIGEST": "消化サポート",
-  "FAT": "脂肪減少",
-  "FOOD": "食事摂取量のコントロール",
-  "SWEET_MANGO": "スイートマンゴー＆ミックスベリー",
-  "BOOST": "2つの美味しいフレーバーで気分アップ",
-  "MORNINGSHOT": "モーニングショット",
-  "MIXED_BERRY": "ミックスベリーフレーバー",
-  "FIRST_TASTE": "爽やかな味わいと甘いグレープの後味。",
-  "MELLOW": "まろやかな味",
-  "RICH_FRUIT": "濃厚なフルーツ風味",
-  "SMOOTH": "なめらかで柔らかい",
-  "TRY_BERRY": "ミックスベリーを試す",
-  "MANGO_FLAVOR": "マンゴーフレーバー",
-  "SWEETNESS": "トロピカルフルーツの甘さが口いっぱいに広がる。",
-  "TROPICAL": "トロピカルな甘さ",
-  "REFRESHING_TASTE": "爽やかな味わい",
-  "SOFT_FINISH": "なめらかで優しい後味",
-  "TRY_MANGO": "マンゴーを試す",
-  "FEELING": "むかつきなし",
-  "HESITATION": "飲酒後も迷わず摂れる",
-  "ONE_BITE": "一口で快適さを実感",
-  "INDIAN_GOSSEBERRY": "インドグースベリー",
-  "EMBLICA": "アムラ果実",
-  "EXTRACT": "乾燥エキス",
-  "GINGER": "ショウガ",
-  "RHIZOME": "ショウガ根茎",
-  "DATE_PALM": "デーツ（ナツメヤシ）",
-  "PHOENIX": "ナツメヤシ果実",
-  "FENUGREEK": "フェヌグリーク種子",
-  "FENUGREEK_POWDER": "フェヌグリーク種子粉末",
-  "GRAPES": "ブドウ",
-  "VITIS": "ブドウ果実",
-  "ROOT": "ウコン根",
-  "LONGA": "ウコン根茎"
-
+    "DIRECT": "直接設計・生産",
+    "HANGOVER_RELIEF": "二日酔い緩和効果を確認",
+    "QUALITY_CONTROL": "品質管理された製造",
+    "COMFORTABLE": "快適な処方",
+    "NO_DISCOMFORT": "飲酒後の不快感なし",
+    "REFRESHING": "爽やかな風味",
+    "MANGO": "マンゴー＆グレープブレンド",
+    "RECOMMEND": "おすすめ",
+    "I_RECOMMEND": "こんな人におすすめ",
+    "OFFICE_WORKER": "会社の飲み会が多い会社員",
+    "PEOPLE": "お酒を楽しみたいが翌日が心配な人",
+    "CLEAN_TASTE": "飲後の不快感がないクリーンな味を求める人",
+    "INTROVERT": "パーティーで共有したい内向的な人",
+    "PREFER_SOMETHING": "錠剤や液体より手軽に摂りたい人",
+    "YESTERDAY": "昨日の私",
+    "TODAY": "今日の私",
+    "FUN_LIGHT": "楽しくて軽い気分",
+    "PROVEN": "二日酔い改善が証明済み",
+    "FERMENTED": "発酵ニンニク抽出粉末（Cygbolyin）– No. 1670321",
+    "GOSSEBERRY": "インドのグースベリーとは？",
+    "GOSSEBERRY_DESC": "インドグースベリーはポリフェノールとビタミンCが豊富で、有害作用を軽減する成分の強化と活性化に役立ちます。",
+    "GARCINIA_EXTRACT": "ガルシニアカンボジア抽出物",
+    "CARBO": "炭水化物CUT",
+    "WEIGHT_CONTROL": "体重管理",
+    "BMI": "BMIダウン",
+    "HEART": "心臓の健康",
+    "DIGEST": "消化サポート",
+    "FAT": "脂肪減少",
+    "FOOD": "食事摂取量のコントロール",
+    "SWEET_MANGO": "スイートマンゴー＆ミックスベリー",
+    "BOOST": "2つの美味しいフレーバーで気分アップ",
+    "MORNINGSHOT": "モーニングショット",
+    "MIXED_BERRY": "ミックスベリーフレーバー",
+    "FIRST_TASTE": "爽やかな味わいと甘いグレープの後味。",
+    "MELLOW": "まろやかな味",
+    "RICH_FRUIT": "濃厚なフルーツ風味",
+    "SMOOTH": "なめらかで柔らかい",
+    "TRY_BERRY": "ミックスベリーを試す",
+    "MANGO_FLAVOR": "マンゴーフレーバー",
+    "SWEETNESS": "トロピカルフルーツの甘さが口いっぱいに広がる。",
+    "TROPICAL": "トロピカルな甘さ",
+    "REFRESHING_TASTE": "爽やかな味わい",
+    "SOFT_FINISH": "なめらかで優しい後味",
+    "TRY_MANGO": "マンゴーを試す",
+    "FEELING": "むかつきなし",
+    "HESITATION": "飲酒後も迷わず摂れる",
+    "ONE_BITE": "一口で快適さを実感",
+    "INDIAN_GOSSEBERRY": "インドグースベリー",
+    "EMBLICA": "アムラ果実",
+    "EXTRACT": "乾燥エキス",
+    "GINGER": "ショウガ",
+    "RHIZOME": "ショウガ根茎",
+    "DATE_PALM": "デーツ（ナツメヤシ）",
+    "PHOENIX": "ナツメヤシ果実",
+    "FENUGREEK": "フェヌグリーク種子",
+    "FENUGREEK_POWDER": "フェヌグリーク種子粉末",
+    "GRAPES": "ブドウ",
+    "VITIS": "ブドウ果実",
+    "ROOT": "ウコン根",
+    "LONGA": "ウコン根茎"
   },
-
- "FOOTER": {
-  "BUSINESS_HOURS": "営業時間：月曜〜土曜",
-  "CUSTOMER_CARE": "カスタマーケア",
-  "REWARDS": "リワード",
-  "SHIPPING": "配送",
-  "TRACK_SHIPMENT": "配送状況を追跡",
-  "TERMS_AND_CONDITIONS": "利用規約",
-  "PRIVACY_POLICY": "プライバシーポリシー",
-  "GET_IN_TOUCH": "お問い合わせ",
-  "INDIA": "インド",
-  "REGISTERED_OFFICE": "登録オフィス",
-  "CORPORATE_OFFICE": "本社",
-  "REPUBLIC_OF_KOREA": "大韓民国",
-  "TAMIL_ADDRESS": "No 82 2階、Srestha、4th Avenue、Ashok Nagar、Chennai - 600083、タミル・ナードゥ州、インド。",
-  "HARYANA_ADDRESS": "8階、8-Cビル、DLFサイバーハブ、第2フェーズ、グルガオン、ハリヤナ州 122002、インド。",
-  "COPYRIGHT": "著作権 © 2025 morningshot.loche.in。すべての権利を保有しています。ローチェ・インディア・プライベート・リミテッドによって提供されています。",
-  "OTHER_SITE_LINKS": "その他のサイトリンク"
-},
+  "FOOTER": {
+    "BUSINESS_HOURS": "営業時間：月曜〜土曜",
+    "CUSTOMER_CARE": "カスタマーケア",
+    "REWARDS": "リワード",
+    "SHIPPING": "配送",
+    "TRACK_SHIPMENT": "配送状況を追跡",
+    "TERMS_AND_CONDITIONS": "利用規約",
+    "PRIVACY_POLICY": "プライバシーポリシー",
+    "GET_IN_TOUCH": "お問い合わせ",
+    "INDIA": "インド",
+    "REGISTERED_OFFICE": "登録オフィス",
+    "CORPORATE_OFFICE": "本社",
+    "REPUBLIC_OF_KOREA": "大韓民国",
+    "TAMIL_ADDRESS": "No 82 2階、Srestha、4th Avenue、Ashok Nagar、Chennai - 600083、タミル・ナードゥ州、インド。",
+    "HARYANA_ADDRESS": "8階、8-Cビル、DLFサイバーハブ、第2フェーズ、グルガオン、ハリヤナ州 122002、インド。",
+    "COPYRIGHT": "著作権 © 2025 morningshot.loche.in。すべての権利を保有しています。ローチェ・インディア・プライベート・リミテッドによって提供されています。",
+    "OTHER_SITE_LINKS": "その他のサイトリンク"
+  },
   "GREETING": {
     "CEO_GREETING": "CEO ご挨拶",
     "CEO_NAME": "医療機器およびエステティックビューティー業界での10年間の臨床（整形、美容業界）経験の蓄積 医療機器事業の発展を通じて、21世紀の人間の健康促進プロジェクトに注力しています。",
@@ -194,7 +189,6 @@
     "CONTENT_3": "さらに、アジアの美容エステティックおよび医療機器市場は、中国とインドで急速に成長しています。インド、中東、アフリカの医療業界での経験を基に、Morningshotは、韓国のK医療、製造、R＆D、および教育サービスを先駆けとして、積極的なマーケティングと技術開発を通じて、グローバルネットワークのニッチ市場で市場の拡大と輸出に注力しています。これは韓国のKバイオビジネスの中心です。",
     "CONTENT_4": "インド独自のクリーンルーム製造施設を基に、経営陣と従業員は、インドで14億ルピーで韓国とインドの新しいビジネスモデルを完成させ、継続的かつ迅速なK医療の先駆けとなります。",
     "CONTENT_5": "さらに、21世紀の医療産業における雇用創出と高付加価値医療産業の先駆けとなります。韓国とインドで。",
-
     "VISION": "ビジョン 2030",
     "VISION_STATEMENT": "K-メディカルイノベーションのグローバルフロンティア",
     "VISION_POINT_1": "Morningshotは、2030年までに次のビジョンを実現することを目指しています：<br><br>韓国の先進的なバイオおよび医療機器技術を活用し、インド、中東、アフリカなどの新興市場に合わせたソリューションを提供し、グローバルヘルスケア業界の主要なパートナーとしての地位を確立します。",
@@ -202,26 +196,17 @@
     "VISION_POINT_3": "製造、R＆D、および教育の三角形を完成させる<br>インドのクリーンルーム製造施設を基に、製品開発、研究、専門的なトレーニングを網羅する統合されたK医療プラットフォームを構築します。",
     "VISION_POINT_4": "雇用を創出し、高付加価値の医療イノベーションをリードする<br>韓国とインドの協力を通じて、持続可能な雇用エコシステムを育成し、21世紀の医療産業の先駆けとなります。",
     "VISION_INTRO": "Morningshotは、2030年までに次のビジョンを実現することを目指しています：",
-
-
-
-     "BECOME_A_GLOBAL_LEADER_IN_K_MEDICAL": "K-メディカルのグローバルリーダーになる",
-  
-    
-
-    
+    "BECOME_A_GLOBAL_LEADER_IN_K_MEDICAL": "K-メディカルのグローバルリーダーになる",
     "BECOME_POINT_1": "韓国の先進的なバイオおよび医療機器技術を活用し、インド、中東、アフリカなどの新興市場に合わせたソリューションを提供し、グローバルヘルスケア業界の主要なパートナーとしての地位を確立します。",
     "BECOME_POINT_1_DESC": "私たちは、顧客のニーズに合わせた革新的な製品とサービスを提供することで、K-メディカルのグローバルリーダーとしての地位を確立します。",
     "BECOME_POINT_2": "急速な人口増加と需要の高まりにより、中国、インド、東南アジアの急成長する美容および医療機器市場に焦点を当て、ターゲットを絞った技術開発とマーケティングを通じて対応します。",
-   "BECOME_POINT_2_DESC": "私たちは、急速な人口増加と需要の高まりにより、中国、インド、東南アジアの急成長する美容および医療機器市場に焦点を当て、ターゲットを絞った技術開発とマーケティングを通じて対応します。",
+    "BECOME_POINT_2_DESC": "私たちは、急速な人口増加と需要の高まりにより、中国、インド、東南アジアの急成長する美容および医療機器市場に焦点を当て、ターゲットを絞った技術開発とマーケティングを通じて対応します。",
     "BECOME_POINT_3": "インドのクリーンルーム製造施設を基に、製品開発、研究、専門的なトレーニングを網羅する統合されたK医療プラットフォームを構築します。",
     "BECOME_POINT_3_DESC": "私たちは、インドのクリーンルーム製造施設を基に、製品開発、研究、専門的なトレーニングを網羅する統合されたK医療プラットフォームを構築します。",
     "BECOME_POINT_4": "韓国とインドの協力を通じて、持続可能な雇用エコシステムを育成し、21世紀の医療産業の先駆けとなります。",
     "BECOME_POINT_4_DESC": "私たちは、持続可能な慣行に専念し、社会的責任をビジネス戦略に統合します。地域社会の健康プログラムを支援し、環境に優しいイニシアチブを推進することで、私たちのビジネスが社会と環境にポジティブな影響を与えるようにします。"
-
-
   },
-    "LOCHE_NEWS": {
+  "LOCHE_NEWS": {
     "PRESS_TITLE": "プレス記事におけるロチェバイオインディアプラットフォーム",
     "PRESS_SUBTITLE": "ロチェバイオがパートナーシップとイノベーションを通じてインドのKビューティーの風景をどのように形成しているかをご覧ください。",
     "PRESS_1": "米国アマゾンビューティーカテゴリへの参入を全面的にサポート。",
@@ -229,10 +214,7 @@
     "PRESS_3": "Packboxが米国のK-Beautyコマースプラットフォームと独占供給契約を締結。",
     "PRESS_4": "K-Beautyは現在、Bellaluna (www.bellaluna.in)とともに米国に進出しています。これは100%投資されたKスタートアップです。"
   },
-
-
-
-    "SOCIAL": {
+  "SOCIAL": {
     "SOCIAL_CONTRIBUTION": "社会貢献",
     "SUBTITLE": "K-メディカルイノベーションを通じて、より健康で公平かつ持続可能な未来を築く。",
     "GLOBAL_HEALTH_EQUITY": "グローバルヘルスエクイティ",
@@ -244,72 +226,48 @@
     "COMMUNITY_ENGAGEMENT": "コミュニティエンゲージメント",
     "COMMUNITY_ENGAGEMENT_DESCRIPTION": "私たちは、政府、NGO、および学術パートナーと協力して、公衆衛生、医療アウトリーチ、およびエステティックウェルネス教育を推進し、世界中でより強く健康的なコミュニティを構築しています。"
   },
-
-
-
   "COMPANY": {
-    
-  "HISTORY": "会社の歴史",
-  "TIMELINE": "ロシュタイムライン",
-  "DESCRIPTION": "革新と世界的な医療卓越性の歩み",
-
-  "TIMELINE_DATA": {
-    "TITLE_2015": "医療機器および美容医療業界に参入",
-    "DESCRIPTION_2015": "臨床経験の蓄積を開始。",
-
-    "TITLE_2017": "製品開発を開始",
-    "DESCRIPTION_2017": "形成外科と美容分野の10年間の臨床データに基づき開発を推進。",
-
-    "TITLE_2019": "グローバル展開を拡大",
-    "DESCRIPTION_2019": "中東・アフリカ市場に進出し、国際ネットワークの構築を開始。",
-
-    "TITLE_2021": "インドとの協力強化",
-    "DESCRIPTION_2021": "インドの医療分野と連携し、現地研究を実施。",
-
-    "TITLE_2026": "先端製造の推進",
-    "DESCRIPTION_2026": "インドでクリーンルーム施設を完成させ、K-Medical 製品の生産を開始。",
-
-    "TITLE_2027": "教育サービス開始",
-    "DESCRIPTION_2027": "K-Bio トレーニングプログラムを導入し、R&Dセンターの運営を拡大。",
-
-    "TITLE_2028": "ビジョン2030発表",
-    "DESCRIPTION_2028": "ビジョン2030に基づき、アジアおよびアフリカへの輸出を積極的に拡大。"
-  }
-},
-
-
-"INQUIRY": {
-  "INQUIRY_TITLE": "MORNINGSHOT の美容業界での専門知識とグローバルネットワークに参加しませんか",
-  "INQUIRY_DESCRIPTION": "美容製品の製造、プロダクション、ブランディング、物流、流通、販売に関するご質問がありましたら、お気軽にお問い合わせください。担当者がメール、SMS、または電話にて迅速にご対応いたします。",
-  
-  "AFFILIATE_INQUIRY": "提携お問い合わせ",
-  "SUBTITLE": "MORNINGSHOT との提携をご希望の場合は、以下のフォームにご記入ください。担当チームが早急にご連絡いたします。",
-  
-  "NAME_LABEL": "氏名",
-  "NAME_PLACEHOLDER": "フルネームを入力してください",
-
-  "COMPANY_NAME_LABEL": "会社名",
-  "COMPANY_NAME_PLACEHOLDER": "会社名を入力してください",
-
-  "DEPARTMENT_NAME_LABEL": "部署名",
-  "DEPARTMENT_NAME_PLACEHOLDER": "部署名を入力してください",
-
-  "CONTACT_LABEL": "連絡先",
-
-  "EMAIL_LABEL": "メールアドレス",
-  "EMAIL_PLACEHOLDER": "メールアドレスを入力してください",
-
-  "TITLE_LABEL": "役職",
-  "TITLE_PLACEHOLDER": "役職を入力してください",
-
-  "CONTENT_LABEL": "内容",
-  "CONTENT_PLACEHOLDER": "お問い合わせ内容を入力してください",
-
-  "FILE_ATTACHMENTS_LABEL": "ファイル添付",
-
-  "SUBMIT_BUTTON": "送信"
-},
-
+    "HISTORY": "会社の歴史",
+    "TIMELINE": "ロシュタイムライン",
+    "DESCRIPTION": "革新と世界的な医療卓越性の歩み",
+    "TIMELINE_DATA": {
+      "TITLE_2015": "医療機器および美容医療業界に参入",
+      "DESCRIPTION_2015": "臨床経験の蓄積を開始。",
+      "TITLE_2017": "製品開発を開始",
+      "DESCRIPTION_2017": "形成外科と美容分野の10年間の臨床データに基づき開発を推進。",
+      "TITLE_2019": "グローバル展開を拡大",
+      "DESCRIPTION_2019": "中東・アフリカ市場に進出し、国際ネットワークの構築を開始。",
+      "TITLE_2021": "インドとの協力強化",
+      "DESCRIPTION_2021": "インドの医療分野と連携し、現地研究を実施。",
+      "TITLE_2026": "先端製造の推進",
+      "DESCRIPTION_2026": "インドでクリーンルーム施設を完成させ、K-Medical 製品の生産を開始。",
+      "TITLE_2027": "教育サービス開始",
+      "DESCRIPTION_2027": "K-Bio トレーニングプログラムを導入し、R&Dセンターの運営を拡大。",
+      "TITLE_2028": "ビジョン2030発表",
+      "DESCRIPTION_2028": "ビジョン2030に基づき、アジアおよびアフリカへの輸出を積極的に拡大。"
+    }
+  },
+  "INQUIRY": {
+    "INQUIRY_TITLE": "MORNINGSHOT の美容業界での専門知識とグローバルネットワークに参加しませんか",
+    "INQUIRY_DESCRIPTION": "美容製品の製造、プロダクション、ブランディング、物流、流通、販売に関するご質問がありましたら、お気軽にお問い合わせください。担当者がメール、SMS、または電話にて迅速にご対応いたします。",
+    "AFFILIATE_INQUIRY": "提携お問い合わせ",
+    "SUBTITLE": "MORNINGSHOT との提携をご希望の場合は、以下のフォームにご記入ください。担当チームが早急にご連絡いたします。",
+    "NAME_LABEL": "氏名",
+    "NAME_PLACEHOLDER": "フルネームを入力してください",
+    "COMPANY_NAME_LABEL": "会社名",
+    "COMPANY_NAME_PLACEHOLDER": "会社名を入力してください",
+    "DEPARTMENT_NAME_LABEL": "部署名",
+    "DEPARTMENT_NAME_PLACEHOLDER": "部署名を入力してください",
+    "CONTACT_LABEL": "連絡先",
+    "EMAIL_LABEL": "メールアドレス",
+    "EMAIL_PLACEHOLDER": "メールアドレスを入力してください",
+    "TITLE_LABEL": "役職",
+    "TITLE_PLACEHOLDER": "役職を入力してください",
+    "CONTENT_LABEL": "内容",
+    "CONTENT_PLACEHOLDER": "お問い合わせ内容を入力してください",
+    "FILE_ATTACHMENTS_LABEL": "ファイル添付",
+    "SUBMIT_BUTTON": "送信"
+  },
   "ROOM": {
     "HEADING": "MORNINGSHOT — クリーンルーム & 医療機器基準",
     "HEADING_DESC": "医療・化粧品製造向けのモジュラー型クリーンルーム、ISO 適合、先進的フィルtration ソリューション。",
@@ -353,11 +311,4 @@
     "MAN": "低メンテナンス",
     "MAN_DESC": "簡易アクセスパネルとモジュラー交換部品でダウンタイムを削減。"
   }
-
-
-
-
-
-
-
 }

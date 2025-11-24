@@ -65,21 +65,17 @@
     "ORDERS": "주문 내역",
     "LOGOUT": "로그아웃",
     "PROFILE": "프로필",
-     "KEY_INGREDIENT": "주요 성분",
-  "AMLA": "암라",
-  "GARCIA": "가르시아",
-  "SHOPPING": "쇼핑",
-  "CARDALOG": "카탈로그 아카이브",
-  "PRODUCT": "제품",
-  "MORNINGSHOT": "모닝샷",
-  "INGREDIENT": "성분",
-  "INDIA_HUB": "인도 허브",
-  "NEPAL_HUB": "네팔 허브"
+    "KEY_INGREDIENT": "주요 성분",
+    "AMLA": "암라",
+    "GARCIA": "가르시아",
+    "SHOPPING": "쇼핑",
+    "CARDALOG": "카탈로그 아카이브",
+    "PRODUCT": "제품",
+    "MORNINGSHOT": "모닝샷",
+    "INGREDIENT": "성분",
+    "INDIA_HUB": "인도 허브",
+    "NEPAL_HUB": "네팔 허브"
   },
-
-
-
-
   "HOME": {
     "ABOUTUS": "회사소개",
     "BRAND": "브랜드",
@@ -88,7 +84,7 @@
     "LEARN_MORE": "로체바이오에 대해 더 알아보기",
     "Advanced_Hybrid": "첨단 하이브리드",
     "Collagen_Stimulator": "콜라겐 자극제",
-      "HANGOVER": "숙취 해소 포뮬러",
+    "HANGOVER": "숙취 해소 포뮬러",
     "RESTORE_YOUR": "자연스러운 볼륨을",
     "NATURAL_VOLUME": "복원하세요",
     "FULLNESS_NATURALLY_RESTORED": "자연스럽게 채워진 풍성함",
@@ -104,89 +100,85 @@
     "LOCHE_LOGISTICS": "로체 물류",
     "INTERNATIONAL_LOGISTICS": "국제 물류 항공, 해상 운송",
     "PATENTED": "특허 원료",
-  "DIRECT": "직접 설계 및 생산",
-  "HANGOVER_RELIEF": "숙취 해소 효과 확인",
-  "QUALITY_CONTROL": "품질 관리된 제조",
-  "COMFORTABLE": "편안한 포뮬러",
-  "NO_DISCOMFORT": "음주 후 불편함 없음",
-  "REFRESHING": "상쾌한 맛",
-  "MANGO": "망고 & 포도 블렌드",
-  "RECOMMEND": "추천",
-  "I_RECOMMEND": "이런 분들께 추천합니다",
-  "OFFICE_WORKER": "회식이 잦은 직장인",
-  "PEOPLE": "술은 즐기고 싶지만 다음 날이 걱정되는 사람",
-  "CLEAN_TASTE": "불쾌한 음주 후 맛 없이 깔끔한 맛을 원하는 사람",
-  "INTROVERT": "파티에서 나누고 싶은 내향적인 사람",
-  "PREFER_SOMETHING": "알약이나 액체보다 먹기 편한 것을 선호하는 사람",
-  "YESTERDAY": "어제의 나",
-  "TODAY": "오늘의 나",
-  "FUN_LIGHT": "가볍고 즐거운 느낌",
-  "PROVEN": "숙취 개선 효과 입증",
-  "FERMENTED": "발효 마늘 추출 분말 (Cygbolyin) – No. 1670321",
-  "GOSSEBERRY": "인도 구스베리란?",
-  "GOSSEBERRY_DESC": "인도 구스베리는 폴리페놀과 비타민 C가 풍부하여 유해한 영향을 줄이는 데 도움이 됩니다.",
-  "GARCINIA_EXTRACT": "가르시니아 캄보지아 추출물",
-  "CARBO": "탄수화물 CUT",
-  "WEIGHT_CONTROL": "체중 관리",
-  "BMI": "BMI 감소",
-  "HEART": "심장 건강",
-  "DIGEST": "소화 지원",
-  "FAT": "지방 감소",
-  "FOOD": "식욕 조절",
-  "SWEET_MANGO": "달콤한 망고 & 상큼한 혼합 베리",
-  "BOOST": "두 가지 맛으로 기분 업!",
-  "MORNINGSHOT": "모닝샷",
-  "MIXED_BERRY": "믹스드 베리 맛",
-  "FIRST_TASTE": "상쾌한 첫 맛과 달콤한 포도 향.",
-  "MELLOW": "부드러운 맛",
-  "RICH_FRUIT": "풍부한 과일 향",
-  "SMOOTH": "부드럽고 편안한",
-  "TRY_BERRY": "믹스드 베리 맛을 시도해보세요",
-  "MANGO_FLAVOR": "망고 맛",
-  "SWEETNESS": "입안을 가득 채우는 열대 과일의 달콤함.",
-  "TROPICAL": "트로피컬 달콤함",
-  "REFRESHING_TASTE": "상쾌한 맛",
-  "SOFT_FINISH": "부드럽고 잔잔한 마무리",
-  "TRY_MANGO": "망고 맛을 시도해보세요",
-  "FEELING": "답답함 없음",
-  "HESITATION": "음주 후에도 부담 없이",
-  "ONE_BITE": "한 입이면 즉시 편안함 느껴짐",
-  "INDIAN_GOSSEBERRY": "인도 구스베리",
-  "EMBLICA": "엠블리카 과일",
-  "EXTRACT": "건조 추출물",
-  "GINGER": "생강",
-  "RHIZOME": "생강 뿌리줄기",
-  "DATE_PALM": "대추야자",
-  "PHOENIX": "대추야자 열매",
-  "FENUGREEK": "호로파 씨",
-  "FENUGREEK_POWDER": "호로파 씨 가루",
-  "GRAPES": "포도",
-  "VITIS": "포도 열매",
-  "ROOT": "강황 뿌리",
-  "LONGA": "강황 뿌리줄기"
-
+    "DIRECT": "직접 설계 및 생산",
+    "HANGOVER_RELIEF": "숙취 해소 효과 확인",
+    "QUALITY_CONTROL": "품질 관리된 제조",
+    "COMFORTABLE": "편안한 포뮬러",
+    "NO_DISCOMFORT": "음주 후 불편함 없음",
+    "REFRESHING": "상쾌한 맛",
+    "MANGO": "망고 & 포도 블렌드",
+    "RECOMMEND": "추천",
+    "I_RECOMMEND": "이런 분들께 추천합니다",
+    "OFFICE_WORKER": "회식이 잦은 직장인",
+    "PEOPLE": "술은 즐기고 싶지만 다음 날이 걱정되는 사람",
+    "CLEAN_TASTE": "불쾌한 음주 후 맛 없이 깔끔한 맛을 원하는 사람",
+    "INTROVERT": "파티에서 나누고 싶은 내향적인 사람",
+    "PREFER_SOMETHING": "알약이나 액체보다 먹기 편한 것을 선호하는 사람",
+    "YESTERDAY": "어제의 나",
+    "TODAY": "오늘의 나",
+    "FUN_LIGHT": "가볍고 즐거운 느낌",
+    "PROVEN": "숙취 개선 효과 입증",
+    "FERMENTED": "발효 마늘 추출 분말 (Cygbolyin) – No. 1670321",
+    "GOSSEBERRY": "인도 구스베리란?",
+    "GOSSEBERRY_DESC": "인도 구스베리는 폴리페놀과 비타민 C가 풍부하여 유해한 영향을 줄이는 데 도움이 됩니다.",
+    "GARCINIA_EXTRACT": "가르시니아 캄보지아 추출물",
+    "CARBO": "탄수화물 CUT",
+    "WEIGHT_CONTROL": "체중 관리",
+    "BMI": "BMI 감소",
+    "HEART": "심장 건강",
+    "DIGEST": "소화 지원",
+    "FAT": "지방 감소",
+    "FOOD": "식욕 조절",
+    "SWEET_MANGO": "달콤한 망고 & 상큼한 혼합 베리",
+    "BOOST": "두 가지 맛으로 기분 업!",
+    "MORNINGSHOT": "모닝샷",
+    "MIXED_BERRY": "믹스드 베리 맛",
+    "FIRST_TASTE": "상쾌한 첫 맛과 달콤한 포도 향.",
+    "MELLOW": "부드러운 맛",
+    "RICH_FRUIT": "풍부한 과일 향",
+    "SMOOTH": "부드럽고 편안한",
+    "TRY_BERRY": "믹스드 베리 맛을 시도해보세요",
+    "MANGO_FLAVOR": "망고 맛",
+    "SWEETNESS": "입안을 가득 채우는 열대 과일의 달콤함.",
+    "TROPICAL": "트로피컬 달콤함",
+    "REFRESHING_TASTE": "상쾌한 맛",
+    "SOFT_FINISH": "부드럽고 잔잔한 마무리",
+    "TRY_MANGO": "망고 맛을 시도해보세요",
+    "FEELING": "답답함 없음",
+    "HESITATION": "음주 후에도 부담 없이",
+    "ONE_BITE": "한 입이면 즉시 편안함 느껴짐",
+    "INDIAN_GOSSEBERRY": "인도 구스베리",
+    "EMBLICA": "엠블리카 과일",
+    "EXTRACT": "건조 추출물",
+    "GINGER": "생강",
+    "RHIZOME": "생강 뿌리줄기",
+    "DATE_PALM": "대추야자",
+    "PHOENIX": "대추야자 열매",
+    "FENUGREEK": "호로파 씨",
+    "FENUGREEK_POWDER": "호로파 씨 가루",
+    "GRAPES": "포도",
+    "VITIS": "포도 열매",
+    "ROOT": "강황 뿌리",
+    "LONGA": "강황 뿌리줄기"
   },
-
-
- "FOOTER": {
-  "BUSINESS_HOURS": "영업시간: 월요일 ~ 토요일",
-  "CUSTOMER_CARE": "고객 상담",
-  "REWARDS": "리워드",
-  "SHIPPING": "배송",
-  "TRACK_SHIPMENT": "배송 조회",
-  "TERMS_AND_CONDITIONS": "이용 약관",
-  "PRIVACY_POLICY": "개인정보 처리방침",
-  "GET_IN_TOUCH": "문의하기",
-  "INDIA": "인도",
-  "REGISTERED_OFFICE": "등록 사무소",
-  "CORPORATE_OFFICE": "본사",
-  "REPUBLIC_OF_KOREA": "대한민국",
-  "TAMIL_ADDRESS": "No 82 2층, Srestha, 4th Avenue, Ashok Nagar, Chennai - 600083, Tamil Nadu, India.",
-  "HARYANA_ADDRESS": "8층, 건물 8-C, DLF 사이버 허브, 2단계, 구르가온, 하리아나 122002, 인도.",
-  "COPYRIGHT": "저작권 © 2025 morningshot.loche.in. 모든 권리 보유 Loche India Private Limited에서 제공",
-  "OTHER_SITE_LINKS": "기타 사이트 링크"
-},
-
+  "FOOTER": {
+    "BUSINESS_HOURS": "영업시간: 월요일 ~ 토요일",
+    "CUSTOMER_CARE": "고객 상담",
+    "REWARDS": "리워드",
+    "SHIPPING": "배송",
+    "TRACK_SHIPMENT": "배송 조회",
+    "TERMS_AND_CONDITIONS": "이용 약관",
+    "PRIVACY_POLICY": "개인정보 처리방침",
+    "GET_IN_TOUCH": "문의하기",
+    "INDIA": "인도",
+    "REGISTERED_OFFICE": "등록 사무소",
+    "CORPORATE_OFFICE": "본사",
+    "REPUBLIC_OF_KOREA": "대한민국",
+    "TAMIL_ADDRESS": "No 82 2층, Srestha, 4th Avenue, Ashok Nagar, Chennai - 600083, Tamil Nadu, India.",
+    "HARYANA_ADDRESS": "8층, 건물 8-C, DLF 사이버 허브, 2단계, 구르가온, 하리아나 122002, 인도.",
+    "COPYRIGHT": "저작권 © 2025 morningshot.loche.in. 모든 권리 보유 Loche India Private Limited에서 제공",
+    "OTHER_SITE_LINKS": "기타 사이트 링크"
+  },
   "GREETING": {
     "CEO_GREETING": "CEO 인사말",
     "CEO_NAME": "의료기기 및 미용 뷰티 산업에서 10년간의 임상(성형, 뷰티 산업) 경험 축적 의료기기 사업의 발전을 통해 21세기 인간 건강 증진 프로젝트에 주력하고 있습니다.",
@@ -195,7 +187,6 @@
     "CONTENT_3": "또한 아시아의 뷰티 미용 및 의료기기 시장은 중국과 인도에서 급속히 성장하고 있습니다. 인도, 중동 및 아프리카의 의료 산업에서의 경험을 바탕으로 Morningshot는 한국의 K 메디컬, 제조, R&D 및 교육 서비스를 선봉으로 삼아 적극적인 마케팅과 기술 개발을 통해 글로벌 네트워크 틈새 시장에서 시장 확대 및 수출에 주력하고 있습니다. 이는 한국 K 바이오 비즈니스의 핵심입니다.",
     "CONTENT_4": "인도 고유의 클린룸 제조 시설을 기반으로 경영진과 직원들은 인도에서 14억 루피로 한국과 인도의 새로운 비즈니스 모델을 완성하여 지속적이고 빠른 K 메디컬 선봉장이 될 것입니다.",
     "CONTENT_5": "또한 21세기 한국과 인도의 의료 산업에서 일자리 창출과 고부가가치 의료 산업의 개척자가 될 것입니다.",
-
     "VISION": "비전 2030",
     "VISION_STATEMENT": "\"K-메디컬 혁신의 글로벌 개척자\"",
     "VISION_POINT_1": "Morningshot는 2030년까지 다음과 같은 비전을 실현하는 것을 목표로 합니다: <br /><br />한국의 첨단 바이오 및 의료기술을 활용하여 인도, 중동, 아프리카 등 신흥 시장에 맞춤형 솔루션을 제공하며 글로벌 헬스케어 산업의 핵심 파트너로 자리매김합니다.",
@@ -203,31 +194,16 @@
     "VISION_POINT_3": "혁신 및 R&D<br />우리는 의료 기술의 최전선에 머물기 위해 R&D에 지속적으로 투자할 것입니다. 선도적인 연구 기관 및 대학과 협력하여 변화하는 환자 요구를 충족시키는 혁신적인 의료 솔루션을 개발하는 것을 목표로 합니다.",
     "VISION_POINT_4": "지속 가능성 및 사회적 책임<br />Morningshot는 지속 가능성 관행에 전념하며 사회적 책임을 비즈니스 전략에 통합할 것입니다. 우리는 지역 사회 건강 프로그램을 지원하고 환경 친화적인 이니셔티브를 추진하여 우리의 비즈니스가 사회와 환경에 긍정적인 영향을 미치 하도록 할 것입니다.",
     "VISION_INTRO": "로시에BNH는 2030년까지 다음과 같은 비전을 실현하는 것을 목표로 합니다.",
-
-
-
-     "BECOME_A_GLOBAL_LEADER_IN_K_MEDICAL": "K-메디컬의 글로벌 리더가 되다",
-
-    
+    "BECOME_A_GLOBAL_LEADER_IN_K_MEDICAL": "K-메디컬의 글로벌 리더가 되다",
     "BECOME_POINT_1": "한국의 첨단 바이오 및 의료기기 기술을 활용하여 인도, 중동, 아프리카 등 신흥 시장에 맞춤형 솔루션을 제공하며 글로벌 헬스케어 산업의 핵심 파트너로 자리매김합니다.",
     "BECOME_POINT_1_DESC": "우리는 고객의 요구에 맞춘 혁신적인 제품과 서비스를 제공하여 K-메디컬의 글로벌 리더로 자리매김할 것입니다.",
-
     "BECOME_POINT_2": "아시아 태평양 지역에서의 전략적 확장<br />아시아 태평양 지역, 특히 인도에서 강력한 존재감을 구축함으로써 성장하는 의료 수요를 활용할 계획입니다. 현지 의료 기관 및 유통업체와 협력하여 제품과 서비스가 시장의 요구를 효과적으로 충족할 수 있도록 할 것입니다.",
     "BECOME_POINT_2_DESC": "우리는 아시아 태평양 지역, 특히 인도에서 강력한 존재감을 구축함으로써 성장하는 의료 수요를 활용할 계획입니다. 현지 의료 기관 및 유통업체와 협력하여 제품과 서비스가 시장의 요구를 효과적으로 충족할 수 있도록 할 것입니다.",
     "BECOME_POINT_3": "혁신 및 R&D<br />우리는 의료 기술의 최전선에 머물기 위해 R&D에 지속적으로 투자할 것입니다. 선도적인 연구 기관 및 대학과 협력하여 변화하는 환자 요구를 충족시키는 혁신적인 의료 솔루션을 개발하는 것을 목표로 합니다.",
     "BECOME_POINT_3_DESC": "우리는 의료 기술의 최전선에 머물기 위해 R&D에 지속적으로 투자할 것입니다. 선도적인 연구 기관 및 대학과 협력하여 변화하는 환자 요구를 충족시키는 혁신적인 의료 솔루션을 개발하는 것을 목표로 합니다.",
     "BECOME_POINT_4": "지속 가능성 및 사회적 책임<br />Morningshot는 지속 가능성 관행에 전념하며 사회적 책임을 비즈니스 전략에 통합할 것입니다. 우리는 지역 사회 건강 프로그램을 지원하고 환경 친화적인 이니셔티브를 추진하여 우리의 비즈니스가 사회와 환경에 긍정적인 영향을 미치 하도록 할 것입니다.",
     "BECOME_POINT_4_DESC": "우리는 지속 가능성 관행에 전념하며 사회적 책임을 비즈니스 전략에 통합할 것입니다. 우리는 지역 사회 건강 프로그램을 지원하고 환경 친화적인 이니셔티브를 추진하여 우리의 비즈니스가 사회와 환경에 긍정적인 영향을 미치 하도록 할 것입니다."
-
-
-
-
-
-
   },
-
-
-
   "LOCHE_NEWS": {
     "PRESS_TITLE": "Morningshot 플랫폼의 언론 기사",
     "PRESS_SUBTITLE": "Morningshot가 파트너십과 혁신을 통해 인도의 K-뷰티 환경을 어떻게 형성하고 있는지 알아보세요.",
@@ -236,9 +212,6 @@
     "PRESS_3": "Packbox, 미국 K-뷰티 커머스 플랫폼과 독점 공급 계약 체결.",
     "PRESS_4": "K-뷰티는 이제 100% 투자된 K-스타트업인 Bellaluna(www.bellaluna.in)와 함께 미국에 진출합니다."
   },
-
-
-
   "SOCIAL": {
     "SOCIAL_CONTRIBUTION": "🤝 사회 공헌",
     "SUBTITLE": "K-메디컬 혁신을 통한 더 건강하고 공평하며 지속 가능한 미래 구축.",
@@ -251,72 +224,49 @@
     "COMMUNITY_ENGAGEMENT": "지역사회 참여",
     "COMMUNITY_ENGAGEMENT_DESCRIPTION": "우리는 정부, NGO 및 학술 파트너와 협력하여 공중 보건, 의료 봉사 및 미용 웰니스 교육을 발전시켜 전 세계적으로 더 강력하고 건강한 지역사회를 구축합니다."
   },
-
-
-
   "COMPANY": {
-  "HISTORY": "회사 연혁",
-  "TIMELINE": "로슈 타임라인",
-  "DESCRIPTION": "혁신과 글로벌 의료 우수성의 여정",
-
-  "TIMELINE_DATA": {
-    "TITLE_2015": "의료기기 및 미용 산업 진출",
-    "DESCRIPTION_2015": "임상 경험을 축적하기 시작했습니다.",
-
-    "TITLE_2017": "제품 개발 시작",
-    "DESCRIPTION_2017": "성형외과 및 미용 분야에서 10년간의 임상 데이터를 기반으로 개발을 진행했습니다.",
-
-    "TITLE_2019": "글로벌 진출 확대",
-    "DESCRIPTION_2019": "중동과 아프리카 시장에 진출하여 국제 네트워크 구축을 시작했습니다.",
-
-    "TITLE_2021": "인도 파트너십 강화",
-    "DESCRIPTION_2021": "인도 의료 분야와 협력하여 현지 연구를 진행했습니다.",
-
-    "TITLE_2026": "첨단 제조 고도화",
-    "DESCRIPTION_2026": "인도에서 클린룸 시설을 완공하고 K-Medical 제품 생산을 시작했습니다.",
-
-    "TITLE_2027": "교육 서비스 시작",
-    "DESCRIPTION_2027": "K-Bio 교육 프로그램을 도입하고 R&D 센터 운영을 확대했습니다.",
-
-    "TITLE_2028": "비전 2030 발표",
-    "DESCRIPTION_2028": "비전 2030에 따라 아시아와 아프리카 수출을 적극적으로 확대하고 있습니다."
-  }
-},
-
-
-"INQUIRY": {
-  "INQUIRY_TITLE": "MORNINGSHOT와 함께 아름다움 산업 전문성과 글로벌 네트워크를 경험하세요",
-  "INQUIRY_DESCRIPTION": "뷰티 제품의 제조, 생산, 브랜드, 물류, 유통 또는 판매와 관련하여 궁금한 점이 있다면 언제든지 문의해 주세요. 담당자가 이메일, 문자 또는 전화로 신속하게 답변해 드립니다。",
-  
-  "AFFILIATE_INQUIRY": "제휴 문의",
-  "SUBTITLE": "MORNINGSHOT와의 제휴 기회를 문의하려면 아래 양식을 작성해 주세요. 담당 팀이 최대한 빠르게 연락드리겠습니다。",
-  
-  "NAME_LABEL": "이름",
-  "NAME_PLACEHOLDER": "이름을 입력하세요",
-
-  "COMPANY_NAME_LABEL": "회사명",
-  "COMPANY_NAME_PLACEHOLDER": "회사명을 입력하세요",
-
-  "DEPARTMENT_NAME_LABEL": "부서명",
-  "DEPARTMENT_NAME_PLACEHOLDER": "부서명을 입력하세요",
-
-  "CONTACT_LABEL": "연락처",
-
-  "EMAIL_LABEL": "이메일",
-  "EMAIL_PLACEHOLDER": "이메일 주소를 입력하세요",
-
-  "TITLE_LABEL": "직함",
-  "TITLE_PLACEHOLDER": "직함을 입력하세요",
-
-  "CONTENT_LABEL": "문의 내용",
-  "CONTENT_PLACEHOLDER": "문의 내용을 입력하세요",
-
-  "FILE_ATTACHMENTS_LABEL": "파일 첨부",
-
-  "SUBMIT_BUTTON": "제출"
-},
-
- "ROOM": {
+    "HISTORY": "회사 연혁",
+    "TIMELINE": "로슈 타임라인",
+    "DESCRIPTION": "혁신과 글로벌 의료 우수성의 여정",
+    "TIMELINE_DATA": {
+      "TITLE_2015": "의료기기 및 미용 산업 진출",
+      "DESCRIPTION_2015": "임상 경험을 축적하기 시작했습니다.",
+      "TITLE_2017": "제품 개발 시작",
+      "DESCRIPTION_2017": "성형외과 및 미용 분야에서 10년간의 임상 데이터를 기반으로 개발을 진행했습니다.",
+      "TITLE_2019": "글로벌 진출 확대",
+      "DESCRIPTION_2019": "중동과 아프리카 시장에 진출하여 국제 네트워크 구축을 시작했습니다.",
+      "TITLE_2021": "인도 파트너십 강화",
+      "DESCRIPTION_2021": "인도 의료 분야와 협력하여 현지 연구를 진행했습니다.",
+      "TITLE_2026": "첨단 제조 고도화",
+      "DESCRIPTION_2026": "인도에서 클린룸 시설을 완공하고 K-Medical 제품 생산을 시작했습니다.",
+      "TITLE_2027": "교육 서비스 시작",
+      "DESCRIPTION_2027": "K-Bio 교육 프로그램을 도입하고 R&D 센터 운영을 확대했습니다.",
+      "TITLE_2028": "비전 2030 발표",
+      "DESCRIPTION_2028": "비전 2030에 따라 아시아와 아프리카 수출을 적극적으로 확대하고 있습니다."
+    }
+  },
+  "INQUIRY": {
+    "INQUIRY_TITLE": "MORNINGSHOT와 함께 아름다움 산업 전문성과 글로벌 네트워크를 경험하세요",
+    "INQUIRY_DESCRIPTION": "뷰티 제품의 제조, 생산, 브랜드, 물류, 유통 또는 판매와 관련하여 궁금한 점이 있다면 언제든지 문의해 주세요. 담당자가 이메일, 문자 또는 전화로 신속하게 답변해 드립니다。",
+    "AFFILIATE_INQUIRY": "제휴 문의",
+    "SUBTITLE": "MORNINGSHOT와의 제휴 기회를 문의하려면 아래 양식을 작성해 주세요. 담당 팀이 최대한 빠르게 연락드리겠습니다。",
+    "NAME_LABEL": "이름",
+    "NAME_PLACEHOLDER": "이름을 입력하세요",
+    "COMPANY_NAME_LABEL": "회사명",
+    "COMPANY_NAME_PLACEHOLDER": "회사명을 입력하세요",
+    "DEPARTMENT_NAME_LABEL": "부서명",
+    "DEPARTMENT_NAME_PLACEHOLDER": "부서명을 입력하세요",
+    "CONTACT_LABEL": "연락처",
+    "EMAIL_LABEL": "이메일",
+    "EMAIL_PLACEHOLDER": "이메일 주소를 입력하세요",
+    "TITLE_LABEL": "직함",
+    "TITLE_PLACEHOLDER": "직함을 입력하세요",
+    "CONTENT_LABEL": "문의 내용",
+    "CONTENT_PLACEHOLDER": "문의 내용을 입력하세요",
+    "FILE_ATTACHMENTS_LABEL": "파일 첨부",
+    "SUBMIT_BUTTON": "제출"
+  },
+  "ROOM": {
     "HEADING": "MORNINGSHOT — 클린룸 & 의료기기 기준",
     "HEADING_DESC": "의료 및 화장품 제조를 위한 모듈형 클린룸, ISO 규정 준수, 고급 공기 필tration 솔루션.",
     "STANDARDS": "의료기기 기준",
@@ -359,8 +309,4 @@
     "MAN": "저비용 유지관리",
     "MAN_DESC": "손쉬운 접근 패널과 모듈식 부품으로 다운타임 감소."
   }
-
-
-
-
 }
