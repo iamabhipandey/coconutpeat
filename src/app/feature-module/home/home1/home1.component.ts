@@ -192,6 +192,29 @@ promotionProducts = [
       }
     }
   };
+    yachttypeOwlOptions: OwlOptions = {
+    loop:true,
+			margin:24,
+			nav:false,
+			dots: false,
+			autoplay:true,
+			smartSpeed: 2000,
+      responsive:{
+				0:{
+					items:2
+				},
+				
+				550:{
+					items:8
+				},
+				1200:{
+					items:8
+				},
+				1400:{
+					items:10
+				}
+			}
+  };
   BrandsliderOwlOptions: OwlOptions = {
     loop:true,
     margin:10,
