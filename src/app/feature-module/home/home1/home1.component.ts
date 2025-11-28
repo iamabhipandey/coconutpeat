@@ -30,49 +30,24 @@ export class HomeComponent implements AfterViewInit{
   }
 
 hangoverFAQ = [
-  { q: "What is MorningShot Hangover Drink?", 
-    a: "An Ayurvedic detox drink that supports liver function, boosts hydration, and helps you wake up fresh after drinking." },
-
-  { q: "How does it reduce hangovers?", 
-    a: "Its herbal blend helps break down alcohol toxins faster, reducing headache, nausea, and fatigue the next day." },
-
-  { q: "When should I take it?", 
-    a: "For best results, drink it after your last drink—before going to sleep." },
-
-  { q: "Can I take it before drinking?", 
-    a: "Yes, it prepares the liver and helps reduce next-day discomfort." },
-
-  { q: "Is it safe for daily use?", 
-    a: "Yes, it is made from natural Ayurvedic herbs and safe for regular use." },
-
-  { q: "How fast does it work?", 
-    a: "You feel the difference the next morning with reduced tiredness and dehydration." },
-
-  { q: "Is it Ayurvedic and chemical-free?", 
-    a: "Yes, it is 100% Ayurvedic, non-addictive, and free from harmful chemicals." }
+  { q: "HOME.FAQ_QA.Q1", a: "HOME.FAQ_QA.A1" },
+  { q: "HOME.FAQ_QA.Q2", a: "HOME.FAQ_QA.A2" },
+  { q: "HOME.FAQ_QA.Q3", a: "HOME.FAQ_QA.A3" },
+  { q: "HOME.FAQ_QA.Q4", a: "HOME.FAQ_QA.A4" },
+  { q: "HOME.FAQ_QA.Q5", a: "HOME.FAQ_QA.A5" },
+  { q: "HOME.FAQ_QA.Q6", a: "HOME.FAQ_QA.A6" },
+  { q: "HOME.FAQ_QA.Q7", a: "HOME.FAQ_QA.A7" }
 ];
 
+
 sleepFAQ = [
-  { q: "What is MorningShot Sleep Aid?", 
-    a: "A natural herbal sleep formula that helps you fall asleep faster and enjoy deep, restorative sleep." },
-
-  { q: "Is it habit-forming?", 
-    a: "No, it is 100% non-habit forming and safe for long-term use." },
-
-  { q: "How quickly does it work?", 
-    a: "Typically within 20–30 minutes after consumption." },
-
-  { q: "Will I feel sleepy or heavy the next morning?", 
-    a: "No, you wake up fresh and energised with no grogginess." },
-
-  { q: "Does it help reduce anxiety or overthinking?", 
-    a: "Yes, calming herbs support relaxation and mental calmness." },
-
-  { q: "Can I take it every night?", 
-    a: "Yes, it is herbal and suitable for nightly use." },
-
-  { q: "Is it safe with other medications?", 
-    a: "Generally yes, but consult a doctor if you are on regular medication." }
+  { q: "HOME.SLEEP_QA.Q1", a: "HOME.SLEEP_QA.A1" },
+  { q: "HOME.SLEEP_QA.Q2", a: "HOME.SLEEP_QA.A2" },
+  { q: "HOME.SLEEP_QA.Q3", a: "HOME.SLEEP_QA.A3" },
+  { q: "HOME.SLEEP_QA.Q4", a: "HOME.SLEEP_QA.A4" },
+  { q: "HOME.SLEEP_QA.Q5", a: "HOME.SLEEP_QA.A5" },
+  { q: "HOME.SLEEP_QA.Q6", a: "HOME.SLEEP_QA.A6" },
+  { q: "HOME.SLEEP_QA.Q7", a: "HOME.SLEEP_QA.A7" }
 ];
 
 public routes = routes

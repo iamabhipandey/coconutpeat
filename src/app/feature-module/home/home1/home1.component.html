@@ -46,7 +46,7 @@
           <div class="banner-slider-icon">
             <span><img src="assets/img/icons/natural-ingredients.png" alt="Img" /></span>
           </div>
-          <h6>Natural formulations</h6>
+          <h6>{{"HOME.NATURAL" | translate}}</h6>
         </div>
       </ng-template>
       <ng-template carouselSlide>
@@ -54,7 +54,7 @@
           <div class="banner-slider-icon">
             <span><img src="assets/img/icons/wake-up.png" alt="Img" /></span>
           </div>
-          <h6>Wake up fresh</h6>
+          <h6>{{"HOME.WAKE_UP" | translate}}</h6>
         </div>
       </ng-template>
       <ng-template carouselSlide>
@@ -62,7 +62,7 @@
           <div class="banner-slider-icon">
             <span><img src="assets/img/icons/science-and-tech.png" alt="Img" /></span>
           </div>
-          <h6>Science backed</h6>
+          <h6>{{"HOME.SEIENCE_BACKEND" | translate}}</h6>
         </div>
       </ng-template>
       <ng-template carouselSlide>
@@ -70,7 +70,7 @@
           <div class="banner-slider-icon">
             <span><img src="assets/img/icons/healthcare.png" alt="Img" /></span>
           </div>
-          <h6>Easy-to-carry</h6>
+          <h6>{{"HOME.EASY_TO_CARRY" | translate}}</h6>
         </div>
       </ng-template>
       <!-- <ng-template carouselSlide>
@@ -147,15 +147,14 @@
         <div class="banner-slider-icon">
           <span><img src="assets/img/icons/banner-slider-03.svg" alt="Img" /></span>
         </div>
-        <h6>50+ Guests</h6>
+        <h6>50+ {{"HOME.GUESTS" | translate}}</h6>
       </div>
     </owl-carousel-o>
   </div>
   <div class="section-header-two">
-    <h2>Our Best Selection</h2>
-    <p>
-      Explore our curated collection featuring trending, premium, and most-loved
-      products designed to elevate your routine.
+    <h2>{{"HOME.OUR_BEST_SELECTION" | translate}}</h2>
+    <p>{{"HOME.EXPLORE" | translate}}
+     
     </p>
   </div>
   <div class="row yacht-category-lists">
@@ -168,8 +167,8 @@
         </div>
         <div class="card-content d-flex align-items-center justify-content-between">
           <div>
-            <h4><a [routerLink]="routes.listingGrid">Hangover Drinks by Morning Fresh</a></h4>
-            <span>3 Products</span>
+            <h4><a [routerLink]="routes.listingGrid">{{"HOME.HANGOVER" | translate}}</a></h4>
+            <span>3 {{"HOME.PRODUCTS" | translate}} </span>
           </div>
           <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
         </div>
@@ -183,8 +182,8 @@
         </div>
         <div class="card-content d-flex align-items-center justify-content-between">
           <div>
-            <h4><a [routerLink]="routes.listingGrid">Sleep Aids by Morning Fresh</a></h4>
-            <span>2 Producs</span>
+            <h4><a [routerLink]="routes.listingGrid">{{"HOME.SLEEP" | translate}}</a></h4>
+            <span>2 {{"HOME.PRODUCTS" | translate}}</span>
           </div>
           <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
         </div>
@@ -198,8 +197,8 @@
         </div>
         <div class="card-content d-flex align-items-center justify-content-between">
           <div>
-            <h4><a [routerLink]="routes.listingGrid">Hangover Kits by Morning Fresh</a></h4>
-            <span>4 Products</span>
+            <h4><a [routerLink]="routes.listingGrid">{{"HOME.HANGOVER_KITS" | translate}}</a></h4>
+            <span>4 {{"HOME.PRODUCTS" | translate}}</span>
           </div>
           <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
         </div>
@@ -368,7 +367,7 @@
       </div> -->
     <div class="col-md-12">
       <div class="view-more-btn text-center">
-        <a [routerLink]="routes.listingGrid" class="btn btn-secondary">View More</a>
+        <a [routerLink]="routes.listingGrid" class="btn btn-secondary">{{"HOME.VIEW_MORE" | translate}}</a>
       </div>
     </div>
   </div>
@@ -382,12 +381,12 @@
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="hangover-tab" data-bs-toggle="tab" data-bs-target="#hangover" type="button"
           role="tab">
-          Hangover
+          {{"HOME.HANGOVER" | translate}}
         </button>
       </li>
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="sleep-tab" data-bs-toggle="tab" data-bs-target="#sleep" type="button" role="tab">
-          Sleep
+          {{"HOME.SLEEP" | translate}}
         </button>
       </li>
 
@@ -416,13 +415,11 @@
 
           <!-- Right Content -->
           <div class="col-lg-6">
-            <h2 class="section-title">Restful Sleep</h2>
-            <p class="section-text">
-              Our sleep shots calm your mind and guide you into deep, restful sleep,
-              so you wake up feeling refreshed and full of energy.
-              Made with clean, plant-based ingredients that are safe and non-habit forming.
+            <h2 class="section-title">{{"HOME.RESTFULL" | translate}} </h2>
+            <p class="section-text">{{"HOME.RESTFULL_DESC" | translate}}
+            
             </p>
-            <button class="btn btn-learn mt-3">Learn More</button>
+            <button class="btn btn-learn mt-3">{{"HOME.LEARN_MORE" | translate}}</button>
           </div>
 
         </div>
@@ -455,12 +452,12 @@
 
           <!-- Right Content -->
           <div class="col-lg-5 ps-4">
-            <h2 class="section-title ps-4">Hangover Relief</h2>
+            <h2 class="section-title ps-4">{{"HOME.HANGOVER_RELIEF" | translate}}</h2>
             <p class="section-text ps-4">
-              Revitalize your morning with our hangover shots that replenish lost nutrients,
-              hydrate your body, and lift your energy—naturally and quickly.
+              {{"HOME.HANGOVER_RELIEF_DESC" | translate}}
+             
             </p>
-            <button class="btn btn-learn mt-3 ms-3">Learn More</button>
+            <button class="btn btn-learn mt-3 ms-3">{{"HOME.LEARN_MORE" | translate}}</button>
           </div>
 
         </div>
@@ -478,7 +475,7 @@
       <div class="col-md-12">
         <!-- Heading title-->
         <div class="section-heading heading-three mx-auto" data-aos="fade-down">
-          <h2 class="d-flex justify-content-center">Most Loving Products</h2>
+          <h2 class="d-flex justify-content-center">{{"HOME.MOST_LOVING" | translate}}</h2>
 
         </div>
         <!-- /Heading title -->
@@ -501,7 +498,7 @@
                     
                     <div class="listing-features align-items-center justify-content-between">
                                               <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">Morningshot Orenge</a>
+                          <a [routerLink]="routes.listingDetails">{{"HOME.MORNINGSHOT" | translate}}</a>
                         </h3>
                       <div class="list-rating">
                         <div class="list-ratings">
@@ -510,7 +507,7 @@
                           <i class="fas fa-star filled"></i>
                           <i class="fas fa-star filled"></i>
                           <i class="fas fa-star"></i>
-                          <span>138 Reviews</span>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
                         </div>
 
                       </div>
@@ -525,7 +522,7 @@
                           (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
                           <i class="feather icon-heart"></i>
                         </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order">Book Now</a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" | translate}}</a>
                       </div>
                     </div>
                     <!-- <div class="feature-text">
@@ -552,7 +549,7 @@
                     
                     <div class="listing-features align-items-center justify-content-between">
                                               <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">Morningshot grape</a>
+                          <a [routerLink]="routes.listingDetails">{{"HOME.MORNING_GRAPE" | translate}}</a>
                         </h3>
                       <div class="list-rating">
                         <div class="list-ratings">
@@ -561,7 +558,7 @@
                           <i class="fas fa-star filled"></i>
                           <i class="fas fa-star filled"></i>
                           <i class="fas fa-star"></i>
-                          <span>138 Reviews</span>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
                         </div>
 
                       </div>
@@ -576,7 +573,7 @@
                           (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
                           <i class="feather icon-heart"></i>
                         </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order">Book Now</a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" | translate}}</a>
                       </div>
                     </div>
                     <!-- <div class="feature-text">
@@ -603,7 +600,7 @@
                     
                     <div class="listing-features align-items-center justify-content-between">
                                               <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">Morningshot Orenge</a>
+                          <a [routerLink]="routes.listingDetails">{{"HOME.MORNINGSHOT" | translate}}</a>
                         </h3>
                       <div class="list-rating">
                         <div class="list-ratings">
@@ -612,7 +609,7 @@
                           <i class="fas fa-star filled"></i>
                           <i class="fas fa-star filled"></i>
                           <i class="fas fa-star"></i>
-                          <span>138 Reviews</span>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
                         </div>
 
                       </div>
@@ -627,7 +624,7 @@
                           (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
                           <i class="feather icon-heart"></i>
                         </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order">Book Now</a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" | translate}}</a>
                       </div>
                     </div>
                     <!-- <div class="feature-text">
@@ -654,7 +651,7 @@
                     
                     <div class="listing-features align-items-center justify-content-between">
                                               <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">Morningshot Orenge</a>
+                          <a [routerLink]="routes.listingDetails">{{"HOME.MORNINGSHOT" | translate}}</a>
                         </h3>
                       <div class="list-rating">
                         <div class="list-ratings">
@@ -663,7 +660,7 @@
                           <i class="fas fa-star filled"></i>
                           <i class="fas fa-star filled"></i>
                           <i class="fas fa-star"></i>
-                          <span>138 Reviews</span>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
                         </div>
 
                       </div>
@@ -678,7 +675,7 @@
                           (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
                           <i class="feather icon-heart"></i>
                         </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order">Book Now</a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" | translate}}</a>
                       </div>
                     </div>
                     <!-- <div class="feature-text">
@@ -693,7 +690,7 @@
         </div>
 
         <div class="view-all-btn text-center aos" data-aos="fade-down">
-          <a [routerLink]="routes.listingGrid" class="btn btn-secondary">View all</a>
+          <a [routerLink]="routes.listingGrid" class="btn btn-secondary">{{"HOME.VIEW_ALL" | translate}}</a>
         </div>
       </div>
     </div>
@@ -719,9 +716,9 @@
   </div>
   <div class="container">
     <div class="section-header-two">
-      <h2>Benefits Of Morning Shot</h2>
+      <h2>{{"HOME.BENIFITS" | translate}}</h2>
       <p>
-        Start your morning with a clean, natural boost that fuels your body from the very first sip.
+        <span>{{"HOME.BENIFITS_DESC" | translate}}</span>
       </p>
     </div>
     <div class="renting-yacht-benifits d-flex align-items-center justify-content-between">
@@ -729,29 +726,29 @@
         <li>
           <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-05.svg" alt="icon" /></span>
           <div class="benifit-contents">
-            <h5>Fast & Effective Relief</h5>
+            <h5>{{"HOME.FAST" | translate}}</h5>
             <p>
-              Our formula is designed to work quickly,
-              helping you feel better in less time.
+              {{"HOME.FAST_DESC" | translate}}
+              
             </p>
           </div>
         </li>
         <li>
           <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-04.svg" alt="icon" /></span>
           <div class="benifit-contents">
-            <h5>Powered by Natural Ingredients</h5>
-            <p>
-              Yacht charters offer flexibility and freedom to create customized
-              itineraries based on your interests and preferences.
+            <h5>{{"HOME.POWER" | translate}}</h5>
+            <p>{{"HOME.POWER_DESC" | translate}}
+            
             </p>
           </div>
         </li>
         <li>
           <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-05.svg" alt="icon" /></span>
           <div class="benifit-contents">
-            <h5>Gentle & No Harsh Side Effects</h5>
+            <h5>{{"HOME.GENTAL" | translate}}</h5>
             <p>
-              Our clean formulation delivers benefits without causing discomfort or unwanted reactions.
+              {{"HOME.GENTAL_DESC" | translate}}
+            
             </p>
           </div>
         </li>
@@ -764,27 +761,30 @@
         <li>
           <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-03.svg" alt="icon" /></span>
           <div class="benifit-contents">
-            <h5>Supports Daily Wellness</h5>
+            <h5>{{"HOME.SUPPORT" | translate}}</h5>
             <p>
-              Each dose is crafted to help improve energy, focus, and overall balance throughout the day.
+              {{"HOME.SUPPORT_DESC" | translate}}
+            
             </p>
           </div>
         </li>
         <li>
           <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-02.svg" alt="icon" /></span>
           <div class="benifit-contents">
-            <h5>Backed by Clinical Research</h5>
+            <h5>{{"HOME.BACKED" | translate}}</h5>
             <p>
-              Every ingredient is carefully selected and supported by scientific studies for proven results.
+              {{"HOME.BACKED_DESC" | translate}}
+              
             </p>
           </div>
         </li>
         <li>
           <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-01.svg" alt="icon" /></span>
           <div class="benifit-contents">
-            <h5>Convenient for Everyday Use</h5>
+            <h5>{{"HOME.USE" | translate}}</h5>
             <p>
-              Easy to carry and simple to use—perfect for busy schedules and on-the-go lifestyles.
+              {{"HOME.USE_DESC" | translate}}
+            
             </p>
           </div>
         </li>
@@ -800,11 +800,11 @@
     <!-- ANGULAR TABS -->
     <div class="ms-faq-tabs d-flex justify-content-center mb-4">
       <button class="tab-btn" [class.active]="activeTab === 'hangover'" (click)="activeTab = 'hangover'">
-        Hangover Drinks FAQ
+        {{"HOME.FAQ" | translate}}
       </button>
 
       <button class="tab-btn" [class.active]="activeTab === 'sleep'" (click)="activeTab = 'sleep'">
-        Sleep Aid FAQ
+        {{"HOME.AID_FAQ" | translate}}
       </button>
     </div>
 
@@ -812,32 +812,33 @@
     <div class="tab-content">
 
       <!-- HANGOVER FAQ -->
-      <div *ngIf="activeTab === 'hangover'">
-        <div *ngFor="let h of hangoverFAQ; let i = index" class="ms-faq-card">
+     <div *ngIf="activeTab === 'hangover'">
+  <div *ngFor="let h of hangoverFAQ; let i = index" class="ms-faq-card">
 
-          <div class="question" (click)="toggle(i, 'hang')">
-            {{ h.q }}
-            <span class="icon" [class.open]="openedHang === i">▼</span>
-          </div>
+    <div class="question" (click)="toggle(i, 'hang')">
+      {{ h.q | translate }}
+      <span class="icon" [class.open]="openedHang === i">▼</span>
+    </div>
 
-          <div class="answer" *ngIf="openedHang === i">
-            {{ h.a }}
-          </div>
+    <div class="answer" *ngIf="openedHang === i">
+      {{ h.a | translate }}
+    </div>
 
-        </div>
-      </div>
+  </div>
+</div>
+
 
       <!-- SLEEP FAQ -->
       <div *ngIf="activeTab === 'sleep'">
         <div *ngFor="let s of sleepFAQ; let j = index" class="ms-faq-card">
 
           <div class="question" (click)="toggle(j, 'sleep')">
-            {{ s.q }}
+            {{ s.q | translate}}
             <span class="icon" [class.open]="openedSleep === j">▼</span>
           </div>
 
           <div class="answer" *ngIf="openedSleep === j">
-            {{ s.a }}
+            {{ s.a | translate}}
           </div>
 
         </div>
