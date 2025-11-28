@@ -2,23 +2,23 @@
 <section class="slider-for-ta">
   <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
     <div class="carousel-inner">
-      
-     
-    
-       <div class="carousel-item active" [routerLink]="routes.listingGrid">
+
+
+
+      <div class="carousel-item active" [routerLink]="routes.listingGrid">
         <img src="assets/img/banners/hang2.jpg" class="d-block w-100" alt="Slide 5">
       </div>
 
-        <div class="carousel-item" [routerLink]="routes.listingGrid">
+      <div class="carousel-item" [routerLink]="routes.listingGrid">
         <img src="assets/img/banners/hang4.jpg" class="d-block w-100" alt="Slide 5">
       </div>
 
-       <div class="carousel-item" [routerLink]="routes.listingGrid">
+      <div class="carousel-item" [routerLink]="routes.listingGrid">
         <img src="assets/img/banners/hang3.jpg" class="d-block w-100" alt="Slide 5">
       </div>
 
-      
-       
+
+
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -38,50 +38,42 @@
 </section>
 <!-- /for tab banners -->
 
-  <div class="container">
-    <div class="banner-yacht-type-slider">
-      <owl-carousel-o [options]="yachttypeOwlOptions">
-        <ng-template carouselSlide>
-      <div class="slider-card">
-        <div class="banner-slider-icon">
-          <span
-            ><img src="assets/img/icons/natural-ingredients.png" alt="Img"
-          /></span>
+<div class="container">
+  <div class="banner-yacht-type-slider">
+    <owl-carousel-o [options]="yachttypeOwlOptions">
+      <ng-template carouselSlide>
+        <div class="slider-card">
+          <div class="banner-slider-icon">
+            <span><img src="assets/img/icons/natural-ingredients.png" alt="Img" /></span>
+          </div>
+          <h6>Natural formulations</h6>
         </div>
-        <h6>Natural formulations</h6>
-      </div>
       </ng-template>
       <ng-template carouselSlide>
-      <div class="slider-card">
-        <div class="banner-slider-icon">
-          <span
-            ><img src="assets/img/icons/wake-up.png" alt="Img"
-          /></span>
+        <div class="slider-card">
+          <div class="banner-slider-icon">
+            <span><img src="assets/img/icons/wake-up.png" alt="Img" /></span>
+          </div>
+          <h6>Wake up fresh</h6>
         </div>
-        <h6>Wake up fresh</h6>
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slider-card">
-        <div class="banner-slider-icon">
-          <span
-            ><img src="assets/img/icons/science-and-tech.png" alt="Img"
-          /></span>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slider-card">
+          <div class="banner-slider-icon">
+            <span><img src="assets/img/icons/science-and-tech.png" alt="Img" /></span>
+          </div>
+          <h6>Science backed</h6>
         </div>
-        <h6>Science backed</h6>
-      </div>
-    </ng-template>
-    <ng-template carouselSlide>
-      <div class="slider-card slider-card-active">
-        <div class="banner-slider-icon">
-          <span
-            ><img src="assets/img/icons/healthcare.png" alt="Img"
-          /></span>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slider-card slider-card-active">
+          <div class="banner-slider-icon">
+            <span><img src="assets/img/icons/healthcare.png" alt="Img" /></span>
+          </div>
+          <h6>Easy-to-carry</h6>
         </div>
-        <h6>Easy-to-carry</h6>
-      </div>
-    </ng-template>
-    <!-- <ng-template carouselSlide>
+      </ng-template>
+      <!-- <ng-template carouselSlide>
       <div class="slider-card">
         <div class="banner-slider-icon">
           <span
@@ -153,92 +145,67 @@
     </ng-template> -->
       <div class="slider-card">
         <div class="banner-slider-icon">
-          <span
-            ><img src="assets/img/icons/banner-slider-03.svg" alt="Img"
-          /></span>
+          <span><img src="assets/img/icons/banner-slider-03.svg" alt="Img" /></span>
         </div>
         <h6>50+ Guests</h6>
       </div>
     </owl-carousel-o>
+  </div>
+  <div class="section-header-two">
+    <h2>Our Best Selection</h2>
+    <p>
+      Explore our curated collection featuring trending, premium, and most-loved
+      products designed to elevate your routine.
+    </p>
+  </div>
+  <div class="row yacht-category-lists">
+    <div class="custom-col">
+      <div class="yacht-cat-grid">
+        <div class="yatch-card-img">
+          <a [routerLink]="routes.listingGrid"><img
+              src="assets/img/yacht/Hangover_Drinks_dd95127a-d225-4fa6-953e-2fe1ee3feafc.webp" class="img-fluid"
+              alt="yacht" /></a>
+        </div>
+        <div class="card-content d-flex align-items-center justify-content-between">
+          <div>
+            <h4><a [routerLink]="routes.listingGrid">Hangover Drinks by Morning Fresh</a></h4>
+            <span>3 Products</span>
+          </div>
+          <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+      </div>
     </div>
-    <div class="section-header-two">
-      <h2>Our Best Selection</h2>
-      <p>
-        Explore our curated collection featuring trending, premium, and most-loved 
-        products designed to elevate your routine.
-      </p>
+    <div class="custom-col">
+      <div class="yacht-cat-grid">
+        <div class="yatch-card-img">
+          <a [routerLink]="routes.listingGrid"><img src="assets/img/yacht/Sleep.webp" class="img-fluid"
+              alt="yacht" /></a>
+        </div>
+        <div class="card-content d-flex align-items-center justify-content-between">
+          <div>
+            <h4><a [routerLink]="routes.listingGrid">Sleep Aids by Morning Fresh</a></h4>
+            <span>2 Producs</span>
+          </div>
+          <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+      </div>
     </div>
-    <div class="row yacht-category-lists">
-      <div class="custom-col">
-        <div class="yacht-cat-grid">
-          <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
-              ><img
-                src="assets/img/yacht/Hangover_Drinks_dd95127a-d225-4fa6-953e-2fe1ee3feafc.webp"
-                class="img-fluid"
-                alt="yacht"
-            /></a>
+    <div class="custom-col">
+      <div class="yacht-cat-grid">
+        <div class="yatch-card-img">
+          <a [routerLink]="routes.listingGrid"><img src="assets/img/yacht/Untitled_design_5.webp" class="img-fluid"
+              alt="yacht" /></a>
+        </div>
+        <div class="card-content d-flex align-items-center justify-content-between">
+          <div>
+            <h4><a [routerLink]="routes.listingGrid">Hangover Kits by Morning Fresh</a></h4>
+            <span>4 Products</span>
           </div>
-          <div
-            class="card-content d-flex align-items-center justify-content-between"
-          >
-            <div>
-              <h4><a [routerLink]="routes.listingGrid">Hangover Drinks by Morning Fresh</a></h4>
-              <span>3 Products</span>
-            </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
-              ><i class="bx bx-right-arrow-alt"></i
-            ></a>
-          </div>
+          <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
         </div>
       </div>
-      <div class="custom-col">
-        <div class="yacht-cat-grid">
-          <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
-              ><img
-                src="assets/img/yacht/Sleep.webp"
-                class="img-fluid"
-                alt="yacht"
-            /></a>
-          </div>
-          <div
-            class="card-content d-flex align-items-center justify-content-between"
-          >
-            <div>
-              <h4><a [routerLink]="routes.listingGrid">Sleep Aids by Morning Fresh</a></h4>
-              <span>2 Producs</span>
-            </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
-              ><i class="bx bx-right-arrow-alt"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <div class="custom-col">
-        <div class="yacht-cat-grid">
-          <div class="yatch-card-img">
-            <a [routerLink]="routes.listingGrid"
-              ><img
-                src="assets/img/yacht/Untitled_design_5.webp"
-                class="img-fluid"
-                alt="yacht"
-            /></a>
-          </div>
-          <div
-            class="card-content d-flex align-items-center justify-content-between"
-          >
-            <div>
-              <h4><a [routerLink]="routes.listingGrid">Hangover Kits by Morning Fresh</a></h4>
-              <span>4 Products</span>
-            </div>
-            <a [routerLink]="routes.listingGrid" class="arrow-right"
-              ><i class="bx bx-right-arrow-alt"></i
-            ></a>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="custom-col">
+    </div>
+    <!-- <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
             <a [routerLink]="routes.listingGrid"
@@ -261,7 +228,7 @@
           </div>
         </div>
       </div> -->
-      <!-- <div class="custom-col">
+    <!-- <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
             <a [routerLink]="routes.listingGrid"
@@ -284,7 +251,7 @@
           </div>
         </div>
       </div> -->
-      <!-- <div class="custom-col">
+    <!-- <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
             <a [routerLink]="routes.listingGrid"
@@ -307,7 +274,7 @@
           </div>
         </div>
       </div> -->
-      <!-- <div class="custom-col">
+    <!-- <div class="custom-col">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
             <a [routerLink]="routes.listingGrid"
@@ -399,15 +366,490 @@
           </div>
         </div>
       </div> -->
+    <div class="col-md-12">
+      <div class="view-more-btn text-center">
+        <a [routerLink]="routes.listingGrid" class="btn btn-secondary">View More</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!------------------ product information section ------------->
+<section class="wellness-section py-5">
+  <div class="container">
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs wellness-tabs mb-4" id="wellnessTab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="hangover-tab" data-bs-toggle="tab" data-bs-target="#hangover" type="button"
+          role="tab">
+          Hangover
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sleep-tab" data-bs-toggle="tab" data-bs-target="#sleep" type="button" role="tab">
+          Sleep
+        </button>
+      </li>
+
+
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="wellnessTabContent">
+
+      <!-- Sleep Tab -->
+      <div class="tab-pane fade" id="sleep" role="tabpanel">
+
+        <div class="row align-items-center g-5">
+
+          <!-- Left Image -->
+          <div class="col-lg-6">
+            <div class="floating-img-wrapper">
+              <img class="main-img" src="assets/img/banners/hangoverimg.jpeg">
+              <img class="small-img top-right" src="assets/img/banners/hangoverimg.jpeg">
+              <img class="small-img bottom-left" src="assets/img/banners/hangoverimg.jpeg">
+            </div>
+          </div>
+
+
+
+
+          <!-- Right Content -->
+          <div class="col-lg-6">
+            <h2 class="section-title">Restful Sleep</h2>
+            <p class="section-text">
+              Our sleep shots calm your mind and guide you into deep, restful sleep,
+              so you wake up feeling refreshed and full of energy.
+              Made with clean, plant-based ingredients that are safe and non-habit forming.
+            </p>
+            <button class="btn btn-learn mt-3">Learn More</button>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- Hangover Tab -->
+      <div class="tab-pane fade show active" id="hangover" role="tabpanel">
+
+        <div class="row align-items-center g-5">
+
+          <!-- Left Image -->
+          <!-- <div class="col-lg-6">
+            <div class="image-wrapper shadow-lg rounded-4 overflow-hidden">
+              <img src="assets/img/banners/hangoverimg.jpeg" class="img-fluid w-100" alt="Hangover">
+            </div>
+          </div> -->
+          <div class="col-lg-7">
+            <div class="hangover-collage">
+
+              <img src="assets/img/banners/hangoverimg.jpeg" class="collage-main">
+
+              <img src="assets/img/banners/hangoverimg.jpeg" class="collage-side collage-left">
+
+              <img src="assets/img/banners/hangoverimg.jpeg" class="collage-side collage-right">
+
+            </div>
+          </div>
+
+
+          <!-- Right Content -->
+          <div class="col-lg-5 ps-4">
+            <h2 class="section-title ps-4">Hangover Relief</h2>
+            <p class="section-text ps-4">
+              Revitalize your morning with our hangover shots that replenish lost nutrients,
+              hydrate your body, and lift your energy—naturally and quickly.
+            </p>
+            <button class="btn btn-learn mt-3 ms-3">Learn More</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- product section -->
+<section class="section features-section">
+  <div class="container">
+    <div class="row">
       <div class="col-md-12">
-        <div class="view-more-btn text-center">
-          <a [routerLink]="routes.listingGrid" class="btn btn-secondary"
-            >View More</a
-          >
+        <!-- Heading title-->
+        <div class="section-heading heading-three mx-auto" data-aos="fade-down">
+          <h2 class="d-flex justify-content-center">Most Loving Products</h2>
+
+        </div>
+        <!-- /Heading title -->
+        <div class="bike-feature-slider nav-center">
+          <owl-carousel-o [options]="bikefeatureOwlOptions">
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a [routerLink]="routes.listingDetails">
+                          <img src="assets/img/banners/hangoverimg.jpeg" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="listing-content">
+                    
+                    <div class="listing-features align-items-center justify-content-between">
+                                              <h3 class="listing-title">
+                          <a [routerLink]="routes.listingDetails">Morningshot Orenge</a>
+                        </h3>
+                      <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 Reviews</span>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 1600 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">Book Now</a>
+                      </div>
+                    </div>
+                    <!-- <div class="feature-text">
+                      <span class="bg-danger">Featured</span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a [routerLink]="routes.listingDetails">
+                          <img src="assets/img/banners/hangover2.jpeg" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="listing-content">
+                    
+                    <div class="listing-features align-items-center justify-content-between">
+                                              <h3 class="listing-title">
+                          <a [routerLink]="routes.listingDetails">Morningshot grape</a>
+                        </h3>
+                      <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 Reviews</span>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 2600 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">Book Now</a>
+                      </div>
+                    </div>
+                    <!-- <div class="feature-text">
+                      <span class="bg-danger">Featured</span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a [routerLink]="routes.listingDetails">
+                          <img src="assets/img/banners/hangover3.jpeg" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="listing-content">
+                    
+                    <div class="listing-features align-items-center justify-content-between">
+                                              <h3 class="listing-title">
+                          <a [routerLink]="routes.listingDetails">Morningshot Orenge</a>
+                        </h3>
+                      <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 Reviews</span>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 1600 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">Book Now</a>
+                      </div>
+                    </div>
+                    <!-- <div class="feature-text">
+                      <span class="bg-danger">Featured</span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a [routerLink]="routes.listingDetails">
+                          <img src="assets/img/bike/bike1-slide-01.png" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="listing-content">
+                    
+                    <div class="listing-features align-items-center justify-content-between">
+                                              <h3 class="listing-title">
+                          <a [routerLink]="routes.listingDetails">Morningshot Orenge</a>
+                        </h3>
+                      <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 Reviews</span>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 1600 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">Book Now</a>
+                      </div>
+                    </div>
+                    <!-- <div class="feature-text">
+                      <span class="bg-danger">Featured</span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+
+          </owl-carousel-o>
+        </div>
+
+        <div class="view-all-btn text-center aos" data-aos="fade-down">
+          <a [routerLink]="routes.listingGrid" class="btn btn-secondary">View all</a>
         </div>
       </div>
     </div>
   </div>
+  <div class="feature-bg">
+    <img src="assets/img/bg/destination-bg-01.png" class="img-fluid shape-01" alt="img" />
+    <img src="assets/img/bg/feature-bg.png" class="img-fluid shape-02" alt="img" />
+  </div>
+</section>
+<!-- end product section -->
+ <!-- Benefits section  -->
+<section class="renting-yacht-sec">
+  <div class="sec-round-colors">
+    <span class="bg-orange round-small"></span>
+    <span class="bg-orange round-small"></span>
+    <span class="bg-orange round-small"></span>
+    <span class="bg-dark-blue round-small"></span>
+    <span class="bg-dark-blue round-big"></span>
+    <span class="bg-orange round-big"></span>
+  </div>
+  <div class="sec-bg">
+    <img src="assets/img/bg/ship-part-bg-01.png" alt="Bg" />
+  </div>
+  <div class="container">
+    <div class="section-header-two">
+      <h2>Benefits Of Morning Shot</h2>
+      <p>
+        Start your morning with a clean, natural boost that fuels your body from the very first sip.
+      </p>
+    </div>
+    <div class="renting-yacht-benifits d-flex align-items-center justify-content-between">
+      <ul>
+        <li>
+          <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-05.svg" alt="icon" /></span>
+          <div class="benifit-contents">
+            <h5>Fast & Effective Relief</h5>
+            <p>
+              Our formula is designed to work quickly,
+              helping you feel better in less time.
+            </p>
+          </div>
+        </li>
+        <li>
+          <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-04.svg" alt="icon" /></span>
+          <div class="benifit-contents">
+            <h5>Powered by Natural Ingredients</h5>
+            <p>
+              Yacht charters offer flexibility and freedom to create customized
+              itineraries based on your interests and preferences.
+            </p>
+          </div>
+        </li>
+        <li>
+          <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-05.svg" alt="icon" /></span>
+          <div class="benifit-contents">
+            <h5>Gentle & No Harsh Side Effects</h5>
+            <p>
+              Our clean formulation delivers benefits without causing discomfort or unwanted reactions.
+            </p>
+          </div>
+        </li>
+      </ul>
+      <div class="yatcht-center-img">
+        <span><img src="assets/img/banners/hangoverimg.jpeg" class="img-fluids" alt="Img" /></span>
+        <span class="roung-img-bg"></span>
+      </div>
+      <ul>
+        <li>
+          <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-03.svg" alt="icon" /></span>
+          <div class="benifit-contents">
+            <h5>Supports Daily Wellness</h5>
+            <p>
+              Each dose is crafted to help improve energy, focus, and overall balance throughout the day.
+            </p>
+          </div>
+        </li>
+        <li>
+          <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-02.svg" alt="icon" /></span>
+          <div class="benifit-contents">
+            <h5>Backed by Clinical Research</h5>
+            <p>
+              Every ingredient is carefully selected and supported by scientific studies for proven results.
+            </p>
+          </div>
+        </li>
+        <li>
+          <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-01.svg" alt="icon" /></span>
+          <div class="benifit-contents">
+            <h5>Convenient for Everyday Use</h5>
+            <p>
+              Easy to carry and simple to use—perfect for busy schedules and on-the-go lifestyles.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+<!-- /Benefits section -->
+<!----------------------- FAQ ------------------>
+<section class="ms-faq-section py-5">
+  <div class="container">
+
+    <!-- ANGULAR TABS -->
+    <div class="ms-faq-tabs d-flex justify-content-center mb-4">
+      <button class="tab-btn" [class.active]="activeTab === 'hangover'" (click)="activeTab = 'hangover'">
+        Hangover Drinks FAQ
+      </button>
+
+      <button class="tab-btn" [class.active]="activeTab === 'sleep'" (click)="activeTab = 'sleep'">
+        Sleep Aid FAQ
+      </button>
+    </div>
+
+    <!-- TAB CONTENT -->
+    <div class="tab-content">
+
+      <!-- HANGOVER FAQ -->
+      <div *ngIf="activeTab === 'hangover'">
+        <div *ngFor="let h of hangoverFAQ; let i = index" class="ms-faq-card">
+
+          <div class="question" (click)="toggle(i, 'hang')">
+            {{ h.q }}
+            <span class="icon" [class.open]="openedHang === i">▼</span>
+          </div>
+
+          <div class="answer" *ngIf="openedHang === i">
+            {{ h.a }}
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SLEEP FAQ -->
+      <div *ngIf="activeTab === 'sleep'">
+        <div *ngFor="let s of sleepFAQ; let j = index" class="ms-faq-card">
+
+          <div class="question" (click)="toggle(j, 'sleep')">
+            {{ s.q }}
+            <span class="icon" [class.open]="openedSleep === j">▼</span>
+          </div>
+
+          <div class="answer" *ngIf="openedSleep === j">
+            {{ s.a }}
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
 
 
 

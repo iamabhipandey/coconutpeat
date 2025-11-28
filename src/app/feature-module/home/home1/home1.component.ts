@@ -16,6 +16,65 @@ interface data {
   styleUrls: ['./home1.component.css'],
 })
 export class HomeComponent implements AfterViewInit{
+  activeTab: string = 'hangover';
+
+  openedHang: number | null = null;
+  openedSleep: number | null = null;
+
+  toggle(i: number, type: string) {
+    if (type === 'hang') {
+      this.openedHang = this.openedHang === i ? null : i;
+    } else {
+      this.openedSleep = this.openedSleep === i ? null : i;
+    }
+  }
+
+hangoverFAQ = [
+  { q: "What is MorningShot Hangover Drink?", 
+    a: "An Ayurvedic detox drink that supports liver function, boosts hydration, and helps you wake up fresh after drinking." },
+
+  { q: "How does it reduce hangovers?", 
+    a: "Its herbal blend helps break down alcohol toxins faster, reducing headache, nausea, and fatigue the next day." },
+
+  { q: "When should I take it?", 
+    a: "For best results, drink it after your last drink—before going to sleep." },
+
+  { q: "Can I take it before drinking?", 
+    a: "Yes, it prepares the liver and helps reduce next-day discomfort." },
+
+  { q: "Is it safe for daily use?", 
+    a: "Yes, it is made from natural Ayurvedic herbs and safe for regular use." },
+
+  { q: "How fast does it work?", 
+    a: "You feel the difference the next morning with reduced tiredness and dehydration." },
+
+  { q: "Is it Ayurvedic and chemical-free?", 
+    a: "Yes, it is 100% Ayurvedic, non-addictive, and free from harmful chemicals." }
+];
+
+sleepFAQ = [
+  { q: "What is MorningShot Sleep Aid?", 
+    a: "A natural herbal sleep formula that helps you fall asleep faster and enjoy deep, restorative sleep." },
+
+  { q: "Is it habit-forming?", 
+    a: "No, it is 100% non-habit forming and safe for long-term use." },
+
+  { q: "How quickly does it work?", 
+    a: "Typically within 20–30 minutes after consumption." },
+
+  { q: "Will I feel sleepy or heavy the next morning?", 
+    a: "No, you wake up fresh and energised with no grogginess." },
+
+  { q: "Does it help reduce anxiety or overthinking?", 
+    a: "Yes, calming herbs support relaxation and mental calmness." },
+
+  { q: "Can I take it every night?", 
+    a: "Yes, it is herbal and suitable for nightly use." },
+
+  { q: "Is it safe with other medications?", 
+    a: "Generally yes, but consult a doctor if you are on regular medication." }
+];
+
 public routes = routes
   public thumbnails1: thumbnails1[] = [];
   public testimonials: testimonials[] = [];
@@ -136,6 +195,61 @@ promotionProducts = [
       },
 
     },
+  };
+    bikefeatureOwlOptions: OwlOptions = {
+    loop:true,
+    margin:24,
+    nav:true,
+    dots: false,
+    autoplay:false,
+    smartSpeed: 2000,
+    items:1,
+    navText : ["<i class='bx bx-chevron-left'></i>","<i class='bx bx-chevron-right'></i>"],
+    responsive:{
+      0:{
+        items:1
+      },
+      
+      550:{
+        items:1
+      },
+      700:{
+        items:2
+      },
+      1000:{
+        items:3
+      },
+      1400:{
+        items:4
+      }
+    },
+  };
+    carimagesliderOwlOptions: OwlOptions = {
+    loop:true,
+    margin:24,
+    nav:true,
+    dots: true,
+    autoplay:false,
+    smartSpeed: 2000,
+    navText : ["<i class='bx bx-chevron-left'></i>","<i class='bx bx-chevron-right'></i>"],
+    responsive:{
+      0:{
+        items:1
+      },
+      
+      550:{
+        items:1
+      },
+      700:{
+        items:2
+      },
+      1000:{
+        items:6
+      },
+      1200:{
+        items:6
+      }
+    }
   };
   firstsecOptions: OwlOptions = {
     loop:true,
