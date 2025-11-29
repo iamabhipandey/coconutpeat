@@ -54,7 +54,7 @@
         .main-nav {
             >li {
                 >a {
-                    color: $__gray;
+                    color: $__black_color;
                     line-height: 46px;
                     font-weight: $__medium;
                     @include respond-below(custom991) {

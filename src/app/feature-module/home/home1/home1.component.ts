@@ -294,10 +294,10 @@ promotionProducts = [
 				},
 				
 				550:{
-					items:8
+					items:3
 				},
 				1200:{
-					items:8
+					items:4
 				},
 				1400:{
 					items:10

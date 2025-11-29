@@ -1,531 +1,10 @@
-.sec-one-img img {
-  border-radius: 10px;
-}
-
-/* section two */
-.menu-section {
-  background-color: #f8f8f8;
-  padding: 15px 0;
-}
-.menu-item {
-  text-align: center;
-  cursor: pointer;
-}
-.menu-item i {
-  font-size: 20px;
-  margin-bottom: 10px;
-  display: block;
-  color: #000;
-}
-.menu-item span {
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  color: #444;
-}
-/* end section two */
-
-/* section 3 */
-.hero-section {
-  padding: 80px 0;
-  background: #fff;
-}
-.hero-title {
-  font-size: 52px;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #111;
-}
-.hero-btn {
-  background-color: #004a97;
-  border: none;
-  padding: 14px 28px;
-  font-size: 16px;
-  font-weight: 500;
-  border-radius: 30px;
-  color: white;
-  margin-top: 25px;
-}
-.hero-btn:hover {
-  background-color: #003d7a;
-}
-.hero-image {
-  width: 100%;
-  border-radius: 20px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
-  object-fit: cover;
-}
-
-.lenisna-section {
-  padding: 80px 0;
-  background: #f7eef2;
-}
-.lenisna-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-}
-.grid-img {
-  width: 100%;
-  height: 350px;
-  object-fit: cover;
-  border-radius: 150px;
-  transition: 0.35s ease;
-  position: relative;
-  border: 15px solid white;
-}
-.grid-img:nth-child(1),
-.grid-img:nth-child(3) {
-  height: 420px;
-  margin-top: 70px;
-}
-.grid-img:nth-child(2) {
-  height: 550px;
-}
-.grid-img:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.18);
-}
-.lenisna-title {
-  font-size: 42px;
-  font-weight: 600;
-  line-height: 1.2;
-  margin-bottom: 15px;
-}
-.lenisna-tagline {
-  font-size: 17px;
-  color: #666;
-  margin-bottom: 25px;
-  font-style: italic;
-}
-.lenisna-button {
-  background: #222;
-  color: #fff;
-  border: none;
-  padding: 12px 28px;
-  border-radius: 30px;
-  font-size: 16px;
-  transition: 0.35s ease;
-}
-.lenisna-button:hover {
-  background: #444;
-  transform: translateY(-3px);
-}
-/* end section 3 */
-
-/* brand section (used for Loche Bio Products header) */
-.section-title {
-  font-size: 30px;
-  font-weight: 700;
-  font-family: sans-serif;
-  color: #303351;
-  display: flex;
-  align-items: center;
-}
-.section-title span {
-  font-weight: 400;
-  font-size: 18px;
-  padding: 0 15px;
-  margin-left: 10px;
-  cursor: pointer;
-  border-left: 2px solid gray;
-}
-.section-title i {
-  font-size: 13px;
-}
-@media (max-width: 575.98px) {
-  .section-title {
-    font-size: 17px;
-    font-weight: 700;
-  }
-  .section-title span {
-    font-size: 15px;
-    padding: 0 10px;
-  }
-}
-
-/* New Arrival background gradient */
-@media (max-width: 767.98px) {
-  .our-Stores-product {
-    border-radius: 30px 30px 0 0;
-    margin-top: -10px;
-    width: 100%;
-    background-image: linear-gradient(#f5f7fe, #fff 14%);
-  }
-}
-
-/* Empowering Global Synergies Section */
-.affiliates-section {
-  padding-bottom: 40px;
-}
-
-.affiliates-title {
-  font-size: 30px;
-  
-  font-weight: 700;
-  font-family: sans-serif;
-  color: #303351;
-  text-align: center;
-  margin-bottom: 30px;
-}
-
-.affiliates-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  padding: 30px 0;
-}
-
-.affiliate-card {
-  height: 500px;
-  position: relative;
-  padding: 25px;
-  border-radius: 22px;
-  border: 1px solid #c7c7c7;
-  text-align: center;
-  transition: 0.35s ease;
-  overflow: hidden;
-}
-
-.affiliate-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 0 18px rgba(120, 120, 255, 0.25);
-}
-
-.logo {
-  max-width: 140px;
-  margin-bottom: 18px;
-}
-
-.bottom-circle {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  overflow: hidden;
-  border: 6px solid rgba(255, 255, 255, 0.7);
-  position: absolute;
-  bottom: 30px;
-  right: 30px;
-}
-
-.bottom-circle img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 21px;
-}
-
-.glass {
-  background: rgb(245 243 243);
-  backdrop-filter: blur(15px);
-}
-
-.gradient {
-  background: linear-gradient(135deg, #d5a6ff, #bce3ff);
-  color: #333;
-}
-
-.neu {
-  background: #f1f3f5;
-}
-
-.split {
-  align-items: center;
-  background: #dbdbdb;
-}
-
-@media (min-width: 768px) {
-  .slider-for-mobile {
-    display: none !important;
-  }
-  .slider-custom {
-    padding: 10px;
-  }
-}
-@media (max-width: 767.9px) {
-  .slider-for-tab {
-    display: none !important;
-  }
-  .hero-title {
-    font-size: 30px;
-}
-.hero-btn {
-    padding: 9px 15px;
-    font-size: 14px;
-    font-weight: 500;
-    margin-top: 16px;
-}
-.lenisna-title {
-    font-size: 31px;
-}
-.lenisna-button {
-    padding: 9px 15px;
-    font-size: 14px;
-}
-}
-
-
-/* ----------------------------- new section 2 -----------------------*/
-.feature-section {
-  background: #f6c048;
-}
-
-.feature-box {
-  background: #fff;
-  border-radius: 16px;
-  padding: 25px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-  transition: 0.3s ease;
-}
-
-.feature-box:hover {
-  transform: translateY(-5px);
-}
-
-.feature-img {
-  width: 65px;
-  height: 65px;
-}
-/* ----------------------------recommanded section------------------------- */
-.recommend-section {
-  background: #fde9b8;
-}
-.recommend-section::before {
-    content: "";
-    background: #f7f7f7;
-    width: 100%;
-    height: 0%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-.recommend-tag {
-  display: inline-block;
-  background: #000;
-  color: #fff;
-  padding: 6px 22px;
-  border-radius: 25px;
-  font-size: 14px;
-  font-weight: 600;
-}
-
-.recommend-box {
-  background: #fff;
-  padding: 15px 20px;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-  margin-bottom: 15px;
-  transition: 0.2s ease;
-}
-
-.recommend-box:hover {
-  transform: translateY(-4px);
-}
-
-.num-circle {
-  width: 35px;
-  height: 35px;
-  background: #f39b1b;
-  color: #fff;
-  border-radius: 50%;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 15px;
-  font-size: 16px;
-}
-
-.morning-shot-box {
-  padding: 25px;
-  border-radius: 22px;
- 
-  backdrop-filter: blur(8px);
-  display: inline-block;
-}
-
-.morning-shot-img {
-  border-radius: 20px;
-}
-
-
-.caption-text h3 {
-  font-size: 30px;
-  font-weight: 700;
-  color: #222;
-  line-height: 1.3;
-  margin-bottom: 5px;
-}
-
-.tagline {
-  font-size: 18px;
-  background: #111;
-  color: #fff;
-  display: inline-block;
-  padding: 6px 22px;
-  border-radius: 10px;
-  margin-top: 10px;
-  letter-spacing: 0.5px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
-}
-
-/*----------------------------- feature section --------------------------- */
-.feature-section {
-  background: #fafafa;
-}
-
-.point-badge {
-  background: #000;
-  color: #fff;
-  padding: 6px 14px;
-  border-radius: 6px;
-  font-size: 14px;
-  font-weight: 600;
-  display: inline-block;
-}
-
-.title {
-  font-size: 32px;
-  font-weight: 700;
-  color: #222;
-  line-height: 1.3;
-}
-
-.subtitle {
-  font-size: 16px;
-  margin-top: 8px;
-  color: #555;
-}
-
-.highlight-box {
-  background: #fff;
-  border-left: 4px solid #f9c846;
-  padding: 15px 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.07);
-}
-
-.highlight-title {
-  background: #f9c846;
-  padding: 4px 10px;
-  font-weight: 600;
-  border-radius: 6px;
-}
-
-.highlight-text {
-  margin-top: 8px;
-  color: #444;
-  font-size: 14px;
-}
-
-.feature-img-box {
-  display: inline-block;
-  padding: 15px;
-}
-
-.feature-img1 {
-  border-radius: 50%;
-  max-width: 330px;
-  transition: 0.4s ease;
-}
-
-/* Hover Effect */
-.feature-img:hover {
-  transform: scale(1.03);
-  box-shadow: 0 18px 40px rgba(0,0,0,0.15);
-}
-
-.garcinia-title {
-  font-size: 22px;
-  color: #333;
-  font-weight: 600;
-}
-
-.cut-title {
-  font-size: 30px;
-  color: #b72a47;
-  font-weight: 800;
-}
-
-.icon-img {
-  width: 55px;
-  height: 55px;
-  margin-bottom: 10px;
-}
-
-.icon-text {
-  font-size: 14px;
-  color: #444;
-  font-weight: 500;
-}
-
-.icon-grid .col-md-2 {
-  padding: 20px 10px;
-}
-/*------------------------------------ product details --------------------------- */
-
-.flavor-section {
-    background: linear-gradient(135deg, #ffb347, #ffcc33, #b19eff, #d4a3ff);
-    background-size: 300% 300%;
-    animation: gradientMove 6s infinite alternate;
-  }
-  @keyframes gradientMove {
-    0% { background-position: left; }
-    100% { background-position: right; }
-  }
-
-  .berry-card { background: #f5e9ff; }
-  .mango-card { background: #fff4dd; }
-
-  .text-purple { color: #7a39c9; }
-  .text-orange { color: #ff8a00; }
-
-  .btn-purple {
-    background: #7a39c9; 
-    color: white; 
-  }
-
-  .btn-orange {
-    background: #ff8a00; 
-    color: white; 
-  }
-
-  .bg-purple { background: #9f63e6 !important; }
-  .bg-orange { background: #ffa733 !important; }
-
-  .flavor-card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  .flavor-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 15px 35px rgba(0,0,0,0.15);
-  }
-/*----------------------- ingredient section ------------------------------*/
-    .ingredients-section {
-    background: linear-gradient(135deg, #fff8e6, #f3eaff);
-  }
-
-  .ingredient-card {
-    background: #ffffff;
-    transition: all .3s ease;
-  }
-.ingredient-card h5 {
-    font-size: 16px;
-}
-  .ingredient-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
-  }
-
-  /* ----------------------new css ------------------------------------- */
   .wellness-section.py-5 {
     background: #efefef;
     margin-top: 20px;
 }
   /* Tabs */
 .wellness-tabs .nav-link {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 600;
   color: #808080;
   border: none;
@@ -592,6 +71,7 @@
 /*------------- img section */
 .floating-img-wrapper {
   position: relative;
+  margin: 30px 0px;
 }
 
 .main-img {
@@ -839,4 +319,55 @@ width: 30%;
     color: #676767;
     flex-shrink: 0;
     -moz-osx-font-smoothing: grayscale;
+}
+
+/*------------- first section -------------- */
+.single-banner-section {
+  width: 100%;
+  position: relative;
+}
+
+.banner-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.banner-img {
+  width: 100%;
+  display: block;
+}
+
+/* Sparkle Stars */
+.sparkle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #fffacd 25%, #ffeb8a 60%, rgba(255,255,255,0) 80%);
+  border-radius: 50%;
+  animation: sparkleBlink 2s infinite ease-in-out alternate,
+             floatingMove 6s infinite ease-in-out alternate;
+  filter: drop-shadow(0 0 12px #ffed9c);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* Star Positions */
+.sparkle-1 { top: 12%; left: 18%; animation-delay: 0s; }
+.sparkle-2 { top: 28%; right: 15%; animation-delay: .7s; }
+.sparkle-3 { bottom: 18%; left: 45%; animation-delay: 1.5s; }
+.sparkle-4 { top: 50%; left: 70%; animation-delay: 2.2s; }
+
+/* Soft Blinking Effect */
+@keyframes sparkleBlink {
+  0% { transform: scale(0.6); opacity: 0.4; }
+  50% { transform: scale(1.3); opacity: 1; }
+  100% { transform: scale(0.7); opacity: 0.5; }
+}
+
+/* Floating Movement */
+@keyframes floatingMove {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-18px); }
 }
