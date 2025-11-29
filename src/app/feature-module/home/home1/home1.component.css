@@ -776,11 +776,38 @@ width: 30%;
 }
 
 /* Responsive */
+
+@media (max-width: 992px) {
+
+  .collage-main {
+    width: 38% !important;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    position: relative;
+    z-index: 3;
+}
+.collage-left {
+    left: 16px !important;
+    transform: translateY(-50%) rotate(-7deg);
+}
+.collage-right[_ngcontent-ng-c3532192847] {
+    right: 16px !important;
+    transform: translateY(-50%) rotate(7deg);
+}
+}
 @media (max-width: 768px) {
   .ms-faq-tabs {
     flex-direction: column;
     gap: 10px;
   }
+    .collage-main {
+    width: 50% !important;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+    position: relative;
+    z-index: 3;
+}
+
 }
 .img-fluids {
     width: 275px;

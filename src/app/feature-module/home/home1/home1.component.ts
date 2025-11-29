@@ -173,7 +173,7 @@ promotionProducts = [
   };
     bikefeatureOwlOptions: OwlOptions = {
     loop:true,
-    margin:24,
+    margin:15,
     nav:true,
     dots: false,
     autoplay:false,
@@ -182,11 +182,11 @@ promotionProducts = [
     navText : ["<i class='bx bx-chevron-left'></i>","<i class='bx bx-chevron-right'></i>"],
     responsive:{
       0:{
-        items:1
+        items:2
       },
       
       550:{
-        items:1
+        items:2
       },
       700:{
         items:2
