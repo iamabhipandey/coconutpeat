@@ -1,10 +1,12 @@
 {
   "HEADER": {
-    "COMPANY": "Company",
-    "CEO_GREETING": "CEO Greeting",
+    "COMPANY": "Products",
+    "CEO_GREETING": "Coconut",
     "VISION": "VISION 2030",
     "HISTORY": "Company History",
+    "CLEAN_ROOM": "Clean Room",
     "SOCIAL_CONTRIBUTION": "Social Contribution",
+    "RND_TECH": "R&D and Technology",
     "PRODUCT_INFO": "Product Information",
     "MEDICAL_DEVICES": "Medical Devices",
     "BOTOX": "Botox",
@@ -24,8 +26,6 @@
     "RND": "Research & Development",
     "INDIAN_HOSPITALS": "Introduction to Indian Hospitals",
     "KOREA_HEALTH_CENTER": "Korea Health Center (Antiviral Research)",
-    "RND_TECH": "R&D and Technology",
-    "CLEAN_ROOM": "Clean Room",
     "CERTIFICATIONS": "Certification Details",
     "COOPERATIVE_ORG": "Cooperative Organization",
     "PARAS_HOSPITAL": "Paras Hospital",

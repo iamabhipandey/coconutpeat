@@ -96,4 +96,7 @@ a.nav-link.header-user {
 }
 /*-------------------- end header two ----------------------------*/
 
-
+.navbar-header {
+    display: flex;
+    align-items: baseline;
+}

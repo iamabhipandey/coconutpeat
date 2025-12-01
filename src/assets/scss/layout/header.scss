@@ -9,7 +9,7 @@
         box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     left: 0;
     top: 0;
-    height: 160px;
+    height: 125px;
     width: 100%;
     z-index: 999;
     @extend %animation-effect;
@@ -283,8 +283,6 @@
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
-            // justify-content: space-between;
-                justify-content: space-around;
                 flex: auto;
                 
                 
