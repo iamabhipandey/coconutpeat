@@ -216,13 +216,45 @@ promotionProducts = [
       700:{
         items:3
       },
-      1000:{
+       892:{
+        items:3
+      },
+       992:{
         items:4
       },
+      1200:{
+        items:5
+      },
       1400:{
-        items:4
+        items:6
       }
     },
+  };
+    blogsliderOwlOptions: OwlOptions = {
+    loop:true,
+			margin:24,
+			nav:true,
+			dots:false,
+			smartSpeed: 2000,
+			autoplay:false,
+      navText: [
+				'<i class="fa-solid fa-chevron-left"></i>',
+				'<i class="fa-solid fa-chevron-right"></i>'
+			],
+    responsive:{
+      0:{
+        items:1
+      },				
+      550:{
+        items:2
+      },
+      768:{
+        items:3
+      },
+      1200:{
+        items:3
+      }
+    }
   };
     carimagesliderOwlOptions: OwlOptions = {
     loop:true,
@@ -315,17 +347,22 @@ promotionProducts = [
 			smartSpeed: 2000,
       responsive:{
 				0:{
+					items:1
+				},
+				500:{
 					items:2
 				},
-				
-				550:{
+				676:{
 					items:3
 				},
-				1200:{
+        867:{
 					items:4
 				},
+				1200:{
+					items:5
+				},
 				1400:{
-					items:10
+					items:6
 				}
 			}
   };

@@ -111,41 +111,55 @@
   </div>
 </section>
 
-
-
 <div class="container">
   <div class="banner-yacht-type-slider">
     <owl-carousel-o [options]="yachttypeOwlOptions">
       <ng-template carouselSlide>
         <div class="slider-card">
           <div class="banner-slider-icon">
-            <span><img src="assets/img/icons/natural-ingredients.png" alt="Img" /></span>
+            <span><img src="assets/img/icons/biomimetic.png" alt="Img" /></span>
           </div>
-          <h6>{{"HOME.NATURAL" | translate}}</h6>
+          <h6>100% Organic Material</h6>
         </div>
       </ng-template>
       <ng-template carouselSlide>
         <div class="slider-card">
           <div class="banner-slider-icon">
-            <span><img src="assets/img/icons/wake-up.png" alt="Img" /></span>
+            <span><img src="assets/img/icons/drop.png" alt="Img" /></span>
           </div>
-          <h6>{{"HOME.WAKE_UP" | translate}}</h6>
+          <h6>High Water Retention</h6>
         </div>
       </ng-template>
       <ng-template carouselSlide>
         <div class="slider-card">
           <div class="banner-slider-icon">
-            <span><img src="assets/img/icons/science-and-tech.png" alt="Img" /></span>
+            <span><img src="assets/img/icons/recycle.png" alt="Img" /></span>
           </div>
-          <h6>{{"HOME.SEIENCE_BACKEND" | translate}}</h6>
+          <h6>Eco-Friendly</h6>
         </div>
       </ng-template>
       <ng-template carouselSlide>
-        <div class="slider-card slider-card-active">
+        <div class="slider-card">
           <div class="banner-slider-icon">
-            <span><img src="assets/img/icons/healthcare.png" alt="Img" /></span>
+            <span><img src="assets/img/icons/easy-to-use.png" alt="Img" /></span>
           </div>
-          <h6>{{"HOME.EASY_TO_CARRY" | translate}}</h6>
+          <h6>Easy-To-Use</h6>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slider-card">
+          <div class="banner-slider-icon">
+            <span><img src="assets/img/icons/network-connection.png" alt="Img" /></span>
+          </div>
+          <h6>Multi-Purpose Use</h6>
+        </div>
+      </ng-template>
+      <ng-template carouselSlide>
+        <div class="slider-card">
+          <div class="banner-slider-icon">
+            <span><img src="assets/img/icons/energy.png" alt="Img" /></span>
+          </div>
+          <h6>Eco-Friendly Production</h6>
         </div>
       </ng-template>
       <div class="slider-card">
@@ -156,6 +170,7 @@
       </div>
     </owl-carousel-o>
   </div>
+
   <div class="section-header-two">
     <!-- <h2>{{"HOME.OUR_BEST_SELECTION" | translate}}</h2>
     <p>{{"HOME.EXPLORE" | translate}}</p> -->
@@ -222,7 +237,8 @@
     </div> -->
   </div>
 </div>
-<!-- product section -->
+
+<!----------------------- product intro ---------------------------->
 <section class="mt-5 mb-5">
   <div class="container">
     <div class="section-header-two">
@@ -359,7 +375,7 @@
           </div>
         </div>
       </div>
-            <div class="custom-col1">
+      <div class="custom-col1">
         <div class="yacht-cat-grid">
           <div class="yatch-card-img">
             <a><img src="assets/img/banner-section2/product11.jpg" class="img-fluid" alt="yacht" /></a>
@@ -381,102 +397,676 @@
     </div>
   </div>
 </section>
+<!---------------------- product section ----------------------------->
+<section class="section features-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="section-heading heading-three mx-auto" data-aos="fade-down">
+          <h2 class="d-flex justify-content-center">New Lounches</h2>
 
-<!------------------ product information section ------------->
-<!-- <section class="wellness-section py-5">
+        </div>
+        <div class="bike-feature-slider nav-center">
+          <owl-carousel-o [options]="bikefeatureOwlOptions">
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a [routerLink]="routes.listingDetails">
+                          <img src="assets/img/banner-section2/product11.jpg" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="listing-content">
+
+                    <div class="listing-features align-items-center justify-content-between">
+                      <h3 class="listing-title">
+                        <a [routerLink]="routes.listingDetails">COIR FELT NEEDLE</a>
+                      </h3>
+                      <!-- <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
+                        </div>
+
+                      </div> -->
+                    </div>
+
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 600 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <!-- <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a> -->
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" |
+                          translate}}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a>
+                          <img src="assets/img/banner-section2/product9.png" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="listing-content">
+
+                    <div class="listing-features align-items-center justify-content-between">
+                      <h3 class="listing-title">
+                        <a>SEMI HUSK COCONUT</a>
+                      </h3>
+                      <!-- <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
+                        </div>
+
+                      </div> -->
+                    </div>
+
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 800 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <!-- <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a> -->
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" |
+                          translate}}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a [routerLink]="routes.listingDetails">
+                          <img src="assets/img/banner-section2/product7.png" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="listing-content">
+
+                    <div class="listing-features align-items-center justify-content-between">
+                      <h3 class="listing-title">
+                        <a [routerLink]="routes.listingDetails">COIR NET</a>
+                      </h3>
+                      <!-- <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
+                        </div>
+
+                      </div> -->
+                    </div>
+
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 600 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <!-- <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a> -->
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" |
+                          translate}}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a [routerLink]="routes.listingDetails">
+                          <img src="assets/img/banner-section2/product03.jpeg" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="listing-content">
+
+                    <div class="listing-features align-items-center justify-content-between">
+                      <h3 class="listing-title">
+                        <a>COCO PEAT</a>
+                      </h3>
+                      <!-- <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
+                        </div>
+
+                      </div> -->
+                    </div>
+
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 1600 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <!-- <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a> -->
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" |
+                          translate}}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a [routerLink]="routes.listingDetails">
+                          <img src="assets/img/banner-section2/product2.png" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-content">
+                    <div class="listing-features align-items-center justify-content-between">
+                      <h3 class="listing-title">
+                        <a>COIR MAT</a>
+                      </h3>
+                      <!-- <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
+                        </div>
+
+                      </div> -->
+                    </div>
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 2600 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <!-- <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a> -->
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" |
+                          translate}}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a [routerLink]="routes.listingDetails">
+                          <img src="assets/img/banner-section2/product1.png" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-content">
+                    <div class="listing-features align-items-center justify-content-between">
+                      <h3 class="listing-title">
+                        <a>COCONUT FIBER</a>
+                      </h3>
+                    </div>
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 3600 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" |
+                          translate}}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a [routerLink]="routes.listingDetails">
+                          <img src="assets/img/banner-section2/product8.jpg" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="listing-content">
+                    <div class="listing-features align-items-center justify-content-between">
+                      <h3 class="listing-title">
+                        <a>DESICCATED COCONUT</a>
+                      </h3>
+                      <!-- <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
+                        </div>
+
+                      </div> -->
+                    </div>
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 200 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <!-- <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a> -->
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" |
+                          translate}}</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+
+          </owl-carousel-o>
+        </div>
+
+        <div class="view-all-btn text-center aos" data-aos="fade-down">
+          <a class="btn btn-secondary">{{"HOME.VIEW_ALL" | translate}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="feature-bg">
+    <img src="assets/img/bg/destination-bg-01.png" class="img-fluid shape-01" alt="img" />
+    <img src="assets/img/bg/feature-bg.png" class="img-fluid shape-02" alt="img" />
+  </div>
+</section>
+<!-- end product section -->
+<!-- Blog Section -->
+<section class="blog-section bike-news">
+  <div class="container">
+    <!-- Heading title-->
+    <div class="section-heading heading-three mx-auto" data-aos="fade-down">
+      <h2>Contemporary news and insights <span>for you</span></h2>
+      <p>Here's a hypothetical blog post about car rental services</p>
+    </div>
+    <!-- /Heading title -->
+
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="blog-slider nav-center">
+          <owl-carousel-o [options]="blogsliderOwlOptions" class="blog-slider">
+            <ng-template carouselSlide>
+              <!-- Blog List -->
+              <div class="blog grid-blog">
+                <div class="blog-image">
+                  <!-- [routerLink]="routes.blogDetails" -->
+                  <a ><img class="img-fluid" src="assets/img/banner-section2/news-1.jpeg "
+                      alt="Post Image" /></a>
+                </div>
+                <div class="blog-content">
+                  <h3 class="blog-title">
+                    <a >How to Make Shredded Coconut & Desiccated Coconut</a>
+                  </h3>
+                  <p class="blog-description">
+                    We would be delighted to provide to qualified customers, at no 
+                    cost or obligation to your company, samples, and further documentation, 
+                    as well as discuss your concerns and needs.
+                  </p>
+                  <div class="blog-footer">
+                    <p><i class="bx bx-calendar"></i>Apr 21, 2025</p>
+                    <a  class="read-more">Read More<i
+                        class="bx bx-right-arrow-alt"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- /Blog List -->
+            </ng-template>
+            <ng-template carouselSlide>
+              <!-- Blog List -->
+              <div class="blog grid-blog">
+                <div class="blog-image">
+                  <a ><img class="img-fluid" src="assets/img/banner-section2/news-2.jpg "></a>
+                </div>
+                <div class="blog-content">
+                  <h3 class="blog-title">
+                    <a >Coconut Water: A Healthy Drink With Many Benefits But Who Should Avoid It?</a>
+                  </h3>
+                  <p class="blog-description">
+                   Coconut water is more than just a natural, refreshing drink. It carries a surprising 
+                   number of health benefits. But while it’s an excellent drink for many people, there 
+                   are some who should be careful or avoid it altogether.
+                  </p>
+                  <div class="blog-footer">
+                    <p><i class="bx bx-calendar"></i>Apr 27, 2025</p>
+                    <a class="read-more">Read More<i
+                        class="bx bx-right-arrow-alt"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- /Blog List -->
+            </ng-template>
+            <ng-template carouselSlide>
+              <!-- Blog List -->
+              <div class="blog grid-blog">
+                <div class="blog-image">
+                  <a ><img class="img-fluid" src="assets/img/banner-section2/news-3.jpeg "
+                      alt="Post Image" /></a>
+                </div>
+                <div class="blog-content">
+                  <h3 class="blog-title">
+                    <a>Avantages de l’utilisation du tapis en coco (coir carpet)</a>
+                  </h3>
+                  <p class="blog-description">
+                    Le tapis en coco, fabriqué à partir de fibres naturelles de noix de coco, 
+                    est un matériau écologique et durable largement utilisé pour les chemins, les jardins,
+                  </p>
+                  <div class="blog-footer">
+                    <p><i class="bx bx-calendar"></i>May 02, 2025</p>
+                    <a  class="read-more">Read More<i
+                        class="bx bx-right-arrow-alt"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- /Blog List -->
+            </ng-template>
+            <ng-template carouselSlide>
+              <!-- Blog List -->
+              <div class="blog grid-blog">
+                <div class="blog-image">
+                  <a ><img class="img-fluid" src="assets/img/blog/blog-bike-04.jpg"
+                      alt="Post Image" /></a>
+                </div>
+                <div class="blog-content">
+                  <h3 class="blog-title">
+                    <a >Exploring the Outdoors: A Guide to Bike Rentals and
+                      Adventure</a>
+                  </h3>
+                  <p class="blog-description">
+                    One of the first steps in planning your biking adventure is
+                    selecting the right bike...
+                  </p>
+                  <div class="blog-footer">
+                    <p><i class="bx bx-calendar"></i>May 16, 2024</p>
+                    <a class="read-more">Read More<i
+                        class="bx bx-right-arrow-alt"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- /Blog List -->
+            </ng-template>
+            <ng-template carouselSlide>
+              <!-- Blog List -->
+              <div class="blog grid-blog">
+                <div class="blog-image">
+                  <a ><img class="img-fluid" src="assets/img/blog/blog-bike-05.jpg"
+                      alt="Post Image" /></a>
+                </div>
+                <div class="blog-content">
+                  <h3 class="blog-title">
+                    <a >Ride into Adventure: Exploring Nature's Beauty with Bikes
+                    </a>
+                  </h3>
+                  <p class="blog-description">
+                    From rugged mountain trails and scenic coastal paths to
+                    tranquil forested routes, the great...
+                  </p>
+                  <div class="blog-footer">
+                    <p><i class="bx bx-calendar"></i>May 25, 2024</p>
+                    <a  class="read-more">Read More<i
+                        class="bx bx-right-arrow-alt"></i></a>
+                  </div>
+                </div>
+              </div>
+              <!-- /Blog List -->
+            </ng-template>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+    <div class="view-all-btn text-center aos-init aos-animate" data-aos="fade-down">
+      <a [routerLink]="routes.blogDetails" class="btn btn-secondary">View all Blog</a>
+    </div>
+  </div>
+</section>
+<!-- /Blog Section -->
+<!----------------------- FAQ ------------------>
+<section class="ms-faq-section py-5">
   <div class="container">
 
-    <ul class="nav nav-tabs wellness-tabs mb-4" id="wellnessTab" role="tablist">
-      <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="hangover-tab" data-bs-toggle="tab" data-bs-target="#hangover" type="button"
-          role="tab">
-          {{"HOME.HANGOVER" | translate}}
-        </button>
-      </li>
-      <li class="nav-item" role="presentation">
-        <button class="nav-link" id="sleep-tab" data-bs-toggle="tab" data-bs-target="#sleep" type="button" role="tab">
-          {{"HOME.SLEEP" | translate}}
-        </button>
-      </li>
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
 
+    <div class="accordion" id="coconutPeatFAQ">
 
-    </ul>
-
-    <div class="tab-content" id="wellnessTabContent">
-
-      <div class="tab-pane fade" id="sleep" role="tabpanel">
-
-        <div class="row align-items-center g-5">
-
-          <div class="col-lg-6">
-            <div class="floating-img-wrapper">
-              <img class="main-img" src="assets/img/banners/hangoverimg.jpeg">
-              <img class="small-img top-right" src="assets/img/banners/hangoverimg.jpeg">
-              <img class="small-img bottom-left" src="assets/img/banners/hangoverimg.jpeg">
-            </div>
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse1">
+            What is Coconut Peat?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Coconut Peat (Coco Peat) is a natural growing medium made from coconut husk. It improves aeration, water
+            retention, and is widely used in gardening and agriculture.
           </div>
-
-          <div class="col-lg-6">
-            <h2 class="section-title">{{"HOME.RESTFULL" | translate}} </h2>
-            <p class="section-text">{{"HOME.RESTFULL_DESC" | translate}}
-
-            </p>
-            <div class="view-more-btn mt-3">
-              <a class="btn btn-secondary">{{"HOME.LEARN_MORE" | translate}}</a>
-            </div>
-          </div>
-
         </div>
-
       </div>
 
-      <div class="tab-pane fade show active" id="hangover" role="tabpanel">
-
-        <div class="row align-items-center g-5">
-
-          <div class="col-lg-7">
-            <div class="hangover-collage">
-
-              <img src="assets/img/banners/hangoverimg.jpeg" class="collage-main">
-
-              <img src="assets/img/banners/hangoverimg.jpeg" class="collage-side collage-left">
-
-              <img src="assets/img/banners/hangoverimg.jpeg" class="collage-side collage-right">
-
-            </div>
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse2">
+            What products do you offer on CoconutPeat.loche.in?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            We offer Coco Peat Blocks, Coco Grow Bags, Coco Discs, Husk Chips, Coir Fibre, and premium
+            horticulture-grade coco products.
           </div>
-
-
-          <div class="col-lg-5 ps-4">
-            <h2 class="section-title ps-4">{{"HOME.HANGOVER_RELIEF" | translate}}</h2>
-            <p class="section-text ps-4">
-              {{"HOME.HANGOVER_RELIEF_DESC" | translate}}
-
-            </p>
-            <div class="view-more-btn mt-3 ms-3">
-              <a class="btn btn-secondary">{{"HOME.LEARN_MORE" | translate}}</a>
-            </div>
-          </div>
-
         </div>
+      </div>
 
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse3">
+            Are your Coco Peat products organic and eco-friendly?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Yes, all our products are 100% natural, biodegradable, chemical-free, and suitable for organic farming.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse4">
+            What is the difference between Low EC and High EC Coco Peat?
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Low EC is used for agriculture, hydroponics & nurseries.
+            High EC is used for industrial applications like oil absorbents and bedding.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse5">
+            Do you supply bulk and wholesale orders?
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Yes, we offer bulk supply for nurseries, farms, exporters, wholesalers, and hydroponic growers with the best
+            factory prices.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse6">
+            What sizes and packaging options are available?
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            We offer 5kg blocks, 650g bricks, grow bags, loose bags, and customized packaging for large orders.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq7">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse7">
+            How long does shipping take?
+          </button>
+        </h2>
+        <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Shipping usually takes 4–7 days within India. Bulk and pallet shipments may take 7–12 days depending on
+            location.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 8 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq8">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse8">
+            Do you offer customized Coco Peat mixes?
+          </button>
+        </h2>
+        <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Yes, we customize EC level, moisture, particle size, blend ratio, and block size based on customer
+            requirements.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 9 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq9">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapse9">
+            How do I use a Coco Peat block?
+          </button>
+        </h2>
+        <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Soak the block in 20–25 liters of water for 10–15 minutes.
+            It will expand 5–6 times into soft and fluffy growing media.
+          </div>
+        </div>
       </div>
 
     </div>
 
   </div>
-</section> -->
-<!-- product section -->
-<section class="section features-section">
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <section class="section features-section">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <!-- Heading title-->
         <div class="section-heading heading-three mx-auto" data-aos="fade-down">
-          <h2 class="d-flex justify-content-center">{{"HOME.MOST_LOVING" | translate}}</h2>
+          <h2 class="d-flex justify-content-center">New Lounches</h2>
 
         </div>
-        <!-- /Heading title -->
         <div class="bike-feature-slider nav-center">
           <owl-carousel-o [options]="bikefeatureOwlOptions">
             <ng-template carouselSlide>
@@ -524,9 +1114,6 @@
                           translate}}</a>
                       </div>
                     </div>
-                    <!-- <div class="feature-text">
-                      <span class="bg-danger">Featured</span>
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -576,9 +1163,6 @@
                           translate}}</a>
                       </div>
                     </div>
-                    <!-- <div class="feature-text">
-                      <span class="bg-danger">Featured</span>
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -628,9 +1212,6 @@
                           translate}}</a>
                       </div>
                     </div>
-                    <!-- <div class="feature-text">
-                      <span class="bg-danger">Featured</span>
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -680,9 +1261,6 @@
                           translate}}</a>
                       </div>
                     </div>
-                    <!-- <div class="feature-text">
-                      <span class="bg-danger">Featured</span>
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -732,9 +1310,6 @@
                           translate}}</a>
                       </div>
                     </div>
-                    <!-- <div class="feature-text">
-                      <span class="bg-danger">Featured</span>
-                    </div> -->
                   </div>
                 </div>
               </div>
@@ -745,7 +1320,6 @@
 
         <div class="view-all-btn text-center aos" data-aos="fade-down">
           <a class="btn btn-secondary">{{"HOME.VIEW_ALL" | translate}}</a>
-          <!-- [routerLink]="routes.listingGrid" -->
         </div>
       </div>
     </div>
@@ -754,254 +1328,4 @@
     <img src="assets/img/bg/destination-bg-01.png" class="img-fluid shape-01" alt="img" />
     <img src="assets/img/bg/feature-bg.png" class="img-fluid shape-02" alt="img" />
   </div>
-</section>
-<!-- end product section -->
-<!-- Benefits section  -->
-<!-- <section class="renting-yacht-sec">
-  <div class="sec-round-colors">
-    <span class="bg-orange round-small"></span>
-    <span class="bg-orange round-small"></span>
-    <span class="bg-orange round-small"></span>
-    <span class="bg-dark-blue round-small"></span>
-    <span class="bg-dark-blue round-big"></span>
-    <span class="bg-orange round-big"></span>
-  </div>
-  <div class="sec-bg">
-    <img src="assets/img/bg/ship-part-bg-01.png" alt="Bg" />
-  </div>
-  <div class="container">
-    <div class="section-header-two">
-      <h2>{{"HOME.BENIFITS" | translate}}</h2>
-      <p>
-        <span>{{"HOME.BENIFITS_DESC" | translate}}</span>
-      </p>
-    </div>
-    <div class="renting-yacht-benifits d-flex align-items-center justify-content-between">
-      <ul>
-        <li>
-          <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-05.svg" alt="icon" /></span>
-          <div class="benifit-contents">
-            <h5>{{"HOME.FAST" | translate}}</h5>
-            <p>
-              {{"HOME.FAST_DESC" | translate}}
-
-            </p>
-          </div>
-        </li>
-        <li>
-          <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-04.svg" alt="icon" /></span>
-          <div class="benifit-contents">
-            <h5>{{"HOME.POWER" | translate}}</h5>
-            <p>{{"HOME.POWER_DESC" | translate}}
-
-            </p>
-          </div>
-        </li>
-        <li>
-          <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-05.svg" alt="icon" /></span>
-          <div class="benifit-contents">
-            <h5>{{"HOME.GENTAL" | translate}}</h5>
-            <p>
-              {{"HOME.GENTAL_DESC" | translate}}
-
-            </p>
-          </div>
-        </li>
-      </ul>
-      <div class="yatcht-center-img">
-        <span><img src="assets/img/banners/hangoverimg.jpeg" class="img-fluids" alt="Img" /></span>
-        <span class="roung-img-bg"></span>
-      </div>
-      <ul>
-        <li>
-          <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-03.svg" alt="icon" /></span>
-          <div class="benifit-contents">
-            <h5>{{"HOME.SUPPORT" | translate}}</h5>
-            <p>
-              {{"HOME.SUPPORT_DESC" | translate}}
-
-            </p>
-          </div>
-        </li>
-        <li>
-          <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-02.svg" alt="icon" /></span>
-          <div class="benifit-contents">
-            <h5>{{"HOME.BACKED" | translate}}</h5>
-            <p>
-              {{"HOME.BACKED_DESC" | translate}}
-
-            </p>
-          </div>
-        </li>
-        <li>
-          <span class="benifit-icon"><img src="assets/img/icons/benifits-icon-01.svg" alt="icon" /></span>
-          <div class="benifit-contents">
-            <h5>{{"HOME.USE" | translate}}</h5>
-            <p>
-              {{"HOME.USE_DESC" | translate}}
-
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
 </section> -->
-<!-- /Benefits section -->
-<!----------------------- FAQ ------------------>
-<section class="ms-faq-section py-5">
-  <div class="container">
-
-    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
-
-    <div class="accordion" id="coconutPeatFAQ">
-
-      <!-- FAQ 1 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq1">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-            What is Coconut Peat?
-          </button>
-        </h2>
-        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
-          <div class="accordion-body">
-            Coconut Peat (Coco Peat) is a natural growing medium made from coconut husk. It improves aeration, water retention, and is widely used in gardening and agriculture.
-          </div>
-        </div>
-      </div>
-
-      <!-- FAQ 2 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq2">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-            What products do you offer on CoconutPeat.loche.in?
-          </button>
-        </h2>
-        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
-          <div class="accordion-body">
-            We offer Coco Peat Blocks, Coco Grow Bags, Coco Discs, Husk Chips, Coir Fibre, and premium horticulture-grade coco products.
-          </div>
-        </div>
-      </div>
-
-      <!-- FAQ 3 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq3">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-            Are your Coco Peat products organic and eco-friendly?
-          </button>
-        </h2>
-        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
-          <div class="accordion-body">
-            Yes, all our products are 100% natural, biodegradable, chemical-free, and suitable for organic farming.
-          </div>
-        </div>
-      </div>
-
-      <!-- FAQ 4 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq4">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
-            What is the difference between Low EC and High EC Coco Peat?
-          </button>
-        </h2>
-        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
-          <div class="accordion-body">
-            Low EC is used for agriculture, hydroponics & nurseries.  
-            High EC is used for industrial applications like oil absorbents and bedding.
-          </div>
-        </div>
-      </div>
-
-      <!-- FAQ 5 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq5">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
-            Do you supply bulk and wholesale orders?
-          </button>
-        </h2>
-        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
-          <div class="accordion-body">
-            Yes, we offer bulk supply for nurseries, farms, exporters, wholesalers, and hydroponic growers with the best factory prices.
-          </div>
-        </div>
-      </div>
-
-      <!-- FAQ 6 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq6">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
-            What sizes and packaging options are available?
-          </button>
-        </h2>
-        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
-          <div class="accordion-body">
-            We offer 5kg blocks, 650g bricks, grow bags, loose bags, and customized packaging for large orders.
-          </div>
-        </div>
-      </div>
-
-      <!-- FAQ 7 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq7">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
-            How long does shipping take?
-          </button>
-        </h2>
-        <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
-          <div class="accordion-body">
-            Shipping usually takes 4–7 days within India. Bulk and pallet shipments may take 7–12 days depending on location.
-          </div>
-        </div>
-      </div>
-
-      <!-- FAQ 8 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq8">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
-            Do you offer customized Coco Peat mixes?
-          </button>
-        </h2>
-        <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
-          <div class="accordion-body">
-            Yes, we customize EC level, moisture, particle size, blend ratio, and block size based on customer requirements.
-          </div>
-        </div>
-      </div>
-
-      <!-- FAQ 9 -->
-      <div class="accordion-item">
-        <h2 class="accordion-header" id="faq9">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9">
-            How do I use a Coco Peat block?
-          </button>
-        </h2>
-        <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
-          <div class="accordion-body">
-            Soak the block in 20–25 liters of water for 10–15 minutes.  
-            It will expand 5–6 times into soft and fluffy growing media.
-          </div>
-        </div>
-      </div>
-
-      <!-- FAQ 10 -->
-      <!-- <div class="accordion-item">
-        <h2 class="accordion-header" id="faq10">
-          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10">
-            How can I contact CoconutPeat.loche.in for support?
-          </button>
-        </h2>
-        <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
-          <div class="accordion-body">
-            You can contact us through email (support&amploche.in) or WhatsApp for orders, bulk inquiries, and assistance.
-          </div>
-        </div>
-      </div> -->
-
-    </div>
-
-  </div>
-</section>
-
-
-
