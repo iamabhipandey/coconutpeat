@@ -50,6 +50,31 @@ sleepFAQ = [
   { q: "HOME.SLEEP_QA.Q7", a: "HOME.SLEEP_QA.A7" }
 ];
 
+  public selectedValue1!: string;
+  public selectedValue2!: string;
+  public selectedValue3!: string;
+  selectedList1: data[] = [
+    { value: 'Coconut' },
+    { value: ' Agricultural' },
+    { value: 'Desiccated coconut' },
+    { value: 'Other Products' },
+    
+  ];
+  selectedList2: data[] = [
+    { value: 'Fine Powder' },
+    { value: 'Fiber Long' },
+    { value: 'Fiber Short' },
+    { value: 'Peat Block 5kg' },
+    { value: 'Peat Brick 650g' },
+    { value: 'Husk Chips Large' },
+    { value: 'Husk Chips Small' },
+    
+  ];
+  selectedList3: data[] = [
+    { value: 'India' },
+    { value: 'Koria' },
+    
+  ];
 public routes = routes
   public thumbnails1: thumbnails1[] = [];
   public testimonials: testimonials[] = [];
@@ -189,10 +214,10 @@ promotionProducts = [
         items:2
       },
       700:{
-        items:2
+        items:3
       },
       1000:{
-        items:3
+        items:4
       },
       1400:{
         items:4

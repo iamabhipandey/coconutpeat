@@ -100,3 +100,11 @@ a.nav-link.header-user {
     display: flex;
     align-items: baseline;
 }
+a.nav-link.header-login.notification span {
+    padding: 9px 9px;
+    background: #e4e4e4;
+    border-radius: 30px;
+}
+.nav-link {
+    padding: 5px !important;
+}

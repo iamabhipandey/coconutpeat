@@ -1,15 +1,113 @@
-<section class="single-banner-section">
-  <div class="banner-wrapper">
+<section class="banner-section banner-slider">
+  <div class="container">
+    <div class="home-banner">
+      <div class="row align-items-center">
+        <div class="col-lg-7" data-aos="fade-down">
+          <h1> Welcome to <span>coconutpeat.loche.in</span></h1>
+          <h4>Discover premium products crafted with purity, quality, and modern elegance.</h4>
+          <div class="banner-search">
+            <form class="form-block d-flex align-items-center">
+              <div class="search-input">
+                <div class="input-block">
+                  <label>Product type</label>
 
-    <!-- Floating Sparkle Stars -->
-    <div class="sparkle sparkle-1"></div>
-    <div class="sparkle sparkle-2"></div>
-    <div class="sparkle sparkle-3"></div>
-    <div class="sparkle sparkle-4"></div>
+                  <mat-select [(ngModel)]="selectedValue1" [ngModelOptions]="{ standalone: true }" class="select "
+                    placeholder="Categories">
+                    @for (data of selectedList1; track data) {
+                    <mat-option [value]="data.value">
+                      {{ data.value }}
+                    </mat-option>
+                    }
+                  </mat-select>
+                </div>
+              </div>
+              <div class="search-input">
+                <div class="input-block">
+                  <label>Product Form / Type</label>
 
-    <!-- Banner Image -->
-    <img src="assets/img/banners/final-banner2.webp" alt="Banner" class="banner-img">
+                  <mat-select [(ngModel)]="selectedValue2" [ngModelOptions]="{ standalone: true }" class="select"
+                    placeholder="Select...">
+                    @for (data of selectedList2; track data) {
+                    <mat-option [value]="data.value">
+                      {{ data.value }}
+                    </mat-option>
+                    }
+                  </mat-select>
+                </div>
+              </div>
+              <div class="search-input">
+                <div class="input-block">
+                  <label>Location</label>
 
+                  <mat-select [(ngModel)]="selectedValue3" [ngModelOptions]="{ standalone: true }" class="select"
+                    placeholder="India">
+                    @for (data of selectedList3; track data) {
+                    <mat-option [value]="data.value">
+                      {{ data.value }}
+                    </mat-option>
+                    }
+                  </mat-select>
+                </div>
+              </div>
+              <div class="search-btn">
+                <button class="btn btn-primary" type="submit">
+                  <i class="bx bx-search-alt"></i>Search
+                </button>
+              </div>
+            </form>
+          </div>
+          <p>
+            Pure organic cocopeat delivering natural strength, superior growth performance, and sustainable solutions
+            for modern agriculture.
+          </p>
+          <div class="customer-list">
+            <div class="users-wrap">
+              <ul class="users-list">
+                <li>
+                  <img src="assets/img/profiles/avatar-11.jpg" class="img-fluid aos" alt="bannerimage" />
+                </li>
+                <li>
+                  <img src="assets/img/profiles/avatar-15.jpg" class="img-fluid aos" alt="bannerimage" />
+                </li>
+                <li>
+                  <img src="assets/img/profiles/avatar-03.jpg" class="img-fluid aos" alt="bannerimage" />
+                </li>
+              </ul>
+              <div class="customer-info">
+                <h4>6K + Happy Customers</h4>
+                <!-- <p>has used our renting services</p> -->
+              </div>
+            </div>
+            <div class="view-all">
+              <!-- [routerLink]="routes.listingGrid" -->
+              <a class="btn btn-view d-inline-flex align-items-center">Learn More </a>
+              <a class="btn btn-secondary d-inline-flex align-items-center"><i class="bx bxs-plus-circle"></i>Shop Now
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="banner-image">
+    <div class="banner-bg-img" data-aos="fade-left">
+      <img src="assets/img/coconat.png" class="img-fluid" alt="img" />
+      <div class="banner-bg">
+        <img src="assets/img/bg/ban-bg.png" class="img-fluid" alt="img" />
+      </div>
+    </div>
+  </div>
+  <div class="banner-bgs">
+    <img src="assets/img/bg/ban-bg-01.png" class="shape-01 img-fluid" alt="img" />
+    <img src="assets/img/bg/ban-bg-02.png" class="shape-02 img-fluid" alt="img" />
+    <img src="assets/img/bg/ban-bg-03.png" class="shape-03 img-fluid" alt="img" />
+    <img src="assets/img/bg/ban-bg-04.png" class="shape-04 img-fluid" alt="img" />
+    <img src="assets/img/bg/ban-bg-05.png" class="shape-05 img-fluid" alt="img" />
+    <img src="assets/img/bg/ban-bg-06.png" class="shape-06 img-fluid" alt="img" />
+    <img src="assets/img/bg/ban-bg-07.png" class="shape-07 img-fluid" alt="img" />
+    <img src="assets/img/bg/ban-bg-05.png" class="shape-08 img-fluid" alt="img" />
+    <img src="assets/img/bg/ban-bg-06.png" class="shape-09 img-fluid" alt="img" />
+    <img src="assets/img/bg/ban-bg-03.png" class="shape-10 img-fluid" alt="img" />
   </div>
 </section>
 
@@ -50,7 +148,7 @@
           <h6>{{"HOME.EASY_TO_CARRY" | translate}}</h6>
         </div>
       </ng-template>
-    <div class="slider-card">
+      <div class="slider-card">
         <div class="banner-slider-icon">
           <span><img src="assets/img/icons/banner-slider-03.svg" alt="Img" /></span>
         </div>
@@ -59,72 +157,235 @@
     </owl-carousel-o>
   </div>
   <div class="section-header-two">
-    <h2>{{"HOME.OUR_BEST_SELECTION" | translate}}</h2>
-    <p>{{"HOME.EXPLORE" | translate}}
-     
-    </p>
+    <!-- <h2>{{"HOME.OUR_BEST_SELECTION" | translate}}</h2>
+    <p>{{"HOME.EXPLORE" | translate}}</p> -->
+    <h2>Explore Our Product Categories</h2>
+    <p>Pure, natural, and sustainably crafted products for every global requirement.</p>
+
   </div>
   <div class="row yacht-category-lists">
     <div class="custom-col">
       <div class="yacht-cat-grid">
-        <div class="yatch-card-img">
+        <div class="yatch-card-img img-cat">
           <!-- <a [routerLink]="routes.listingGrid"> -->
-             <a >
-            <img src="assets/img/banners/hangoverimg.jpeg" class="img-fluid"
+          <a>
+            <img src="assets/img/banners/category1.jpg" class="img-fluid" style="height: 300px; width: 100%;"
               alt="product" /></a>
         </div>
         <div class="card-content d-flex align-items-center justify-content-between">
           <div>
-            <h4><a [routerLink]="routes.listingGrid">{{"HOME.HANGOVER" | translate}}</a></h4>
-            <span>3 {{"HOME.PRODUCTS" | translate}} </span>
+            <!-- <h4><a [routerLink]="routes.listingGrid">{{"HOME.HANGOVER" | translate}}</a></h4>
+            <span>3 {{"HOME.PRODUCTS" | translate}} </span> -->
+            <h4><a>Coconut</a></h4>
+            <span>12 {{"HOME.PRODUCTS" | translate}} </span>
           </div>
-          <a  class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          <a class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
         </div>
       </div>
     </div>
     <div class="custom-col">
       <div class="yacht-cat-grid">
         <div class="yatch-card-img">
-          <a >
-            <img src="assets/img/banners/hangover2.jpeg" class="img-fluid"
-              alt="Sleep" /></a>
+          <a>
+            <img src="assets/img/banners/AG124_Cocopeat_2 (1).avif" class="img-fluid"
+              style="height: 300px; width: 100%;" alt="Sleep" /></a>
         </div>
         <div class="card-content d-flex align-items-center justify-content-between">
           <div>
-            <h4><a >{{"HOME.SLEEP" | translate}}</a></h4>
+            <!-- <h4><a>{{"HOME.SLEEP" | translate}}</a></h4> -->
+            <h4><a>Agricultural </a></h4>
             <span>2 {{"HOME.PRODUCTS" | translate}}</span>
           </div>
-          <a  class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          <a class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
         </div>
       </div>
     </div>
     <div class="custom-col">
       <div class="yacht-cat-grid">
         <div class="yatch-card-img">
-          <a ><img src="assets/img/banners/kid-product.png" class="img-fluid"
+          <a><img src="assets/img/banners/product3.jpg" class="img-fluid" style="height: 300px; width: 100%;"
               alt="yacht" /></a>
         </div>
         <div class="card-content d-flex align-items-center justify-content-between">
           <div>
-            <h4><a >{{"HOME.HANGOVER_KITS" | translate}}</a></h4>
+            <h4><a>{{"HOME.HANGOVER_KITS" | translate}}</a></h4>
             <span>4 {{"HOME.PRODUCTS" | translate}}</span>
           </div>
-          <a  class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          <a class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
         </div>
       </div>
     </div>
- <div class="col-md-12">
+    <!-- <div class="col-md-12">
       <div class="view-more-btn text-center">
         <a class="btn btn-secondary">{{"HOME.VIEW_MORE" | translate}}</a>
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
+<!-- product section -->
+<section class="mt-5 mb-5">
+  <div class="container">
+    <div class="section-header-two">
+      <h2>Popular Products</h2>
+      <p>
+        CoconutPeat.loche.in specializes in delivering premium cocopeat and coconut-based products,
+        including Cocopeat Blocks, Coir Fibers, Grow Bags, Husk Chips, and other natural growing solutions.
+      </p>
+    </div>
+    <div class="row yacht-category-lists">
+      <div class="custom-col1">
+        <div class="yacht-cat-grid">
+          <div class="yatch-card-img">
+            <a><img src="assets/img/banner-section2/product1.png" class="img-fluid" alt="yacht" /></a>
+          </div>
+          <div class="card-content d-flex align-items-center justify-content-between">
+            <div>
+              <h4><a [routerLink]="routes.listingGrid">COCONUT</a></h4>
+              <span>COCONUT FIBER</span>
+            </div>
+            <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col1">
+        <div class="yacht-cat-grid">
+          <div class="yatch-card-img">
+            <a><img src="assets/img/banner-section2/product2.png" class="img-fluid" alt="yacht" /></a>
+          </div>
+          <div class="card-content d-flex align-items-center justify-content-between">
+            <div>
+              <h4><a [routerLink]="routes.listingGrid">COCONUT</a></h4>
+              <span>COIR MAT</span>
+            </div>
+            <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col1">
+        <div class="yacht-cat-grid">
+          <div class="yatch-card-img">
+            <a><img src="assets/img/banner-section2/product03.jpeg" class="img-fluid" alt="yacht" /></a>
+          </div>
+          <div class="card-content d-flex align-items-center justify-content-between">
+            <div>
+              <h4><a [routerLink]="routes.listingGrid">COCONUT</a></h4>
+              <span>COCO PEAT</span>
+            </div>
+            <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col1">
+        <div class="yacht-cat-grid">
+          <div class="yatch-card-img">
+            <a><img src="assets/img/banner-section2/product5.png" class="img-fluid" alt="yacht" /></a>
+          </div>
+          <div class="card-content d-flex align-items-center justify-content-between">
+            <div>
+              <h4><a [routerLink]="routes.listingGrid">COCONUT</a></h4>
+              <span>COIR ROPE</span>
+            </div>
+            <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col1">
+        <div class="yacht-cat-grid">
+          <div class="yatch-card-img">
+            <a><img src="assets/img/banner-section2/product6.jpg" class="img-fluid" alt="yacht" /></a>
+          </div>
+          <div class="card-content d-flex align-items-center justify-content-between">
+            <div>
+              <h4><a [routerLink]="routes.listingGrid">COCONUT</a></h4>
+              <span>COIR ROPE</span>
+            </div>
+            <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col1">
+        <div class="yacht-cat-grid">
+          <div class="yatch-card-img">
+            <a><img src="assets/img/banner-section2/product7.png" class="img-fluid" alt="yacht" /></a>
+          </div>
+          <div class="card-content d-flex align-items-center justify-content-between">
+            <div>
+              <h4><a [routerLink]="routes.listingGrid">COCONUT</a></h4>
+              <span>COIR NET</span>
+            </div>
+            <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col1">
+        <div class="yacht-cat-grid">
+          <div class="yatch-card-img">
+            <a><img src="assets/img/banner-section2/product8.jpg" class="img-fluid" alt="yacht" /></a>
+          </div>
+          <div class="card-content d-flex align-items-center justify-content-between">
+            <div>
+              <h4><a [routerLink]="routes.listingGrid">COCONUT</a></h4>
+              <span>DESICCATED COCONUT</span>
+            </div>
+            <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col1">
+        <div class="yacht-cat-grid">
+          <div class="yatch-card-img">
+            <a><img src="assets/img/banner-section2/product9.png" class="img-fluid" alt="yacht" /></a>
+          </div>
+          <div class="card-content d-flex align-items-center justify-content-between">
+            <div>
+              <h4><a [routerLink]="routes.listingGrid">COCONUT</a></h4>
+              <span>SEMI HUSK COCONUT</span>
+            </div>
+            <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="custom-col1">
+        <div class="yacht-cat-grid">
+          <div class="yatch-card-img">
+            <a><img src="assets/img/banner-section2/product10.jpeg" class="img-fluid" alt="yacht" /></a>
+          </div>
+          <div class="card-content d-flex align-items-center justify-content-between">
+            <div>
+              <h4><a [routerLink]="routes.listingGrid">COCONUT</a></h4>
+              <span>COIR BOARD</span>
+            </div>
+            <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+            <div class="custom-col1">
+        <div class="yacht-cat-grid">
+          <div class="yatch-card-img">
+            <a><img src="assets/img/banner-section2/product11.jpg" class="img-fluid" alt="yacht" /></a>
+          </div>
+          <div class="card-content d-flex align-items-center justify-content-between">
+            <div>
+              <h4><a [routerLink]="routes.listingGrid">COCONUT</a></h4>
+              <span>COIR FELT NEEDLE</span>
+            </div>
+            <a [routerLink]="routes.listingGrid" class="arrow-right"><i class="bx bx-right-arrow-alt"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12">
+        <div class="view-more-btn text-center">
+          <a [routerLink]="routes.listingGrid" class="btn btn-secondary">View More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!------------------ product information section ------------->
-<section class="wellness-section py-5">
+<!-- <section class="wellness-section py-5">
   <div class="container">
 
-    <!-- Tabs -->
     <ul class="nav nav-tabs wellness-tabs mb-4" id="wellnessTab" role="tablist">
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="hangover-tab" data-bs-toggle="tab" data-bs-target="#hangover" type="button"
@@ -141,15 +402,12 @@
 
     </ul>
 
-    <!-- Tab Content -->
     <div class="tab-content" id="wellnessTabContent">
 
-      <!-- Sleep Tab -->
       <div class="tab-pane fade" id="sleep" role="tabpanel">
 
         <div class="row align-items-center g-5">
 
-          <!-- Left Image -->
           <div class="col-lg-6">
             <div class="floating-img-wrapper">
               <img class="main-img" src="assets/img/banners/hangoverimg.jpeg">
@@ -158,14 +416,10 @@
             </div>
           </div>
 
-
-
-
-          <!-- Right Content -->
           <div class="col-lg-6">
             <h2 class="section-title">{{"HOME.RESTFULL" | translate}} </h2>
             <p class="section-text">{{"HOME.RESTFULL_DESC" | translate}}
-            
+
             </p>
             <div class="view-more-btn mt-3">
               <a class="btn btn-secondary">{{"HOME.LEARN_MORE" | translate}}</a>
@@ -176,17 +430,10 @@
 
       </div>
 
-      <!-- Hangover Tab -->
       <div class="tab-pane fade show active" id="hangover" role="tabpanel">
 
         <div class="row align-items-center g-5">
 
-          <!-- Left Image -->
-          <!-- <div class="col-lg-6">
-            <div class="image-wrapper shadow-lg rounded-4 overflow-hidden">
-              <img src="assets/img/banners/hangoverimg.jpeg" class="img-fluid w-100" alt="Hangover">
-            </div>
-          </div> -->
           <div class="col-lg-7">
             <div class="hangover-collage">
 
@@ -200,14 +447,13 @@
           </div>
 
 
-          <!-- Right Content -->
           <div class="col-lg-5 ps-4">
             <h2 class="section-title ps-4">{{"HOME.HANGOVER_RELIEF" | translate}}</h2>
             <p class="section-text ps-4">
               {{"HOME.HANGOVER_RELIEF_DESC" | translate}}
-             
+
             </p>
-            <div  class="view-more-btn mt-3 ms-3">
+            <div class="view-more-btn mt-3 ms-3">
               <a class="btn btn-secondary">{{"HOME.LEARN_MORE" | translate}}</a>
             </div>
           </div>
@@ -219,7 +465,7 @@
     </div>
 
   </div>
-</section>
+</section> -->
 <!-- product section -->
 <section class="section features-section">
   <div class="container">
@@ -240,18 +486,174 @@
                     <div class="image-slider">
                       <div class="slide-images">
                         <a [routerLink]="routes.listingDetails">
-                          <img src="assets/img/banners/hangoverimg.jpeg" class="img-fluid" alt="img" />
+                          <img src="assets/img/banner-section2/product11.jpg" class="img-fluid" alt="img" />
                         </a>
                       </div>
                     </div>
 
                   </div>
                   <div class="listing-content">
-                    
+
                     <div class="listing-features align-items-center justify-content-between">
-                                              <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">{{"HOME.MORNINGSHOT" | translate}}</a>
-                        </h3>
+                      <h3 class="listing-title">
+                        <a [routerLink]="routes.listingDetails">COIR FELT NEEDLE</a>
+                      </h3>
+                      <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 600 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" |
+                          translate}}</a>
+                      </div>
+                    </div>
+                    <!-- <div class="feature-text">
+                      <span class="bg-danger">Featured</span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a >
+                          <img src="assets/img/banner-section2/product9.png" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="listing-content">
+
+                    <div class="listing-features align-items-center justify-content-between">
+                      <h3 class="listing-title">
+                        <a >SEMI HUSK COCONUT</a>
+                      </h3>
+                      <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 800 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" |
+                          translate}}</a>
+                      </div>
+                    </div>
+                    <!-- <div class="feature-text">
+                      <span class="bg-danger">Featured</span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a [routerLink]="routes.listingDetails">
+                          <img src="assets/img/banner-section2/product7.png" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="listing-content">
+
+                    <div class="listing-features align-items-center justify-content-between">
+                      <h3 class="listing-title">
+                        <a [routerLink]="routes.listingDetails">COIR NET</a>
+                      </h3>
+                      <div class="list-rating">
+                        <div class="list-ratings">
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star filled"></i>
+                          <i class="fas fa-star"></i>
+                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
+                        </div>
+
+                      </div>
+                    </div>
+
+                    <div class="listing-button">
+                      <div class="listing-price mb-2">
+                        <h6>₹ 600 </h6>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
+                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
+                          <i class="feather icon-heart"></i>
+                        </a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" |
+                          translate}}</a>
+                      </div>
+                    </div>
+                    <!-- <div class="feature-text">
+                      <span class="bg-danger">Featured</span>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="item">
+                <div class="listing-item bike-list">
+                  <div class="listing-img">
+                    <div class="image-slider">
+                      <div class="slide-images">
+                        <a [routerLink]="routes.listingDetails">
+                          <img src="assets/img/banner-section2/product03.jpeg" class="img-fluid" alt="img" />
+                        </a>
+                      </div>
+                    </div>
+
+                  </div>
+                  <div class="listing-content">
+
+                    <div class="listing-features align-items-center justify-content-between">
+                      <h3 class="listing-title">
+                        <a >COCO PEAT</a>
+                      </h3>
                       <div class="list-rating">
                         <div class="list-ratings">
                           <i class="fas fa-star filled"></i>
@@ -274,7 +676,8 @@
                           (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
                           <i class="feather icon-heart"></i>
                         </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" | translate}}</a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" |
+                          translate}}</a>
                       </div>
                     </div>
                     <!-- <div class="feature-text">
@@ -284,25 +687,25 @@
                 </div>
               </div>
             </ng-template>
-            <ng-template carouselSlide>
+                        <ng-template carouselSlide>
               <div class="item">
                 <div class="listing-item bike-list">
                   <div class="listing-img">
                     <div class="image-slider">
                       <div class="slide-images">
                         <a [routerLink]="routes.listingDetails">
-                          <img src="assets/img/banners/hangover2.jpeg" class="img-fluid" alt="img" />
+                          <img src="assets/img/banner-section2/product2.png" class="img-fluid" alt="img" />
                         </a>
                       </div>
                     </div>
 
                   </div>
                   <div class="listing-content">
-                    
+
                     <div class="listing-features align-items-center justify-content-between">
-                                              <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">{{"HOME.MORNING_GRAPE" | translate}}</a>
-                        </h3>
+                      <h3 class="listing-title">
+                        <a >COIR MAT</a>
+                      </h3>
                       <div class="list-rating">
                         <div class="list-ratings">
                           <i class="fas fa-star filled"></i>
@@ -325,109 +728,8 @@
                           (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
                           <i class="feather icon-heart"></i>
                         </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" | translate}}</a>
-                      </div>
-                    </div>
-                    <!-- <div class="feature-text">
-                      <span class="bg-danger">Featured</span>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </ng-template>
-            <ng-template carouselSlide>
-              <div class="item">
-                <div class="listing-item bike-list">
-                  <div class="listing-img">
-                    <div class="image-slider">
-                      <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
-                          <img src="assets/img/banners/hangover3.jpeg" class="img-fluid" alt="img" />
-                        </a>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="listing-content">
-                    
-                    <div class="listing-features align-items-center justify-content-between">
-                                              <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">{{"HOME.MORNINGSHOT" | translate}}</a>
-                        </h3>
-                      <div class="list-rating">
-                        <div class="list-ratings">
-                          <i class="fas fa-star filled"></i>
-                          <i class="fas fa-star filled"></i>
-                          <i class="fas fa-star filled"></i>
-                          <i class="fas fa-star filled"></i>
-                          <i class="fas fa-star"></i>
-                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <div class="listing-button">
-                      <div class="listing-price mb-2">
-                        <h6>₹ 1600 </h6>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
-                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
-                          <i class="feather icon-heart"></i>
-                        </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" | translate}}</a>
-                      </div>
-                    </div>
-                    <!-- <div class="feature-text">
-                      <span class="bg-danger">Featured</span>
-                    </div> -->
-                  </div>
-                </div>
-              </div>
-            </ng-template>
-            <ng-template carouselSlide>
-              <div class="item">
-                <div class="listing-item bike-list">
-                  <div class="listing-img">
-                    <div class="image-slider">
-                      <div class="slide-images">
-                        <a [routerLink]="routes.listingDetails">
-                          <img src="assets/img/banners/hangoverimg.jpeg" class="img-fluid" alt="img" />
-                        </a>
-                      </div>
-                    </div>
-
-                  </div>
-                  <div class="listing-content">
-                    
-                    <div class="listing-features align-items-center justify-content-between">
-                                              <h3 class="listing-title">
-                          <a [routerLink]="routes.listingDetails">{{"HOME.MORNINGSHOT" | translate}}</a>
-                        </h3>
-                      <div class="list-rating">
-                        <div class="list-ratings">
-                          <i class="fas fa-star filled"></i>
-                          <i class="fas fa-star filled"></i>
-                          <i class="fas fa-star filled"></i>
-                          <i class="fas fa-star filled"></i>
-                          <i class="fas fa-star"></i>
-                          <span>138 {{"HOME.REVIEWS" | translate}}</span>
-                        </div>
-
-                      </div>
-                    </div>
-
-                    <div class="listing-button">
-                      <div class="listing-price mb-2">
-                        <h6>₹ 1600 </h6>
-                      </div>
-                      <div class="d-flex align-items-center">
-                        <a href="javascript:void(0)" class="fav-icon" (click)="toggleClass(0)"
-                          (keydown)="toggleClass(0)" tabindex="1" [ngClass]="{ selected: isClassAdded[0] }">
-                          <i class="feather icon-heart"></i>
-                        </a>
-                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" | translate}}</a>
+                        <a [routerLink]="routes.listingDetails" class="btn btn-order">{{"HOME.BOOK_NOW" |
+                          translate}}</a>
                       </div>
                     </div>
                     <!-- <div class="feature-text">
@@ -442,7 +744,7 @@
         </div>
 
         <div class="view-all-btn text-center aos" data-aos="fade-down">
-          <a  class="btn btn-secondary">{{"HOME.VIEW_ALL" | translate}}</a>
+          <a class="btn btn-secondary">{{"HOME.VIEW_ALL" | translate}}</a>
           <!-- [routerLink]="routes.listingGrid" -->
         </div>
       </div>
@@ -454,8 +756,8 @@
   </div>
 </section>
 <!-- end product section -->
- <!-- Benefits section  -->
-<section class="renting-yacht-sec"> 
+<!-- Benefits section  -->
+<!-- <section class="renting-yacht-sec">
   <div class="sec-round-colors">
     <span class="bg-orange round-small"></span>
     <span class="bg-orange round-small"></span>
@@ -482,7 +784,7 @@
             <h5>{{"HOME.FAST" | translate}}</h5>
             <p>
               {{"HOME.FAST_DESC" | translate}}
-              
+
             </p>
           </div>
         </li>
@@ -491,7 +793,7 @@
           <div class="benifit-contents">
             <h5>{{"HOME.POWER" | translate}}</h5>
             <p>{{"HOME.POWER_DESC" | translate}}
-            
+
             </p>
           </div>
         </li>
@@ -501,7 +803,7 @@
             <h5>{{"HOME.GENTAL" | translate}}</h5>
             <p>
               {{"HOME.GENTAL_DESC" | translate}}
-            
+
             </p>
           </div>
         </li>
@@ -517,7 +819,7 @@
             <h5>{{"HOME.SUPPORT" | translate}}</h5>
             <p>
               {{"HOME.SUPPORT_DESC" | translate}}
-            
+
             </p>
           </div>
         </li>
@@ -527,7 +829,7 @@
             <h5>{{"HOME.BACKED" | translate}}</h5>
             <p>
               {{"HOME.BACKED_DESC" | translate}}
-              
+
             </p>
           </div>
         </li>
@@ -537,455 +839,169 @@
             <h5>{{"HOME.USE" | translate}}</h5>
             <p>
               {{"HOME.USE_DESC" | translate}}
-            
+
             </p>
           </div>
         </li>
       </ul>
     </div>
   </div>
-</section>
+</section> -->
 <!-- /Benefits section -->
 <!----------------------- FAQ ------------------>
 <section class="ms-faq-section py-5">
   <div class="container">
 
-    <!-- ANGULAR TABS -->
-    <div class="ms-faq-tabs d-flex justify-content-center mb-4">
-      <button class="tab-btn" [class.active]="activeTab === 'hangover'" (click)="activeTab = 'hangover'">
-        {{"HOME.FAQ" | translate}}
-      </button>
+    <h2 class="text-center mb-4">Frequently Asked Questions</h2>
 
-      <button class="tab-btn" [class.active]="activeTab === 'sleep'" (click)="activeTab = 'sleep'">
-        {{"HOME.AID_FAQ" | translate}}
-      </button>
-    </div>
+    <div class="accordion" id="coconutPeatFAQ">
 
-    <!-- TAB CONTENT -->
-    <div class="tab-content">
-
-      <!-- HANGOVER FAQ -->
-     <div *ngIf="activeTab === 'hangover'">
-  <div *ngFor="let h of hangoverFAQ; let i = index" class="ms-faq-card">
-
-    <div class="question" (click)="toggle(i, 'hang')">
-      {{ h.q | translate }}
-      <span class="icon" [class.open]="openedHang === i">▼</span>
-    </div>
-
-    <div class="answer" *ngIf="openedHang === i">
-      {{ h.a | translate }}
-    </div>
-
-  </div>
-</div>
-
-
-      <!-- SLEEP FAQ -->
-      <div *ngIf="activeTab === 'sleep'">
-        <div *ngFor="let s of sleepFAQ; let j = index" class="ms-faq-card">
-
-          <div class="question" (click)="toggle(j, 'sleep')">
-            {{ s.q | translate}}
-            <span class="icon" [class.open]="openedSleep === j">▼</span>
-          </div>
-
-          <div class="answer" *ngIf="openedSleep === j">
-            {{ s.a | translate}}
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-
-
-
-
-
-<!-- <section class="feature-section py-5">
-  <div class="container">
-    <div class="row g-4">
-      <div class="col-md-3 col-6">
-        <div class="feature-box text-center p-4">
-          <img src="assets/img/icons/flask.png" class="feature-img" alt="">
-          <h6 class="fw-bold mt-3">{{'HOME.PATENTED' | translate}}</h6>
-          <p class="small text-muted mb-0">{{'HOME.HANGOVER_RELIEF' | translate}}</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="feature-box text-center p-4">
-          <img src="assets/img/icons/mass-production.png" class="feature-img" alt="">
-          <h6 class="fw-bold mt-3">{{'HOME.DIRECT' | translate}}</h6>
-          <p class="small text-muted mb-0">{{'HOME.QUALITY_CONTROL' | translate}}</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="feature-box text-center p-4">
-          <img src="assets/img/icons/dairy-products.png" class="feature-img" alt="">
-          <h6 class="fw-bold mt-3">{{'HOME.COMFORTABLE' | translate}}</h6>
-          <p class="small text-muted mb-0">{{'HOME.NO_DISCOMFORT' | translate}}</p>
-        </div>
-      </div>
-      <div class="col-md-3 col-6">
-        <div class="feature-box text-center p-4">
-          <img src="assets/img/icons/juice.png" class="feature-img" alt="">
-          <h6 class="fw-bold mt-3">{{'HOME.REFRESHING' | translate}}</h6>
-          <p class="small text-muted mb-0">{{'HOME.MANGO' | translate}}</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-
-
-
-
-<!-- /Banner -->
-
-<!-- <section class="recommend-section py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <div class="recommend-tag mb-3">{{'HOME.RECOMMEND' | translate}}</div>
-        <h2 class="fw-bold mb-4">{{'HOME.I_RECOMMEND' | translate}}</h2>
-        <div class="recommend-box d-flex align-items-center">
-          <span class="num-circle">1</span>
-          <p class="mb-0">{{'HOME.OFFICE_WORKER' | translate}}</p>
-        </div>
-        <div class="recommend-box d-flex align-items-center">
-          <span class="num-circle">2</span>
-          <p class="mb-0">{{'HOME.PEOPLE' | translate}}</p>
-        </div>
-        <div class="recommend-box d-flex align-items-center">
-          <span class="num-circle">3</span>
-          <p class="mb-0">{{'HOME.CLEAN_TASTE' | translate}}</p>
-        </div>
-        <div class="recommend-box d-flex align-items-center">
-          <span class="num-circle">4</span>
-          <p class="mb-0">{{'HOME.INTROVERT' | translate}}</p>
-        </div>
-        <div class="recommend-box d-flex align-items-center">
-          <span class="num-circle">5</span>
-          <p class="mb-0">{{'HOME.PREFER_SOMETHING' | translate}}</p>
-        </div>
-      </div>
-
-<div class="col-lg-6 text-center mt-5 mt-lg-0">
-  <div class="morning-shot-box p-4 shadow-lg rounded-4">
-    <img src="assets/img/icons/sectionn2img.png" class="img-fluid morning-shot-img" alt="Product">
-    <div class="caption-text mt-4">
-      <h3 class="fw-bold mb-1">{{'HOME.YESTERDAY' | translate}}<br>{{'HOME.TODAY' | translate}}</h3>
-      <p class="tagline fw-semibold">{{'HOME.FUN_LIGHT' | translate}}!</p>
-    </div>
-  </div>
-</div>
-    </div>
-  </div>
-</section>
-
-
-<section class="feature-section py-5">
-  <div class="container">
-    <div class="row align-items-center">
-      <div class="col-lg-6 mb-4 mb-lg-0">
-        <div class="feature-content">
-          <span class="point-badge">POINT 01</span>
-          <h2 class="title mt-3">
-            {{'HOME.PATENTED' | translate}}<br>
-            {{'HOME.PROVEN' | translate}}
-          </h2>
-          <p class="subtitle">{{'HOME.FERMENTED' | translate}}</p>
-          <div class="highlight-box mt-4">
-            <span class="highlight-title">{{'HOME.GOSSEBERRY' | translate}}</span>
-            <p class="highlight-text">
-             {{'HOME.GOSSEBERRY_DESC' | translate}} 
-            </p>
+      <!-- FAQ 1 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq1">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+            What is Coconut Peat?
+          </button>
+        </h2>
+        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Coconut Peat (Coco Peat) is a natural growing medium made from coconut husk. It improves aeration, water retention, and is widely used in gardening and agriculture.
           </div>
         </div>
       </div>
 
-      <div class="col-lg-6 text-center">
-        <div class="feature-img-box">
-          <img src="assets/img/icons/j.jpg" class="img-fluid rounded-circle shadow-lg feature-img1" alt="Ingredients">
-        </div>
-      </div>
-    </div>
-    <div class="text-center mt-5">
-      <h3 class="garcinia-title">{{'HOME.GARCINIA_EXTRACT' | translate}}</h3>
-      <h2 class="cut-title">{{'HOME.CARBO' | translate}}!</h2>
-    </div>
-    <div class="row text-center mt-4">
-      <div class="col-4 col-md-2 mb-3">
-        <img src="assets/img/icons/diet.png" class="icon-img" alt="">
-        <p class="icon-text">{{'HOME.WEIGHT_CONTROL' | translate}}</p>
-      </div>
-      <div class="col-4 col-md-2 mb-3">
-        <img src="assets/img/icons/weight-scale.png" class="icon-img" alt="">
-        <p class="icon-text">{{'HOME.BMI' | translate}}</p>
-      </div>
-      <div class="col-4 col-md-2 mb-3">
-        <img src="assets/img/icons/cardiogram.png" class="icon-img" alt="">
-        <p class="icon-text">{{'HOME.HEART' | translate}}</p>
-      </div>
-      <div class="col-4 col-md-2 mb-3">
-        <img src="assets/img/icons/digestive-organ.png" class="icon-img" alt="">
-        <p class="icon-text">{{'HOME.DIGEST' | translate}}</p>
-      </div>
-      <div class="col-4 col-md-2 mb-3">
-        <img src="assets/img/icons/slim.png" class="icon-img" alt="">
-        <p class="icon-text">{{'HOME.FAT' | translate}}</p>
-      </div>
-      <div class="col-4 col-md-2 mb-3">
-        <img src="assets/img/icons/target (2).png" class="icon-img" alt="">
-        <p class="icon-text">{{'HOME.FOOD' | translate}}</p>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<section class="flavor-section py-5">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="fw-bold text-white">{{'HOME.SWEET_MANGO' | translate}}</h2>
-      <p class="text-light">{{'HOME.BOOST' | translate}}!</p>
-    </div>
-    <div class="row g-4">
-      <div class="col-md-6">
-        <div class="card flavor-card berry-card h-100 shadow-lg border-0 rounded-4">
-          <div class="card-body p-4">
-            <span class="badge bg-purple mb-2 px-3 py-2 rounded-pill">{{'HOME.MORNINGSHOT' | translate}}</span>
-            <h3 class="fw-bold text-purple">{{'HOME.MIXED_BERRY' | translate}}</h3>
-            <p class="text-muted">{{'HOME.FIRST_TASTE' | translate}}</p>
-            <ul class="list-unstyled mt-3 mb-4 text-purple">
-              <li>🌿 {{'HOME.MELLOW' | translate}}</li>
-              <li>🍇 {{'HOME.RICH_FRUIT' | translate}}</li>
-              <li>✨ {{'HOME.SMOOTH' | translate}}</li>
-            </ul>
-            <div class="mt-4">
-              <button class="btn btn-purple px-4 py-2 rounded-pill fw-semibold">
-                {{'HOME.TRY_BERRY' | translate}}
-              </button>
-            </div>
+      <!-- FAQ 2 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq2">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+            What products do you offer on CoconutPeat.loche.in?
+          </button>
+        </h2>
+        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            We offer Coco Peat Blocks, Coco Grow Bags, Coco Discs, Husk Chips, Coir Fibre, and premium horticulture-grade coco products.
           </div>
         </div>
       </div>
 
-      <div class="col-md-6">
-        <div class="card flavor-card mango-card h-100 shadow-lg border-0 rounded-4">
-          <div class="card-body p-4">
-            <span class="badge bg-orange mb-2 px-3 py-2 rounded-pill">{{'HOME.MORNINGSHOT' | translate}}</span>
-            <h3 class="fw-bold text-orange">{{'HOME.MANGO_FLAVOR' | translate}}</h3>
-            <p class="text-muted">{{'HOME.SWEETNESS' | translate}}</p>
-            <ul class="list-unstyled mt-3 mb-4 text-orange">
-              <li>🥭 {{'HOME.TROPICAL' | translate}}</li>
-              <li>🍈 {{'HOME.REFRESHING_TASTE' | translate}}</li>
-              <li>✨ {{'HOME.SOFT_FINISH' | translate}}</li>
-            </ul>
-
-            <div class="mt-4">
-              <button class="btn btn-orange px-4 py-2 rounded-pill fw-semibold">
-                {{'HOME.TRY_MANGO' | translate}}
-              </button>
-            </div>
+      <!-- FAQ 3 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq3">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+            Are your Coco Peat products organic and eco-friendly?
+          </button>
+        </h2>
+        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Yes, all our products are 100% natural, biodegradable, chemical-free, and suitable for organic farming.
           </div>
         </div>
       </div>
+
+      <!-- FAQ 4 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq4">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+            What is the difference between Low EC and High EC Coco Peat?
+          </button>
+        </h2>
+        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Low EC is used for agriculture, hydroponics & nurseries.  
+            High EC is used for industrial applications like oil absorbents and bedding.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 5 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq5">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+            Do you supply bulk and wholesale orders?
+          </button>
+        </h2>
+        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Yes, we offer bulk supply for nurseries, farms, exporters, wholesalers, and hydroponic growers with the best factory prices.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 6 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq6">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+            What sizes and packaging options are available?
+          </button>
+        </h2>
+        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            We offer 5kg blocks, 650g bricks, grow bags, loose bags, and customized packaging for large orders.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 7 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq7">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+            How long does shipping take?
+          </button>
+        </h2>
+        <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Shipping usually takes 4–7 days within India. Bulk and pallet shipments may take 7–12 days depending on location.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 8 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq8">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
+            Do you offer customized Coco Peat mixes?
+          </button>
+        </h2>
+        <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Yes, we customize EC level, moisture, particle size, blend ratio, and block size based on customer requirements.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 9 -->
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faq9">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9">
+            How do I use a Coco Peat block?
+          </button>
+        </h2>
+        <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            Soak the block in 20–25 liters of water for 10–15 minutes.  
+            It will expand 5–6 times into soft and fluffy growing media.
+          </div>
+        </div>
+      </div>
+
+      <!-- FAQ 10 -->
+      <!-- <div class="accordion-item">
+        <h2 class="accordion-header" id="faq10">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10">
+            How can I contact CoconutPeat.loche.in for support?
+          </button>
+        </h2>
+        <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#coconutPeatFAQ">
+          <div class="accordion-body">
+            You can contact us through email (support&amploche.in) or WhatsApp for orders, bulk inquiries, and assistance.
+          </div>
+        </div>
+      </div> -->
+
     </div>
+
   </div>
 </section>
 
-<section class="ingredients-section py-5">
-  <div class="container">
-    <section class="highlight-msg pb-5">
-  <div class="container text-center">
-    <span class="badge bg-black px-4 py-2 fs-6">{{'HOME.FEELING' | translate}}</span>
-    <h2 class="fw-bold mt-4">{{'HOME.HESITATION' | translate}}</h2>
-    <p class="text-muted fs-5">{{'HOME.ONE_BITE' | translate}}</p>
-  </div>
-</section>
-
-    <div class="row g-2 justify-content-center">
-
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="ingredient-card rounded-4 shadow-sm p-3 text-center">
-          <img src="assets/img/icons/amala.png" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semi-bold">{{'HOME.INDIAN_GOSSEBERRY' | translate}}</h5>
-          <p class="small text-muted mb-0">{{'HOME.EMBLICA' | translate}}</p>
-          <p class="small fw-semibold text-primary">{{'HOME.EXTRACT' | translate}} 42.5 mg</p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="ingredient-card rounded-4 shadow-sm p-3 text-center">
-          <img src="assets/img/icons/ginger.png" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semi-bold">{{'HOME.GINGER' | translate}}</h5>
-          <p class="small text-muted mb-0">{{'HOME.RHIZOME' | translate}}</p>
-          <p class="small fw-semibold text-primary">{{'HOME.EXTRACT' | translate}} 1.2 mg</p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="ingredient-card rounded-4 shadow-sm p-3 text-center">
-          <img src="assets/img/icons/date.png" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semi-bold">{{'HOME.DATE_PALM' | translate}}</h5>
-          <p class="small text-muted mb-0">{{'HOME.PHOENIX' | translate}}</p>
-          <p class="small fw-semibold text-primary">{{'HOME.EXTRACT' | translate}} 43.4 mg</p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="ingredient-card rounded-4 shadow-sm p-3 text-center">
-          <img src="assets/img/icons/seed powder.png" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semi-bold">{{'HOME.FENUGREEK' | translate}}</h5>
-          <p class="small text-muted mb-0">{{'HOME.FENUGREEK_POWDER' | translate}}</p>
-          <p class="small fw-semibold text-primary">{{'HOME.EXTRACT' | translate}} 21.9 mg</p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="ingredient-card rounded-4 shadow-sm p-3 text-center">
-          <img src="assets/img/icons/grape.png" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semi-bold">{{'HOME.GRAPES' | translate}}</h5>
-          <p class="small text-muted mb-0">{{'HOME.VITIS' | translate}}</p>
-          <p class="small fw-semibold text-primary">{{'HOME.EXTRACT' | translate}} 16.9 mg</p>
-        </div>
-      </div>
-
-      <div class="col-6 col-md-4 col-lg-3 col-xl-2">
-        <div class="ingredient-card rounded-4 shadow-sm p-3 text-center">
-          <img src="assets/img/icons/termerik.png" class="img-fluid mb-3" alt="">
-          <h5 class="fw-semi-bold">{{'HOME.ROOT' | translate}}</h5>
-          <p class="small text-muted mb-0">{{'HOME.LONGA' | translate}}</p>
-          <p class="small fw-semibold text-primary">{{'HOME.EXTRACT' | translate}}  25.0 mg</p>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
 
 
- <div class="hero-section">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <div class="col-lg-5 mb-4 mb-lg-0">
-        <h1 class="hero-title">
-          {{ 'HOME.Advanced_Hybrid' | translate }} <br>
-          {{ 'HOME.HANGOVER' | translate }}
-        </h1>
-        <button class="hero-btn" >
-            {{ 'HOME.LEARN_MORE' | translate }}
-        </button>
-      </div>
-
-      <div class="col-lg-7 text-center" >
-        <img src="assets/img/banners/drink.webp" alt="Hero Image" class="hero-image">
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-<div class="lenisna-section mb-5">
-  <div class="container">
-    <div class="row align-items-center">
-
-      <div class="col-lg-8 mb-5 mb-lg-0">
-        <div class="lenisna-grid">
-          <img src="assets/img/banners/hang2.avif" class="grid-img">
-          <img src="assets/img/banners/drink5.jpg" class="grid-img">
-          <img src="assets/img/banners/drink3.webp" class="grid-img">
-        </div>
-      </div>
-
-      <div class="col-lg-4 ps-lg-5" [routerLink]="routes.listingGrid">
-        <h2 class="lenisna-title">{{ 'HOME.RESTORE_YOUR' | translate }}<br> {{ 'HOME.NATURAL_VOLUME' | translate }}</h2>
-        <p class="lenisna-tagline">{{ 'HOME.FULLNESS_NATURALLY_RESTORED' | translate }}</p>
-        <button class="lenisna-button">{{ 'HOME.LEARN_MORE' | translate }}</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<div class="affiliates-section container">
-  <h2 class="affiliates-title">{{ 'HOME.EMPOWERING_GLOBAL_SYNERGIES' | translate }}</h2>
-
-  <div class="affiliates-wrapper container">
-
-     <a target="_blank" rel="noopener noreferrer"
-          href="https://wholesale.stylekorean.com/?utm_source=stylekorean&utm_medium=referral&utm_campaign=stylekorean_gl_bt_pc">
-
-    <div class="affiliate-card glass">
-      <div class="top mt-4">
-        <a target="_blank" rel="noopener noreferrer"
-          href="https://wholesale.stylekorean.com/?utm_source=stylekorean&utm_medium=referral&utm_campaign=stylekorean_gl_bt_pc">
-
-          <img src="assets/img/banners/stylekorean_logo.png" class="logo">
-        </a>
-
-        <h4 class="mt-4">{{ 'HOME.STYLE_KOREAN' | translate }}</h4>
-        <p>{{ 'HOME.AESTHETIC_COSMETICS_MANUFACTURING' | translate }}</p>
-
-      </div>
-
-      <div class="bottom-circle">
-        <img src="assets/img/banners/2148963960.jpg">
-      </div>
-    </div>
-    </a>
-
-         <a href="https://myindia.co.kr/" target="_blank" rel="noopener noreferrer">
-    <div class="affiliate-card gradient">
-      <div class="top">
-        <a href="https://myindia.co.kr/" target="_blank" rel="noopener noreferrer">
-          <img src="assets/img/loche-logo-white-300x300.png" style="width:70px;" class="logo">
-        </a>
-        <h4>{{ 'HOME.MYINDIA' | translate }}</h4>
-        <p>{{ 'HOME.CDSCO_CERTIFICATION' | translate }}</p>
-      </div>
-      <div class="bottom-circle">
-        <img src="assets/img/banners/b2bimg.png">
-      </div>
-    </div>
-    </a>
-
-      <a href="https://bellaluna.in/" target="_blank" rel="noopener noreferrer">
-    <div class="affiliate-card neu">
-      <div class="top">
-        <a href="https://bellaluna.in/" target="_blank" rel="noopener noreferrer">
-          <img src="assets/img/bellaluna-logo.webp" class="logo">
-        </a>
-        <h4 class="mt-2">{{ 'HOME.BELLALUNA' | translate }}</h4>
-        <p>{{ 'HOME.COSMETICS_OEM_MANUFACTURING' | translate }}</p>
-      </div>
-      <div class="bottom-circle">
-        <img src="assets/img/header-bg.png">
-      </div>
-    </div>
-</a>
-
-      <a href="https://loche.in/" target="_blank" rel="noopener noreferrer">
-    <div class="affiliate-card split">
-      <div class="top">
-        <a href="https://loche.in/" target="_blank" rel="noopener noreferrer">
-          <img src="assets/img/Loche-India-Logo-PNG.png" style="width:70px; " class="logo">
-        </a>
-        <h4>{{ 'HOME.LOCHE_LOGISTICS' | translate }}</h4>
-        <p>{{ 'HOME.INTERNATIONAL_LOGISTICS' | translate }}</p>
-      </div>
-      <div class="bottom-circle">
-        <img src="assets/img/banners/transport.png" class="thumb">
-      </div>
-    </div>
-</a>
-  </div>
-</div>  -->

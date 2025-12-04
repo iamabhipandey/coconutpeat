@@ -89,24 +89,22 @@ public header: header[] = [
       { menuValue: 'HEADER.CEO_GREETING', routes: routes.CeoGreeting,  hasSubRoute: false, showSubRoute: false, subMenus: [],},
       { menuValue: 'HEADER.VISION', routes: routes.Vision2030Module, hasSubRoute: false, showSubRoute: false, subMenus: [],},
       { menuValue: 'HEADER.HISTORY', routes: routes.CompanyHistory, hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'HEADER.SOCIAL_CONTRIBUTION', routes: routes.SocialContribution, hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'HEADER.RND_TECH', routes: routes.CeoGreeting,  hasSubRoute: false, showSubRoute: false, subMenus: [],},
       { menuValue: 'HEADER.CLEAN_ROOM', routes: routes.CleanRoom,  hasSubRoute: false, showSubRoute: false, subMenus: [],},
     ],
   },
-  {
-    tittle: 'HEADER.KEY_INGREDIENT',
-    showAsTab: false,
-    separateRoute: false,
-    menu: [
-      { menuValue: 'HEADER.AMLA', 
-        hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.GARCIA', 
-        hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'B.C', 
-        hasSubRoute: false, showSubRoute: false, subMenus: [], },
-    ]
-  },
+  // {
+  //   tittle: 'HEADER.KEY_INGREDIENT',
+  //   showAsTab: false,
+  //   separateRoute: false,
+  //   menu: [
+  //     { menuValue: 'HEADER.AMLA', 
+  //       hasSubRoute: false, showSubRoute: false, subMenus: [], },
+  //     { menuValue: 'HEADER.GARCIA', 
+  //       hasSubRoute: false, showSubRoute: false, subMenus: [], },
+  //     { menuValue: 'B.C', 
+  //       hasSubRoute: false, showSubRoute: false, subMenus: [], },
+  //   ]
+  // },
     {
     tittle: 'HEADER.SHOPPING',
       showAsTab: false,
@@ -117,85 +115,55 @@ public header: header[] = [
 
   {
     tittle: 'HEADER.CARDALOG',
-    showAsTab: false,
-    separateRoute: false,
-    menu: [
-      //  { menuValue: 'the entire', hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      
-     
-     { menuValue: 'HEADER.PRODUCT',  hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.MORNINGSHOT', hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.INGREDIENT', hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.INDIA_HUB', hasSubRoute: false, showSubRoute: false, subMenus: [], },
-      { menuValue: 'HEADER.NEPAL_HUB', hasSubRoute: false, showSubRoute: false, subMenus: [], },
-    
-    ]
+      showAsTab: false,
+      separateRoute: true,
+      hasSubRoute: false,
+      showSubRoute: false,
   },
 
   {
   tittle: 'HEADER.CUSTOMER_CENTER',
-  showAsTab: false,
-  separateRoute: false,
-  menu: [
-    {
-      menuValue: 'HEADER.AFFILIATE_INQUIRY',
-      routes: routes.AffiliateInquiry,
+      showAsTab: false,
+      separateRoute: true,
       hasSubRoute: false,
       showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.QNA',
-      routes: routes.CeoGreeting,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.OEM_ODM_INQUIRIES',
-      routes: routes.CeoGreeting,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    }
-  ]
 },
 
-{
-  tittle: 'HEADER.PUBLIC_RELATIONS_CENTER',
-  showAsTab: false,
-  separateRoute: false,
-  menu: [
-    {
-      menuValue: 'HEADER.LOCHE_NEWS',
-      routes: routes.LocheNews,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.LOCHE_COMMERCIAL',
-      routes: routes.LocheNews,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.INTRO_PARTNER_COMPANIES',
-      routes: routes.LocheNews,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    },
-    {
-      menuValue: 'HEADER.INTRO_CI',
-      routes: routes.CeoGreeting,
-      hasSubRoute: false,
-      showSubRoute: false,
-      subMenus: [],
-    }
-  ]
-}
+// {
+//   tittle: 'HEADER.PUBLIC_RELATIONS_CENTER',
+//   showAsTab: false,
+//   separateRoute: false,
+//   menu: [
+//     {
+//       menuValue: 'HEADER.LOCHE_NEWS',
+//       routes: routes.LocheNews,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     },
+//     {
+//       menuValue: 'HEADER.LOCHE_COMMERCIAL',
+//       routes: routes.LocheNews,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     },
+//     {
+//       menuValue: 'HEADER.INTRO_PARTNER_COMPANIES',
+//       routes: routes.LocheNews,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     },
+//     {
+//       menuValue: 'HEADER.INTRO_CI',
+//       routes: routes.CeoGreeting,
+//       hasSubRoute: false,
+//       showSubRoute: false,
+//       subMenus: [],
+//     }
+//   ]
+// }
 
 
 ];

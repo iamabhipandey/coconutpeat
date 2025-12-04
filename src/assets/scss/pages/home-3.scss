@@ -1,4 +1,4 @@
-.home-three {
+
 	.banner-slider {
 		background: $__white;
 		background-image: none;
@@ -14,19 +14,20 @@
 		.home-banner {
 	        h1 {
 	        	margin-bottom: 15px;
+				font-size: 45px;
 	        	text-transform: capitalize;
 	        	span {
 	        		position: relative;
 	        		color: $__black-gray;
 	        		display: inline-block;
-	        		&::before {
-	        			content: "";
-	        			width: 100%;
-	        			height: 12px;
-	        			background: $__primarycolor;
-	        			@include position(absolute, null, null, 8px, 0);
-	        			z-index: -1;
-	        		}
+	        		// &::before {
+	        		// 	content: "";
+	        		// 	width: 100%;
+	        		// 	height: 12px;
+	        		// 	background: $__primarycolor;
+	        		// 	@include position(absolute, null, null, 8px, 0);
+	        		// 	z-index: -1;
+	        		// }
 	        	}
 	        }
 	        h4 {
@@ -285,7 +286,7 @@
 	    	}
 	    }
 	}
-}
+
 .category-section {
 	background: #fbffff;
     background: linear-gradient(to right, #f6e5ff, #9ffaff, #f6e5ff);
