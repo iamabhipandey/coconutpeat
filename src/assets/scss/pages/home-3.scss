@@ -479,9 +479,10 @@
 .quality-bg {
 	@include position(absolute, 0, null, null, 0);
 }
+
 .quality-img {
-	width: 40%;
-	@include position(absolute, 50%, 30px, null, null);
+	width: 55%;
+	@include position(absolute, 60%, 0px, null, null);
 	@include transform(translateY(-50%));
 	@include respond-below(custom991) {
 		display: none;

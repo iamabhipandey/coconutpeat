@@ -2,6 +2,10 @@
     background: #efefef;
     margin-top: 20px;
 }
+.bg-color{
+    background: #eaeaea;
+    padding: 27px 0px;
+}
   /* Tabs */
 .wellness-tabs .nav-link {
   font-size: 18px;
