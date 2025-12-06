@@ -481,7 +481,7 @@
 }
 
 .quality-img {
-	width: 40%;
+	width: 45%;
 	@include position(absolute, 60%, 0px, null, null);
 	@include transform(translateY(-50%));
 	@include respond-below(custom991) {
