@@ -86,85 +86,85 @@ public header: header[] = [
     showAsTab: false,
     separateRoute: false,
     menu: [
-      { menuValue: 'HEADER.CEO_GREETING',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'HEADER.VISION',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'HEADER.HISTORY',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'HEADER.CLEAN_ROOM',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'CEOs greeting',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'VISION 2030',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Company history',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Social contribution',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
     ],
   },
-  
-  // {
-  //   tittle: 'HEADER.KEY_INGREDIENT',
-  //   showAsTab: false,
-  //   separateRoute: false,
-  //   menu: [
-  //     { menuValue: 'HEADER.AMLA', 
-  //       hasSubRoute: false, showSubRoute: false, subMenus: [], },
-  //     { menuValue: 'HEADER.GARCIA', 
-  //       hasSubRoute: false, showSubRoute: false, subMenus: [], },
-  //     { menuValue: 'B.C', 
-  //       hasSubRoute: false, showSubRoute: false, subMenus: [], },
-  //   ]
-  // },
     {
-    tittle: 'HEADER.SHOPPING',
-      showAsTab: false,
-      separateRoute: true,
-      hasSubRoute: false,
-      showSubRoute: false,
-        },
-
-  {
-    tittle: 'HEADER.CARDALOG',
-      showAsTab: false,
-      separateRoute: true,
-      hasSubRoute: false,
-      showSubRoute: false,
+    tittle: 'Product Informatin ',
+    showAsTab: false,
+    separateRoute: false,
+    menu: [
+      { menuValue: 'Cocopeat',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Usage: Farms',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Excellent performance and superiority',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Locally produced factory',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Korean-style quality control',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
+    ],
+  },
+      {
+    tittle: 'Research and development',
+    showAsTab: false,
+    separateRoute: false,
+    menu: [
+      { menuValue: 'Agricultural Research Institute',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Certification Details',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Partner Organizations',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+    ],
+  },
+        {
+    tittle: 'Customer center',
+    showAsTab: false,
+    separateRoute: false,
+    menu: [
+      { menuValue: 'kakao',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'whatapp',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'OEM/ODM Inquiries',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+    ],
+  },
+          {
+    tittle: 'Public Relations Center',
+    showAsTab: false,
+    separateRoute: false,
+    menu: [
+      { menuValue: 'Loche News',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Loche commercial',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Introduction of partner companies',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Introduction of CI',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+    ],
+  },
+        {
+    tittle: 'PR',
+    showAsTab: false,
+    separateRoute: false,
+    menu: [
+      { menuValue: 'press release',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'a promotional video',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Advertising',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+    ],
+  },
+          {
+    tittle: 'Cardalog Archive',
+    showAsTab: false,
+    separateRoute: false,
+    menu: [
+      { menuValue: 'Cocoi',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Hyobato',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
+    ],
   },
 
-  {
-  tittle: 'HEADER.CUSTOMER_CENTER',
-      showAsTab: false,
-      separateRoute: true,
-      hasSubRoute: false,
-      showSubRoute: false,
-},
 
-// {
-//   tittle: 'HEADER.PUBLIC_RELATIONS_CENTER',
-//   showAsTab: false,
-//   separateRoute: false,
-//   menu: [
-//     {
-//       menuValue: 'HEADER.LOCHE_NEWS',
-//       routes: routes.LocheNews,
+//   {
+//   tittle: 'HEADER.CUSTOMER_CENTER',
+//       showAsTab: false,
+//       separateRoute: true,
 //       hasSubRoute: false,
 //       showSubRoute: false,
-//       subMenus: [],
-//     },
-//     {
-//       menuValue: 'HEADER.LOCHE_COMMERCIAL',
-//       routes: routes.LocheNews,
-//       hasSubRoute: false,
-//       showSubRoute: false,
-//       subMenus: [],
-//     },
-//     {
-//       menuValue: 'HEADER.INTRO_PARTNER_COMPANIES',
-//       routes: routes.LocheNews,
-//       hasSubRoute: false,
-//       showSubRoute: false,
-//       subMenus: [],
-//     },
-//     {
-//       menuValue: 'HEADER.INTRO_CI',
-//       routes: routes.CeoGreeting,
-//       hasSubRoute: false,
-//       showSubRoute: false,
-//       subMenus: [],
-//     }
-//   ]
-// }
+// },
+
+
 
 
 ];

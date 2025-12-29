@@ -108,3 +108,11 @@ a.nav-link.header-login.notification span {
 .nav-link {
     padding: 5px !important;
 }
+
+//------------------------------------------------ overwrite css -----------------------------------------------//
+.header .main-menu-wrapper .main-nav:last-child {
+    margin-right: 0;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}

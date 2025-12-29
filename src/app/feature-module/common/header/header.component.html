@@ -53,7 +53,7 @@
   <!-- ------------------------------- end head two ----------------------------------------- -->
   <div class="main-head">
     <nav class="navbar navbar-expand-lg header-nav">
-      <div class="container-fluid w-100 header-respo">
+      <div class="container-fluid w-100 border-bottom header-respo">
         <div class="navbar-header">
           <a (click)="toggleSidebar()" id="mobile_btn">
             <span class="bar-icon">
@@ -72,7 +72,88 @@
             <!-- <img src="assets/img/bellaluna-circle.png" class="img-fluid" width="65px" alt="Logo" /> -->
           </a>
 
-          <div class="main-menu-wrapper">
+         
+        </div>
+        <ul class="nav header-navbar-rht">
+          <li class="nav-item search-mo">
+            <a class="nav-link header-login">
+              <!-- <div class="input-group">
+              <input type="text" [(ngModel)]="searchterm" name="searchterm" class="form-control" placeholder="Search..."
+                aria-describedby="button-addon2" (keydown.enter)="searhProductData()">
+              <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="searhProductData()">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div> -->
+
+              <div class="search-box position-relative" style="max-width: 350px;">
+                <input type="text" class="form-control pe-5" placeholder="Search here...">
+                <i class="fa-solid fa-magnifying-glass position-absolute top-50 end-0 translate-middle-y me-3 text-secondary"
+                  style="cursor: pointer;"></i>
+              </div>
+            </a>
+          </li>
+
+          <li class="nav-item user-link" *ngIf="userLogin">
+            <div class="header-two-to">
+              <div class="container-fluid">
+                <div class="header-top-items">
+                  <div class="header-top-right d-flex justify-content-end">
+                    <ul class="header-address" *ngIf="!userLogin">
+                    </ul>
+                    <ul class="nav header-navbar-rht" *ngIf="userLogin">
+                      <li class="nav-item dropdown has-arrow logged-item">
+                        <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="user-img">
+                            <img class="rounded-circle" src="assets/img/profiles/profile.png" alt="Profile">
+                          </span>
+                          <span class="user-text user-name">{{loggedUserName}}</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" [routerLink]="routes.userDashboard">
+                            <i class="feather-user-check"></i> {{ 'HEADER.PROFILE' | translate }}
+                          </a>
+                          <a class="dropdown-item" [routerLink]="routes.userWishlist">
+                            <i class="feather-user-check"></i> {{ 'HEADER.WISHLIST' | translate }}
+                          </a>
+                          <a class="dropdown-item" [routerLink]="routes.order">
+                            <i class="feather-settings"></i> {{ 'HEADER.ORDERS' | translate }}
+                          </a>
+                          <a class="dropdown-item" (click)="logout()">
+                            <i class="feather-power"></i> {{ 'HEADER.LOGOUT' | translate }}
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="nav-item user-link" [routerLink]="routes.login" *ngIf="!userLogin">
+            <a class="nav-link header-user">
+              <i class="bx bx-user"></i>
+            </a>
+          </li>
+
+
+          <li class="nav-item" (click)="viewCart()">
+            <a class="nav-link header-login notification"><span>
+                <img src="assets/img/icons/shopping-cart.png" alt="Logo" class="img-fluid" width="20px">
+              </span>
+              @if(cartCount>0){
+              <span class="badge">{{ cartCount }}</span>
+              }
+            </a>
+          </li>
+        </ul>
+      </div>
+
+
+
+ <div class="main-menu-wrapper">
             <div class="menu-header">
               <!-- for sidebar -->
               <a [routerLink]="routes.home" class="menu-logo">
@@ -145,96 +226,6 @@
         </div>
 
           </div>
-        </div>
-        <ul class="nav header-navbar-rht">
-          <li class="nav-item search-mo">
-            <a class="nav-link header-login">
-              <!-- <div class="input-group">
-              <input type="text" [(ngModel)]="searchterm" name="searchterm" class="form-control" placeholder="Search..."
-                aria-describedby="button-addon2" (keydown.enter)="searhProductData()">
-              <button class="btn btn-outline-secondary" type="button" id="button-addon2" (click)="searhProductData()">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
-            </div> -->
-
-              <div class="search-box position-relative" style="max-width: 350px;">
-                <input type="text" class="form-control pe-5" placeholder="Search here...">
-                <i class="fa-solid fa-magnifying-glass position-absolute top-50 end-0 translate-middle-y me-3 text-secondary"
-                  style="cursor: pointer;"></i>
-              </div>
-            </a>
-          </li>
-
-          <li class="nav-item user-link" *ngIf="userLogin">
-            <div class="header-two-to">
-              <div class="container-fluid">
-                <div class="header-top-items">
-                  <div class="header-top-right d-flex justify-content-end">
-                    <ul class="header-address" *ngIf="!userLogin">
-                    </ul>
-                    <ul class="nav header-navbar-rht" *ngIf="userLogin">
-                      <li class="nav-item dropdown has-arrow logged-item">
-                        <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown" aria-expanded="false">
-                          <span class="user-img">
-                            <img class="rounded-circle" src="assets/img/profiles/profile.png" alt="Profile">
-                          </span>
-                          <span class="user-text user-name">{{loggedUserName}}</span>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end">
-                          <a class="dropdown-item" [routerLink]="routes.userDashboard">
-                            <i class="feather-user-check"></i> {{ 'HEADER.PROFILE' | translate }}
-                          </a>
-                          <a class="dropdown-item" [routerLink]="routes.userWishlist">
-                            <i class="feather-user-check"></i> {{ 'HEADER.WISHLIST' | translate }}
-                          </a>
-                          <a class="dropdown-item" [routerLink]="routes.order">
-                            <i class="feather-settings"></i> {{ 'HEADER.ORDERS' | translate }}
-                          </a>
-                          <a class="dropdown-item" (click)="logout()">
-                            <i class="feather-power"></i> {{ 'HEADER.LOGOUT' | translate }}
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </li>
-
-          <li class="nav-item user-link" [routerLink]="routes.login" *ngIf="!userLogin">
-            <a class="nav-link header-user">
-              <i class="bx bx-user"></i>
-            </a>
-          </li>
-
-          <!-- <li class="nav-item" [routerLink]="routes.userWishlist">
-      <a class="nav-link header-login  notification"><span>
-          <img src="assets/img/icons/heart.png" alt="Logo" class="img-fluid" width="25px">
-        </span>
-        @if(wishlistCount>0){
-        <span class="badge">{{ wishlistCount }}</span>
-        }
-      </a>
-    </li> -->
-
-          <li class="nav-item" (click)="viewCart()">
-            <a class="nav-link header-login notification"><span>
-                <img src="assets/img/icons/shopping-cart.png" alt="Logo" class="img-fluid" width="20px">
-              </span>
-              @if(cartCount>0){
-              <span class="badge">{{ cartCount }}</span>
-              }
-            </a>
-          </li>
-        </ul>
-      </div>
-
-
-
-
 
 
 
