@@ -62,3 +62,90 @@
 span.select2-container.select2-container--default.select2-container--open {
     z-index: 9999;
 }
+
+
+  /* COMMON */
+.screen-section {
+  min-height: 100vh;
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.section-text {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* CEO SECTION */
+.ceo-section {
+  background: linear-gradient(135deg, #f6fff9, #e6f7ef);
+}
+
+.ceo-name {
+  font-weight: 700;
+  color: #1b5e20;
+}
+
+.ceo-designation {
+  font-size: 14px;
+  color: #666;
+}
+
+/* VISION */
+.vision-section {
+  background: #ffffff;
+}
+
+.vision-box {
+  padding: 30px 20px;
+  border-radius: 12px;
+  background: #f5f5f5;
+  transition: 0.3s;
+}
+
+.vision-box:hover {
+  background: #e8f5e9;
+  transform: translateY(-6px);
+}
+
+/* HISTORY */
+.history-section {
+  background: #f9fafb;
+}
+
+.history-list {
+  list-style: none;
+  padding: 0;
+}
+
+.history-list li {
+  padding: 12px 0;
+  font-size: 17px;
+  position: relative;
+}
+
+.history-list li::before {
+  content: "✔";
+  color: #2e7d32;
+  margin-right: 10px;
+}
+
+/* SOCIAL */
+.social-section {
+  background: linear-gradient(135deg, #ffffff, #f1f8f5);
+}
+
+.social-box {
+  background: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+  height: 100%;
+}

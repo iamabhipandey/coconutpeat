@@ -1,20 +1,15 @@
-<section class="timeline-section">
+<!-- ===== SECTION 3 : COMPANY HISTORY ===== -->
+<section class="screen-section history-section d-flex align-items-center">
   <div class="container">
-      <div class="timeline-header text-center">
-      <h2>🏢 {{ 'COMPANY.HISTORY' | translate }}: <span class="text-dark">{{ 'COMPANY.TIMELINE' | translate }}</span></h2>
-      <p class="text-muted">{{ 'COMPANY.DESCRIPTION' | translate }}</p>
-    </div>
-
-
-    <div class="timeline">
-      <div *ngFor="let item of timelineData" 
-           class="timeline-item" 
-           [ngClass]="item.position" 
-           [attr.data-year]="item.year">
-        <div class="timeline-content">
-          <h4>{{ item.title | translate }}</h4>
-          <p>{{ item.description | translate }}</p>
-        </div>
+    <div class="row justify-content-center">
+      <div class="col-lg-9 text-center">
+        <h2 class="section-title">Company History</h2>
+        <ul class="history-list mt-4">
+          <li>Established with a focus on premium cocopeat supply</li>
+          <li>Strong sourcing network in India and coconut-growing regions</li>
+          <li>Advanced processing and strict quality control</li>
+          <li>Trusted by agriculture & horticulture industries</li>
+        </ul>
       </div>
     </div>
   </div>

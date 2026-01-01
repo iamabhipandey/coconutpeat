@@ -86,10 +86,14 @@ public header: header[] = [
     showAsTab: false,
     separateRoute: false,
     menu: [
-      { menuValue: 'CEOs greeting',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'VISION 2030',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Company history',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Social contribution',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
+      { menuValue: 'CEOs greeting',   
+        hasSubRoute: false, 
+        routes: routes.CeoGreeting,
+        showSubRoute: false, 
+        subMenus: [],},
+      { menuValue: 'VISION 2030',  hasSubRoute: false,routes: routes.Vision2030Module, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Company history',  hasSubRoute: false, routes: routes.CompanyHistory, showSubRoute: false, subMenus: [],},
+      { menuValue: 'Social contribution',   hasSubRoute: false, routes: routes.SocialContribution, showSubRoute: false, subMenus: [],},
     ],
   },
     {
