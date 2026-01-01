@@ -1,0 +1,23 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { PartnerOrganizationsComponent } from './partner-organizations.component';
+
+describe('PartnerOrganizationsComponent', () => {
+  let component: PartnerOrganizationsComponent;
+  let fixture: ComponentFixture<PartnerOrganizationsComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [PartnerOrganizationsComponent]
+    })
+    .compileComponents();
+
+    fixture = TestBed.createComponent(PartnerOrganizationsComponent);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

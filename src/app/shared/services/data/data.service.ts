@@ -8,7 +8,7 @@ import { map } from 'rxjs';
   providedIn: 'root',
 })
 export class DataService {
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient) { }
   public getuserPayment() {
     return this.http.get<apiResultFormat>('assets/JSON/user-payment.json').pipe(
       map((res: apiResultFormat) => {
@@ -80,98 +80,100 @@ export class DataService {
 
 
 
-public header: header[] = [
-  {
-    tittle: 'HEADER.COMPANY',
-    showAsTab: false,
-    separateRoute: false,
-    menu: [
-      { menuValue: 'CEOs greeting',   
-        hasSubRoute: false, 
-        routes: routes.CeoGreeting,
-        showSubRoute: false, 
-        subMenus: [],},
-      { menuValue: 'VISION 2030',  hasSubRoute: false,routes: routes.Vision2030Module, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Company history',  hasSubRoute: false, routes: routes.CompanyHistory, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Social contribution',   hasSubRoute: false, routes: routes.SocialContribution, showSubRoute: false, subMenus: [],},
-    ],
-  },
+  public header: header[] = [
     {
-    tittle: 'Product Informatin ',
-    showAsTab: false,
-    separateRoute: false,
-    menu: [
-      { menuValue: 'Cocopeat',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Usage: Farms',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Excellent performance and superiority',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Locally produced factory',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Korean-style quality control',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
-    ],
-  },
-      {
-    tittle: 'Research and development',
-    showAsTab: false,
-    separateRoute: false,
-    menu: [
-      { menuValue: 'Agricultural Research Institute',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Certification Details',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Partner Organizations',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-    ],
-  },
+      tittle: 'HEADER.COMPANY',
+      showAsTab: false,
+      separateRoute: false,
+      menu: [
         {
-    tittle: 'Customer center',
-    showAsTab: false,
-    separateRoute: false,
-    menu: [
-      { menuValue: 'kakao',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'whatapp',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'OEM/ODM Inquiries',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-    ],
-  },
-          {
-    tittle: 'Public Relations Center',
-    showAsTab: false,
-    separateRoute: false,
-    menu: [
-      { menuValue: 'Loche News',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Loche commercial',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Introduction of partner companies',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Introduction of CI',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-    ],
-  },
-        {
-    tittle: 'PR',
-    showAsTab: false,
-    separateRoute: false,
-    menu: [
-      { menuValue: 'press release',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'a promotional video',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Advertising',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-    ],
-  },
-          {
-    tittle: 'Cardalog Archive',
-    showAsTab: false,
-    separateRoute: false,
-    menu: [
-      { menuValue: 'Cocoi',   hasSubRoute: false, showSubRoute: false, subMenus: [],},
-      { menuValue: 'Hyobato',  hasSubRoute: false, showSubRoute: false, subMenus: [],},
-    ],
-  },
+          menuValue: 'CEOs greeting',
+          hasSubRoute: false,
+          routes: routes.CeoGreeting,
+          showSubRoute: false,
+          subMenus: [],
+        },
+        { menuValue: 'VISION 2030', hasSubRoute: false, routes: routes.Vision2030Module, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Company history', hasSubRoute: false, routes: routes.CompanyHistory, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Social contribution', hasSubRoute: false, routes: routes.SocialContribution, showSubRoute: false, subMenus: [], },
+      ],
+    },
+    {
+      tittle: 'Product Informatin ',
+      showAsTab: false,
+      separateRoute: false,
+      menu: [
+        { menuValue: 'Cocopeat', hasSubRoute: false, routes: routes.cocopeat, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Usage: Farms', hasSubRoute: false, routes: routes.usageFarms, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Excellent performance and superiority', hasSubRoute: false, routes: routes.performance, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Locally produced factory', hasSubRoute: false, routes: routes.factory, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Korean-style quality control', hasSubRoute: false, routes: routes.qualityControl, showSubRoute: false, subMenus: [], },
+      ],
+    },
+    {
+      tittle: 'Research and development',
+      showAsTab: false,
+      separateRoute: false,
+      menu: [
+        { menuValue: 'Agricultural Research Institute', hasSubRoute: false, routes: routes.agriculturalResearchInstitute, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Certification Details', hasSubRoute: false, routes: routes.certificationDetails, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Partner Organizations', hasSubRoute: false, routes: routes.partnerOrganizations, showSubRoute: false, subMenus: [], },
+      ],
+    },
+    {
+      tittle: 'Customer center',
+      showAsTab: false,
+      separateRoute: false,
+      menu: [
+        { menuValue: 'kakao', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+        { menuValue: 'whatapp', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+        { menuValue: 'OEM/ODM Inquiries', hasSubRoute: false, routes: routes.oemOdmInquiries, showSubRoute: false, subMenus: [], },
+      ],
+    },
+    {
+      tittle: 'Public Relations Center',
+      showAsTab: false,
+      separateRoute: false,
+      menu: [
+        { menuValue: 'Loche News', hasSubRoute: false, routes: routes.LocheNews, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Loche commercial', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Introduction of partner companies', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Introduction of CI', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      ],
+    },
+    {
+      tittle: 'PR',
+      showAsTab: false,
+      separateRoute: false,
+      menu: [
+        { menuValue: 'press release', hasSubRoute: false, routes: routes.LocheNews, showSubRoute: false, subMenus: [], },
+        { menuValue: 'a promotional video', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Advertising', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      ],
+    },
+    {
+      tittle: 'Cardalog Archive',
+      showAsTab: false,
+      separateRoute: false,
+      menu: [
+        { menuValue: 'Cocoi', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+        { menuValue: 'Hyobato', hasSubRoute: false, showSubRoute: false, subMenus: [], },
+      ],
+    },
 
 
-//   {
-//   tittle: 'HEADER.CUSTOMER_CENTER',
-//       showAsTab: false,
-//       separateRoute: true,
-//       hasSubRoute: false,
-//       showSubRoute: false,
-// },
+    //   {
+    //   tittle: 'HEADER.CUSTOMER_CENTER',
+    //       showAsTab: false,
+    //       separateRoute: true,
+    //       hasSubRoute: false,
+    //       showSubRoute: false,
+    // },
 
 
 
 
-];
+  ];
 
 
 
@@ -202,7 +204,7 @@ public header: header[] = [
       para: 'Authentic Customer Reviews – Users can share detailed feedback on product effectiveness, texture, and results.',
     },
   ];
- 
+
   public testimonial = [
     {
       img: 'assets/img/profiles/avatar-02.jpg',
@@ -238,7 +240,7 @@ public header: header[] = [
 
 
 
-  public listingDetails = [ 
+  public listingDetails = [
     {
       img: 'assets/img/product/product-3.avif',
     },
@@ -260,7 +262,7 @@ public header: header[] = [
 
 
 
-  
+
   public thumbnails1 = [
     {
       img: 'assets/img/profiles/avatar-11.jpg',
@@ -279,34 +281,34 @@ public header: header[] = [
     {
       name: 'Marian Hendriques',
       location: 'Dubai, Emirates',
-     
+
       title: '“ From a Satisfied Business Traveler “',
       content: 'As a frequent business traveler, I rely on Dreams Rent for all my transportation needs. Their extensive fleet of vehicles, convenient locations, and competitive pricing make them my go-to choice every time. Plus, their friendly staff always go the extra mile to ensure a seamless rental experience.'
     },
     {
       name: 'Lyon Avenue',
       location: 'Derby, UK',
-     
+
       title: '“ David\'s Urban Exploration “',
       content: 'As a frequent traveler, finding reliable bike rental services is crucial for me. I stumbled upon this website during my recent trip, and I\'m glad I did. The process of booking was seamless, and the prices were reasonable. The best part was the quality of the bikes; they were well-maintained and comfortable to ride.'
     },
     {
       name: 'Westfall Avenue',
       location: 'New York, USA',
-      
+
       title: '“ Sarah\'s Adventure “',
       content: 'Absolutely loved my experience with Dreams Rent! Booking was a breeze; their website is user-friendly and intuitive. The bike I rented was in excellent condition, which made exploring the city a joy. What stood out the most was the exceptional customer service.'
     },
     {
       name: 'Saint Clair Street',
       location: 'Norwich, UK',
-     
+
       title: '“ Edward\'s Scenic Ride “',
       content: 'From start to finish, renting a bike through this website was an absolute pleasure. The website interface was easy to navigate, and I could quickly find the perfect bike for my needs. When I arrived to pick up the bike, I was impressed by its excellent condition. It was evident that they take pride in maintaining their fleet.'
     }
-    
+
   ];
-  
+
   public thumbnails = [
     {
       img: 'assets/img/cars/slider-thum-01.jpg',

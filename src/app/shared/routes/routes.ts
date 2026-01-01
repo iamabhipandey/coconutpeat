@@ -26,11 +26,11 @@ export class routes {
     return this.baseUrl + '/listings/listing-grid';
   }
 
-  
 
-  
 
-    public static get brandsProducts(): string {
+
+
+  public static get brandsProducts(): string {
     return this.baseUrl + '/listings/brand-products';
   }
   public static get aboutUs(): string {
@@ -72,7 +72,7 @@ export class routes {
 
   public static get B2B(): string {
     return this.baseUrl + '/pages/register-with-us';
-  } 
+  }
 
   public static get B2BSection(): string {
     return this.baseUrl + '/pages/sell-on-bellaluna';
@@ -81,7 +81,7 @@ export class routes {
   public static get beautyBook(): string {
     return this.baseUrl + '/pages/beauty-book';
   }
-public static get allbrands(): string {
+  public static get allbrands(): string {
     return this.baseUrl + '/pages/all-brands';
   }
 
@@ -100,7 +100,7 @@ public static get allbrands(): string {
   public static get privacyPolicy(): string {
     return this.baseUrl + '/pages/privacy-policy';
   }
-    public static get ReturnCancellation(): string {
+  public static get ReturnCancellation(): string {
     return this.baseUrl + '/pages/ReturnCancellation';
   }
   public static get maintenance(): string {
@@ -118,32 +118,59 @@ public static get allbrands(): string {
   public static get contactUs(): string {
     return this.baseUrl + '/pages/contact-us';
   }
-    public static get CeoGreeting(): string {
+  public static get CeoGreeting(): string {
     return this.baseUrl + '/pages/CeoGreeting';
   }
-      public static get Vision2030Module(): string {
+  public static get Vision2030Module(): string {
     return this.baseUrl + '/pages/Vision2030';
   }
-    public static get CompanyHistory(): string {
+  public static get CompanyHistory(): string {
     return this.baseUrl + '/pages/CompanyHistory';
   }
-    public static get SocialContribution(): string {
+  public static get SocialContribution(): string {
     return this.baseUrl + '/pages/SocialContribution';
   }
-      public static get AffiliateInquiry(): string {
+  public static get AffiliateInquiry(): string {
     return this.baseUrl + '/pages/AffiliateInquiry';
   }
-        public static get LocheNews(): string {
+  public static get LocheNews(): string {
     return this.baseUrl + '/pages/LocheNews';
   }
-          public static get CleanRoom(): string {
+  public static get CleanRoom(): string {
     return this.baseUrl + '/pages/CleanRoom';
   }
   public static get comingSoon(): string {
     return this.baseUrl + '/pages/coming-soon';
   }
-   public static get globalstore(): string {
+  public static get globalstore(): string {
     return this.baseUrl + '/pages/global-stores';
+  }
+  public static get cocopeat(): string {
+    return this.baseUrl + '/pages/cocopeat';
+  }
+  public static get usageFarms(): string {
+    return this.baseUrl + '/pages/usage-farms';
+  }
+  public static get performance(): string {
+    return this.baseUrl + '/pages/performance';
+  }
+  public static get factory(): string {
+    return this.baseUrl + '/pages/factory';
+  }
+  public static get qualityControl(): string {
+    return this.baseUrl + '/pages/quality-control';
+  }
+  public static get agriculturalResearchInstitute(): string {
+    return this.baseUrl + '/pages/agricultural-research-institute';
+  }
+  public static get certificationDetails(): string {
+    return this.baseUrl + '/pages/certification-details';
+  }
+  public static get partnerOrganizations(): string {
+    return this.baseUrl + '/pages/partner-organizations';
+  }
+  public static get oemOdmInquiries(): string {
+    return this.baseUrl + '/pages/oem-odm-inquiries';
   }
   public static get user(): string {
     return this.baseUrl + '/user';
@@ -154,13 +181,13 @@ public static get allbrands(): string {
   public static get userWallet(): string {
     return this.user + '/user-wallet';
   }
-      public static get faquestions(): string {
+  public static get faquestions(): string {
     return this.user + '/faquestions';
   }
-    public static get accountinfo(): string {
+  public static get accountinfo(): string {
     return this.user + '/accountInfo';
   }
-   public static get order(): string {
+  public static get order(): string {
     return this.user + '/my-orders';
   }
   public static get userReview(): string {
@@ -193,12 +220,12 @@ public static get allbrands(): string {
   }
 
 
- public static get myOrders(): string {
+  public static get myOrders(): string {
     return this.user + '/my-orders';
   }
 
 
-   public static get trackingOrder(): string {
+  public static get trackingOrder(): string {
     return this.user + '/tracking-order';
   }
 
@@ -254,5 +281,5 @@ public static get allbrands(): string {
 
 
 
-  
+
 }

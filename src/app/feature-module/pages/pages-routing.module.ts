@@ -80,46 +80,82 @@ const routes: Routes = [
     path: 'beauty-book',
     loadChildren: () => import('./beauty-book/beauty-book.module').then((m) => m.BeautyBookModule),
   },
-   {
+  {
     path: 'all-brands',
     loadChildren: () => import('./all-brands/all-brands.module').then((m) => m.AllBrandsModule),
   },
-   {
+  {
+    path: 'cocopeat',
+    loadChildren: () => import('./cocopeat/cocopeat.module').then((m) => m.CocopeatModule),
+  },
+  {
+    path: 'usage-farms',
+    loadChildren: () => import('./usage-farms/usage-farms.module').then((m) => m.UsageFarmsModule),
+  },
+  {
+    path: 'performance',
+    loadChildren: () => import('./performance/performance.module').then((m) => m.PerformanceModule),
+  },
+  {
+    path: 'factory',
+    loadChildren: () => import('./factory/factory.module').then((m) => m.FactoryModule),
+  },
+  {
+    path: 'quality-control',
+    loadChildren: () => import('./quality-control/quality-control.module').then((m) => m.QualityControlModule),
+  },
+  {
+    path: 'agricultural-research-institute',
+    loadChildren: () => import('./agricultural-research-institute/agricultural-research-institute.module').then((m) => m.AgriculturalResearchInstituteModule),
+  },
+  {
+    path: 'certification-details',
+    loadChildren: () => import('./certification-details/certification-details.module').then((m) => m.CertificationDetailsModule),
+  },
+  {
+    path: 'partner-organizations',
+    loadChildren: () => import('./partner-organizations/partner-organizations.module').then((m) => m.PartnerOrganizationsModule),
+  },
+  {
+    path: 'oem-odm-inquiries',
+    loadChildren: () => import('./oem-odm-inquiries/oem-odm-inquiries.module').then((m) => m.OemOdmInquiriesModule),
+  },
+  {
     path: 'global-stores',
     loadChildren: () => import('./global-store/global-store.module').then((m) => m.GlobalStoreModule),
   },
 
-     {
+  {
     path: 'ReturnCancellation',
     loadChildren: () => import('./return-cancellation/return-cancellation.module').then((m) => m.ReturnCancellationModule),
   },
-    {
+  {
     path: 'CeoGreeting',
-    loadChildren: () => import('./ceo-greeting/ceo-greeting.module').then( (m) => m.CeoGreetingModule),
+    loadChildren: () => import('./ceo-greeting/ceo-greeting.module').then((m) => m.CeoGreetingModule),
   },
-      {
+  {
     path: 'Vision2030',
-    loadChildren: () => import('./vision-2030/vision-2030.module').then( (m) => m.Vision2030Module),
+    loadChildren: () => import('./vision-2030/vision-2030.module').then((m) => m.Vision2030Module),
   },
-        {
+  {
     path: 'CompanyHistory',
-    loadChildren: () => import('./company-history/company-history.module').then( (m) => m.CompanyHistoryModule),
+    loadChildren: () => import('./company-history/company-history.module').then((m) => m.CompanyHistoryModule),
   },
-          {
+  {
     path: 'SocialContribution',
-    loadChildren: () => import('./social-contribution/social-contribution.module').then( (m) => m.SocialContributionModule),
+    loadChildren: () => import('./social-contribution/social-contribution.module').then((m) => m.SocialContributionModule),
   },
-            {
+  {
     path: 'AffiliateInquiry',
-    loadChildren: () => import('./affiliate-inquiry/affiliate-inquiry.module').then( (m) => m.AffiliateInquiryModule),
+    loadChildren: () => import('./affiliate-inquiry/affiliate-inquiry.module').then((m) => m.AffiliateInquiryModule),
   },
-      {
+  {
     path: 'LocheNews',
-    loadChildren: () => import('./loche-news/loche-news.module').then( (m) => m.LocheNewsModule ),
+    loadChildren: () => import('./loche-news/loche-news.module').then((m) => m.LocheNewsModule),
   },
-        {
+  {
     path: 'CleanRoom',
-    loadChildren: () => import('./clean-room/clean-room.module').then( (m) => m.CleanRoomModule),
+    loadChildren: () => import('./clean-room/clean-room.module').then((m) => m.CleanRoomModule),
   },
 ];
 
@@ -127,4 +163,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class PagesRoutingModule {}
+export class PagesRoutingModule { }
