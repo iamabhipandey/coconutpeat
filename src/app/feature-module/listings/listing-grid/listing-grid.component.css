@@ -1,20 +1,25 @@
-/* 🌟 Premium "Golden Hour" Banner */
+/* 🌿 "Organic Harvest" Unique Banner (Refined) */
 .product-banner {
   position: relative;
-  /* Softer "Golden Hour" Gradient */
-  background: linear-gradient(135deg, #ff9a8a, #fecd9a, #ff9a8a);
-  background-size: 300% 300%;
-  animation: warmGlow 12s ease infinite;
-  padding: 90px 0 100px;
+  /* Warm "Mango Sunset" Gradient */
+  background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  /* Subtle Dotted Texture */
+  background-image:
+    radial-gradient(rgba(255, 255, 255, 0.25) 2px, transparent 2px),
+    linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+  background-size: 30px 30px, 100% 100%;
+  padding: 50px 0 100px;
+  /* Increased Height slightly */
   color: #fff;
   text-align: center;
+  /* Soft Curve */
   border-radius: 0 0 60px 60px;
   overflow: hidden;
   z-index: 1;
-  box-shadow: 0 20px 50px rgba(255, 154, 138, 0.25);
+  box-shadow: 0 20px 40px -10px rgba(253, 160, 133, 0.6);
 }
 
-/* 🛁 Yellow Rising Bubbles */
+/* 🍃 Floating Leaves */
 .bubbles {
   position: absolute;
   width: 100%;
@@ -23,107 +28,116 @@
   left: 0;
   z-index: -1;
   overflow: hidden;
+  pointer-events: none;
 }
 
 .bubbles span {
   position: absolute;
-  bottom: -50px;
-  background: rgba(255, 235, 59, 0.6);
-  /* Yellow */
-  border-radius: 50%;
+  bottom: -60px;
+  background: rgba(255, 255, 255, 0.35);
   display: block;
-  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.5);
-  animation: riseUp 10s linear infinite;
+  border-radius: 0 60% 0 60%;
+  transform: rotate(45deg);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  animation: leafFloat 15s linear infinite;
 }
 
+/* Varied Leaves */
 .bubbles span:nth-child(1) {
   left: 10%;
   width: 40px;
   height: 40px;
-  animation-duration: 9s;
-  animation-delay: 0s;
+  animation-duration: 12s;
 }
 
 .bubbles span:nth-child(2) {
   left: 30%;
   width: 25px;
   height: 25px;
-  animation-duration: 6s;
-  animation-delay: 2s;
+  animation-duration: 8s;
+  opacity: 0.6;
 }
 
 .bubbles span:nth-child(3) {
-  left: 50%;
+  left: 55%;
   width: 50px;
   height: 50px;
-  animation-duration: 11s;
-  animation-delay: 1s;
+  animation-duration: 15s;
 }
 
 .bubbles span:nth-child(4) {
-  left: 70%;
+  left: 75%;
   width: 30px;
   height: 30px;
-  animation-duration: 8s;
-  animation-delay: 3s;
+  animation-duration: 10s;
+  opacity: 0.5;
 }
 
 .bubbles span:nth-child(5) {
   left: 90%;
   width: 45px;
   height: 45px;
-  animation-duration: 10s;
-  animation-delay: 0.5s;
-  background: rgba(255, 215, 0, 0.6);
+  animation-duration: 14s;
+  background: rgba(255, 255, 255, 0.5);
 }
 
-@keyframes riseUp {
+@keyframes leafFloat {
   0% {
-    transform: translateY(0) scale(1);
+    transform: translateY(0) rotate(45deg) translateX(0);
     opacity: 0;
   }
 
-  10% {
-    opacity: 0.8;
+  20% {
+    opacity: 1;
   }
 
   100% {
-    transform: translateY(-400px) scale(1.2);
+    transform: translateY(-200px) rotate(135deg) translateX(-20px);
     opacity: 0;
   }
 }
 
 .product-banner h2 {
-  font-size: 3.8rem;
-  font-weight: 800;
-  letter-spacing: -1px;
+  font-family: 'Playfair Display', serif;
+  /* Elegant Serif */
+  font-size: 3rem;
+  /* Larger Size */
+  font-weight: 700;
+  font-style: italic;
+  /* Unique Style */
+  letter-spacing: 1px;
   margin-bottom: 15px;
-  text-shadow: 0 10px 20px rgba(199, 85, 59, 0.2);
-  animation: slideUpFade 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  animation: popIn 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
   opacity: 0;
-  transform: translateY(30px);
+  transform: scale(0.9);
 }
 
 .product-banner p {
-  font-size: 1.1rem;
-  font-weight: 600;
-  opacity: 0;
-  max-width: 600px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  /* Balanced Text */
+  font-weight: 500;
+  max-width: 550px;
   margin: 0 auto;
-  line-height: 1.6;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: rgba(255, 255, 255, 0.95);
-  background: rgba(255, 255, 255, 0.2);
-  padding: 10px 30px;
+  letter-spacing: 1px;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.25);
+  padding: 10px 35px;
   border-radius: 50px;
-  display: inline-block;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  animation: slideUpFade 0.9s cubic-bezier(0.2, 0.8, 0.2, 1) 0.2s forwards;
-  transform: translateY(20px);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  animation: slideUpFade 0.8s ease 0.3s forwards;
+  opacity: 0;
+  transform: translateY(15px);
+  font-style: italic;
+}
+
+@keyframes popIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 
 /* 🌈 Filter Button (Animated) */
@@ -177,14 +191,14 @@
 .tabs-wrap {
   display: flex;
   align-items: center;
-  margin: -50px 20px 40px;
+  margin: -50px 20px 25px;
   /* Stronger overlap */
   position: relative;
   z-index: 10;
   gap: 20px;
   background: #fff;
   border-radius: 25px;
-  padding: 20px 30px;
+  padding: 10px 20px;
   box-shadow: 0 20px 60px rgba(100, 100, 100, 0.1);
   /* Soft, deep shadow */
   animation: scaleFadeIn 1s cubic-bezier(0.2, 0.8, 0.2, 1) 0.4s both;
@@ -196,7 +210,7 @@
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   cursor: grab;
-  padding-bottom: 5px;
+  padding: 10px;
 }
 
 .tab-scroll:active {
