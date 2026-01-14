@@ -286,6 +286,17 @@ export class ListingGridComponent {
         rating: '4.6',
         reviews: '40',
         countryOrigin: 'LocheBio'
+      },
+      {
+        id: '11',
+        productName: 'Coco Grow Bags',
+        superSubCategory: 'Agricultural',
+        category: 'Agricultural',
+        imageInfo: { imageUrl: 'assets/img/banner-section2/product4.png' },
+        mrp: '450',
+        rating: '4.8',
+        reviews: '250',
+        countryOrigin: 'LocheBio'
       }
     ];
 
