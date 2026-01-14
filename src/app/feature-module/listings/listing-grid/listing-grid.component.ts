@@ -67,7 +67,7 @@ export class ListingGridComponent {
 
     }
     // this.listingGrid = this.data.listingGrid;
-    this.getAllVerifiedProductData();
+    // this.getAllVerifiedProductData(); // Removed
     this.getAllActiveProductData();
 
   }
@@ -123,22 +123,7 @@ export class ListingGridComponent {
   // }
 
 
-  getAllverifiedData: any = [];
-  getAllVerifiedProductData() {
-    this.commonService.getAllProductVerifiedData().subscribe({
-      next: (res: any) => {
-        if (res.status === 'true') {
-          this.getAllverifiedData = res.data;
-          console.log(this.getAllverifiedData);
-        } else {
-
-        }
-      },
-      error: (err: any) => {
-        console.error(err);
-      }
-    });
-  }
+  // getAllVerifiedProductData removed as it was unused and dynamic
 
 
 
@@ -190,26 +175,122 @@ export class ListingGridComponent {
 
 
   getAllActiveProductData() {
-    this.commonService.getAllActiveProductData().subscribe({
-      next: (res: any) => {
-        if (res.status === 'true' && Array.isArray(res.data)) {
-
-          // Filter products with countryOrigin = "LocheBio"
-          this.originalProducts = res.data.filter(
-            (item: any) => item.countryOrigin?.toLowerCase() === 'lochebio'.toLowerCase()
-          );
-
-          // Copy to display array
-          this.getAllProductData = [...this.originalProducts];
-
-        } else {
-          console.warn('No active products found');
-        }
+    // Static Data Implementation
+    this.originalProducts = [
+      {
+        id: '1',
+        productName: 'Coconut Fiber',
+        superSubCategory: 'Coconut',
+        category: 'Coconut',
+        imageInfo: { imageUrl: 'assets/img/banner-section2/product1.png' },
+        mrp: '1200',
+        rating: '4.5',
+        reviews: '120',
+        countryOrigin: 'LocheBio'
       },
-      error: (err: any) => {
-        console.error(err);
+      {
+        id: '2',
+        productName: 'Coir Mat',
+        superSubCategory: 'Coir Mat',
+        category: 'Coconut',
+        imageInfo: { imageUrl: 'assets/img/banner-section2/product2.png' },
+        mrp: '2600',
+        rating: '4.8',
+        reviews: '80',
+        countryOrigin: 'LocheBio'
+      },
+      {
+        id: '3',
+        productName: 'Coco Peat',
+        superSubCategory: 'Coco Peat',
+        category: 'Coconut',
+        imageInfo: { imageUrl: 'assets/img/banner-section2/product03.jpeg' },
+        mrp: '1600',
+        rating: '4.9',
+        reviews: '200',
+        countryOrigin: 'LocheBio'
+      },
+      {
+        id: '4',
+        productName: 'Coir Rope',
+        superSubCategory: 'Coir Rope',
+        category: 'Coconut',
+        imageInfo: { imageUrl: 'assets/img/banner-section2/product5.png' },
+        mrp: '1500',
+        rating: '4.3',
+        reviews: '45',
+        countryOrigin: 'LocheBio'
+      },
+      {
+        id: '5',
+        productName: 'Coir Rope (Heavy Duty)',
+        superSubCategory: 'Coir Rope',
+        category: 'Coconut',
+        imageInfo: { imageUrl: 'assets/img/banner-section2/product6.jpg' },
+        mrp: '1800',
+        rating: '4.7',
+        reviews: '60',
+        countryOrigin: 'LocheBio'
+      },
+      {
+        id: '6',
+        productName: 'Coir Net',
+        superSubCategory: 'Coir Net',
+        category: 'Coconut',
+        imageInfo: { imageUrl: 'assets/img/banner-section2/product7.png' },
+        mrp: '2200',
+        rating: '4.6',
+        reviews: '90',
+        countryOrigin: 'LocheBio'
+      },
+      {
+        id: '7',
+        productName: 'Desiccated Coconut',
+        superSubCategory: 'Desiccated coconut',
+        category: 'Coconut',
+        imageInfo: { imageUrl: 'assets/img/banner-section2/product8.jpg' },
+        mrp: '200',
+        rating: '4.8',
+        reviews: '150',
+        countryOrigin: 'LocheBio'
+      },
+      {
+        id: '8',
+        productName: 'Semi Husk Coconut',
+        superSubCategory: 'Semi Husk Coconut',
+        category: 'Coconut',
+        imageInfo: { imageUrl: 'assets/img/banner-section2/product9.png' },
+        mrp: '800',
+        rating: '4.5',
+        reviews: '100',
+        countryOrigin: 'LocheBio'
+      },
+      {
+        id: '9',
+        productName: 'Coir Board',
+        superSubCategory: 'Other Products', // Mapped to Other Products
+        category: 'Coconut',
+        imageInfo: { imageUrl: 'assets/img/banner-section2/product10.jpeg' },
+        mrp: '3000',
+        rating: '4.4',
+        reviews: '30',
+        countryOrigin: 'LocheBio'
+      },
+      {
+        id: '10',
+        productName: 'Coir Felt Needle',
+        superSubCategory: 'Other Products', // Mapped to Other Products
+        category: 'Coconut',
+        imageInfo: { imageUrl: 'assets/img/banner-section2/product11.jpg' },
+        mrp: '3500',
+        rating: '4.6',
+        reviews: '40',
+        countryOrigin: 'LocheBio'
       }
-    });
+    ];
+
+    // No filtering needed here as we want to show all these products (they are already LocheBio implicitly)
+    this.getAllProductData = [...this.originalProducts];
   }
 
 
@@ -446,57 +527,6 @@ export class ListingGridComponent {
     this.applyFilters();
   }
 
-  selectedConcerns: string[] = [];
-  onConcernChange(event: any, bodyConcern: string) {
-    if (event.target.checked) {
-      this.selectedConcerns.push(bodyConcern);
-    } else {
-      this.selectedConcerns = this.selectedConcerns.filter(c => c !== bodyConcern);
-    }
-    this.applyFilters();
-  }
-
-  selectedSkintype: string[] = [];
-  onSkintypeChange(event: any, skinType: string) {
-    if (event.target.checked) {
-      this.selectedSkintype.push(skinType);
-    } else {
-      this.selectedSkintype = this.selectedSkintype.filter(c => c !== skinType);
-    }
-    this.applyFilters();
-  }
-
-  selectedIngredient: string[] = [];
-  onIngredientChange(event: any, ingredient: string) {
-    if (event.target.checked) {
-      this.selectedIngredient.push(ingredient);
-    } else {
-      this.selectedIngredient = this.selectedIngredient.filter(c => c !== ingredient);
-    }
-    this.applyFilters();
-  }
-
-  selectedFormulation: string[] = [];
-  onFormulationChange(event: any, formulation: string) {
-    if (event.target.checked) {
-      this.selectedFormulation.push(formulation);
-    } else {
-      this.selectedFormulation = this.selectedFormulation.filter(c => c !== formulation);
-    }
-    this.applyFilters();
-  }
-
-
-  selectedPreference: string[] = [];
-  onPreferenceChange(event: any, preference: string) {
-    if (event.target.checked) {
-      this.selectedPreference.push(preference);
-    } else {
-      this.selectedPreference = this.selectedPreference.filter(c => c !== preference);
-    }
-    this.applyFilters();
-  }
-
   applyFilters() {
     let filtered = [...this.originalProducts];
 
@@ -505,31 +535,7 @@ export class ListingGridComponent {
 
     // Category filter
     if (this.selectedCategories.length > 0) {
-      filtered = filtered.filter(p => this.selectedCategories.includes(p.productType));
-    }
-
-    // Concern filter
-    if (this.selectedConcerns.length > 0) {
-      filtered = filtered.filter(p => this.selectedConcerns.includes(p.concern));
-    }
-
-    // Skin type  filter
-    if (this.selectedSkintype.length > 0) {
-      filtered = filtered.filter(p => this.selectedSkintype.includes(p.skinType));
-    }
-
-    // Ingredient filter
-    if (this.selectedIngredient.length > 0) {
-      filtered = filtered.filter(p => this.selectedIngredient.includes(p.keyIngredients));
-    }
-
-    // Formulation  filter
-    if (this.selectedFormulation.length > 0) {
-      filtered = filtered.filter(p => this.selectedFormulation.includes(p.productType));
-    }
-    // Preference  filter
-    if (this.selectedPreference.length > 0) {
-      filtered = filtered.filter(p => this.selectedPreference.includes(p.keyIngredients));
+      filtered = filtered.filter(p => this.selectedCategories.includes(p.category) || this.selectedCategories.includes(p.superSubCategory));
     }
 
     // ✅ Default Condition — If no result, show all products again

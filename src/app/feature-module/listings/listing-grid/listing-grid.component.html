@@ -26,7 +26,7 @@
         <img src="assets/img/Loche-India-Logo-PNG.png" alt="Logo" width="75px" />
       </div>
 
-      <!-- Close Button --> 
+      <!-- Close Button -->
       <button class="btn-close" (click)="toggleSidebar()">
         <span>&times;</span>
       </button>
@@ -71,54 +71,46 @@
                       <div class="col-md-12">
                         <div id="checkBoxes1">
                           <div class="selectBox-cont">
-                            <!-- Manually add product categories -->
+                            <!-- Coconut Categories -->
                             <label class="custom_check w-100">
-                              <input type="checkbox" name="category">
-                              <span class="checkmark"></span> All
+                              <input type="checkbox" name="category" (change)="onCategoryChange($event, 'Coconut')">
+                              <span class="checkmark"></span> Coconut
                             </label>
                             <label class="custom_check w-100">
-                              <input type="checkbox" name="category">
-                              <span class="checkmark"></span> Medical Devices
+                              <input type="checkbox" name="category"
+                                (change)="onCategoryChange($event, 'Agricultural')">
+                              <span class="checkmark"></span> Agricultural
                             </label>
                             <label class="custom_check w-100">
-                              <input type="checkbox" name="category">
-                              <span class="checkmark"></span> Botox
+                              <input type="checkbox" name="category" (change)="onCategoryChange($event, 'Coir Mat')">
+                              <span class="checkmark"></span> Coir Mat
                             </label>
                             <label class="custom_check w-100">
-                              <input type="checkbox" name="category">
-                              <span class="checkmark"></span> Fillers
+                              <input type="checkbox" name="category" (change)="onCategoryChange($event, 'Coco Peat')">
+                              <span class="checkmark"></span> Coco Peat
                             </label>
                             <label class="custom_check w-100">
-                              <input type="checkbox" name="category">
-                              <span class="checkmark"></span> PL
-                            </label>
-                             <label class="custom_check w-100">
-                              <input type="checkbox" name="category">
-                              <span class="checkmark"></span> PN Injector
+                              <input type="checkbox" name="category" (change)="onCategoryChange($event, 'Coir Rope')">
+                              <span class="checkmark"></span> Coir Rope
                             </label>
                             <label class="custom_check w-100">
-                              <input type="checkbox" name="category">
-                              <span class="checkmark"></span> PDRN
+                              <input type="checkbox" name="category" (change)="onCategoryChange($event, 'Coir Net')">
+                              <span class="checkmark"></span> Coir Net
                             </label>
                             <label class="custom_check w-100">
-                              <input type="checkbox" name="category">
-                              <span class="checkmark"></span> Skin Booster
+                              <input type="checkbox" name="category"
+                                (change)="onCategoryChange($event, 'Desiccated coconut')">
+                              <span class="checkmark"></span> Desiccated Coconut
                             </label>
                             <label class="custom_check w-100">
-                              <input type="checkbox" name="category">
-                              <span class="checkmark"></span> Lipolysis
+                              <input type="checkbox" name="category"
+                                (change)="onCategoryChange($event, 'Semi Husk Coconut')">
+                              <span class="checkmark"></span> Semi Husk Coconut
                             </label>
                             <label class="custom_check w-100">
-                              <input type="checkbox" name="category">
-                              <span class="checkmark"></span> PDRN Dental Implants
-                            </label>
-                            <label class="custom_check w-100">
-                              <input type="checkbox" name="category">
-                              <span class="checkmark"></span> Cosmetics
-                            </label>
-                            <label class="custom_check w-100">
-                              <input type="checkbox" name="category">
-                              <span class="checkmark"></span> Health Functional Food
+                              <input type="checkbox" name="category"
+                                (change)="onCategoryChange($event, 'Other Products')">
+                              <span class="checkmark"></span> Other Products
                             </label>
                           </div>
                         </div>
@@ -326,8 +318,9 @@
             <div class="listing-img">
               <div class="img-slider">
                 <div class="slide-images" (click)="productProfile(product.id)">
-                  <a class="product-image" >
-                    <img class="img-fluid" [src]="product.productImageId || product.imageInfo?.imageUrl" [alt]="product.productName"/>
+                  <a class="product-image">
+                    <img class="img-fluid" [src]="product.productImageId || product.imageInfo?.imageUrl"
+                      [alt]="product.productName" />
                   </a>
                 </div>
               </div>
@@ -337,8 +330,9 @@
                 </a>
               </div>
             </div>
-            <div class="listing-content" >
-              <div class="listing-features d-flex align-items-end justify-content-between"  (click)="productProfile(product.id)">
+            <div class="listing-content">
+              <div class="listing-features d-flex align-items-end justify-content-between"
+                (click)="productProfile(product.id)">
                 <div class="list-rating">
                   <h3 class="listing-title">
                     <a>{{ product.productName }}</a>
@@ -347,30 +341,30 @@
                     <i class="fas fa-star filled me-1" *ngFor="let i of [1,2,3,4]"></i>
                     <i class="fas fa-star"></i>
                     <!-- <span>{{ product.reviews }} ({{ product.rating }}) | {{ product.reviews }} Reviews</span> -->
-                  <span>({{ product.rating }}) | {{ product.reviews }} Reviews</span>
+                    <span>({{ product.rating }}) | {{ product.reviews }} Reviews</span>
                   </div>
                 </div>
               </div>
 
-              <div class="listing-location-details"  (click)="productProfile(product.id)">
-                 <div class="listing-price">
-                    @if(product.mrp){
-                    <h5> ₹ {{ product?.mrp }}</h5>
-                    }@else{
-                   <div class="outof-stock" style="color: red;"> OUT OF STOCK</div>
-                    }
-                  </div>
+              <div class="listing-location-details" (click)="productProfile(product.id)">
+                <div class="listing-price">
+                  @if(product.mrp){
+                  <h5> ₹ {{ product?.mrp }}</h5>
+                  }@else{
+                  <div class="outof-stock" style="color: red;"> OUT OF STOCK</div>
+                  }
+                </div>
               </div>
 
               @if(product.mrp){
-                <div class="listing-button" (click)="addToCart(product.id)">
-                  <a class="btn btn-order">
-                    <span><i class="fa-solid fa-bag-shopping"></i></span>
-                    Add To Cart
-                  </a>
-                </div>
+              <div class="listing-button" (click)="addToCart(product.id)">
+                <a class="btn btn-order">
+                  <span><i class="fa-solid fa-bag-shopping"></i></span>
+                  Add To Cart
+                </a>
+              </div>
               }
-              
+
             </div>
           </div>
         </div>
