@@ -317,9 +317,35 @@ export class ListingGridComponent {
     }
   }
 
+  // 📄 Pagination Logic
+  currentPage: number = 1;
+  pageSize: number = 8;
+
+  get totalPages(): number {
+    return Math.ceil(this.filteredProducts.length / this.pageSize);
+  }
+
+  get paginatedProducts(): any[] {
+    const startIndex = (this.currentPage - 1) * this.pageSize;
+    const endIndex = startIndex + this.pageSize;
+    return this.filteredProducts.slice(startIndex, endIndex);
+  }
+
+  get pageNumbers(): number[] {
+    return Array(this.totalPages).fill(0).map((x, i) => i + 1);
+  }
+
+  changePage(page: number): void {
+    if (page >= 1 && page <= this.totalPages) {
+      this.currentPage = page;
+      this.viewportScroller.scrollToPosition([0, 0]); // Scroll to top
+    }
+  }
+
   // 💡 Change tab
   selectTab(tabId: string) {
     this.activeTab = tabId;
+    this.currentPage = 1; // Reset to first page
   }
 
 
@@ -555,6 +581,7 @@ export class ListingGridComponent {
     }
 
     this.getAllProductData = filtered;
+    this.currentPage = 1; // Reset to first page
   }
 
 

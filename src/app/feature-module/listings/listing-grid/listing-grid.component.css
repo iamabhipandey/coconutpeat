@@ -458,21 +458,124 @@
   }
 }
 
-/* 📄 Pagination (used at bottom) */
+/* 📄 Pagination (Refined & Centered) */
 .blog-pagination {
-  border-top: 1px solid #eee;
-  padding: 20px 0;
-  margin-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 40px 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  position: relative;
 }
 
+/* Container for the list */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  /* More space between items */
+  margin: 0;
+  padding: 10px 20px;
+  background: #fff;
+  border-radius: 50px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+  /* Soft floating container shadow */
+}
+
+.page-item {
+  list-style: none;
+  margin: 0;
+}
+
+/* Standard number link */
+.page-link {
+  border: none;
+  /* Removed border */
+  width: 45px;
+  /* Slightly larger */
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #666;
+  background: transparent;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  /* Bouncy transition */
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+}
+
+/* Hover Effect for Numbers */
+.page-link:hover {
+  background: #f4f6f8;
+  color: #ff7e5f;
+  transform: translateY(-3px);
+}
+
+/* Active State */
+.page-link.active {
+  background: linear-gradient(135deg, #ff7e5f 0%, #feb47b 100%);
+  color: #fff;
+  box-shadow: 0 8px 15px rgba(255, 126, 95, 0.4);
+  transform: scale(1.1);
+}
+
+/* Arrows */
 .paginationarrow {
-  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #fdfdfd;
   color: #333;
-  transition: color 0.3s;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 14px;
+  border: 1px solid #f0f0f0;
+  /* Subtle border for arrows */
 }
 
 .paginationarrow:hover {
-  color: #ff7e5f;
+  background: #ff7e5f;
+  color: #fff;
+  border-color: #ff7e5f;
+  transform: translateX(0) scale(1.05);
+  box-shadow: 0 5px 15px rgba(255, 126, 95, 0.3);
+}
+
+/* Disabled State */
+.page-item.disabled .paginationarrow,
+.page-item.disabled .page-link {
+  opacity: 0.4;
+  pointer-events: none;
+  background: #f9f9f9;
+  color: #ccc;
+  border-color: transparent;
+  box-shadow: none;
+  transform: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .pagination {
+    gap: 8px;
+    padding: 8px 15px;
+  }
+
+  .page-link,
+  .paginationarrow {
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+  }
 }
 
 /* Sidebar styling (Bouncy Entrance) */

@@ -308,12 +308,13 @@
   <div class="tab-container mt-4">
     <div *ngIf="filteredProducts.length > 0" class="tab-section fade-in">
       <div class="row">
-        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6" *ngFor="let product of filteredProducts">
+        <!-- 🟡 Changed to paginatedProducts -->
+        <div class="col-xl-3 col-lg-4 col-md-4 col-sm-4 col-6" *ngFor="let product of paginatedProducts">
           <div class="listing-item">
             <div class="listing-img">
               <div class="img-slider">
-                <div class="slide-images" (click)="productProfile(product.id)">
-                  <a class="product-image">
+                <div class="slide-images">
+                  <a class="product-image" [routerLink]="[routes.listingDetails]" [queryParams]="{id: product.id}">
                     <img class="img-fluid" [src]="product.productImageId || product.imageInfo?.imageUrl"
                       [alt]="product.productName" />
                   </a>
@@ -326,11 +327,11 @@
               </div>
             </div>
             <div class="listing-content">
-              <div class="listing-features d-flex align-items-end justify-content-between"
-                (click)="productProfile(product.id)">
+              <div class="listing-features d-flex align-items-end justify-content-between">
                 <div class="list-rating">
                   <h3 class="listing-title">
-                    <a>{{ product.productName }}</a>
+                    <a [routerLink]="[routes.listingDetails]" [queryParams]="{id: product.id}">{{ product.productName
+                      }}</a>
                   </h3>
                   <div class="list-rating">
                     <i class="fas fa-star filled me-1" *ngFor="let i of [1,2,3,4]"></i>
@@ -341,7 +342,7 @@
                 </div>
               </div>
 
-              <div class="listing-location-details" (click)="productProfile(product.id)">
+              <div class="listing-location-details">
                 <div class="listing-price">
                   @if(product.mrp){
                   <h5> ₹ {{ product?.mrp }}</h5>
@@ -377,33 +378,35 @@
 
 
   <!--Pagination-->
-  <!-- <div class="blog-pagination">
+  <div class="blog-pagination" *ngIf="totalPages > 1">
     <nav>
-      <ul class="pagination page-item justify-content-end">
-        <li class="previtem">
-          <a class="paginationarrow"><i class="fa-solid fa-angles-left"></i></a>
+      <ul class="pagination page-item justify-content-center">
+        <!-- Previous -->
+        <li class="previtem" [class.disabled]="currentPage === 1">
+          <a class="paginationarrow" (click)="changePage(currentPage - 1)"><i class="fa-solid fa-angles-left"></i></a>
         </li>
+
+        <!-- Page Numbers -->
         <li class="justify-content-center pagination-center">
           <div class="page-group">
             <ul>
-              <li class="page-item">
-                <a class="active page-link" href="javascript:void(0);">1</a>
-              </li>
-              <li class="page-item">
-                <a class=" page-link" href="javascript:void(0);">2 <span class="visually-hidden">(current)</span></a>
-              </li>
-              <li class="page-item">
-                <a class="page-link" href="javascript:void(0);">3</a>
+              <li class="page-item" *ngFor="let page of pageNumbers">
+                <a class="page-link" [class.active]="page === currentPage" (click)="changePage(page)">
+                  {{ page }}
+                  <span *ngIf="page === currentPage" class="visually-hidden">(current)</span>
+                </a>
               </li>
             </ul>
           </div>
         </li>
-        <li class="nextlink">
-          <a class="paginationarrow"><i class="fa-solid fa-angles-right"></i></a>
+
+        <!-- Next -->
+        <li class="nextlink" [class.disabled]="currentPage === totalPages">
+          <a class="paginationarrow" (click)="changePage(currentPage + 1)"><i class="fa-solid fa-angles-right"></i></a>
         </li>
       </ul>
     </nav>
-  </div> -->
+  </div>
   <!--/Pagination-->
 
 </section>
