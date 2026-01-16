@@ -117,8 +117,9 @@ export class DataService {
       menu: [
         { menuValue: 'Agricultural Research Institute', hasSubRoute: false, routes: routes.agriculturalResearchInstitute, showSubRoute: false, subMenus: [], },
         { menuValue: 'Certification Details', hasSubRoute: false, routes: routes.certificationDetails, showSubRoute: false, subMenus: [], },
-        { menuValue: 'Partner Organizations', hasSubRoute: false, routes: routes.partnerOrganizations, showSubRoute: false, subMenus: [], },
+        // { menuValue: 'Partner Organizations', hasSubRoute: false, routes: routes.partnerOrganizations, showSubRoute: false, subMenus: [], },
       ],
+
     },
     {
       tittle: 'Customer center',
@@ -129,6 +130,7 @@ export class DataService {
         { menuValue: 'whatapp', hasSubRoute: false, showSubRoute: false, subMenus: [], },
         { menuValue: 'OEM/ODM Inquiries', hasSubRoute: false, routes: routes.oemOdmInquiries, showSubRoute: false, subMenus: [], },
       ],
+
     },
     {
       tittle: 'Public Relations Center',
@@ -140,6 +142,7 @@ export class DataService {
         { menuValue: 'Introduction of partner companies', hasSubRoute: false, showSubRoute: false, subMenus: [], },
         { menuValue: 'Introduction of CI', hasSubRoute: false, showSubRoute: false, subMenus: [], },
       ],
+
     },
     {
       tittle: 'PR',
@@ -150,6 +153,7 @@ export class DataService {
         { menuValue: 'a promotional video', hasSubRoute: false, showSubRoute: false, subMenus: [], },
         { menuValue: 'Advertising', hasSubRoute: false, showSubRoute: false, subMenus: [], },
       ],
+
     },
     {
       tittle: 'Cardalog Archive',
@@ -159,6 +163,7 @@ export class DataService {
         { menuValue: 'Cocoi', hasSubRoute: false, showSubRoute: false, subMenus: [], },
         { menuValue: 'Hyobato', hasSubRoute: false, showSubRoute: false, subMenus: [], },
       ],
+
     },
 
 

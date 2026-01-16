@@ -148,11 +148,11 @@ export interface listingDetails {
 }
 export interface testimonials {
   name: string;
-  location:string;
+  location: string;
   title: string;
   content: string;
-  
-  
+
+
 }
 export interface thumbnails1 {
   img: string;
@@ -239,38 +239,38 @@ export interface carousel {
   para: string;
 }
 export interface userPayment {
-    id: number;
-    bookingID: string;
-    carName: string;
-    paidOn: string;
-    mode: string;
-    total: string;
-    status: string;
-    img:string;
-    feature: string;
-    isSelected: boolean;
-  }
-  export interface userReview {
-    id: number;
-    carName: string;
-    rentalType: string;
-    review: string;
-    ratings: string;
-    img: string;
-    feature: string;
-    isSelected: boolean;
-    rating: string;
-  }
-  export interface userWallet {
-    id: number;
-    refId: string;
-    transactionFor: string;
-    date: string;
-    total: string;
-    status: string;
-    isSelected: boolean;
-  }
-  
+  id: number;
+  bookingID: string;
+  carName: string;
+  paidOn: string;
+  mode: string;
+  total: string;
+  status: string;
+  img: string;
+  feature: string;
+  isSelected: boolean;
+}
+export interface userReview {
+  id: number;
+  carName: string;
+  rentalType: string;
+  review: string;
+  ratings: string;
+  img: string;
+  feature: string;
+  isSelected: boolean;
+  rating: string;
+}
+export interface userWallet {
+  id: number;
+  refId: string;
+  transactionFor: string;
+  date: string;
+  total: string;
+  status: string;
+  isSelected: boolean;
+}
+
 export interface userBookingCancelled {
   isSelected: boolean;
   id: number;
@@ -385,5 +385,5 @@ export interface User {
   password: string;
   confirmPassword: string;
   otp: string;
-  userType:string;
+  userType: string;
 }
