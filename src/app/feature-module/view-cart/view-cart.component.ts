@@ -66,21 +66,61 @@ export class ViewCartComponent {
   cartItems: any = [];
 
   getCartData() {
-    this.commonService.viewCart(this.loggedUserId).subscribe({
-      next: (res: any) => {
-        if (res.status === 'true') {
-          this.cartData = res.data;
-          this.cartItems = res.data.items;
-
-        } else {
-
+    // Static Data Implementation
+    this.cartData = {
+      quantity: 3,
+      totalAmount: 4400,
+      items: [
+        {
+          productId: 101,
+          productName: 'COCO PEAT',
+          category: 'Gardening',
+          subCategory: 'Peat',
+          quantity: 1,
+          price: 1600,
+          totalPrice: 1600,
+          imageUrl: 'assets/img/banner-section2/product03.jpeg'
+        },
+        {
+          productId: 102,
+          productName: 'COIR MAT',
+          category: 'Home Decore',
+          subCategory: 'Mats',
+          quantity: 1,
+          price: 2600,
+          totalPrice: 2600,
+          imageUrl: 'assets/img/banner-section2/product2.png'
+        },
+        {
+          productId: 103,
+          productName: 'DESICCATED COCONUT',
+          category: 'Food',
+          subCategory: 'Coconut',
+          quantity: 1,
+          price: 200,
+          totalPrice: 200,
+          imageUrl: 'assets/img/banner-section2/product8.jpg'
         }
-      },
-      error: (err: any) => {
-        console.error(err);
-      }
-    });
+      ]
+    };
+    this.cartData.totalAmount = this.cartData.items.reduce((acc: any, item: any) => acc + item.totalPrice, 0);
 
+    this.cartItems = this.cartData.items;
+
+    // this.commonService.viewCart(this.loggedUserId).subscribe({
+    //   next: (res: any) => {
+    //     if (res.status === 'true') {
+    //       this.cartData = res.data;
+    //       this.cartItems = res.data.items;
+    //
+    //     } else {
+    //
+    //     }
+    //   },
+    //   error: (err: any) => {
+    //     console.error(err);
+    //   }
+    // });
   }
 
   removeItem(productId: number) {

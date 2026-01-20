@@ -4,12 +4,14 @@
   top: 150px;
   z-index: 200;
 }
+
 .sidebar__body {
   padding: 12px;
   overflow: auto;
-      height: 91vh;
-      box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  height: 91vh;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
+
 .card-white {
   display: flex;
   flex-direction: column;
@@ -18,46 +20,67 @@
   border-radius: 12px;
   margin-bottom: 20px;
 }
+
+/* Sidebar Link Styles */
 .sidebar__link {
   display: flex;
   align-items: center;
   padding: 13px 15px;
   font-size: 14px;
-  color: #333;
+  color: #201F1D;
+  /* Theme Dark */
   text-decoration: none;
   border-radius: 6px;
   transition: background 0.3s ease, color 0.3s ease;
-}
-.sidebar__link:hover {
-  background-color: #fff0f5;
   font-weight: 500;
 }
+
+.sidebar__link:hover {
+  background-color: #fff8eb;
+  /* Very light orange bg */
+  color: #FFA633;
+  /* Theme Orange */
+}
+
 .sidebar__link i {
   margin-right: 10px;
-  color: #666;
+  color: #7f8c8d;
   transition: color 0.3s ease;
 }
+
+.sidebar__link:hover i {
+  color: #FFA633;
+}
+
+/* Active State */
 .sidebar__link.active {
-  background: #ffeaf0;
-  color: #ff5894;
+  background: #fff8eb;
+  color: #FFA633;
   font-weight: 600;
+  border-left: 3px solid #FFA633;
+  border-radius: 0 6px 6px 0;
+  /* Flat left side for border */
 }
+
 .sidebar__link.active i {
-  color: #ff5894;
+  color: #FFA633;
 }
+
+/* Sidebar Toggle Button */
 .sidebar__open-btn {
   position: absolute;
   right: -50px;
   top: 0;
-  background: #ff4f81;
+  background: #FFA633;
   color: #fff;
   border: none;
   padding: 10px;
   border-radius: 50%;
   cursor: pointer;
 }
+
 .sidebar__open-btn:hover {
-  background: #e93c6e;
+  background: #E8952E;
 }
 
 /* Sidebar */
@@ -70,6 +93,7 @@
   top: 0;
   transition: transform 0.3s ease;
   z-index: 1000;
+
   @media (max-width: 991px) {
     width: 260px;
     transform: translateX(-100%);
@@ -104,7 +128,8 @@
   transform: translateX(0) translateY(-50%);
   transition: transform 0.3s ease;
   color: #fff;
-  background-color: #fd82af;
+  background-color: #FFA633;
+  /* Theme Orange */
   border: none;
   padding: 3px 5px;
   border-radius: 0px 20px 20px 0px;
@@ -133,13 +158,15 @@
     display: none;
   }
 }
-.sidebar__title{
+
+.sidebar__title {
   padding-bottom: 10px;
 }
-  @media (max-width: 992px) {
-    .sidebar__item{
-  padding-top: 10px;
-  border-top: 1px solid #cacaca;
-}
 
+@media (max-width: 992px) {
+  .sidebar__item {
+    padding-top: 10px;
+    border-top: 1px solid #cacaca;
   }
+
+}

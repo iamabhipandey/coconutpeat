@@ -1,65 +1,59 @@
 <div class="content dashboard-content">
+  <div class="container-fluid">
+    <header class="css-wn6jwz">
+      <span class="css-1gjbxyh">My Wishlist
+        @if(wishlistData?.length){
+        <span class="css-1ylarvv"> ({{wishlistData?.length}})</span>
+        }
+      </span>
+    </header>
+
     <div class="details-grid">
-      <header class="css-wn6jwz">
-        <span class="css-1gjbxyh">Total  Items
-           @if(wishlistData?.length){
-          <span class="css-1ylarvv"> ( {{wishlistData?.length}} )</span>
-           }
-        </span>
-      </header>
-      <div class="rental-deal-slider details-car ">
-        <div class="row">
-           @if(wishlistData?.length){
-          <div class="col-6 col-sm-6 col-md-4 col-lg-3 col-xl-3" *ngFor="let item of wishlistData">
-            <div class="rental-car-item">
-              <div class="listing-item pb-0">
-                <div class="listing-img" (click)="productProfile(item)">
-                  <a>
-                    <img *ngIf="item?.imageUrl" [src]="item?.imageUrl" class="img-fluid" alt="img" />
-                  </a>
-                  <div class="fav-item justify-content-end" (click)="removeFromTheWishList(item.productId)">
-                    <a href="javascript:void(0)" class="fav-icon">
-                      <i class="feather icon-heart"></i>
-                    </a>
-                  </div>
-                  <!-- <span class="featured-text">{{item?.productName}}</span> -->
-                </div>
-                <div class="listing-content">
-                  <div class="listing-features d-flex align-items-end justify-content-between" (click)="productProfile(item)">
-                    <div class="list-rating">
-                      <!-- <a href="javascript:void(0)" class="author-img">
-                        <img src="assets/img/profiles/avatar-03.jpg" alt="author">
-                      </a> -->
-                      <h3 class="listing-title">
-                        <a>{{item?.productName}}</a>
-                      </h3>
-                      <div class="list-rating">
-                        <i class="fas fa-star filled"></i>
-                        <i class="fas fa-star filled"></i>
-                        <i class="fas fa-star filled"></i>
-                        <i class="fas fa-star filled"></i>
-                        <i class="fas fa-star"></i>
-                        <span>(4.0) 150 Reviews</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="listing-location-details" (click)="productProfile(item.productId)">
-                    <div class="listing-price">
-                      <h5>₹ {{item?.price}} </h5>
-                      <!-- <p>₹700</p><span>(7% Off)</span> -->
-                    </div>
-                  </div>
-                  <div class="listing-button" (click)="addToCart(item.id)">
-                    <a class="btn btn-order"><span><i class="fa-solid fa-bag-shopping"></i></span>Add to Cart</a>
-                  </div>
+      <div class="row">
+        @if(wishlistData?.length > 0){
+        <div class="col-xl-3 col-lg-4 col-md-6 col-12 " *ngFor="let item of wishlistData">
+          <div class="yacht-cat-grid">
+            <div class="yatch-card-img position-relative">
+              <a (click)="productProfile(item)">
+                <img *ngIf="item?.imageUrl" [src]="item?.imageUrl" class="img-fluid" alt="{{item.productName}}" />
+              </a>
+
+              <!-- Remove Icon Overlay -->
+              <div class="fav-item" (click)="removeFromTheWishList(item.productId); $event.stopPropagation()"
+                style="position: absolute; top: 0px; right: 0px; background: #fff; border-radius: 50%; width: 35px; height: 35px; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: 0 2px 5px rgba(0,0,0,0.2);">
+                <div class="fav-icon" title="Remove from Wishlist">
+                  <i class="feather icon-trash-2" style="color: #ff4757; font-size: 16px;"></i>
                 </div>
               </div>
             </div>
+
+            <div class="card-content d-flex align-items-center justify-content-between" style="padding-top: 15px;">
+              <div>
+                <h4><a (click)="productProfile(item)" class="product-title-link">{{item?.productName}}</a>
+                </h4>
+                <span
+                  style="display: block; font-size: 14px; color: #7f8c8d; margin-bottom: 5px;">{{item?.category}}</span>
+                <h5 style="font-size: 16px; font-weight: 700; margin: 0; color: #201F1D;">₹ {{item?.price}}</h5>
+              </div>
+              <!-- Add to Cart Action -->
+              <a (click)="addToCart(item.productId); $event.stopPropagation()" class="arrow-right"
+                style="width: 40px; height: 40px; background: #f4f4f4; border-radius: 50%; padding: 10px; display: flex; align-items: center; justify-content: center; color: #201F1D; cursor: pointer; transition: all 0.3s;"
+                title="Add to Cart">
+                <i class="bx bx-cart" style="font-size: 20px;"></i>
+              </a>
+            </div>
           </div>
-        }@else{
-          There is no items yet!
-        }
         </div>
+        }@else{
+        <div class="col-12 text-center py-5">
+          <img src="assets/img/icons/empty-cart.svg" alt="Empty Wishlist"
+            style="max-width: 200px; margin-bottom: 20px;">
+          <h4>Your wishlist is empty</h4>
+          <p>Browse products and add your favorites here!</p>
+          <button class="btn btn-primary mt-3" [routerLink]="routes.listingGrid">Start Shopping</button>
+        </div>
+        }
       </div>
     </div>
   </div>
+</div>
