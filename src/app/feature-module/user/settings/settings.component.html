@@ -5,16 +5,41 @@
         <!-- <div class="content-header content-settings-header">
             <h4>Settings</h4>
         </div> -->
-        
-        <!-- <div class="row">
-            <div class="col-lg-3 theiaStickySidebar">
-                <div class="stickybar">
-                    <app-user-setting-sidebar></app-user-setting-sidebar>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Settings Tabs -->
+                <div class="settings-tabs">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link" routerLinkActive="active" [routerLink]="routes.userSettings">
+                                <i class="feather icon-user"></i> Profile
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" routerLinkActive="active" [routerLink]="routes.userSecurity">
+                                <i class="feather icon-shield"></i> Security
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" routerLinkActive="active" [routerLink]="routes.userNotification">
+                                <i class="feather icon-bell"></i> Notifications
+                            </a>
+                        </li>
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" routerLinkActive="active" [routerLink]="routes.userIntegration">
+                                <i class="feather icon-git-merge"></i> Integration
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- /Settings Tabs -->
+
+                <div class="settings-content">
+                    <router-outlet></router-outlet>
                 </div>
             </div>
-            <div class="col-lg-9">
-                <router-outlet></router-outlet>
-            </div>
         </div>
-    </div> -->
+    </div>
 </div>

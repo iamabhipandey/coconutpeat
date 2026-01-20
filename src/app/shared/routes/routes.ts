@@ -199,9 +199,7 @@ export class routes {
   public static get userSettings(): string {
     return this.user + '/settings/user-settings';
   }
-  public static get userPreference(): string {
-    return this.user + '/user-preferences';
-  }
+
 
   public static get userBookingCancelled(): string {
     return this.user + '/user-booking-cancelled';
@@ -244,9 +242,7 @@ export class routes {
   public static get userNotification(): string {
     return this.user + '/settings/user-notification';
   }
-  public static get userPreferences(): string {
-    return this.user + '/settings/user-preferences';
-  }
+
   public static get userSecurity(): string {
     return this.user + '/settings/user-security';
   }

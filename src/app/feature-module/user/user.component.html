@@ -37,6 +37,13 @@
                                         <a [routerLink]="routes.userDashboard" routerLinkActive="active"
                                             class="sidebar__link">
                                             <i class="fa-solid fa-gauge"></i>
+                                            <span>Dashboard</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__list-item">
+                                        <a [routerLink]="routes.userSettings" routerLinkActive="active"
+                                            [ngClass]="{'active': customRouteSettings == true}" class="sidebar__link">
+                                            <i class="fa-solid fa-user"></i>
                                             <span>User Profile</span>
                                         </a>
                                     </li>
@@ -70,14 +77,15 @@
                                     <div class="sidebar__item mt-3">
                                         <div class="sidebar__title">Help</div>
                                         <ul class="sidebar__list">
-                                            <li class="sidebar__list-item" >
-                                            <a class="sidebar__link" [routerLink]="routes.faquestions" routerLinkActive="active">
-                                                <i class="fa-solid fa-circle-question"></i>
-                                                <span>Get Started</span>
-                                            </a>
-                                        </li>
-                                            <li  class="sidebar__list-item" (click)="logout()">
-                                                <a class="sidebar__link"  [ngClass]="{'active': customRouteSettings == true}">
+                                            <!-- <li class="sidebar__list-item">
+                                                <a class="sidebar__link" [routerLink]="routes.faquestions"
+                                                    routerLinkActive="active">
+                                                    <i class="fa-solid fa-circle-question"></i>
+                                                    <span>Get Started</span>
+                                                </a>
+                                            </li> -->
+                                            <li class="sidebar__list-item" (click)="logout()">
+                                                <a class="sidebar__link">
                                                     <i class="fa-solid fa-power-off"></i>
                                                     <span>Log Out</span>
                                                 </a>

@@ -4,7 +4,6 @@ import { CommonModule } from '@angular/common';
 import { SettingsRoutingModule } from './settings-routing.module';
 import { SettingsComponent } from './settings.component';
 import { UserSettingSidebarComponent } from '../common/user-setting-sidebar/user-setting-sidebar.component';
-import { UserPreferencesComponent } from './user-preferences/user-preferences.component';
 import { UserSettingsComponent } from './user-settings/user-settings.component';
 import { UserNotificationComponent } from './user-notification/user-notification.component';
 import { UserIntegrationComponent } from './user-integration/user-integration.component';
@@ -16,7 +15,6 @@ import { UserSecurityComponent } from './user-security/user-security.component';
   declarations: [
     SettingsComponent,
     UserSettingSidebarComponent,
-    UserPreferencesComponent,
     UserSettingsComponent,
     UserNotificationComponent,
     UserIntegrationComponent,

@@ -8,4 +8,9 @@ import { routes } from 'src/app/shared/routes/routes';
 })
 export class UserSettingsComponent {
   public routes = routes;
+  public isEditing = false;
+
+  toggleEdit() {
+    this.isEditing = !this.isEditing;
+  }
 }

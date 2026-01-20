@@ -1,68 +1,70 @@
-<div class="profile-container">
-    <div class="profile-header">
-        <div class="profile-card">
-            <span class="edit-icon" (click)="openModal()" >
-                <a class="edit-link"><i class="fa-solid fa-pen-to-square"></i></a> Edit
-            </span>
-            <img src="assets/img/profiles/profile (1).png" alt="user" class="profile-avatar">
-            <div class="profile-info">
-                <strong class="user-name">{{loggedUserName}}</strong>
-                <div class="info-row">
-                    <span class="label">Email: </span>
-                    <span class="user-email">{{loggedUserEmail}}</span>
-                      <span class="mobile-hide">
-                         <img src="assets/img/profiles/check.png" alt="user" class="mobile-hide">
-                        </span>
-                    <!-- <span class="verified">Verified</span> -->
+<div class="content dashboard-content">
+
+    <!-- Welcome Section -->
+    <div class="welcome-section mb-4">
+        <h4>Hello, <span>{{loggedUserName}}</span>!</h4>
+        <p>From your account dashboard, you can view your recent orders, manage your shipping and billing addresses, and
+            edit
+            your password and account details.</p>
+    </div>
+
+    <!-- Dashboard Stats Widgets -->
+    <div class="row">
+        <div class="col-lg-3 col-md-6 col-sm-12" *ngFor="let stat of dashboardStats">
+            <div class="dash-widget">
+                <div class="dash-widget-icon" [ngClass]="stat.textClass">
+                    <i [class]="stat.icon"></i>
                 </div>
-                <div class="info-row"></div>
-                <div class="info-row" (click)="VerifiedAdhar()">
-                    <span class="label">Aadhar Number:</span>
-                    <span class="user-dob">{{userProfileData?.aadharNumber}} || 697897980979</span>
-                    <span class="mobile-hide">
-                         <img src="assets/img/profiles/check.png" alt="user" class="mobile-hide">
-                        </span>
-                     <!-- <span class="verified">* Aadhar card is mandatory for Cross-Border Products</span> -->
+                <div class="dash-widget-info">
+                    <h3>{{stat.value}}</h3>
+                    <h6>{{stat.label}}</h6>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="address-section">
-        <div class="address-header">
-            <div class="address-title">
-                <span class="home-icon">
-                    <a width="20" height="19"><i class="fa-solid fa-house"></i></a>
-                </span>MY ADDRESSES
-            </div>
-            <div class="add-address" (click)="editaddress()" >
-                <a class="add-icon">
-                    <i class="fa-solid fa-pen-to-square"></i>
-                </a>ADD NEW ADDRESS
-            </div>
-        </div>
-        <div class="address-list">
-            <!-- Address Block 1 -->
-            <div class="address-card"  *ngFor="let add of useraddressData">
-                <div class="address-tag">{{add.address}}</div>
-                <div class="address-name">{{loggedUserName}} </div>
-                <div>{{add.city}}, {{add.pincode}}, {{add.state}}</div>
-                <div class="contact-info">
-                    <div class="phone-number">{{loggedMobile}} {{add.mobileNo}}</div>
+    <!-- Recent Orders Section -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card card-table">
+                <div class="card-header">
+                    <h4 class="card-title">Recent Orders</h4>
                 </div>
-                <!-- <div class="address-actions">
-                    <div class="action-button">
-                        <a class="action-icon">
-                            <i class="fa-solid fa-pen-to-square"></i>
-                        </a>Edit
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table table-center table-hover mb-0">
+                            <thead>
+                                <tr>
+                                    <th>Order ID</th>
+                                    <th>Date</th>
+                                    <th>Items</th>
+                                    <th>Amount</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let order of recentOrders">
+                                    <td><a [routerLink]="routes.userDashboard"
+                                            style="font-weight: 600; color: #FFA633;">{{order.orderId}}</a></td>
+                                    <td>{{order.date}}</td>
+                                    <td>{{order.items}}</td>
+                                    <td style="font-weight: 600; color: #201F1D;">{{order.amount}}</td>
+                                    <td>
+                                        <span class="badge" [ngClass]="order.statusClass">{{order.status}}</span>
+                                    </td>
+                                    <td>
+                                        <a [routerLink]="routes.userDashboard"
+                                            class="btn btn-sm btn-white text-success me-2"><i class="far fa-eye"></i>
+                                            View</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
-                    <div class="action-button">
-                        <a class="action-icon">
-                            <i class="fa-regular fa-trash-can"></i>
-                        </a>Remove
-                    </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
+
 </div>

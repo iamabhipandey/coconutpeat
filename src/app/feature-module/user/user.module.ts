@@ -7,7 +7,6 @@ import { HeaderComponent } from './common/header/header.component';
 import { UserBookingCancelledComponent } from './user-booking-cancelled/user-booking-cancelled.component';
 import { UserNotificationComponent } from './settings/user-notification/user-notification.component';
 import { UserPaymentComponent } from './user-payment/user-payment.component';
-import { UserPreferencesComponent } from './settings/user-preferences/user-preferences.component';
 import { UserReviewsComponent } from './user-reviews/user-reviews.component';
 import { UserWalletComponent } from './user-wallet/user-wallet.component';
 import { UserWishlistComponent } from './user-wishlist/user-wishlist.component';

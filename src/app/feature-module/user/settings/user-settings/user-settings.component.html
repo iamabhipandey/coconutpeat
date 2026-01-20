@@ -1,119 +1,141 @@
 <!-- Settings Details -->
 <div class="settings-info">
-    <div class="settings-sub-heading">
-        <h4>Profile</h4>
+    <!-- Profile Header -->
+    <div class="settings-header mb-4">
+        <h4>My Profile</h4>
+        <p class="text-muted">Manage your personal information and address details.</p>
     </div>
+
     <form action="#">
 
-        <!-- Basic Info -->
-        <div class="profile-info-grid">
-            <div class="profile-info-header">
-                <h5>Basic Information</h5>
-                <p>Information about user</p>
+        <!-- Basic Information Card -->
+        <div class="settings-card mb-4">
+            <div class="settings-card-header">
+                <h5><i class="feather icon-user me-2"></i>Basic Information</h5>
             </div>
-            <div class="profile-inner">
-                <div class="profile-info-pic">
-                    <div class="profile-info-img">
-                        <img src="assets/img/profiles/avatar-15.jpg" alt="Profile">
-                        <div class="profile-edit-info">
-                            <a href="javascript:void(0)">
-                                <i class="feather icon-edit me-1"></i>
-                            </a>
-                            <a href="javascript:void(0)">
-                                <i class="feather icon-trash-2"></i>
-                            </a>
+            <div class="settings-card-body">
+
+                <!-- Profile Picture -->
+                <div class="profile-pic-section text-center mb-5">
+                    <div class="profile-pic-wrapper">
+                        <img src="assets/img/profiles/avatar-15.jpg" alt="Profile" class="img-fluid profile-img">
+                        <div class="profile-edit-overlay">
+                            <label for="profile_image_upload" class="edit-icon">
+                                <i class="feather icon-camera"></i>
+                            </label>
+                            <input type="file" id="profile_image_upload" hidden>
                         </div>
                     </div>
-                    <div class="profile-info-content">
-                        <h6>Profile picture</h6>
-                        <p>PNG, JPEG under 15 MB</p>
+                    <div class="profile-pic-info mt-3">
+                        <h6>Abhishek Pandey</h6>
+                        <p class="text-muted small">JPG, GIF or PNG. Max size of 800K</p>
                     </div>
                 </div>
-                <div class="row">
+
+                <div class="row g-4">
                     <div class="col-md-4">
-                        <div class="profile-form-group">
-                            <label>First Name <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter First Name">
+                        <div class="form-group custom-form-group">
+                            <label class="form-label">First Name <span class="text-danger">*</span></label>
+                            <div class="input-group-icon">
+                                <input type="text" class="form-control" placeholder="Enter First Name" value="Abhishek">
+                                <span class="input-icon"><i class="feather icon-user"></i></span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="profile-form-group">
-                            <label>Last Name <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Last Name">
+                        <div class="form-group custom-form-group">
+                            <label class="form-label">Last Name <span class="text-danger">*</span></label>
+                            <div class="input-group-icon">
+                                <input type="text" class="form-control" placeholder="Enter Last Name" value="Pandey">
+                                <span class="input-icon"><i class="feather icon-user"></i></span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-4">
-                        <div class="profile-form-group">
-                            <label>User Name <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter User Name">
+                        <div class="form-group custom-form-group">
+                            <label class="form-label">User Name <span class="text-danger">*</span></label>
+                            <div class="input-group-icon">
+                                <input type="text" class="form-control" placeholder="Enter User Name"
+                                    value="abhishek_p">
+                                <span class="input-icon"><i class="feather icon-at-sign"></i></span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="profile-form-group">
-                            <label>Phone Number <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" placeholder="+ 1 65656565656">
+                        <div class="form-group custom-form-group">
+                            <label class="form-label">Phone Number <span class="text-danger">*</span></label>
+                            <div class="input-group-icon">
+                                <input type="text" class="form-control" placeholder="+1 123 456 7890"
+                                    value="+91 9876543210">
+                                <span class="input-icon"><i class="feather icon-phone"></i></span>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="profile-form-group">
-                            <label>Email <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Email">
+                        <div class="form-group custom-form-group">
+                            <label class="form-label">Email <span class="text-danger">*</span></label>
+                            <div class="input-group-icon">
+                                <input type="email" class="form-control" placeholder="Enter Email"
+                                    value="abhishek@example.com">
+                                <span class="input-icon"><i class="feather icon-mail"></i></span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /Basic Info -->
 
-        <!-- Address Info -->
-        <div class="profile-info-grid">
-            <div class="profile-info-header">
-                <h5>Address Information</h5>
-                <p>Information about address of user</p>
+        <!-- Address Information Card -->
+        <div class="settings-card mb-4">
+            <div class="settings-card-header">
+                <h5><i class="feather icon-map-pin me-2"></i>Address Information</h5>
             </div>
-            <div class="profile-inner">
-                <div class="row">
+            <div class="settings-card-body">
+                <div class="row g-4">
                     <div class="col-md-12">
-                        <div class="profile-form-group">
-                            <label>Address <span class="text-danger">*</span></label>
-                            <textarea class="form-control" placeholder="Enter Address"></textarea>
+                        <div class="form-group custom-form-group">
+                            <label class="form-label">Address <span class="text-danger">*</span></label>
+                            <textarea class="form-control" rows="3" placeholder="Enter your address"></textarea>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="profile-form-group">
-                            <label>Country <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Country">
+                        <div class="form-group custom-form-group">
+                            <label class="form-label">Country <span class="text-danger">*</span></label>
+                            <select class="form-select form-control">
+                                <option>Select Country</option>
+                                <option selected>India</option>
+                                <option>USA</option>
+                                <option>UK</option>
+                            </select>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="profile-form-group">
-                            <label>State <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter State">
+                        <div class="form-group custom-form-group">
+                            <label class="form-label">State <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter State" value="Karnataka">
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="profile-form-group">
-                            <label>City <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter City">
+                        <div class="form-group custom-form-group">
+                            <label class="form-label">City <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter City" value="Bangalore">
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="profile-form-group">
-                            <label>Pincode <span class="text-danger">*</span></label>
-                            <input type="text" class="form-control" placeholder="Enter Pincode">
+                        <div class="form-group custom-form-group">
+                            <label class="form-label">Pincode <span class="text-danger">*</span></label>
+                            <input type="text" class="form-control" placeholder="Enter Pincode" value="560001">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /Address Info -->
 
-        <!-- Profile Submit -->
-        <div class="profile-submit-btn">
-            <button type="submit" class="btn btn-secondary">Cancel</button>
-            <button type="submit" class="btn btn-primary">Save Changes</button>
+        <!-- Action Buttons -->
+        <div class="settings-actions d-flex justify-content-end gap-3">
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Cancel</button>
+            <button type="submit" class="btn btn-primary btn-lg px-5">Save Changes</button>
         </div>
-        <!-- /Profile Submit -->
 
     </form>
 </div>

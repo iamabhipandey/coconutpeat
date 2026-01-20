@@ -9,7 +9,6 @@ import { UserPaymentComponent } from './user-payment/user-payment.component';
 import { UserReviewsComponent } from './user-reviews/user-reviews.component';
 
 import { UserNotificationComponent } from './settings/user-notification/user-notification.component';
-import { UserPreferencesComponent } from './settings/user-preferences/user-preferences.component';
 import { UserBookingCompleteComponent } from './user-booking-complete/user-booking-complete.component';
 import { UserBookingInprogressComponent } from './user-booking-inprogress/user-booking-inprogress.component';
 import { UserBookingUpcomingComponent } from './user-booking-upcoming/user-booking-upcoming.component';
@@ -39,7 +38,7 @@ const routes: Routes = [
         path: 'accountInfo',
         component: AccountInfoComponent,
       },
-              {
+      {
         path: 'faquestions',
         component: FrequentlyAskedQuestionsComponent,
       },
@@ -91,28 +90,28 @@ const routes: Routes = [
       },
       {
         path: 'booking-complete-callendar',
-        component:BookingCompleteCalendarComponent,
+        component: BookingCompleteCalendarComponent,
       },
       {
         path: 'booking-inprogress-callendar',
-        component:BookingInprogressCalendarComponent,
+        component: BookingInprogressCalendarComponent,
       },
       {
         path: 'booking-upcoming-callendar',
-        component:BookingUpcomingCalendarComponent,
+        component: BookingUpcomingCalendarComponent,
       },
       {
         path: 'bookings-calendar',
-        component:BookingsCalendarComponent,
+        component: BookingsCalendarComponent,
       },
 
-        {
+      {
         path: 'my-orders',
         loadChildren: () =>
           import('./my-order/my-order.module').then((m) => m.MyOrderModule),
       },
 
-        {
+      {
         path: 'tracking-order',
         loadChildren: () =>
           import('./tracking-order/tracking-order.module').then((m) => m.TrackingOrderModule),
@@ -130,4 +129,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class UserRoutingModule {}
+export class UserRoutingModule { }
