@@ -93,24 +93,24 @@ timepicker.custom-timepicker table tbody tr td input {
   padding: 20px !important;
 }
 .mat-mdc-slider.mat-primary {
-  --mdc-slider-handle-color: #ff5893;
-  --mdc-slider-active-track-color: #ff5893;
- --mdc-slider-focus-handle-color: #ff5893;  /*#ff9b44 */
+  --mdc-slider-handle-color: #127384;
+  --mdc-slider-active-track-color: #127384;
+ --mdc-slider-focus-handle-color: #127384;  /*#ff9b44 */
 }
 mat-slider.mat-mdc-slider.mdc-slider {
   width: 100%;
 }
 mat-option.mat-mdc-option:focus.mdc-list-item,
 mat-option.mat-mdc-option.mat-mdc-option-active.mdc-list-item {
-  background-color:  #ff7baa; /*#127384*/
+  background-color:  #f6d365; /*#127384*/
 }
 mat-option.mat-mdc-option.mdc-list-item--selected:not(
     .mdc-list-item--disabled
   ):not(.mat-mdc-option-multiple) {
-  background-color: #ff4081;/* #127384*/
+  background-color: #fda085;/* #127384*/
 }
 mat-option.mat-mdc-option:hover:not(.mdc-list-item--disabled) {
-  background-color: #ff5893;/*#127384 */
+  background-color: #fda085;/*#127384 */
 }
 mat-option.mat-mdc-option {
   min-height: 35px;
