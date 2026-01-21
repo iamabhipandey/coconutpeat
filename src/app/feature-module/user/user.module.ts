@@ -26,8 +26,7 @@ import { BookingUpcomingCalendarComponent } from './booking-upcoming-calendar/bo
 import { BookingCancelledCalendarComponent } from './booking-cancelled-calendar/booking-cancelled-calendar.component';
 import { BookingCompleteCalendarComponent } from './booking-complete-calendar/booking-complete-calendar.component';
 import { BookingInprogressCalendarComponent } from './booking-inprogress-calendar/booking-inprogress-calendar.component';
-import { ProfileEditComponent } from './user-dashboard/profile-edit/profile-edit.component';
-import { AddAddressComponent } from './user-dashboard/add-address/add-address.component';
+
 
 
 @NgModule({
@@ -50,8 +49,7 @@ import { AddAddressComponent } from './user-dashboard/add-address/add-address.co
     BookingCancelledCalendarComponent,
     BookingCompleteCalendarComponent,
     BookingInprogressCalendarComponent,
-    ProfileEditComponent,
-    AddAddressComponent
+
 
   ],
   imports: [

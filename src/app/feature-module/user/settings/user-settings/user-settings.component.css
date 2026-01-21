@@ -1,219 +1,268 @@
-/* Settings Header */
-.settings-header h4 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #333;
-    margin-bottom: 5px;
-}
-
-.settings-header p {
-    font-size: 14px;
-    margin-bottom: 0;
-}
-
-/* Settings Card */
-.settings-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid rgba(0, 0, 0, 0.02);
-    overflow: hidden;
-    transition: all 0.3s ease;
-}
-
-.settings-card:hover {
-    box-shadow: 0 8px 25px rgba(255, 166, 51, 0.1);
-    transform: translateY(-2px);
-}
-
-.settings-card-header {
-    background: #fff;
-    padding: 20px 25px;
-    border-bottom: 1px solid #eee;
-}
-
-.settings-card-header h5 {
-    font-size: 18px;
-    font-weight: 600;
-    margin: 0;
-    color: #333;
-    display: flex;
-    align-items: center;
-}
-
-.settings-card-header h5 i {
-    color: #FFA633;
-    /* Theme Primary */
-    font-size: 20px;
-}
-
-.settings-card-body {
-    padding: 30px;
-}
-
-/* Profile Picture Section */
-.profile-pic-wrapper {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    margin: 0 auto;
-}
-
-.profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.profile-edit-overlay {
-    position: absolute;
-    bottom: 5px;
-    right: 5px;
-}
-
-.edit-icon {
-    width: 35px;
-    height: 35px;
-    background: #FFA633;
-    color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    box-shadow: 0 3px 10px rgba(255, 166, 51, 0.4);
-    transition: all 0.2s ease;
-}
-
-.edit-icon:hover {
-    background: #e6952e;
-    transform: scale(1.1);
-}
-
-.profile-pic-info h6 {
-    font-weight: 700;
-    margin-bottom: 5px;
-    font-size: 18px;
-}
-
-/* Form Styles */
-.custom-form-group .form-label {
-    font-weight: 500;
-    color: #555;
-    margin-bottom: 8px;
-    font-size: 14px;
-}
-
-.input-group-icon {
-    position: relative;
-}
-
-.input-group-icon .form-control {
-    padding-left: 40px;
-}
-
-.input-group-icon .input-icon {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #aaa;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-.form-control {
-    border: 1px solid #e1e1e1;
-    border-radius: 8px;
-    padding: 12px 15px;
-    font-size: 14px;
-    color: #333;
-    background-color: #f9f9f9;
-    transition: all 0.3s ease;
-}
-
-.form-control:focus {
-    background-color: #fff;
-    border-color: #FFA633;
-    box-shadow: 0 0 0 4px rgba(255, 166, 51, 0.1);
-}
-
-.form-control:focus+.input-icon {
-    color: #FFA633;
-}
-
-/* Select Styling */
-.form-select.form-control {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M2 5l6 6 6-6'/%3e%3c/svg%3e");
-    background-position: right 1rem center;
-    padding-right: 2.5rem;
-}
-
-/* Buttons */
-.btn-primary {
-    background: linear-gradient(135deg, #FFA633 0%, #FF8C00 100%);
+/* Global Card Styling with Soft Shadows & Glass Effect */
+.card {
     border: none;
-    box-shadow: 0 4px 15px rgba(255, 166, 51, 0.4);
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+    /* Softer, deeper shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+    /* Ensure gradient doesn't spill */
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+}
+
+/* Profile Widget & Modern Gradient */
+.profile-bg-gradient {
+    /* Vibrant modern gradient: Deep Orange to Sunny Yellow */
+    background: linear-gradient(135deg, #FF6B35 0%, #FF9F2E 50%, #FFCD56 100%);
+    padding: 2.5rem 1.5rem !important;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add subtle overlay pattern or shape to gradient */
+.profile-bg-gradient::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 60%);
+    transform: rotate(30deg);
+    pointer-events: none;
+}
+
+.profile-user-img {
+    position: relative;
+    z-index: 2;
+}
+
+.profile-user-img img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    box-shadow: 0 8px 25px rgba(255, 166, 51, 0.4);
+    /* Glow matching theme */
+    transition: transform 0.3s ease;
+}
+
+.profile-user-img img:hover {
+    transform: scale(1.05);
+    /* Zoom effect */
+}
+
+.profile-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.profile-user-img:hover .profile-badge {
+    opacity: 1;
+}
+
+.profile-user-info h4 {
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Modern Pulse Animation for Button */
+@keyframes pulse-orange {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 166, 51, 0.4);
+    }
+
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 166, 51, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 166, 51, 0);
+    }
+}
+
+.btn-primary {
+    background: linear-gradient(45deg, #FFA633, #FF8C00);
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 15px rgba(255, 166, 51, 0.3);
     transition: all 0.3s ease;
 }
 
 .btn-primary:hover {
+    background: linear-gradient(45deg, #FF9F2E, #E67E22);
     transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(255, 166, 51, 0.5);
+    box-shadow: 0 6px 20px rgba(255, 166, 51, 0.5);
 }
 
-.btn-outline-secondary {
-    border: 1px solid #ddd;
-    color: #666;
-    background: #fff;
+.btn-primary:active {
+    transform: translateY(0);
 }
 
-.btn-outline-secondary:hover {
-    background: #f1f1f1;
-    color: #333;
-    border-color: #ccc;
-}
-
-/* View Mode Styles */
-.view-profile-pic img {
-    width: 100px;
-    height: 100px;
-    border: 3px solid #fff;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-}
-
-.view-profile-info h3 {
-    font-weight: 700;
-    color: #333;
-}
-
-.profile-details-list li {
+/* Social Buttons */
+.social-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 12px;
+    /* iOS style rounded rect */
     display: flex;
-    justify-content: space-between;
-    padding: 12px 0;
-    border-bottom: 1px solid #f0f0f0;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Bouncy transition */
+    font-size: 1.2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    /* fallback */
 }
 
-.profile-details-list li:last-child {
-    border-bottom: none;
+.social-btn:hover {
+    transform: translateY(-5px) scale(1.1);
 }
 
-.profile-details-list .label {
-    font-weight: 500;
-    color: #888;
+.social-btn.facebook {
+    background: linear-gradient(45deg, #3b5998, #4c70ba);
 }
 
-.profile-details-list .value {
+.social-btn.google {
+    background: linear-gradient(45deg, #db4437, #f25c4e);
+}
+
+.social-btn.twitter {
+    background: linear-gradient(45deg, #1da1f2, #4db5f5);
+}
+
+/* Inputs with Animated Underline */
+.input-group-clean {
+    position: relative;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 4px;
+    /* Increased from 1px */
+    margin-bottom: 4px;
+    /* Increased from 1px */
+}
+
+.input-group-clean::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #FFA633;
+    transition: width 0.4s ease;
+}
+
+.input-group-clean:focus-within::after {
+    width: 100%;
+}
+
+.form-control-clean {
+    border: none;
+    background: transparent;
+    padding: 6px 0;
+    /* Increased from 2px */
+    width: 100%;
+    font-size: 1rem;
+    /* Restored size */
+    color: #2c3e50;
     font-weight: 600;
-    color: #333;
-    text-align: right;
+    transition: color 0.3s;
 }
 
-.uppercase {
+.form-control-clean::placeholder {
+    color: #b0bec5;
+    font-weight: 400;
+}
+
+.form-label {
     text-transform: uppercase;
-    font-size: 11px;
-    letter-spacing: 0.5px;
+    font-size: 0.75rem;
+    /* Restored size */
+    letter-spacing: 1px;
+    color: #8898aa;
+    font-weight: 700;
+    margin-bottom: 0.2rem;
+    /* Restored margin */
+}
+
+/* Verified Badge */
+.bg-success-light {
+    background-color: rgba(31, 188, 47, 0.1);
+    color: #1FBC2F;
+    border-radius: 30px;
+    padding: 5px 12px;
+    font-weight: 600;
+    border: 1px solid rgba(31, 188, 47, 0.2);
+}
+
+/* Card Titles */
+.text-primary-dark {
+    color: #353d66;
+    font-weight: 800;
+    position: relative;
+    display: inline-block;
+    border: none;
+    /* remove old border */
+}
+
+.text-primary-dark::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 4px;
+    background: #FFA633;
+    border-radius: 2px;
+    margin-top: 8px;
+}
+
+/* Switch Styling */
+.form-switch .form-check-input {
+    height: 1.8em;
+    width: 3.5em;
+    border-radius: 2em;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+    border: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+}
+
+.form-switch .form-check-input:checked {
+    background-color: #FFA633;
+    border-color: #FFA633;
+}
+
+/* Hover effects for rows */
+.settings-card-body .row>div {
+    transition: opacity 0.3s;
+}
+
+/* Security Section */
+.feather.icon-shield {
+    background: rgba(31, 188, 47, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+    color: #1FBC2F;
+}
+
+@media (max-width: 768px) {
+    .profile-bg-gradient {
+        padding: 2rem 1rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
 }
