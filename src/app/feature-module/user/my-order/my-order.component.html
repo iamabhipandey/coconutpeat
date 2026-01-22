@@ -5,50 +5,42 @@
       <h4 class="fw-bold">My Orders</h4>
     </div>
 
-    <!-- Static Coconut Order 1 -->
-    <div class="order-list mb-4">
-      <div class="card shadow-sm border-0 rounded-3">
-        <div class="card-body p-4">
+    <!-- Order 1: COIR FELT NEEDLE -->
+    <div class="order-list">
+      <div class="card shadow-none">
+        <div class="card-body compact-body">
           <div class="row align-items-center">
 
             <!-- Product Image -->
-            <div class="col-3 col-sm-2">
+            <div class="col-3 col-sm-2 text-center">
               <div class="product-img-sec">
-                <div class="product-img-set bg-light rounded p-2 d-flex align-items-center justify-content-center"
-                  style="height: 100px; width: 100px;">
-                  <!-- Using a generic placeholder if asset not found, but trying standard path -->
-                  <i class="fas fa-box-open fa-3x text-warning"></i>
+                <div class="product-img-set">
+                  <img src="assets/img/banner-section2/product11.jpg" class="product-img" alt="COIR FELT NEEDLE">
                 </div>
               </div>
             </div>
 
             <!-- Product Details -->
-            <div class="col-9 col-sm-10">
-              <div class="row">
-                <div class="col-md-5 mb-3 mb-md-0">
-                  <h5 class="product-name fw-bold mb-2">Premium Coco Peat (5kg Block)</h5>
-                  <p class="text-muted mb-1 small">High EC, Low EC options available</p>
-                  <div class="d-flex gap-3">
-                    <span class="badge bg-light text-dark border">Weight: 5kg</span>
-                    <span class="badge bg-light text-dark border">Type: Low EC</span>
-                  </div>
-                </div>
+            <div class="col-9 col-sm-6">
+              <h5 class="product-name" [routerLink]="routes.trackingOrder">COIR FELT NEEDLE</h5>
+              <p class="product-spacific-info mb-1">Industrial Grade Coir Felt</p>
+              <p class="product-spacific-info mb-0">Qty: 1</p>
+            </div>
 
-                <div class="col-md-2 mb-3 mb-md-0">
-                  <h5 class="fw-bold text-primary">₹ 450.00</h5>
-                </div>
+            <div class="col-md-1 mb-3 mb-md-0 d-none d-md-block">
+              <h5 class="product-price">₹600</h5>
+            </div>
 
-                <div class="col-md-5">
-                  <div class="d-flex flex-column align-items-md-end">
-                    <div class="d-flex align-items-center mb-2">
-                      <i class="feather icon-check-circle text-success me-2"></i>
-                      <span class="fw-bold text-success">Delivered on Jan 15, 2026</span>
-                    </div>
-                    <p class="text-muted small mb-2">Your item has been delivered</p>
-                    <button class="btn btn-outline-warning btn-sm btn-rounded shadow-sm">
-                      <i class="feather icon-star me-1"></i> Rate & Review
-                    </button>
-                  </div>
+            <div class="col-md-3">
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center mb-1">
+                  <span class="status-dot success"></span>
+                  <span class="status-text">Delivered on Jan 20</span>
+                </div>
+                <p class="del-info text-muted mb-1">Your item has been delivered</p>
+                <div class="mt-1">
+                  <span class="rating-text"><i class="feather icon-star me-1 text-primary"></i>Rate & Review
+                    Product</span>
                 </div>
               </div>
             </div>
@@ -58,48 +50,37 @@
       </div>
     </div>
 
-    <!-- Static Coconut Order 2 -->
-    <div class="order-list mb-4">
-      <div class="card shadow-sm border-0 rounded-3">
-        <div class="card-body p-4">
+    <!-- Order 2: SEMI HUSK COCONUT -->
+    <div class="order-list">
+      <div class="card shadow-none">
+        <div class="card-body compact-body">
           <div class="row align-items-center">
 
-            <div class="col-3 col-sm-2">
+            <div class="col-3 col-sm-2 text-center">
               <div class="product-img-sec">
-                <div class="product-img-set bg-light rounded p-2 d-flex align-items-center justify-content-center"
-                  style="height: 100px; width: 100px;">
-                  <i class="fas fa-layer-group fa-3x text-warning"></i>
+                <div class="product-img-set">
+                  <img src="assets/img/banner-section2/product9.png" class="product-img" alt="SEMI HUSK COCONUT">
                 </div>
               </div>
             </div>
 
-            <div class="col-9 col-sm-10">
-              <div class="row">
-                <div class="col-md-5 mb-3 mb-md-0">
-                  <h5 class="product-name fw-bold mb-2">Coconut Coir Discs (Set of 10)</h5>
-                  <p class="text-muted mb-1 small">Ideal for seed starting</p>
-                  <div class="d-flex gap-3">
-                    <span class="badge bg-light text-dark border">Size: 10cm</span>
-                    <span class="badge bg-light text-dark border">Qty: 10</span>
-                  </div>
-                </div>
+            <div class="col-9 col-sm-6">
+              <h5 class="product-name" [routerLink]="routes.trackingOrder">SEMI HUSK COCONUT</h5>
+              <p class="product-spacific-info mb-1">Fresh Semi-Husked</p>
+              <p class="product-spacific-info mb-0">Qty: 50</p>
+            </div>
 
-                <div class="col-md-2 mb-3 mb-md-0">
-                  <h5 class="fw-bold text-primary">₹ 850.00</h5>
-                </div>
+            <div class="col-md-1 mb-3 mb-md-0 d-none d-md-block">
+              <h5 class="product-price">₹800</h5>
+            </div>
 
-                <div class="col-md-5">
-                  <div class="d-flex flex-column align-items-md-end">
-                    <div class="d-flex align-items-center mb-2">
-                      <i class="feather icon-truck text-info me-2"></i>
-                      <span class="fw-bold text-info">On the way</span>
-                    </div>
-                    <p class="text-muted small mb-2">Expected by Jan 25, 2026</p>
-                    <button class="btn btn-primary btn-sm btn-rounded shadow-sm">
-                      <i class="feather icon-map-pin me-1"></i> Track Order
-                    </button>
-                  </div>
+            <div class="col-md-3">
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center mb-1">
+                  <span class="status-dot warning"></span>
+                  <span class="status-text">On the way</span>
                 </div>
+                <p class="del-info text-muted mb-1">Expected delivery by Jan 25</p>
               </div>
             </div>
 
@@ -108,46 +89,39 @@
       </div>
     </div>
 
-    <!-- Static Coconut Order 3 -->
-    <div class="order-list mb-4">
-      <div class="card shadow-sm border-0 rounded-3">
-        <div class="card-body p-4">
+    <!-- Order 3: COIR NET -->
+    <div class="order-list">
+      <div class="card shadow-none">
+        <div class="card-body compact-body">
           <div class="row align-items-center">
 
-            <div class="col-3 col-sm-2">
+            <div class="col-3 col-sm-2 text-center">
               <div class="product-img-sec">
-                <div class="product-img-set bg-light rounded p-2 d-flex align-items-center justify-content-center"
-                  style="height: 100px; width: 100px;">
-                  <i class="fas fa-leaf fa-3x text-warning"></i>
+                <div class="product-img-set">
+                  <img src="assets/img/banner-section2/product7.png" class="product-img" alt="COIR NET">
                 </div>
               </div>
             </div>
 
-            <div class="col-9 col-sm-10">
-              <div class="row">
-                <div class="col-md-5 mb-3 mb-md-0">
-                  <h5 class="product-name fw-bold mb-2">Coir Garden Mulch Mat</h5>
-                  <p class="text-muted mb-1 small">Eco-friendly weed control</p>
-                  <div class="d-flex gap-3">
-                    <span class="badge bg-light text-dark border">Size: Large</span>
-                  </div>
-                </div>
+            <div class="col-9 col-sm-6">
+              <h5 class="product-name" [routerLink]="routes.trackingOrder">COIR NET</h5>
+              <p class="product-spacific-info mb-1">Erosion Control Netting</p>
+              <p class="product-spacific-info mb-0">Size: 10m roll</p>
+            </div>
 
-                <div class="col-md-2 mb-3 mb-md-0">
-                  <h5 class="fw-bold text-primary">₹ 1,200.00</h5>
-                </div>
+            <div class="col-md-1 mb-3 mb-md-0 d-none d-md-block">
+              <h5 class="product-price">₹600</h5>
+            </div>
 
-                <div class="col-md-5">
-                  <div class="d-flex flex-column align-items-md-end">
-                    <div class="d-flex align-items-center mb-2">
-                      <i class="feather icon-x-circle text-danger me-2"></i>
-                      <span class="fw-bold text-danger">Cancelled</span>
-                    </div>
-                    <p class="text-muted small mb-2">Refund Processed</p>
-                    <button class="btn btn-outline-secondary btn-sm btn-rounded shadow-sm">
-                      <i class="feather icon-shopping-cart me-1"></i> Reorder
-                    </button>
-                  </div>
+            <div class="col-md-3">
+              <div class="d-flex flex-column">
+                <div class="d-flex align-items-center mb-1">
+                  <span class="status-dot danger"></span>
+                  <span class="status-text text-danger">Cancelled</span>
+                </div>
+                <p class="del-info text-muted mb-1">Refund has been processed</p>
+                <div class="mt-1">
+                  <span class="rating-text text-danger">Reorder</span>
                 </div>
               </div>
             </div>
