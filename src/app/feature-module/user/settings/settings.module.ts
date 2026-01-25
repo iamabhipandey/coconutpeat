@@ -9,6 +9,7 @@ import { UserNotificationComponent } from './user-notification/user-notification
 import { UserIntegrationComponent } from './user-integration/user-integration.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { UserSecurityComponent } from './user-security/user-security.component';
+import { EditPersonalDetailsComponent } from './edit-personal-details/edit-personal-details.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { UserSecurityComponent } from './user-security/user-security.component';
     UserSettingsComponent,
     UserNotificationComponent,
     UserIntegrationComponent,
-    UserSecurityComponent
+    UserSecurityComponent,
+    EditPersonalDetailsComponent
   ],
   imports: [
     CommonModule,

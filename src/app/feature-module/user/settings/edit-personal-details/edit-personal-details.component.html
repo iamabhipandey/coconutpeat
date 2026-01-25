@@ -1,0 +1,63 @@
+<div class="modal fade show custom-modal" style="display: block;" tabindex="-1">
+    <div class="modal-dialog modal-dialog-slide modal-dialog-scrollable">
+        <div class="modal-content shadow">
+            <div class="modal-header">
+                <div class="head-cart d-flex">
+                    <span class="card-hicon" (click)="close()"><i class="fa-solid fa-arrow-left"></i></span>
+                    <h6>Edit Personal Information</h6>
+                </div>
+            </div>
+
+            <form class="form-container" [formGroup]="editForm" (ngSubmit)="saveDetails()">
+                <div class="modal-body">
+                    <h2 class="section-title">Personal Details</h2>
+                    <p class="cont-text">Update your personal information below.</p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" formControlName="firstName" placeholder=" " required>
+                                <label>First Name <span style="color: red;">*</span></label>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" formControlName="lastName" placeholder=" " required>
+                                <label>Last Name <span style="color: red;">*</span></label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" formControlName="userName" placeholder=" " required>
+                        <label>User Name <span style="color: red;">*</span></label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" formControlName="taxNumber" placeholder=" ">
+                        <label>Tax/VAT Number</label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" formControlName="mobile" maxlength="10" placeholder=" " required>
+                        <label>Mobile Number <span style="color: red;">*</span></label>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="tel" formControlName="whatsapp" maxlength="10" placeholder=" " required>
+                        <label>WhatsApp Number <span style="color: red;">*</span></label>
+                    </div>
+
+                </div>
+
+                <div class="modal-btn">
+                    <div class="">
+                        <button type="submit" class="btn btn-primary proceed-btn">
+                            <p>Save Changes</p>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

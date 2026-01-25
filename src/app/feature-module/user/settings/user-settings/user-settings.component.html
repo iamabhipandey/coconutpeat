@@ -56,36 +56,38 @@
                         <div class="col-md-6">
                             <label class="form-label text-muted small fw-bold">First Name</label>
                             <div class="input-group-clean">
-                                <input type="text" class="form-control-clean" value="Abhi" placeholder="First Name">
+                                <input type="text" class="form-control-clean" [value]="firstName"
+                                    placeholder="First Name" readonly>
                             </div>
                         </div>
                         <div class="col-md-6">
                             <label class="form-label text-muted small fw-bold">Last Name</label>
                             <div class="input-group-clean">
-                                <input type="text" class="form-control-clean" value="Pandey" placeholder="Last Name">
+                                <input type="text" class="form-control-clean" [value]="lastName" placeholder="Last Name"
+                                    readonly>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <label class="form-label text-muted small fw-bold">User Name</label>
                             <div class="input-group-clean">
-                                <input type="text" class="form-control-clean" value="abhishek_p"
-                                    placeholder="User Name">
+                                <input type="text" class="form-control-clean" [value]="userName" placeholder="User Name"
+                                    readonly>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <label class="form-label text-muted small fw-bold">Tax/VAT Number</label>
                             <div class="input-group-clean">
-                                <input type="text" class="form-control-clean text-muted" value="Not provided"
-                                    placeholder="Tax/VAT Number">
+                                <input type="text" class="form-control-clean text-muted" [value]="taxNumber"
+                                    placeholder="Tax/VAT Number" readonly>
                             </div>
                         </div>
 
                         <div class="col-md-12">
                             <label class="form-label text-muted small fw-bold">Email Address</label>
                             <div class="d-flex align-items-center">
-                                <span class="fw-medium me-2">abhishekpandeymail.com</span>
+                                <span class="fw-medium me-2">{{email}}</span>
                                 <span class="badge bg-success-light text-success d-flex align-items-center gap-1">
                                     <i class="feather icon-check-circle"></i> verified
                                 </span>
@@ -96,23 +98,24 @@
                         <div class="col-md-6">
                             <label class="form-label text-muted small fw-bold">Mobile Number</label>
                             <div class="input-group-clean">
-                                <input type="text" class="form-control-clean fw-bold" value="+91 756767576"
-                                    placeholder="Mobile Number">
+                                <input type="text" class="form-control-clean fw-bold" [value]="mobile"
+                                    placeholder="Mobile Number" readonly>
                             </div>
                         </div>
 
                         <div class="col-md-6">
                             <label class="form-label text-muted small fw-bold">WhatsApp Number</label>
                             <div class="input-group-clean">
-                                <input type="text" class="form-control-clean fw-bold" value="+91 756767576"
-                                    placeholder="WhatsApp Number">
+                                <input type="text" class="form-control-clean fw-bold" [value]="whatsapp"
+                                    placeholder="WhatsApp Number" readonly>
                             </div>
                         </div>
 
 
 
                         <div class="col-12 text-end mt-3">
-                            <button type="submit" class="btn btn-primary btn-rounded px-4 mb-2">
+                            <button type="button" class="btn btn-primary btn-rounded px-4 mb-2"
+                                (click)="openEditModal()">
                                 <i class="feather icon-edit me-2"></i> Edit Profile
                             </button>
                         </div>
