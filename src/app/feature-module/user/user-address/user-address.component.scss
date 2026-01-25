@@ -1,0 +1,41 @@
+.address-card {
+    border: 1px solid #e3e3e3;
+    transition: all 0.3s;
+
+    &:hover {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .card-title {
+        font-weight: 600;
+        color: #333;
+
+        i {
+            color: #777;
+            cursor: pointer;
+        }
+    }
+}
+
+// Theme Color
+$primary-orange: #FFA633;
+
+.btn-outline-theme {
+    color: $primary-orange;
+    border-color: $primary-orange;
+
+    &:hover,
+    &.active {
+        background-color: $primary-orange;
+        color: white;
+    }
+}
+
+label.text-muted {
+    font-size: 0.9rem;
+}
+
+p.font-weight-bold {
+    font-weight: 600;
+    font-size: 0.95rem;
+}

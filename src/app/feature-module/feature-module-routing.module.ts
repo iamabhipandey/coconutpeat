@@ -17,16 +17,8 @@ const routes: Routes = [
         loadChildren: () =>
           import('./home/home1/home1.module').then((m) => m.Home1Module),
       },
-      {
-        path: 'home-2',
-        loadChildren: () =>
-          import('./home/home2/home2.module').then((m) => m.Home2Module),
-      },
-      {
-        path: 'home-3',
-        loadChildren: () =>
-          import('./home/home3/home3.module').then((m) => m.Home3Module),
-      },
+
+
       {
         path: 'booking',
         loadChildren: () =>
@@ -42,14 +34,14 @@ const routes: Routes = [
         loadChildren: () =>
           import('./proceed-cart/proceed-cart.module').then((m) => m.ProceedCartModule),
       },
-   {
+      {
         path: 'reviews',
         loadChildren: () =>
           import('./proceed-cart/proceed-cart.module').then((m) => m.ProceedCartModule),
       },
 
-      
-      
+
+
       {
         path: 'listings',
         loadChildren: () =>
@@ -91,4 +83,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class FeatureModuleRoutingModule {}
+export class FeatureModuleRoutingModule { }

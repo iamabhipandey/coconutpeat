@@ -243,7 +243,7 @@ export class HeaderComponent {
     this.common.searhProductData(formData).subscribe({
       next: (res: any) => {
         if (res.status === 'true') {
-          this.router.navigate([this.routes.brandsProducts], {
+          this.router.navigate([this.routes.listingGrid], {
             queryParams: payload
           });
           this.activeCategory = null;

@@ -61,6 +61,20 @@
                                             <span>My Orders</span>
                                         </a>
                                     </li>
+                                    <li class="sidebar__list-item">
+                                        <a class="sidebar__link" [routerLink]="routes.userWallet"
+                                            routerLinkActive="active">
+                                            <i class="fa-solid fa-wallet"></i>
+                                            <span>Payment</span>
+                                        </a>
+                                    </li>
+                                    <li class="sidebar__list-item">
+                                        <a class="sidebar__link" [routerLink]="routes.userShippingAddress"
+                                            routerLinkActive="active">
+                                            <i class="fa-solid fa-map-location-dot"></i>
+                                            <span>Shipping Address</span>
+                                        </a>
+                                    </li>
                                     <!-- Account Settings -->
                                     <!-- <div class="sidebar__item mt-3">
                                         <div class="sidebar__title">Account Settings</div>
@@ -77,13 +91,13 @@
                                     <div class="sidebar__item mt-3">
                                         <div class="sidebar__title">Help</div>
                                         <ul class="sidebar__list">
-                                            <!-- <li class="sidebar__list-item">
+                                            <li class="sidebar__list-item">
                                                 <a class="sidebar__link" [routerLink]="routes.faquestions"
                                                     routerLinkActive="active">
                                                     <i class="fa-solid fa-circle-question"></i>
                                                     <span>Get Started</span>
                                                 </a>
-                                            </li> -->
+                                            </li>
                                             <li class="sidebar__list-item" (click)="logout()">
                                                 <a class="sidebar__link">
                                                     <i class="fa-solid fa-power-off"></i>

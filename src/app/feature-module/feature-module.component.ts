@@ -57,16 +57,16 @@ export class FeatureModuleComponent implements OnInit {
       }
     });
 
-    
+
     this.getRoutes(this.router);
   }
-  
+
   public getRoutes(events: routerlink) {
     const splitVal = events.url.split('/');
     this.common.base.next(splitVal[1]);
     this.common.page.next(splitVal[2]);
     this.common.last.next(splitVal[3]);
-    this.currentUrl = events.url;  
+    this.currentUrl = events.url;
     if (
       events.url.split('/')[2] === 'maintenance' ||
       events.url.split('/')[2] === 'coming-soon' ||
@@ -75,10 +75,8 @@ export class FeatureModuleComponent implements OnInit {
       events.url.split('/')[2] === 'register' ||
       events.url.split('/')[2] === 'login' ||
       events.url.split('/')[2] === 'forgot-password' ||
-      events.url.split('/')[2] === 'reset-password' ||
-      events.url.split('/')[1] === 'home-3' ||
-      events.url.split('/')[1] === 'home-2' 
-     
+      events.url.split('/')[2] === 'reset-password'
+
     ) {
       this.footerActive = false;
       this.headerActive = false;

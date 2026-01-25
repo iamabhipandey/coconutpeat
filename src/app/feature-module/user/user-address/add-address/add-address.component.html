@@ -1,0 +1,76 @@
+<div class="modal-header">
+    <h4 class="modal-title"><i class="fas fa-map-marker-alt me-2 text-primary"></i> Add New Address</h4>
+    <button type="button" class="close-btn" (click)="close()"><span>×</span></button>
+</div>
+<div class="modal-body">
+    <form>
+        <!-- Row 1 -->
+        <div class="modal-form-group">
+            <label>Ship to Name <span class="text-danger">*</span></label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                <input type="text" class="form-control" placeholder="Enter Name">
+            </div>
+        </div>
+
+        <!-- Row 2 -->
+        <div class="modal-form-group">
+            <label>Address Name <span class="text-danger">*</span></label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-tag"></i></span>
+                <input type="text" class="form-control" placeholder="Home / Office / Others">
+            </div>
+        </div>
+
+        <!-- Row 3 -->
+        <div class="modal-form-group">
+            <label>Address <span class="text-danger">*</span></label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-home"></i></span>
+                <input type="text" class="form-control" placeholder="Enter Address">
+            </div>
+        </div>
+
+        <!-- Row 4 -->
+        <div class="modal-form-group">
+            <label>City <span class="text-danger">*</span></label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-city"></i></span>
+                <input type="text" class="form-control" placeholder="Enter City">
+            </div>
+        </div>
+
+        <!-- Row 5 -->
+        <div class="modal-form-group">
+            <label>Post Code <span class="text-danger">*</span></label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-map-pin"></i></span>
+                <input type="text" class="form-control" placeholder="Enter Post Code">
+            </div>
+        </div>
+
+        <!-- Row 6 -->
+        <div class="modal-form-group">
+            <label>Country <span class="text-danger">*</span></label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-globe"></i></span>
+                <input type="text" class="form-control" placeholder="Enter Country">
+            </div>
+        </div>
+
+        <!-- Row 7 -->
+        <div class="modal-form-group">
+            <label>Region / State <span class="text-danger">*</span></label>
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-map"></i></span>
+                <input type="text" class="form-control" placeholder="Enter Region / State">
+            </div>
+        </div>
+    </form>
+</div>
+<div class="modal-footer">
+    <div class="modal-btn">
+        <button type="button" class="btn btn-primary" (click)="save()">Save Address</button>
+        <button type="button" class="btn btn-outline-cancel" (click)="close()">Cancel</button>
+    </div>
+</div>

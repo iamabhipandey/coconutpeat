@@ -1,0 +1,84 @@
+<div class="content">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 d-flex">
+                <div class="card flex-fill">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <h4>Shipping Addresses</h4>
+                        <button class="btn btn-primary" (click)="addAddress()">
+                            <i class="feather icon-plus me-2"></i> Add New Address
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="row" *ngIf="addresses && addresses.length > 0">
+                            <div class="col-md-6" *ngFor="let address of addresses; let i = index">
+                                <div class="card address-card">
+                                    <div class="card-body">
+                                        <div class="row mb-2">
+                                            <div class="col-5"><label class="text-muted">Ship to Name</label></div>
+                                            <div class="col-7">
+                                                <p class="text-dark font-weight-bold mb-0">{{address.shipToName}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5"><label class="text-muted">Address Name</label></div>
+                                            <div class="col-7">
+                                                <p class="text-dark font-weight-bold mb-0">{{address.addressName}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5"><label class="text-muted">Address</label></div>
+                                            <div class="col-7">
+                                                <p class="text-dark font-weight-bold mb-0">{{address.address}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5"><label class="text-muted">City</label></div>
+                                            <div class="col-7">
+                                                <p class="text-dark font-weight-bold mb-0">{{address.city}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5"><label class="text-muted">Post Code</label></div>
+                                            <div class="col-7">
+                                                <p class="text-dark font-weight-bold mb-0">{{address.postCode}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5"><label class="text-muted">Country</label></div>
+                                            <div class="col-7">
+                                                <p class="text-dark font-weight-bold mb-0">{{address.country}}</p>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-5"><label class="text-muted">Region / State</label></div>
+                                            <div class="col-7">
+                                                <p class="text-dark font-weight-bold mb-0">{{address.region}}</p>
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="address-actions d-flex justify-content-between mt-3">
+                                            <button class="btn btn-outline-theme" [class.active]="address.isDefault"
+                                                (click)="setDefault(i)">
+                                                {{ address.isDefault ? 'Default' : 'Make Default' }}
+                                            </button>
+                                            <div>
+                                                <button class="btn btn-outline-secondary me-2"
+                                                    (click)="editAddress(i)">Edit</button>
+                                                <button class="btn btn-danger"
+                                                    (click)="deleteAddress(i)">Remove</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-3" *ngIf="addresses.length === 0">
+                            <p>No addresses found. Please add one.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

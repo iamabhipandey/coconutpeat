@@ -19,32 +19,11 @@ const routes: Routes = [
       ),
   },
 
-   {
-    path: 'listing-map',
-    loadChildren: () =>
-      import('./listing-map/listing-map.module').then(
-        (m) => m.ListingMapModule
-      ),
-  },
-  
-  { 
-    path: 'brand-products',
-    loadChildren: () =>
-      import('.//brand-products/breand-products.module').then(
-        (m) => m.BrandProductsModule
-      ),
-  },
-  {
-    path: 'Cross-Border',
-    loadChildren: () =>
-      import('.//cross-border/cross-border.module').then(
-        (m) => m.CrossBorderModule
-      ),
-  },
+
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class ListingsRoutingModule {}
+export class ListingsRoutingModule { }

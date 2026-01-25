@@ -7,18 +7,11 @@ export class routes {
   public static get home(): string {
     return this.baseUrl + '/home';
   }
-  public static get home2(): string {
-    return this.baseUrl + '/home-2';
-  }
-  public static get home3(): string {
-    return this.baseUrl + '/home-3';
-  }
+
   public static get listingList(): string {
     return this.baseUrl + '/listings/listing-list';
   }
-  public static get listingMap(): string {
-    return this.baseUrl + '/listings/listing-map';
-  }
+
   public static get listingDetails(): string {
     return this.baseUrl + '/listings/listing-details';
   }
@@ -30,9 +23,7 @@ export class routes {
 
 
 
-  public static get brandsProducts(): string {
-    return this.baseUrl + '/listings/brand-products';
-  }
+
   public static get aboutUs(): string {
     return this.baseUrl + '/pages/about-us';
   }
@@ -198,6 +189,9 @@ export class routes {
   }
   public static get userSettings(): string {
     return this.user + '/settings/user-settings';
+  }
+  public static get userShippingAddress(): string {
+    return this.user + '/shipping-address';
   }
 
 

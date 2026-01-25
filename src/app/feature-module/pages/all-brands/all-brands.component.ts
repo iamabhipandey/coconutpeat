@@ -93,7 +93,7 @@ export class AllBrandsComponent {
       next: (res: any) => {
         if (res.status === 'true') {
           // ✅ Redirect based on filter
-          this.router.navigate([this.routes.brandsProducts], {
+          this.router.navigate([this.routes.listingGrid], {
             queryParams: payload   // filters as query params
           });
           //this.activeCategory = null; 

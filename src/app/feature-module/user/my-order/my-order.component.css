@@ -69,10 +69,6 @@
     cursor: pointer;
 }
 
-.card-body.compact-body {
-    padding: 12px 16px !important;
-    /* Reduced padding */
-}
 
 #tablefilter {
     margin: 0px;

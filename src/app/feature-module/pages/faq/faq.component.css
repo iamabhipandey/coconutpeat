@@ -1,0 +1,28 @@
+.faq-title a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.faq-title a:hover,
+.faq-title a:not(.collapsed) {
+    color: #FFA633 !important;
+    /* Theme Orange */
+}
+
+.faq-card {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #f0f0f0;
+    transition: all 0.3s;
+}
+
+.faq-card:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.card-collapse p {
+    color: #666;
+    line-height: 1.6;
+    padding: 10px 0;
+}

@@ -52,7 +52,7 @@
               <label>Add Wallet Credits</label>
             </div>
             <div class="wallet-btn">
-               <input type="text" class="form-control" placeholder="1000">
+              <input type="text" class="form-control" placeholder="1000">
               <a href="javascript:void(0);" class="btn" data-bs-toggle="modal" data-bs-target="#add_payment">Add
                 Payment</a>
             </div>
@@ -196,23 +196,23 @@
     </div>
     <!-- /Wallet Info -->
 
-    <!-- Wallet Table -->
-    <!-- <div class="row">
+    <!-- Payment Table -->
+    <div class="row">
       <div class="col-lg-12 d-flex">
         <div class="card book-card flex-fill mb-0">
           <div class="card-header">
             <div class="row align-items-center">
               <div class="col-md-5">
-                <h4>Wallet Usage History</h4>
+                <h4>All Payments</h4>
               </div>
               <div class="col-md-7 text-md-end">
                 <div class="table-search">
                   <div id="tablefilter" class="me-0">
                     <div class="dataTables_filter">
                       <label>
-                        <input [(ngModel)]="searchDataValue" [ngModelOptions]="{standalone: true}"
-                          [ngModelOptions]="{standalone: true}" (ngModelChange)="searchData(searchDataValue)"
-                          type="search" class="form-control" placeholder="Search" />
+                        <input [(ngModel)]="searchPaymentDataValue" [ngModelOptions]="{standalone: true}"
+                          (ngModelChange)="searchPaymentData(searchPaymentDataValue)" type="search" class="form-control"
+                          placeholder="Search" />
                       </label>
                     </div>
                   </div>
@@ -225,31 +225,72 @@
               <table class="table datatable">
                 <thead class="thead-light">
                   <tr>
-                    <th>Ref Id</th>
-                    <th>Transaction For</th>
-                    <th>Date</th>
+                    <th>
+                      <label class="custom_check w-100" (click)="selectAll(initChecked)">
+                        <input type="checkbox" name="username" [(ngModel)]="initChecked">
+                        <span class="checkmark"></span>
+                      </label>
+                    </th>
+                    <th>Booking ID</th>
+                    <th>Product Name</th>
+                    <th>Paid on</th>
                     <th>Total</th>
+                    <th>Mode</th>
                     <th>Status</th>
+                    <th class="text-end">Action</th>
                   </tr>
                 </thead>
                 <tbody>
-                  @for (data of tableData; track data) {
+                  @for (data of paymentTableData; track data) {
                   <tr>
-                    <td><a href="javascript:void(0);"> {{data.refId}}</a></td>
+                    <td>
+                      <label class="custom_check w-100">
+                        <input type="checkbox" name="reference" [(ngModel)]="data.isSelected">
+                        <span class="checkmark"></span>
+                      </label>
+                    </td>
+                    <td><a href="javascript:void(0);" data-bs-toggle="modal"
+                        data-bs-target="#view_invoice">{{data.bookingID}}</a></td>
                     <td>
                       <div class="table-avatar">
+                        <a href="javascript:void(0);" class="avatar avatar-lg flex-shrink-0">
+                          <img class="avatar-img" [src]="data.img" alt="Booking">
+                        </a>
                         <div class="table-head-name flex-grow-1">
-                          <a href="javascript:void(0);" class="mb-0">{{data.transactionFor}}</a>
+                          <a href="javascript:void(0);">{{data.carName}}</a>
+                          <p>{{data.feature}}</p>
                         </div>
                       </div>
                     </td>
-                    <td>{{data.date}}</td>
-                    <td [ngClass]="{ 'text-danger': data.total === '- $500' || data.total === '- $450'  }"
-                      class="text-success-light">{{data.total}}</td>
+                    <td>{{data.paidOn}}</td>
+                    <td>
+                      <p class="text-darker">{{data.total}}</p>
+                    </td>
+                    <td>
+                      <span class="badge badge-light-secondary">{{data.mode}}</span>
+                    </td>
                     <td>
                       <span
                         [ngClass]="{ 'badge-light-success': data.status === 'Completed','badge-light-warning': data.status === 'Pending','badge-light-danger':data.status === 'Failed' }"
                         class="badge">{{data.status}}</span>
+                    </td>
+                    <td class="text-end">
+                      <div class="dropdown dropdown-action">
+                        <a href="javascript:void(0);" class="dropdown-toggle" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          <i class="fas fa-ellipsis-vertical"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-end">
+                          <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal"
+                            data-bs-target="#view_invoice">
+                            <i class="feather icon-file-plus me-2"></i> View Invoice
+                          </a>
+                          <a class="dropdown-item" href="javascript:void(0);" data-bs-toggle="modal"
+                            data-bs-target="#delete_modal_wallet">
+                            <i class="feather icon-trash-2 me-2"></i> Delete
+                          </a>
+                        </div>
+                      </div>
                     </td>
                   </tr>
                   }
@@ -261,8 +302,8 @@
           </div>
         </div>
       </div>
-    </div> -->
-    <!-- /Wallet Table -->
+    </div>
+    <!-- /Payment Table -->
 
   </div>
 </div>
@@ -279,16 +320,16 @@
         <form action="#">
           <div class="row">
             <div class="col-md-6">
-        <div class="modal-form-group">
-            <label>Card Number <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" placeholder="Enter Card Number">
-          </div>
+              <div class="modal-form-group">
+                <label>Card Number <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" placeholder="Enter Card Number">
+              </div>
             </div>
             <div class="col-md-6">
-           <div class="modal-form-group">
-            <label>Name on Card <span class="text-danger">*</span></label>
-            <input type="text" class="form-control" placeholder="Enter Card Name">
-          </div>
+              <div class="modal-form-group">
+                <label>Name on Card <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" placeholder="Enter Card Name">
+              </div>
             </div>
           </div>
           <div class="row">

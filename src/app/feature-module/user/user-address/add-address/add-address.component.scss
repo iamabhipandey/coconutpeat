@@ -1,0 +1,146 @@
+// Theme Color
+$primary-orange: #FFA633;
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 25px;
+    background-color: #fff;
+    border-radius: 8px 8px 0 0;
+    height: 70px; // Fixed height
+
+    h4 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 1.2rem;
+        color: #333;
+
+        i {
+            color: $primary-orange !important;
+        }
+    }
+
+    .close-btn {
+        background: none;
+        border: none;
+        font-size: 1.5rem;
+        color: #999;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        &:hover {
+            color: #333;
+        }
+    }
+}
+
+.modal-body {
+    padding: 25px;
+    height: calc(100% - 150px); // 100% - (Header + Footer)
+    overflow-y: auto;
+
+    // Custom Scrollbar
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #ccc;
+        border-radius: 3px;
+    }
+}
+
+.modal-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    padding: 20px 25px;
+    border-top: 1px solid #f0f0f0;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.03);
+    height: 80px; // Fixed height
+}
+
+.modal-form-group {
+    margin-bottom: 20px;
+
+    label {
+        font-weight: 600;
+        margin-bottom: 8px;
+        display: block;
+        color: #555;
+        font-size: 0.9rem;
+    }
+
+    .input-group {
+        border: 1px solid #ced4da;
+        border-radius: 0.375rem;
+        overflow: hidden; // Ensures rounded corners clip content
+        transition: all 0.3s;
+
+        &:focus-within {
+            border-color: $primary-orange;
+            box-shadow: 0 0 0 0.2rem rgba(255, 166, 51, 0.25);
+
+            .input-group-text {
+                color: $primary-orange;
+            }
+        }
+    }
+
+    .input-group-text {
+        background-color: #fff;
+        border: none; // Remove inner border
+        color: #aaa;
+        padding-right: 15px;
+    }
+
+    .form-control {
+        border: none; // Remove inner border
+        padding-left: 0;
+
+        &:focus {
+            box-shadow: none;
+            border-color: transparent; // Rely on input-group border
+        }
+    }
+}
+
+.modal-btn {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+
+    button {
+        flex: 1;
+        padding: 12px;
+        font-weight: 600;
+        border-radius: 6px;
+        transition: all 0.3s;
+    }
+
+    .btn-primary {
+        background-color: $primary-orange;
+        border-color: $primary-orange;
+        color: #fff;
+
+        &:hover {
+            background-color: darken($primary-orange, 10%);
+            border-color: darken($primary-orange, 10%);
+        }
+    }
+
+    .btn-outline-cancel {
+        border: 1px solid #ddd;
+        color: #666;
+        background: #fff;
+
+        &:hover {
+            background: #f5f5f5;
+            color: #333;
+        }
+    }
+}
