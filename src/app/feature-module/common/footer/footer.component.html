@@ -129,7 +129,8 @@
                                 <a [routerLink]="routes.shippingPolicy">{{ 'FOOTER.SHIPPING' | translate }}</a>
                             </li>
                             <li>
-                                <a [routerLink]="routes.trackingOrder">{{ 'FOOTER.TRACK_SHIPMENT' | translate }}</a>
+                                <a href="javascript:void(0);" (click)="handleTrackShipment()">{{ 'FOOTER.TRACK_SHIPMENT'
+                                    | translate }}</a>
                             </li>
                             <li>
                                 <a [routerLink]="routes.termsCondition">{{ 'FOOTER.TERMS_AND_CONDITIONS' | translate

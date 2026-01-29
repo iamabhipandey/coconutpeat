@@ -12,7 +12,7 @@ export class DataFactoryService {
 
   // Properties to store login data
   private token: string | null = null;
-  private currentUser: UserData | null = null; 
+  private currentUser: UserData | null = null;
 
   constructor(private http: HttpClient) { }
 
@@ -39,9 +39,9 @@ export class DataFactoryService {
 
   setCurrentUser(userData: UserData | null): void {
     this.currentUser = userData;
-    this.setCookie('authUser', JSON.stringify(userData));   
+    this.setCookie('authUser', JSON.stringify(userData));
   }
-  
+
   getCurrentUser(): UserData | null {
     if (!this.currentUser) {
       const userData = this.getCookie('authUser');
@@ -53,16 +53,16 @@ export class DataFactoryService {
   private setCookie(name: string, value: string): void {
     const expires = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toUTCString();
     document.cookie = `${name}=${encodeURIComponent(value)}; expires=${expires}; path=/`;
-}
-  
+  }
+
   private getCookie(name: string): string | null {
     const value = document.cookie.split('; ').find(row => row.startsWith(name + '='));
     return value ? decodeURIComponent(value.split('=')[1]) : null;
   }
-  
 
 
-  signupCredentials(userName: string, mobile: string, email: string, password: string, confirmPassword: string, otp: string, userType:string): User {
+
+  signupCredentials(userName: string, mobile: string, email: string, password: string, confirmPassword: string, otp: string, userType: string): User {
     return {
       userName: userName,
       mobile: mobile,
@@ -74,12 +74,16 @@ export class DataFactoryService {
     };
   }
 
+  isUserLoggedIn(): boolean {
+    return !!this.getToken();
+  }
 
- 
 
 
 
- 
+
+
+
 
 }
 
