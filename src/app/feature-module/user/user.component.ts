@@ -10,7 +10,7 @@ import { routerlink } from 'src/app/shared/services/model/model';
   styleUrls: ['./user.component.css'],
 })
 export class UserComponent {
- isSidebarOpen = false;
+  isSidebarOpen = false;
 
   toggleSidebar() {
     this.isSidebarOpen = !this.isSidebarOpen;
@@ -46,7 +46,7 @@ export class UserComponent {
     });
   }
 
-    ngOnInit() {
+  ngOnInit() {
     this.routesActive();
   }
 
@@ -56,17 +56,7 @@ export class UserComponent {
     this.router.navigate([this.routes.home]);
   }
   public routesActive() {
-    if (
-      this.page === 'user booking upcoming' ||
-      this.page === 'user booking inprogress' ||
-      this.page === 'user booking complete' ||
-      this.page === 'user booking cancelled' ||
-      this.page === 'user bookings' ||
-      this.page === 'User Bookings'
-    ) {
-      this.customRouteBookings = true;
-      this.page = 'User Bookings';
-    } else if (this.page === 'settings' || this.page === 'User Settings') {
+    if (this.page === 'settings' || this.page === 'User Settings') {
       this.customRouteSettings = true;
       this.page = 'User Settings';
     } else {

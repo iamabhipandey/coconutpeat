@@ -19,11 +19,6 @@ export class routes {
     return this.baseUrl + '/listings/listing-grid';
   }
 
-
-
-
-
-
   public static get aboutUs(): string {
     return this.baseUrl + '/pages/about-us';
   }
@@ -54,37 +49,23 @@ export class routes {
   public static get error500(): string {
     return this.baseUrl + '/error/error500';
   }
-  public static get pricing(): string {
-    return this.baseUrl + '/pages/pricing';
-  }
+
   public static get faq(): string {
     return this.baseUrl + '/pages/faq';
   }
 
-  public static get B2B(): string {
-    return this.baseUrl + '/pages/register-with-us';
-  }
 
-  public static get B2BSection(): string {
-    return this.baseUrl + '/pages/sell-on-bellaluna';
-  }
+
+
 
   public static get beautyBook(): string {
     return this.baseUrl + '/pages/beauty-book';
   }
-  public static get allbrands(): string {
-    return this.baseUrl + '/pages/all-brands';
-  }
 
-  public static get gallery(): string {
-    return this.baseUrl + '/pages/gallery';
-  }
-  public static get ourTeam(): string {
-    return this.baseUrl + '/pages/our-team';
-  }
-  public static get testimonial(): string {
-    return this.baseUrl + '/pages/testimonial';
-  }
+
+
+
+
   public static get termsCondition(): string {
     return this.baseUrl + '/pages/terms-condition';
   }
@@ -94,9 +75,7 @@ export class routes {
   public static get shippingPolicy(): string {
     return this.baseUrl + '/pages/shipping-policy';
   }
-  public static get ReturnCancellation(): string {
-    return this.baseUrl + '/pages/ReturnCancellation';
-  }
+
   public static get maintenance(): string {
     return this.baseUrl + '/pages/maintenance';
   }
@@ -136,9 +115,7 @@ export class routes {
   public static get comingSoon(): string {
     return this.baseUrl + '/pages/coming-soon';
   }
-  public static get globalstore(): string {
-    return this.baseUrl + '/pages/global-stores';
-  }
+
   public static get cocopeat(): string {
     return this.baseUrl + '/pages/cocopeat';
   }
@@ -169,9 +146,7 @@ export class routes {
   public static get user(): string {
     return this.baseUrl + '/user';
   }
-  public static get userPayment(): string {
-    return this.user + '/user-payment';
-  }
+
   public static get userWallet(): string {
     return this.user + '/user-wallet';
   }
@@ -198,21 +173,7 @@ export class routes {
   }
 
 
-  public static get userBookingCancelled(): string {
-    return this.user + '/user-booking-cancelled';
-  }
-  public static get userBookingComplete(): string {
-    return this.user + '/user-booking-complete';
-  }
-  public static get userBookingInprogress(): string {
-    return this.user + '/user-booking-inprogress';
-  }
-  public static get userBookingUpcoming(): string {
-    return this.user + '/user-booking-upcoming';
-  }
-  public static get userBookings(): string {
-    return this.user + '/user-bookings';
-  }
+
 
 
   public static get myOrders(): string {
@@ -224,15 +185,11 @@ export class routes {
     return this.user + '/tracking-order';
   }
 
-  public static get userDashboard(): string {
-    return this.user + '/user-dashboard';
-  }
+
   public static get userIntegration(): string {
     return this.user + '/settings/user-integration';
   }
-  public static get userMessages(): string {
-    return this.user + '/user-messages';
-  }
+
   public static get userReviews(): string {
     return this.user + '/user-reviews';
   }
@@ -255,21 +212,7 @@ export class routes {
   public static get bookingCheckout(): string {
     return this.baseUrl + '/booking/booking-checkout';
   }
-  public static get bookingCalendar(): string {
-    return this.user + '/bookings-calendar';
-  }
-  public static get bookingCancelledCalendar(): string {
-    return this.user + '/booking-cancelled-callendar';
-  }
-  public static get bookingCompletedCalendar(): string {
-    return this.user + '/booking-complete-callendar';
-  }
-  public static get bookingUpcomingCalendar(): string {
-    return this.user + '/booking-upcoming-callendar';
-  }
-  public static get bookingInprogressCalendar(): string {
-    return this.user + '/booking-inprogress-callendar';
-  }
+
 
 
 

@@ -39,50 +39,48 @@ export class MyOrderComponent {
 
 
 
-    loggedUserData: any;
-    loggedUserName: any;
-    loggedMobile: any;
-    loggedUserId: string = '';
-    loggedUserEmail: any = '';
-    loggedUserType: string = '';
-  
-    constructor(
-      private router: Router,
-     private commonService: CommonService,
-      private dataFactory:DataFactoryService,
-      private matDialog: MatDialog, 
-      private viewportScroller: ViewportScroller,
-        private data: DataService,
-          private pagination: PaginationService,
-    ) {
-      
-  this.loggedUserData = this.dataFactory.getCurrentUser();
-        if (this.loggedUserData) {
-        this.loggedUserName = this.loggedUserData.name;
-        this.loggedUserEmail = this.loggedUserData.email;
-        this.loggedMobile = this.loggedUserData.mobile;
-        this.loggedUserType = this.loggedUserData.userType;
-        this.loggedUserId = this.loggedUserData.userProfileId;
-  
-        }
-      this.getAllMyOrder(this.loggedUserId);
+  loggedUserData: any;
+  loggedUserName: any;
+  loggedMobile: any;
+  loggedUserId: string = '';
+  loggedUserEmail: any = '';
+  loggedUserType: string = '';
 
-      this.data.getUserBookings().subscribe((apiRes: apiResultFormat) => {
+  constructor(
+    private router: Router,
+    private commonService: CommonService,
+    private dataFactory: DataFactoryService,
+    private matDialog: MatDialog,
+    private viewportScroller: ViewportScroller,
+    private data: DataService,
+    private pagination: PaginationService,
+  ) {
+
+    this.loggedUserData = this.dataFactory.getCurrentUser();
+    if (this.loggedUserData) {
+      this.loggedUserName = this.loggedUserData.name;
+      this.loggedUserEmail = this.loggedUserData.email;
+      this.loggedMobile = this.loggedUserData.mobile;
+      this.loggedUserType = this.loggedUserData.userType;
+      this.loggedUserId = this.loggedUserData.userProfileId;
+
+    }
+    this.getAllMyOrder(this.loggedUserId);
+
+    this.data.getUserBookings().subscribe((apiRes: apiResultFormat) => {
       this.totalData = apiRes.totalData;
       this.pagination.tablePageSize.subscribe((res: tablePageSize) => {
-        if (this.router.url == this.routes.userBookings) {
-          this.getTableData({ skip: res.skip, limit: this.totalData });
-          this.pageSize = res.pageSize;
-        }
+        this.getTableData({ skip: res.skip, limit: this.totalData });
+        this.pageSize = res.pageSize;
       });
     });
-     
-    }
 
-    
-allOredersData:any=[];
-    getAllMyOrder(id:any){
-       this.commonService.getAllOrders(this.loggedUserId).subscribe({
+  }
+
+
+  allOredersData: any = [];
+  getAllMyOrder(id: any) {
+    this.commonService.getAllOrders(this.loggedUserId).subscribe({
       next: (res: any) => {
         if (res.status === 'true') {
           this.allOredersData = res.data;
@@ -96,16 +94,16 @@ allOredersData:any=[];
         console.error(err);
       }
     });
-    }
+  }
 
 
-orderDetails:any;
-      getMyOrderDetails(id:any){
-       this.commonService.getOrderDetails(id).subscribe({
+  orderDetails: any;
+  getMyOrderDetails(id: any) {
+    this.commonService.getOrderDetails(id).subscribe({
       next: (res: any) => {
         if (res.status === 'true') {
           this.orderDetails = res.data;
-         console.log(this.orderDetails);
+          console.log(this.orderDetails);
         } else {
 
         }
@@ -114,9 +112,9 @@ orderDetails:any;
         console.error(err);
       }
     });
-    }
+  }
 
- 
+
 
   private getTableData(pageOption: pageSelection): void {
     this.data.getUserBookings().subscribe((apiRes: apiResultFormat) => {
@@ -159,19 +157,19 @@ orderDetails:any;
       });
     }
   }
-    writereview(): void {    
-           const dialogResult = this.matDialog.open(WriteReviewComponent);
-             dialogResult.afterClosed().subscribe((res: string) => {
-             });   
-           }
-// for mobile filter---// 
-mobileFilterVisible = false;
+  writereview(): void {
+    const dialogResult = this.matDialog.open(WriteReviewComponent);
+    dialogResult.afterClosed().subscribe((res: string) => {
+    });
+  }
+  // for mobile filter---// 
+  mobileFilterVisible = false;
 
-openMobileFilter() {
-  this.mobileFilterVisible = true;
-}
+  openMobileFilter() {
+    this.mobileFilterVisible = true;
+  }
 
-closeMobileFilter() {
-  this.mobileFilterVisible = false;
-}
+  closeMobileFilter() {
+    this.mobileFilterVisible = false;
+  }
 }
