@@ -157,6 +157,7 @@ const routes: Routes = [
     path: 'CleanRoom',
     loadChildren: () => import('./clean-room/clean-room.module').then((m) => m.CleanRoomModule),
   },
+  { path: 'shipping-policy', loadChildren: () => import('./shipping-policy/shipping-policy.module').then(m => m.ShippingPolicyModule) },
 ];
 
 @NgModule({

@@ -91,6 +91,9 @@ export class routes {
   public static get privacyPolicy(): string {
     return this.baseUrl + '/pages/privacy-policy';
   }
+  public static get shippingPolicy(): string {
+    return this.baseUrl + '/pages/shipping-policy';
+  }
   public static get ReturnCancellation(): string {
     return this.baseUrl + '/pages/ReturnCancellation';
   }

@@ -6,20 +6,20 @@
                 <div class="col-lg-4 col-md-6 col-sm-6 col-12">
                     <div class="footer-contact footer-widget">
                         <div class="footer-logo">
-                             <div class="row">
-                             <div class="col-lg-5 col-md-5 col-sm-8 col-8">
-                                <img src="assets/img/Loche-India-Logo-PNG.png" alt="Logo" class="logo-img">
-                             </div>
-                             <div class="col-lg-1 col-md-1 col-sm-1 col-1 mt-4" style="margin-left: -60px;">
-                                <h2 style="color: black;">X</h2>
-                             </div>
-                            <div class="col-lg-5 col-md-5 col-sm-8 col-8 mt-3" style="margin-left: 10px;">
-                                <img src="assets/img/Kona-logo.png" alt="Logo" class="logo-img">
+                            <div class="row">
+                                <div class="col-lg-5 col-md-5 col-sm-8 col-8">
+                                    <img src="assets/img/Loche-India-Logo-PNG.png" alt="Logo" class="logo-img">
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-sm-1 col-1 mt-4" style="margin-left: -60px;">
+                                    <h2 style="color: black;">X</h2>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-8 col-8 mt-3" style="margin-left: 10px;">
+                                    <img src="assets/img/Kona-logo.png" alt="Logo" class="logo-img">
+                                </div>
                             </div>
-                            </div>
-                           
+
                         </div>
-                       
+
                         <div class="footer-contact-info">
                             <h6>{{ 'FOOTER.BUSINESS_HOURS' | translate }}</h6>
                             <h6 style="margin-left: 10%;"> 09.30 AM - 7:30 PM</h6>
@@ -34,7 +34,7 @@
                                 </div>
                             </div>
                         </div>
-                        <ul class="store-icon">
+                        <!-- <ul class="store-icon">
                             <li>
                                 <a href="javascript:void(0);">
                                     <img src="assets/img/icons/play-icon.svg" class="img-fluid" alt="logo">
@@ -45,10 +45,10 @@
                                     <img src="assets/img/icons/app-icon.svg" class="img-fluid" alt="logo">
                                 </a>
                             </li>
-                        </ul>
+                        </ul> -->
                     </div>
                 </div>
-                   <div class="col-lg-2 col-md-6 col-sm-6 col-6">
+                <div class="col-lg-2 col-md-6 col-sm-6 col-6">
                     <div class="accordion" id="siteLinksAccordion">
 
                         <div class="accordion-item border-0">
@@ -86,7 +86,7 @@
                                                 class="text-dark d-block">glossys.loche.in</a>
                                         </li>
 
-                                         <li class="border-bottom py-2 px-3">
+                                        <li class="border-bottom py-2 px-3">
                                             <a target="_blank" href="https://pdrnelle.loche.in/home"
                                                 class="text-dark d-block">pdrnelle.loche.in</a>
                                         </li>
@@ -100,7 +100,7 @@
                                             <a target="_blank" href="https://pdrnhair.loche.in/home"
                                                 class="text-dark d-block">pdrnhair.loche.in</a>
                                         </li>
-                                         <li class="border-bottom py-2 px-3">
+                                        <li class="border-bottom py-2 px-3">
                                             <a target="_blank" href="https://morningshot.loche.in/home"
                                                 class="text-dark d-block">morningshot.loche.in</a>
                                         </li>
@@ -122,20 +122,21 @@
                     <div class="footer-widget footer-menu">
                         <h5 class="footer-title">{{ 'FOOTER.CUSTOMER_CARE' | translate }}</h5>
                         <ul>
-                            <!-- <li>
-                                <a href="javascript:void(0)">{{ 'FOOTER.REWARDS' | translate }}</a>
-                            </li> -->
                             <li>
-                                <a href="javascript:void(0)">{{ 'FOOTER.SHIPPING' | translate }}</a>
+                                <a [routerLink]="routes.aboutUs">About Us</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">{{ 'FOOTER.TRACK_SHIPMENT' | translate }}</a>
+                                <a [routerLink]="routes.shippingPolicy">{{ 'FOOTER.SHIPPING' | translate }}</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">{{ 'FOOTER.TERMS_AND_CONDITIONS' | translate }}</a>
+                                <a [routerLink]="routes.trackingOrder">{{ 'FOOTER.TRACK_SHIPMENT' | translate }}</a>
                             </li>
                             <li>
-                                <a href="javascript:void(0)">{{ 'FOOTER.PRIVACY_POLICY' | translate }}</a>
+                                <a [routerLink]="routes.termsCondition">{{ 'FOOTER.TERMS_AND_CONDITIONS' | translate
+                                    }}</a>
+                            </li>
+                            <li>
+                                <a [routerLink]="routes.privacyPolicy">{{ 'FOOTER.PRIVACY_POLICY' | translate }}</a>
                             </li>
                         </ul>
                     </div>
@@ -155,9 +156,9 @@
                             </li>
                             <span class="register">{{ 'FOOTER.CORPORATE_OFFICE' | translate }} :</span>
                             <li>
-                                <a> 
+                                <a>
                                     {{ 'FOOTER.HARYANA_ADDRESS' | translate }}
-                                   
+
                                 </a>
                             </li>
                             <h6 class="footer-tital">{{ 'FOOTER.REPUBLIC_OF_KOREA' | translate }}</h6>
@@ -185,7 +186,7 @@
                         <div class="copyright-text">
                             <p>
                                 {{ 'FOOTER.COPYRIGHT' | translate }}
-                               
+
                             </p>
                         </div>
                     </div>
