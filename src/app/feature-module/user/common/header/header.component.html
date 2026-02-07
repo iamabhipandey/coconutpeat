@@ -33,12 +33,13 @@
           @for (mainMenus of header; track mainMenus) {
           @if (mainMenus.separateRoute === true) {
           <li routerLinkActive="active">
-            <a [routerLink]="mainMenus.routes">{{ mainMenus.tittle }}</a>
+            <a [routerLink]="mainMenus.routes">{{ mainMenus.tittle | translate }}</a>
           </li>
           }
           @if (mainMenus.separateRoute === false) {
           <li class="has-submenu" [class.active]="base === mainMenus.base">
-            <a href="javascript:void(0);" (click)="mainMenus.showAsTab = !mainMenus.showAsTab">{{ mainMenus.tittle
+            <a href="javascript:void(0);" (click)="mainMenus.showAsTab = !mainMenus.showAsTab">{{ mainMenus.tittle |
+              translate
               }} <i class="fas fa-chevron-down"></i></a>
             <ul class="submenu" [ngClass]="{
                     'd-block': mainMenus.showAsTab === true
@@ -47,12 +48,13 @@
               @if (menu.hasSubRoute === false) {
               <li
                 [class.active]="page === menu.page1 || page === menu.page2 || page === menu.page3 || page === menu.page4 || page === menu.page5 || page === menu.page6 || page === menu.page7 || page === menu.page8 || page === menu.page9 || page === menu.page10 || page === menu.page11">
-                <a [routerLink]="menu.routes">{{ menu.menuValue }}</a>
+                <a [routerLink]="menu.routes">{{ menu.menuValue | translate }}</a>
               </li>
               }
               @if (menu.hasSubRoute === true) {
               <li class="has-submenu" routerLinkActive="active">
-                <a (click)="menu.showSubRoute = !menu.showSubRoute" [routerLink]="menu.routes">{{ menu.menuValue
+                <a (click)="menu.showSubRoute = !menu.showSubRoute" [routerLink]="menu.routes">{{ menu.menuValue |
+                  translate
                   }}</a>
                 <ul class="submenu" [ngClass]="{
                             'd-block': menu.showSubRoute === true
@@ -60,7 +62,7 @@
                   @for (subMenu of menu.subMenus; track subMenu) {
                   <li routerLinkActive="active">
                     <a [routerLink]="subMenu.routes">{{
-                      subMenu.menuValue
+                      subMenu.menuValue | translate
                       }}</a>
                   </li>
                   }
@@ -86,13 +88,13 @@
           </a>
           <div class="dropdown-menu dropdown-menu-end">
             <a class="dropdown-item" [routerLink]="routes.userSettings">
-              <i class="feather icon-user-check"></i> User Profile
+              <i class="feather icon-user-check"></i> {{ 'HEADER.PROFILE' | translate }}
             </a>
             <a class="dropdown-item">
-              <i class="feather icon-settings"></i> Settings
+              <i class="feather icon-settings"></i> {{ 'HEADER.SETTINGS' | translate }}
             </a>
             <a class="dropdown-item" [routerLink]="routes.home">
-              <i class="feather icon-power"></i> Logout
+              <i class="feather icon-power"></i> {{ 'HEADER.LOGOUT' | translate }}
             </a>
           </div>
         </li>

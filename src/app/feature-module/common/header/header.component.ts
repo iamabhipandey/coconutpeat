@@ -47,9 +47,12 @@ export class HeaderComponent {
   ) {
 
 
+    this.translate.setDefaultLang('en');
     const savedLang = localStorage.getItem('lang') || 'en';
-    this.translate.setDefaultLang(savedLang);
     this.translate.use(savedLang);
+
+    // Sync selectedLanguage with savedLang
+    this.updateSelectedLanguage(savedLang);
 
 
 
@@ -83,7 +86,11 @@ export class HeaderComponent {
 
   changeLanguage(lang: string) {
     localStorage.setItem('lang', lang);
+    this.translate.use(lang);
+    this.updateSelectedLanguage(lang);
+  }
 
+  updateSelectedLanguage(lang: string) {
     if (lang === 'en') {
       this.selectedLanguage = { code: 'en', label: 'English', flag: 'assets/img/flags/us.png' };
     } else if (lang === 'cn') {
@@ -93,9 +100,6 @@ export class HeaderComponent {
     } else if (lang === 'jp') {
       this.selectedLanguage = { code: 'jp', label: 'Japanese', flag: 'assets/img/flags/jp.png' };
     }
-
-    // Your existing language service code
-    this.translate.use(lang);
   }
 
 

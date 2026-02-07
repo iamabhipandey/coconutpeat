@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatDialogModule } from '@angular/material/dialog';
+import { TranslateModule } from '@ngx-translate/core';
 
 import { UserRoutingModule } from './user-routing.module';
 import { UserComponent } from './user.component';
@@ -45,7 +46,8 @@ import { AddAddressComponent } from './user-address/add-address/add-address.comp
     CommonModule,
     UserRoutingModule,
     SharedModule,
-    MatDialogModule
+    MatDialogModule,
+    TranslateModule
   ]
 })
 export class UserModule { }

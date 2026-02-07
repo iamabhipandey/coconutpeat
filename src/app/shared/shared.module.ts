@@ -8,7 +8,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { LightboxModule } from 'ngx-lightbox';
 import { TimepickerModule } from 'ngx-bootstrap/timepicker';
-import {MatSliderModule} from '@angular/material/slider';
+import { MatSliderModule } from '@angular/material/slider';
 import { HttpClientModule, provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { MatSortModule } from '@angular/material/sort';
 import {
@@ -17,9 +17,7 @@ import {
 } from 'ngx-bootstrap/datepicker';
 import { CustomPaginationModule } from './custom-pagination/custom-pagination.module';
 import { MatTooltipModule } from '@angular/material/tooltip';
-import { GoogleMapsModule } from '@angular/google-maps';
 import { LightgalleryModule } from 'lightgallery/angular';
-import { FullCalendarModule } from '@fullcalendar/angular';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { NgxImageZoomModule } from 'ngx-image-zoom';
 
@@ -45,9 +43,8 @@ import { NgxImageZoomModule } from 'ngx-image-zoom';
     MatSortModule,
     CustomPaginationModule,
     MatTooltipModule,
-    GoogleMapsModule,
+    MatTooltipModule,
     LightgalleryModule,
-    FullCalendarModule,
     NgxImageZoomModule,
     HttpClientModule
   ],
@@ -67,11 +64,10 @@ import { NgxImageZoomModule } from 'ngx-image-zoom';
     BsDatepickerModule,
     CustomPaginationModule,
     MatTooltipModule,
-    GoogleMapsModule,
+    MatTooltipModule,
     NgxSpinnerModule,
     LightgalleryModule,
     NgxImageZoomModule,
-    FullCalendarModule,
     HttpClientModule
   ],
   providers: [
@@ -80,5 +76,5 @@ import { NgxImageZoomModule } from 'ngx-image-zoom';
     provideHttpClient(withInterceptorsFromDi())
   ]
 })
-export class SharedModule {}
+export class SharedModule { }
 

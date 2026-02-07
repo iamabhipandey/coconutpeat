@@ -6,61 +6,33 @@
     "HISTORY": "회사 연혁",
     "SOCIAL_CONTRIBUTION": "사회 공헌",
     "PRODUCT_INFO": "제품 정보",
-    "MEDICAL_DEVICES": "의료기기",
-    "BOTOX": "보톡스",
-    "FILLERS": "필러",
-    "PL": "PL",
-    "PDRN": "PDRN",
-    "SKIN_BOOST": "스킨부스터",
-    "LIPOLYSIS": "지방분해",
-    "PDRN_IMPLANTS": "PDRN 임플란트",
-    "COSMETICS": "화장품",
-    "HYALURONIC": "히알루론산",
-    "EXOSOME": "엑소좀",
-    "SPICULE": "스피큘",
-    "MORNING_BOOSTER": "모닝 부스터",
-    "MORNING_SHOT": "모닝 샷",
-    "BUSINESS_INQUIRIES": "비즈니스 문의",
+    "COCOPEAT": "코코피트",
+    "USAGE_FARMS": "용도: 농장",
+    "PERFORMANCE": "우수한 성능과 우수성",
+    "FACTORY_LOCALLY": "현지 생산 공장",
+    "QUALITY_CONTROL": "한국식 품질 관리",
     "RND": "연구개발",
-    "INDIAN_HOSPITALS": "인도 병원 소개",
-    "KOREA_HEALTH_CENTER": "한국 보건센터 (항바이러스 연구센터)",
-    "RND_TECH": "R&D 및 기술",
-    "CLEAN_ROOM": "클린룸",
+    "AGRI_RESEARCH": "농업 연구소",
     "CERTIFICATIONS": "인증 정보",
-    "COOPERATIVE_ORG": "협력 기관",
-    "PARAS_HOSPITAL": "파라스 병원",
-    "ALL_INDIA_COLLEGE": "올 인디아 의과대학",
-    "ALPHA_DENTAL": "알파 치과 그룹",
-    "OSONG_MEDICAL": "오송 첨단 의료 센터",
-    "GIMHAE_FOUNDATION": "김해 첨단 의료 재단",
     "CUSTOMER_CENTER": "고객 센터",
-    "AFFILIATE_INQUIRY": "제휴 문의",
-    "QNA": "Q&A",
+    "KAKAO": "카카오",
+    "WHATSAPP": "왓츠앱",
     "OEM_ODM": "OEM/ODM 문의",
     "PUBLIC_RELATIONS_CENTER": "홍보 센터",
     "LOCHE_NEWS": "로체 뉴스",
     "LOCHE_COMMERCIAL": "로체 광고",
     "PARTNER_COMPANIES": "파트너사 소개",
     "INTRODUCTION_CI": "CI 소개",
-    "RECRUITMENT": "채용",
-    "PERSONNEL_WELFARE": "인사 제도 / 복지 제도",
-    "RECRUITMENT_PROCEDURES": "채용 절차 안내",
-    "JOB_INTRODUCTION": "직무 소개",
     "PR": "PR",
     "PRESS_RELEASE": "보도 자료",
     "PROMOTIONAL_VIDEO": "홍보 영상",
     "ADVERTISING": "광고",
     "CATALOG_ARCHIVE": "카탈로그 아카이브",
-    "ENTIRE_CATALOG": "전체 카탈로그",
-    "DOWNLOAD_CATALOG": "카탈로그 다운로드",
-    "DENTAL": "덴탈",
-    "IMPLANT": "임플란트",
-    "INTRO_PARTNER_COMPANIES": "파트너사 소개",
-    "INTRO_CI": "CI 소개",
-    "OEM_ODM_INQUIRIES": "OEM/ODM 문의",
-    "PERSONNEL_WELFARE_SYSTEM": "인사 제도 / 복지 제도",
+    "COCOI": "Cocoi",
+    "HYOBATO": "Hyobato",
     "ADDRESS": "서울특별시 강남구 봉은사로 108길 23 대광빌딩 303호",
     "DASHBOARD": "대시보드",
+    "SETTINGS": "설정",
     "WISHLIST": "위시리스트",
     "ORDERS": "주문 내역",
     "LOGOUT": "로그아웃",
@@ -76,7 +48,6 @@
     "INDIA_HUB": "인도 허브",
     "NEPAL_HUB": "네팔 허브"
   },
-
   "FOOTER": {
     "BUSINESS_HOURS": "영업시간: 월요일 ~ 토요일",
     "CUSTOMER_CARE": "고객 상담",
@@ -225,7 +196,6 @@
     "MAN": "저비용 유지관리",
     "MAN_DESC": "손쉬운 접근 패널과 모듈식 부품으로 다운타임 감소."
   },
-  
   "HOME": {
     "NATURAL": "천연 포뮬러",
     "WAKE_UP": "상쾌한 아침",
@@ -268,7 +238,6 @@
     "USE_DESC": "바쁜 일정에도 간편하게 사용할 수 있습니다.",
     "FAQ": "숙취 해소 FAQ",
     "AID_FAQ": "수면 보조 FAQ",
-
     "FAQ_QA": {
       "Q1": "모닝샷 숙취 해소 음료란?",
       "A1": "간 기능을 돕고 수분을 공급하여 술 마신 다음 날 상쾌하게 깨어날 수 있도록 돕는 아유르베다 해독 음료입니다.",
@@ -285,7 +254,6 @@
       "Q7": "아유르베딕이며 화학 성분이 없나요?",
       "A7": "네, 100% 아유르베딕이며 비의존성, 무해한 제품입니다."
     },
-
     "SLEEP_QA": {
       "Q1": "모닝샷 수면 보조제란?",
       "A1": "빨리 잠들고 깊고 회복되는 수면을 돕는 천연 허브 수면 포뮬러입니다.",
@@ -301,7 +269,105 @@
       "A6": "네, 허브 기반으로 매일 섭취해도 적합합니다.",
       "Q7": "다른 약과 함께 복용해도 안전한가요?",
       "A7": "대체로 안전하지만, 정기적으로 약을 복용 중이라면 의사에게 상담하세요."
+    },
+    "BANNER": {
+      "WELCOME_TO": "환영합니다,",
+      "COCONUT_LOCHE": "코코넛 로체에",
+      "SUBTITLE": "순수함, 품질, 현대적인 우아함으로 제작된 프리미엄 제품을 만나보세요.",
+      "DESCRIPTION": "현대 농업을 위한 자연적인 힘, 뛰어난 성장 성능, 지속 가능한 솔루션을 제공하는 순수 유기농 코코피트.",
+      "HAPPY_CUSTOMERS": "만족한 고객",
+      "LEARN_MORE": "자세히 보기",
+      "SHOP_NOW": "지금 쇼핑하기"
+    },
+    "SEARCH": {
+      "PRODUCT_TYPE": "제품 유형",
+      "CATEGORIES": "카테고리",
+      "PRODUCT_FORM_TYPE": "제품 형태/유형",
+      "SELECT": "선택...",
+      "LOCATION": "위치",
+      "INDIA": "인도",
+      "BUTTON": "검색"
+    },
+    "FEATURES": {
+      "ORGANIC_MATERIAL": "100% 유기농 소재",
+      "WATER_RETENTION": "높은 수분 유지력",
+      "ECO_FRIENDLY": "친환경적",
+      "EASY_TO_USE": "사용하기 쉬움",
+      "MULTI_PURPOSE": "다목적 사용",
+      "ECO_FRIENDLY_PRODUCTION": "친환경 생산"
+    },
+    "CATEGORIES": {
+      "TITLE": "제품 카테고리 살펴보기",
+      "SUBTITLE": "모든 글로벌 요구 사항에 맞춰 순수하고 자연적이며 지속 가능하게 제작된 제품.",
+      "COCONUT": "코코넛",
+      "AGRICULTURAL": "농업용",
+      "OTHER_PRODUCTS": "기타 제품"
+    },
+    "POPULAR_PRODUCTS": {
+      "TITLE": "인기 제품",
+      "DESCRIPTION": "CoconutPeat.loche.in은 코코피트 블록, 코이어 섬유, 재배 백, 허스크 칩 및 기타 천연 재배 솔루션을 포함한 프리미엄 코코피트 및 코코넛 기반 제품을 전문으로 제공합니다."
+    },
+    "PRODUCT_ITEMS": {
+      "COCONUT_FIBER": "코코넛 섬유",
+      "COIR_MAT": "코이어 매트",
+      "COCO_PEAT": "코코피트",
+      "COIR_ROPE": "코이어 로프",
+      "COIR_NET": "코이어 네트",
+      "DESICCATED_COCONUT": "건조 코코넛",
+      "SEMI_HUSK_COCONUT": "세미 허스크 코코넛",
+      "COIR_BOARD": "코이어 보드",
+      "COIR_FELT_NEEDLE": "코이어 펠트 니들",
+      "VIEW_MORE": "더 보기"
+    },
+    "NEW_LAUNCHES": {
+      "TITLE": "신제품 출시"
+    },
+    "ABOUT": {
+      "TITLE": "회사 소개",
+      "SUBTITLE": "CoconutPeat by Loche India",
+      "DESCRIPTION": "CoconutPeat by Loche India에서는 더 나은 원예, 농업 및 지속 가능한 재배를 위해 만들어진 프리미엄 친환경 코코넛 기반 제품을 제공합니다. 당사의 코코피트, 코이어 섬유, 매트 및 재배 백은 일관된 품질, 탁월한 수분 유지 및 더 건강한 식물 성장을 제공하기 위해 세심하게 제작되었습니다. 우리는 환경과 현대 재배자를 모두 지원하는 천연 재생 가능 재료에 중점을 둡니다.",
+      "FEATURE_1_TITLE": "100% 천연 & 친환경",
+      "FEATURE_1_DESC": "화학 물질이 전혀 없는 순수 코코넛 유래 재료로 식물, 가정 및 산업에 안전한 제품입니다.",
+      "FEATURE_2_TITLE": "지속 가능 & 재생 가능한 자원",
+      "FEATURE_2_DESC": "모든 제품은 재생 가능한 코코넛 껍질로 만들어져 친환경 농업을 지원하고 환경 폐기물을 줄입니다.",
+      "FEATURE_3_TITLE": "완전 생분해성",
+      "FEATURE_3_DESC": "모든 코코넛 제품은 자연적으로 분해되어 환경을 생각하는 가정과 기업에 적합합니다.",
+      "FEATURE_4_TITLE": "다목적 & 다기능",
+      "FEATURE_4_DESC": "원예, 조경, 가정 장식, 농업, 매트리스, 로프, 매트, 수공예품 등에 유용합니다."
+    },
+    "BLOG_SECTION": {
+      "TITLE": "뉴스",
+      "SUBTITLE": "인도와 한국에 고품질 농산물을 공급하는 선도적인 수출 허브.",
+      "POST_1_TITLE": "채 썬 코코넛 & 건조 코코넛 만드는 법",
+      "POST_1_DESC": "자격을 갖춘 고객에게는 회사에 대한 비용이나 의무 없이 샘플 및 추가 문서를 제공하고 귀하의 우려 사항 및 요구 사항을 논의하게 되어 기쁩니다.",
+      "POST_2_TITLE": "코코 블록 – 더 나은 성장을 위한 코코넛의 자연적인 힘",
+      "POST_2_DESC": "코코 블록은 프리미엄 코코넛 껍질 섬유로 만든 100% 천연 재배 배지입니다. 친환경적이고 재생 가능하며 식물의 튼튼한 성장을 지원하면서 토양 건강을 개선하도록 설계되었습니다.",
+      "POST_3_TITLE": "코이어 카펫 사용의 장점",
+      "POST_3_DESC": "천연 코코넛 섬유로 만든 코이어 카펫은 친환경적이고 내구성이 뛰어난 소재로 길, 정원 등에서 널리 사용됩니다.",
+      "POST_4_TITLE": "건조 코코넛 분말 – 순수하고 신선하며 자연적인 영양",
+      "POST_4_DESC": "미세 분말은 쉽게 용해되고 섞여 채 썬 코코넛으로 인해 종종 발생하는 거칠거나 거친 식감을 피할 수 있습니다.",
+      "VIEW_ALL": "모든 블로그 보기"
+    },
+    "FAQ_SECTION": {
+      "TITLE": "자주 묻는 질문",
+      "Q1": "코코피트란 무엇인가요?",
+      "A1": "코코피트(Coco Peat)는 코코넛 껍질로 만든 천연 성장 배지입니다. 통기성과 수분 유지를 개선하며 원예 및 농업에 널리 사용됩니다.",
+      "Q2": "CoconutPeat.loche.in에서는 어떤 제품을 제공하나요?",
+      "A2": "코코피트 블록, 코코 재배 백, 코코 디스크, 허스크 칩, 코이어 섬유 및 프리미엄 원예 등급 코코 제품을 제공합니다.",
+      "Q3": "코코피트 제품은 유기농이며 친환경적인가요?",
+      "A3": "네, 당사의 모든 제품은 100% 천연, 생분해성, 화학 물질 무함유이며 유기농업에 적합합니다.",
+      "Q4": "저 EC와 고 EC 코코피트의 차이점은 무엇인가요?",
+      "A4": "저 EC는 농업, 수경 재배 및 묘목장에 사용됩니다. 고 EC는 오일 흡수제 및 침구와 같은 산업 응용 분야에 사용됩니다.",
+      "Q5": "대량 및 도매 주문을 공급하나요?",
+      "A5": "네, 묘목장, 농장, 수출업체, 도매업체 및 수경 재배자에게 최고의 공장 가격으로 대량 공급합니다.",
+      "Q6": "어떤 크기와 포장 옵션을 사용할 수 있나요?",
+      "A6": "5kg 블록, 650g 벽돌, 재배 백, 루스 백 및 대량 주문을 위한 맞춤형 포장을 제공합니다.",
+      "Q7": "배송에는 얼마나 걸리나요?",
+      "A7": "인도 내 배송은 보통 4~7일이 소요됩니다. 대량 및 팔레트 배송은 위치에 따라 7~12일이 소요될 수 있습니다.",
+      "Q8": "맞춤형 코코피트 믹스를 제공하나요?",
+      "A8": "네, 고객 요구 사항에 따라 EC 수준, 수분, 입자 크기, 혼합 비율 및 블록 크기를 맞춤화합니다.",
+      "Q9": "코코피트 블록은 어떻게 사용하나요?",
+      "A9": "블록을 20~25리터의 물에 10~15분 동안 담가 두세요. 부드럽고 푹신한 성장 배지로 5~6배 팽창합니다."
     }
   }
-
 }
