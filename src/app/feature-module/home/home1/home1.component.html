@@ -15,8 +15,8 @@
                   <mat-select [(ngModel)]="selectedValue1" [ngModelOptions]="{ standalone: true }" class="select "
                     placeholder="{{ 'HOME.SEARCH.CATEGORIES' | translate }}">
                     @for (data of selectedList1; track data) {
-                    <mat-option [value]="data.value">
-                      {{ data.value }}
+                    <mat-option [value]="data.value | translate">
+                      {{ data.value | translate }}
                     </mat-option>
                     }
                   </mat-select>
@@ -29,8 +29,8 @@
                   <mat-select [(ngModel)]="selectedValue2" [ngModelOptions]="{ standalone: true }" class="select"
                     placeholder="{{ 'HOME.SEARCH.SELECT' | translate }}">
                     @for (data of selectedList2; track data) {
-                    <mat-option [value]="data.value">
-                      {{ data.value }}
+                    <mat-option [value]="data.value | translate">
+                      {{ data.value | translate }}
                     </mat-option>
                     }
                   </mat-select>
@@ -43,8 +43,8 @@
                   <mat-select [(ngModel)]="selectedValue3" [ngModelOptions]="{ standalone: true }" class="select"
                     placeholder="{{ 'HOME.SEARCH.INDIA' | translate }}">
                     @for (data of selectedList3; track data) {
-                    <mat-option [value]="data.value">
-                      {{ data.value }}
+                    <mat-option [value]="data.value | translate">
+                      {{ data.value | translate }}
                     </mat-option>
                     }
                   </mat-select>

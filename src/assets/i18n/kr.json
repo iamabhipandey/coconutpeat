@@ -286,7 +286,15 @@
       "SELECT": "선택...",
       "LOCATION": "위치",
       "INDIA": "인도",
-      "BUTTON": "검색"
+      "BUTTON": "검색",
+      "FINE_POWDER": "미세 분말",
+      "FIBER_LONG": "장섬유",
+      "FIBER_SHORT": "단섬유",
+      "PEAT_BLOCK_5KG": "피트 블록 5kg",
+      "PEAT_BRICK_650G": "피트 벽돌 650g",
+      "HUSK_CHIPS_LARGE": "허스크 칩 대형",
+      "HUSK_CHIPS_SMALL": "허스크 칩 소형",
+      "KOREA": "한국"
     },
     "FEATURES": {
       "ORGANIC_MATERIAL": "100% 유기농 소재",
@@ -368,6 +376,27 @@
       "A8": "네, 고객 요구 사항에 따라 EC 수준, 수분, 입자 크기, 혼합 비율 및 블록 크기를 맞춤화합니다.",
       "Q9": "코코피트 블록은 어떻게 사용하나요?",
       "A9": "블록을 20~25리터의 물에 10~15분 동안 담가 두세요. 부드럽고 푹신한 성장 배지로 5~6배 팽창합니다."
+    },
+    "PROMO": {
+      "LOCHE_TOX_100": "로체 독스 100유닛",
+      "LOCHE_TOX_200": "로체 독스 200유닛",
+      "PDRNELLE": "PDRNelle",
+      "PDRNELLE_SKINBOOSTER": "PDRNelle 스킨부스터",
+      "LOCHE_INJECTOR": "로체 인젝터",
+      "PDRNELLE_VEGA_SHINE": "PDRNelle 베가 샤인",
+      "PDRNELLE_V": "PDRNelle V"
+    },
+    "NEW_ARRIVALS": {
+      "PRODUCT_1_TITLE": "레티놀 펩타이드 유스풀 세럼",
+      "PRODUCT_1_BRAND": "febyou",
+      "PRODUCT_2_TITLE": "Plum 심플리 브라이트 2% 나이아신아마이드 페이스 워시",
+      "PRODUCT_2_BRAND": "Plum",
+      "PRODUCT_3_TITLE": "라이스 글로우 폼 토너",
+      "PRODUCT_3_BRAND": "febyou",
+      "PRODUCT_4_TITLE": "KRice 마스크 클렌저",
+      "PRODUCT_4_BRAND": "febyou",
+      "PRODUCT_5_TITLE": "동해 딥 모이스처라이징 크림 1+1",
+      "PRODUCT_5_BRAND": "Ratiplan"
     }
   }
 }

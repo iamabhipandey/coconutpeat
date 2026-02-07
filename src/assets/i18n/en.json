@@ -345,7 +345,15 @@
       "SELECT": "Select...",
       "LOCATION": "Location",
       "INDIA": "India",
-      "BUTTON": "Search"
+      "BUTTON": "Search",
+      "FINE_POWDER": "Fine Powder",
+      "FIBER_LONG": "Fiber Long",
+      "FIBER_SHORT": "Fiber Short",
+      "PEAT_BLOCK_5KG": "Peat Block 5kg",
+      "PEAT_BRICK_650G": "Peat Brick 650g",
+      "HUSK_CHIPS_LARGE": "Husk Chips Large",
+      "HUSK_CHIPS_SMALL": "Husk Chips Small",
+      "KOREA": "Korea"
     },
     "FEATURES": {
       "ORGANIC_MATERIAL": "100% Organic Material",
@@ -427,6 +435,27 @@
       "A8": "Yes, we customize EC level, moisture, particle size, blend ratio, and block size based on customer requirements.",
       "Q9": "How do I use a Coco Peat block?",
       "A9": "Soak the block in 20–25 liters of water for 10–15 minutes. It will expand 5–6 times into soft and fluffy growing media."
+    },
+    "PROMO": {
+      "LOCHE_TOX_100": "Loche Tox 100Unit",
+      "LOCHE_TOX_200": "Loche Tox 200Unit",
+      "PDRNELLE": "PDRNelle",
+      "PDRNELLE_SKINBOOSTER": "PDRNelle Skinbooster",
+      "LOCHE_INJECTOR": "Loche Injector",
+      "PDRNELLE_VEGA_SHINE": "PDRNelle Vega Shine",
+      "PDRNELLE_V": "PDRNelle V"
+    },
+    "NEW_ARRIVALS": {
+      "PRODUCT_1_TITLE": "Retinol Peptide Youthful Serum",
+      "PRODUCT_1_BRAND": "febyou",
+      "PRODUCT_2_TITLE": "Plum Simply Bright 2% Niacinamide Face Wash With",
+      "PRODUCT_2_BRAND": "Plum",
+      "PRODUCT_3_TITLE": "Rice Glow Foam Toner",
+      "PRODUCT_3_BRAND": "febyou",
+      "PRODUCT_4_TITLE": "KRice Mask Cleanser",
+      "PRODUCT_4_BRAND": "febyou",
+      "PRODUCT_5_TITLE": "Donghae Deep Moisturizing Cream 1+1",
+      "PRODUCT_5_BRAND": "Ratiplan"
     }
   }
 }

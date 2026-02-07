@@ -48,7 +48,9 @@ export class HeaderComponent {
 
 
     this.translate.setDefaultLang('en');
-    const savedLang = localStorage.getItem('lang') || 'en';
+    // Force English as default on load
+    const savedLang = 'en';
+    // const savedLang = localStorage.getItem('lang') || 'en'; 
     this.translate.use(savedLang);
 
     // Sync selectedLanguage with savedLang

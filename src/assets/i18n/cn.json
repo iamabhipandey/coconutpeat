@@ -286,7 +286,15 @@
       "SELECT": "选择...",
       "LOCATION": "地点",
       "INDIA": "印度",
-      "BUTTON": "搜索"
+      "BUTTON": "搜索",
+      "FINE_POWDER": "细粉",
+      "FIBER_LONG": "长纤维",
+      "FIBER_SHORT": "短纤维",
+      "PEAT_BLOCK_5KG": "椰糠块 5kg",
+      "PEAT_BRICK_650G": "椰糠砖 650g",
+      "HUSK_CHIPS_LARGE": "大椰壳片",
+      "HUSK_CHIPS_SMALL": "小椰壳片",
+      "KOREA": "韩国"
     },
     "FEATURES": {
       "ORGANIC_MATERIAL": "100% 有机材料",
@@ -368,6 +376,27 @@
       "A8": "是的，我们根据客户要求定制 EC 水平、水分、颗粒大小、混合比例和块大小。",
       "Q9": "如何使用椰糠块？",
       "A9": "将块在 20–25 升水中浸泡 10–15 分钟。它将膨胀 5–6 倍，变成柔软蓬松的生长介质。"
+    },
+    "PROMO": {
+      "LOCHE_TOX_100": "Loche Tox 100单位",
+      "LOCHE_TOX_200": "Loche Tox 200单位",
+      "PDRNELLE": "PDRNelle",
+      "PDRNELLE_SKINBOOSTER": "PDRNelle 皮肤增强剂",
+      "LOCHE_INJECTOR": "Loche 注射器",
+      "PDRNELLE_VEGA_SHINE": "PDRNelle Vega Shine",
+      "PDRNELLE_V": "PDRNelle V"
+    },
+    "NEW_ARRIVALS": {
+      "PRODUCT_1_TITLE": "视黄醇多肽青春精华液",
+      "PRODUCT_1_BRAND": "febyou",
+      "PRODUCT_2_TITLE": "Plum 简单亮白 2% 烟酰胺洗面奶",
+      "PRODUCT_2_BRAND": "Plum",
+      "PRODUCT_3_TITLE": "大米光泽泡沫爽肤水",
+      "PRODUCT_3_BRAND": "febyou",
+      "PRODUCT_4_TITLE": "KRice 面膜洁面乳",
+      "PRODUCT_4_BRAND": "febyou",
+      "PRODUCT_5_TITLE": "Donghae 深层保湿霜 1+1",
+      "PRODUCT_5_BRAND": "Ratiplan"
     }
   }
 }

@@ -286,7 +286,15 @@
       "SELECT": "選択...",
       "LOCATION": "場所",
       "INDIA": "インド",
-      "BUTTON": "検索"
+      "BUTTON": "検索",
+      "FINE_POWDER": "微粉末",
+      "FIBER_LONG": "長繊維",
+      "FIBER_SHORT": "短繊維",
+      "PEAT_BLOCK_5KG": "ピートブロック 5kg",
+      "PEAT_BRICK_650G": "ピートブリック 650g",
+      "HUSK_CHIPS_LARGE": "ハスクチップ 大",
+      "HUSK_CHIPS_SMALL": "ハスクチップ 小",
+      "KOREA": "韓国"
     },
     "FEATURES": {
       "ORGANIC_MATERIAL": "100% 有機素材",
@@ -368,6 +376,27 @@
       "A8": "はい、お客様の要件に基づいて、ECレベル、水分、粒子サイズ、ブレンド比率、ブロックサイズをカスタマイズします。",
       "Q9": "ココピートブロックはどのように使用しますか？",
       "A9": "ブロックを20〜25リットルの水に10〜15分間浸します。5〜6倍に膨らみ、柔らかくふわふわした栽培用培地になります。"
+    },
+    "PROMO": {
+      "LOCHE_TOX_100": "Loche Tox 100ユニット",
+      "LOCHE_TOX_200": "Loche Tox 200ユニット",
+      "PDRNELLE": "PDRNelle",
+      "PDRNELLE_SKINBOOSTER": "PDRNelle スキンブースター",
+      "LOCHE_INJECTOR": "Loche インジェクター",
+      "PDRNELLE_VEGA_SHINE": "PDRNelle ベガシャイン",
+      "PDRNELLE_V": "PDRNelle V"
+    },
+    "NEW_ARRIVALS": {
+      "PRODUCT_1_TITLE": "レチノールペプチドユースフルセラム",
+      "PRODUCT_1_BRAND": "febyou",
+      "PRODUCT_2_TITLE": "Plum シンプリーブライト 2% ナイアシンアミド洗顔料",
+      "PRODUCT_2_BRAND": "Plum",
+      "PRODUCT_3_TITLE": "ライスグロウフォームトナー",
+      "PRODUCT_3_BRAND": "febyou",
+      "PRODUCT_4_TITLE": "KRice マスククレンザー",
+      "PRODUCT_4_BRAND": "febyou",
+      "PRODUCT_5_TITLE": "Donghae ディープモイスチャライジングクリーム 1+1",
+      "PRODUCT_5_BRAND": "Ratiplan"
     }
   }
 }
